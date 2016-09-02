@@ -13,18 +13,19 @@
     <link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-    
     <div class="header">
-        <i class="icon-menu nav-menu"></i>
-        <div class="nav-logo">
+        <i class="i-menu n-menu"></i>
+        <div class="n-logo">
             <img src="images/kui-logo.png">
         </div>
-    </div>
+    </div><!--end header-->
+
 
     <div class="side">
         <div class="logo">
             <img class="k-img" src="images/kui-logo.png">
         </div>
+
 
         <ul class="n">
             <li>
@@ -56,7 +57,9 @@
             </li>
         </ul>
 
+
         <div class="k-ml k-mr u-b"></div>
+
 
         <div class="link k-tac">
             <a class="b b-bc-g">下载 KUI+</a>
@@ -64,13 +67,15 @@
         </div>
     </div><!--end side-->
 
+
 	<div class="main">
 		<div class="k-container">
-
-
             <div class="main-top">
                 <h2>
                     表格
+                    <small>
+                        Table
+                    </small>
                 </h2>
                 <p>
                     所有表格类以
@@ -571,45 +576,39 @@
 
     <script type="text/javascript" src="../js/zepto.min.js"></script>
     <script type="text/javascript" src="js/example.js"></script>
-
     <script type="text/javascript" src="../js/prettify.min.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            prettyPrint();
-        }
-    </script>
-<script>
-	$('.sidebar-menu > li > a').click(function(event) {
-		$(this).parent().addClass('active').siblings().removeClass('active').find('>ul').slideUp(200);
-		$(this).next().slideDown(200);
-	});
+    <script>
+    	$('.sidebar-menu > li > a').click(function(event) {
+    		$(this).parent().addClass('active').siblings().removeClass('active').find('>ul').slideUp(200);
+    		$(this).next().slideDown(200);
+    	});
 
-    var c = 'checked';
+        var c = 'checked';
 
-    $(".label-radio").each(function(index, el) {
-        var that = $(this), tname = that.find("input").attr("name");
-        if(that.find("input").is(":checked")) {
-            that.addClass(c);
-        }
-        that.click(function(event) {
-            $("[name="+tname+"]").attr(c,false).parent().removeClass(c);
-            that.addClass(c).find("input").attr(c,true);
-        });
-    });
-
-    $('.label-check').each(function(index, el) {
-        var that = $(this);
-        if(that.find("input").is(":checked")) {
-            that.addClass(c);
-        }
-        that.click(function(event) {
-            if(that.hasClass(c)) {
-                that.removeClass(c).find("input").attr(c,false);
-            }else {
-                that.addClass(c).find("input").attr(c,true);
+        $(".label-radio").each(function(index, el) {
+            var that = $(this), tname = that.find("input").attr("name");
+            if(that.find("input").is(":checked")) {
+                that.addClass(c);
             }
+            that.click(function(event) {
+                $("[name="+tname+"]").attr(c,false).parent().removeClass(c);
+                that.addClass(c).find("input").attr(c,true);
+            });
         });
-    });
-</script>
+
+        $('.label-check').each(function(index, el) {
+            var that = $(this);
+            if(that.find("input").is(":checked")) {
+                that.addClass(c);
+            }
+            that.click(function(event) {
+                if(that.hasClass(c)) {
+                    that.removeClass(c).find("input").attr(c,false);
+                }else {
+                    that.addClass(c).find("input").attr(c,true);
+                }
+            });
+        });
+    </script>
 </body>
 </html>

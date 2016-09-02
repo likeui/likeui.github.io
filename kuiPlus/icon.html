@@ -12,18 +12,19 @@
     <link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	
-	<div class="header u-b">
-		<i class="i-menu nav-menu"></i>
-		<div class="nav-logo">
+	<div class="header">
+		<i class="i-menu n-menu"></i>
+		<div class="n-logo">
 			<img src="images/kui-logo.png">
 		</div>
-	</div>
+	</div><!--end header-->
+
 
 	<div class="side">
 		<div class="logo">
 			<img class="k-img" src="images/kui-logo.png">
 		</div>
+
 
 		<ul class="n">
 			<li>
@@ -55,7 +56,9 @@
 			</li>
 		</ul>
 
+
 		<div class="k-ml k-mr u-b"></div>
+
 
 		<div class="link k-tac">
 			<a class="b b-bc-g">下载 KUI+</a>
@@ -63,10 +66,9 @@
 		</div>
 	</div><!--end side-->
 
+
 	<div class="main icon">
 		<div class="k-container">
-
-
 			<div class="main-top">
 				<h2>
 					图标
@@ -805,31 +807,25 @@
 
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
-
     <script type="text/javascript" src="../js/prettify.min.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            prettyPrint();
-        }
-    </script>
-<script>
-	$('.sidebar-menu > li > a').click(function(event) {
-		$(this).parent().addClass('active').siblings().removeClass('active').find('>ul').slideUp(200);
-		$(this).next().slideDown(200);
-	});
-
-	$(".iconbox").each(function(index, el) {
-		var that = $(this), iconname = that.find('.iconname'), num = 0; 
-
-		iconname.each(function(index, el) {
-			var html = el.innerHTML;
-			el.style.height = '32px';
-			$(el).before('<i class="'+html+'"></i>');
+	<script>
+		$('.sidebar-menu > li > a').click(function(event) {
+			$(this).parent().addClass('active').siblings().removeClass('active').find('>ul').slideUp(200);
+			$(this).next().slideDown(200);
 		});
 
-		num = iconname.length;
-		that.parent().prev().append('<small>'+num+'个图标</small>');
-	});
-</script>
+		$(".iconbox").each(function(index, el) {
+			var that = $(this), iconname = that.find('.iconname'), num = 0; 
+
+			iconname.each(function(index, el) {
+				var html = el.innerHTML;
+				el.style.height = '32px';
+				$(el).before('<i class="'+html+'"></i>');
+			});
+
+			num = iconname.length;
+			that.parent().prev().append('<small>'+num+'个图标</small>');
+		});
+	</script>
 </body>
 </html>
