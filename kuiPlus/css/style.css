@@ -125,7 +125,9 @@ body.active .main-shade {
 			transform: scale3d(1.2, 1.2, 1.2);
 }
 .index .main-h span {
-	height: 20px;
+	height: 30px;
+	margin-top: -5px;
+	line-height: 30px;
 	text-align: right;
 	overflow: hidden;
 }
@@ -135,14 +137,10 @@ body.active .main-shade {
 	-webkit-transition: -webkit-transform .3s;
 			transition: transform .3s;
 }
-.index .main-h span a:before {
-	font-family: 'kui';
-	content: "\e60b";
-}
 .index .main-h span:hover label,
 .index .main-h span:hover a {
-	-webkit-transform: translateY(-20px);
-			transform: translateY(-20px);
+	-webkit-transform: translateY(-30px);
+			transform: translateY(-30px);
 }
 @media screen and ( max-width: 767px ) {
 	.main-con .n-a > li {
