@@ -652,14 +652,12 @@
 	.l-res + .l-res {
 		margin-top: 30px;
 	}
-	.l-res .l-top {
-		padding: 15px 30px;
-	}
+	.l-res .l-top,
 	.l-res .l-row,
 	.l-res .l-btm {
-		padding: 30px;
+		padding: 15px 30px;
 	}
-
+	
 	.l-hoz .l-top {
 		padding: 15px 0;
 	}

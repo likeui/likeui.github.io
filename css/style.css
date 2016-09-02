@@ -24,29 +24,56 @@ body.active .main-shade {
 	z-index: 9;
 	opacity: .6;
 }
+
+
+/*头部*/
 .header {
 	margin-bottom: 60px;
 	background-color: #fff;
 }
-.footer {
-	padding: 15px;
-	text-align: center;
-	background-color: #fff;
-}
-.nav-logo {
+.n-logo {
 	width: 130px;
 	margin: 0 auto;
 }
-.nav-menu {
+.n-menu {
 	position: absolute;
 	top: 0;
 	right: 0;
 	padding: 20px;
+	font-size: 24px;
 	cursor: pointer;
 }
-
-
-
+@media screen and ( max-width: 767px ) {
+	.header .n {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 3;
+		width: 240px;
+		padding-top: 150px;
+		background-color: #12b7f5;
+		background-image: url(../images/menu-bg.png);
+		background-repeat: no-repeat;
+		-webkit-transform: translate3d(100%, 0, 0);
+				transform: translate3d(100%, 0, 0);
+	}
+	.header .n > li {
+		float: none;
+	}
+	.header .n-c > li > a:after {
+		display: none;
+	}
+	.header .n > li > a {
+		padding: 10px 50px;
+		margin: 0;
+		font-size: 16px;
+		color: #fff;
+	}
+	.header .n > li.active > a {
+		background-color: rgba(0, 0, 0, .15);
+	}
+}
 
 
 .banner {
@@ -59,6 +86,8 @@ body.active .main-shade {
 	height: 150px;
 	background-image: url(../images/slider-bg.png);
 }
+
+
 .header-btm .l-img,
 .header-btm .l-exp {
 	-webkit-transition: -webkit-transform .5s ease-in-out;
@@ -84,9 +113,6 @@ body.active .main-shade {
 	-webkit-transform: translate3d(0, 10px, 0);
 			transform: translate3d(0, 10px, 0);
 }
-
-
-
 
 
 .main .l,
@@ -199,35 +225,6 @@ body.active .main-shade {
 
 
 @media screen and ( max-width: 767px ) {
-	.header .n {
-		position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 3;
-		width: 240px;
-		padding-top: 150px;
-		background-color: #12b7f5;
-		background-image: url(../images/menu-bg.png);
-		background-repeat: no-repeat;
-		-webkit-transform: translate3d(100%, 0, 0);
-				transform: translate3d(100%, 0, 0);
-	}
-	.header .n > li {
-		float: none;
-	}
-	.header .n-c > li > a:after {
-		display: none;
-	}
-	.header .n > li > a {
-		padding: 10px 50px;
-		margin: 0;
-		font-size: 16px;
-		color: #fff;
-	}
-	.header .n > li.active > a {
-		background-color: rgba(0, 0, 0, .15);
-	}
 	
 	.main-top .h {
 		padding: 15px;
@@ -242,17 +239,17 @@ body.active .main-shade {
 	}
 }
 @media screen and ( min-width: 768px ) {
-	.nav-logo {
+	.n-logo {
 		float: left;
 	}
-	.nav-menu {
+	.n-menu {
 		display: none;
 	}
 	.header .n {
 		float: right;
 	}
 	.header .n > li > a {
-		padding: 20px 30px;
+		padding: 22px 30px;
 	}
 	.banner {
 		height: 400px;
@@ -271,21 +268,17 @@ body.active .main-shade {
 	.main-left .l-bd {
 		height: 96px;
 		margin-right: 170px;
+		line-height: 24px;
 		overflow: hidden;
 	}
 	.main-left .l-ft {
 		position: absolute;
-		top: 30px;
+		top: 15px;
 		right: 30px;
 	}
 	.main-left .l-img {
 		width: 140px;
 		height: 96px;
-	}
-
-	.main-right .l-top-a,
-	.main-right .l-top-b {
-		padding: 15px 30px 0;
 	}
 	.hot .l-row {
 		padding: 10px 30px;
@@ -298,14 +291,17 @@ body.active .main-shade {
 	}
 }
 @media screen and ( min-width: 992px ) {
-	.main-left .n,
-	.main-left .l,
-	.main-left .p {
-		margin-right: 15px;
-	}
+
 }
 @media screen and ( min-width: 1190px ) {
 	.banner {
 		height: 500px;
 	}
 }
+/*页尾*/
+.footer {
+	padding: 15px;
+	text-align: center;
+	background-color: #fff;
+}
+

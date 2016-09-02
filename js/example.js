@@ -1,4 +1,4 @@
-$(".nav-menu").click(function() {
+$(".n-menu").click(function() {
 	$("body").addClass("active").on("touchmove", function(event) {
 		event.preventDefault();
 	})
