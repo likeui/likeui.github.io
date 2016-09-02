@@ -82,6 +82,21 @@ body.active .main-shade {
 	background-image: url(../images/promo-bg.jpg);
 	background-size: cover;
 }
+.banner span {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	display: block;
+	text-align: center;
+	font-size: 64px;
+	color: #fff;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+.banner i {
+	display: inline-block;
+}
 .banner2 {
 	height: 150px;
 	background-image: url(../images/slider-bg.png);
