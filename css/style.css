@@ -273,7 +273,7 @@ body.active .main-shade {
 	.main-left .l-ft {
 		position: absolute;
 		top: 30px;
-		right: 0px;
+		right: 30px;
 	}
 	.main-left .l-img {
 		width: 140px;
