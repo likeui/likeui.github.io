@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/kui.min.css">
+	<style type="text/css">
+		.k-mg1 {
+			overflow: hidden;
+		}
+		.k-mg1 .b {
+			margin: 0 10px 10px 0;
+		}
+	</style>
+</head>
+<body ontouchstart>
+
+	<div class="k-container">
+		
+		<div>
+			<div class="k-mg1">
+				<a id="showToast1" class="b">弹出toast1</a>
+				<a id="showToast2" class="b">弹出toast2</a>
+			</div>
+			<div class="k-mg1">
+				<a id="showLoading1" class="b b-info">弹出loading</a>
+			</div>
+			<div class="k-mg1">
+				<a id="showAlert" class="b b-yellow">弹出alert</a>
+				<a id="showPrompt" class="b b-yellow">弹出prompt</a>
+				<a id="showConfirm" class="b b-yellow">弹出confirm</a>
+				<a id="showDialog" class="b b-yellow">弹出dialog</a>
+			</div>
+			<div class="k-mg1">
+				<a id="showSheet" class="b b-green">弹出sheet</a>
+			</div>
+			<div class="k-mg1">
+				<a id="showMsg1" class="b b-wran">弹出msgSucc</a>
+				<a id="showMsg2" class="b b-wran">弹出msgError</a>
+			</div>
+			<div class="k-mg1">
+				<a id="showPage1" class="b b-blue">弹出page1</a>
+				<a id="showPage2" class="b b-blue">弹出page2</a>
+			</div>
+		</div>
+
+		<div id="d_toast" class="k-dn">
+			<div class="d-wrap">
+				<div class="d-mask"></div>
+				<div class="d-box">
+					<div class="d-t">
+						<span class="d-t-info">提示信息</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_toast2" class="k-dn">
+			<div class="d-wrap">
+				<div class="d-mask"></div>
+				<div class="d-box">
+					<div class="d-t">
+						<span class="d-t-icon"></span>
+						<span class="d-t-info">提示信息</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_loading" class="k-dn">
+			<div class="d-wrap">
+				<div class="d-mask"></div>
+				<div class="d-box">
+					<div class="d-t">
+						<div class="d-loading">
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+							<div class="d-loading-leaf"></div>
+						</div>
+						<span class="d-t-info">加载中</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_alert" class="k-dn">
+			<div class="d-wrap">
+				<div class="d-mask active"></div>
+				<div class="d-box">
+					<div class="d-c">
+						<div class="d-c-hd">
+							这是标题
+							<i class="d-close icon-cross"></i>
+						</div>
+						<div class="d-c-bd">
+							这里是内容
+						</div>
+						<div class="d-c-ft x-t">
+							<span type="1">确定</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_prompt" class="k-dn">
+			<div class="d-wrap">
+				<div class="d-mask active"></div>
+				<div class="d-box">
+					<div class="d-c">
+						<div class="d-c-hd">
+							这是标题
+						</div>
+						<div class="d-c-bd">
+							<div class="k-ipt k-border">
+								<input type="text" placeholder="说点什么吧">
+							</div>
+						</div>
+						<div class="d-c-ft x-t">
+							<span type="0">取消</span>
+							<span type="1">确定</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_confirm" class="k-dn">
+			<div class="d-wrap">
+				<div class="d-mask active"></div>
+				<div class="d-box">
+					<div class="d-c d-1">
+						<div class="d-c-hd x-b">
+							这是标题
+						</div>
+						<div class="d-c-bd">
+							这里是内容
+						</div>
+						<div class="d-c-ft x-t">
+							<span type="0">取消</span>
+							<span type="1">确定</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="k-dn">
+			<div id="d_dialog" class="d-wrap">
+				<div class="d-mask active"></div>
+				<div class="d-box">
+					<div class="d-c d-2">
+						<div class="d-c-hd">
+							这是标题
+							<i class="d-close icon-cross"></i>
+						</div>
+						<div class="d-c-bd">
+							<div class="l-row l-icon">
+								<div class="l-hd">
+									<i class="icon-lock t-blue"></i>
+								</div>
+								<div class="l-bd">
+									<div class="l-tit">锁定您的信息</div>
+									<div class="l-btm">这里是详细介绍信息</div>
+								</div>
+							</div>
+							<div class="l-row l-talk">
+								<div class="l-hd">
+									<img src="images/list-m-01.png">
+								</div>
+								<div class="l-bd">
+									<div class="l-tit">读取您的头像</div>
+									<div class="l-btm">这里是详细介绍信息</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-c-ft">
+							<button class="b b-round b-m b-blue">open</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_sheet" class="k-dn">
+			<div class="d-mask active"></div>
+			<div class="d-s active">
+				<div class="d-s-menu">
+					<div class="d-s-row">选项卡一</div>
+					<div class="d-s-row">选项卡二</div>
+					<div class="d-s-row">选项卡三</div>
+					<div class="d-s-row">选项卡四</div>
+				</div>
+				<div class="d-s-ft">
+					<div class="d-s-row k-close">取消</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_msg1"  class="k-dn">
+			<div class="d-m">
+				<div class="d-m-hd d-m-succ"></div>
+				<div class="d-m-bd">
+					<div class="d-m-title">
+						操作成功
+					</div>
+					<div class="d-m-info">
+						这里是提示信息
+					</div>
+				</div>
+				<div class="d-m-ft">
+					<button class="b b-green b-m">确定</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_msg2" class="k-dn">
+			<div class="d-m">
+				<div class="d-m-hd d-m-error"></div>
+				<div class="d-m-bd">
+					<div class="d-m-title">
+						操作失败
+					</div>
+					<div class="d-m-info">
+						这里是提示信息
+					</div>
+				</div>
+				<div class="d-m-ft">
+					<button class="b b-wran">确定</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="d_page" class="k-dn">
+			<div class="d-p k-dn">
+				<div class="d-p-bd">
+					dsf哈哈哈
+				</div>
+			</div>
+		</div>
+
+		<div id="pagehtml" class="k-dn">
+			<h2>
+				李先生著作
+			</h2>
+
+			<div>
+				<h3>
+					第一章 散文
+				</h3>
+				<h4>
+					1.1 美丽的春天
+					<small>小蚊子</small>
+				</h4>
+				<p>
+					春天来了，万物复苏了。我也脱掉了厚厚的棉袄，去感受美丽的春天。 我走在长长的小路上，看着高高的柳树，那细长的柳枝，在随风起舞，迎接着春天的到来。 路上的行人悠闲地走着、说笑着，陶醉在春天美丽的景色之中。 春姑娘来到小河边，厚厚的冰块看见春姑娘美丽的面孔，渐渐的融化了。解冻的小溪叮叮咚咚的唱着歌，感谢春姑娘送她自由。春姑娘拿起水做的笛子，吹起美妙的乐曲，哗哗哗！哗哗哗！小鱼儿听见了，争先恐后的游过来，一起庆祝春天这美好日子的到来。 春姑娘忽然闻到了一股淡淡的香气，她顺着香味来到了迎春花的旁边，“你好吗？迎春花小姐”。沙沙沙！沙沙沙！迎春花高兴地点点头，用快乐的舞姿感谢春天的到来。 春天真美啊！我也陶醉在这个美丽的季节里了。
+				</p>
+				<h4>
+					1.2 漂亮的春天
+					<small>小苍蝇</small>
+				</h4>
+				<p>
+					春天来了，小河里的冰慢慢融化了，鱼儿在水里游来游去，水面上有几只野鸭在不停的戏耍。小草探出了头，大地一片绿油油的。河边的柳树慢慢的吐出了嫩芽，在微风的吹拂下摆来摆去，燕子从南方飞回来了，在屋檐下叽叽喳喳叫个不停。果园里桃花红了、梨花白了，微风吹过传来一阵清香。我来到田野里，看着天空中飘来飘去的风筝、望着田野里农民伯伯忙碌的身影，啊！春天到了春天真美好。
+				</p>
+			</div>
+
+			<div>
+				<h3
+					>第二章 英文
+				</h3>
+
+				<div>
+					<h4>
+						2.1 exercitation
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute
+					</p>
+				</div>
+			</div>
+			<button class="b b-m b-wran" onclick="kui.closeAll()">关闭</button>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>分页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/icon.css">
+
+	<link rel="stylesheet" href="css/paging.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+
+
+		<h4>基本分页<small>paging</small></h4>
+		<div class="demo">
+			<div class="paging">
+				<ul class="paging-list">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="paging">
+	&lt;ul class="paging-list">
+		&lt;li class="paging-prev">&lt;a class="icon-angle-left">&lt;/a>&lt;/li>
+		&lt;li class="active">&lt;a href="">1&lt;/a>&lt;/li>
+		&lt;li class="disabled">&lt;a href="">2&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="">3&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="">4&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="">5&lt;/a>&lt;/li>
+		&lt;li class="paging-next">&lt;a class="icon-angle-right">&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>简单分页<small>paging</small></h4>
+		<div class="demo">
+			<div class="paging">
+				<ul class="paging-list">
+					<li class="prev disabled"><a href="">prev</a></li>
+					<li class="next"><a href="">next</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="paging">
+	&lt;ul class="paging-list">
+		&lt;li class="prev">&lt;a href="">prev&lt;/a>&lt;/li>
+		&lt;li class="next">&lt;a href="">next&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>分页颜色<small>orange | primary | inverse</small></h4>
+		<div class="demo">
+			<div class="paging orange">
+				<ul class="paging-list">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+			<div class="paging primary">
+				<ul class="paging-list">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+			<div class="paging inverse">
+				<ul class="paging-list">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="paging orange">
+...
+&lt;/div>
+&lt;div class="paging primary">
+...
+&lt;/div>
+&lt;div class="paging inverse">
+...
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>分页尺寸<small>paging-m | paging-s | paging-xs</small></h4>
+		<div class="demo">
+			<div class="paging paging-m">
+				<ul class="paging-list paging-right">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+			<div class="paging">
+				<ul class="paging-list paging-left">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+			<div class="paging paging-s">
+				<ul class="paging-list paging-justify">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+			<div class="paging paging-xs">
+				<ul class="paging-list">
+					<li class="paging-prev"><a class="icon-angle-left"></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li class="disabled"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li class="paging-next"><a class="icon-angle-right"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="paging paging-m">
+	&lt;ul class="paging-list paging-right">
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;div class="paging">
+	&lt;ul class="paging-list paging-left">
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;div class="paging paging-s">
+	&lt;ul class="paging-list paging-justify">
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;div class="paging paging-xs">
+	&lt;ul class="paging-list paging-right">
+		...
+	&lt;/ul>
+&lt;/div></code></pre>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

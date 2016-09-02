@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="../kuiPlus/css/kui.css">
+	<link rel="stylesheet" href="../css/prettify.css">
+</head>
+<body>
+
+<div class="p-tit">
+	prettify.js
+</div>
+<pre class="prettyprint gray">
+&lt;a class="b b-l">按钮&lt;/a>
+&lt;a class="b b-m">按钮&lt;/a>
+&lt;a class="b">按钮&lt;/a>
+&lt;a class="b b-s">按钮&lt;/a>
+</pre>
+	
+<pre class="prettyprint">
+(function(){
+	hljs.configure({tabReplace: '    '});
+	hljs.initHighlightingOnLoad();
+
+	var docCdoe = document.getElementsByTagName("code");
+	for (var i = 0; i < docCdoe.length; i++) {
+		var lines = docCdoe[i].innerText.split('\n').length;
+		var obj = document.createElement("ul");
+		obj.className = "pre-numbering";
+		docCdoe[i].parentNode.appendChild(obj);
+		for (var j = 1; j <= lines; j++) {
+			var li = document.createElement("li");
+			li.innerHTML = j;
+			obj.appendChild(li);
+		};
+	};
+})($);
+</pre>
+
+<pre class="prettyprint linenums gray">
+&lt;a class="b b-l">按钮&lt;/a>
+&lt;a class="b b-m">按钮&lt;/a>
+&lt;a class="b">按钮&lt;/a>
+&lt;a class="b b-s">按钮&lt;/a>
+</pre>
+	
+<pre class="prettyprint linenums">
+(function(){
+	hljs.configure({tabReplace: '    '});
+	hljs.initHighlightingOnLoad();
+
+	var docCdoe = document.getElementsByTagName("code");
+	for (var i = 0; i < docCdoe.length; i++) {
+		var lines = docCdoe[i].innerText.split('\n').length;
+		var obj = document.createElement("ul");
+		obj.className = "pre-numbering";
+		docCdoe[i].parentNode.appendChild(obj);
+		for (var j = 1; j <= lines; j++) {
+			var li = document.createElement("li");
+			li.innerHTML = j;
+			obj.appendChild(li);
+		};
+	};
+})($);
+</pre>
+	
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/prettify.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			prettyPrint();
+		}
+	</script>
+</body>
+</html>

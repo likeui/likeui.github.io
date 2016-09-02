@@ -1,0 +1,313 @@
+/*
+ * Component: Form
+ ========================================================================== */
+.f > :last-child {
+	margin-bottom: 0;
+}
+.f-row + .f-row:not(.f-inline) {
+	margin-top: 15px;
+}
+.f-row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+@media screen and ( min-width: 768px ) {
+	.f-inline .f-row {
+		display: inline-block;
+	}
+	.f-inline .f-row + .f-row {
+		margin-top: 0;
+	}
+}
+.f fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+.f legend {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 30px;
+	border: 0;
+}
+.f legend:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid #ccc;
+	-webkit-transform: scaleY(.5);
+			transform: scaleY(.5);
+	-webkit-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+}
+.f optgroup {
+	font: inherit;
+	font-weight: bold;
+}
+/* Style
+ ========================================================================== */
+.f select,
+.f textarea,
+.f input:not([type]),
+.f [type="text"],
+.f [type="password"],
+.f [type="datetime"],
+.f [type="datetime-local"],
+.f [type="date"],
+.f [type="month"],
+.f [type="time"],
+.f [type="week"],
+.f [type="number"],
+.f [type="email"],
+.f [type="url"],
+.f [type="search"],
+.f [type="tel"],
+.f [type="color"],
+.f-ipt {
+	max-width: 100%;
+	height: 32px;
+	padding: 5px;
+	border: 1px solid #ddd;
+	color: #555;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	background-color: #fff;
+	-webkit-transition: all linear 0.2s;
+			transition: all linear 0.2s;
+	border-radius: 2px;
+}
+.f select:focus,
+.f textarea:focus,
+.f [type="text"]:focus,
+.f [type="password"]:focus,
+.f [type="datetime"]:focus,
+.f [type="datetime-local"]:focus,
+.f [type="date"]:focus,
+.f [type="month"]:focus,
+.f [type="time"]:focus,
+.f [type="week"]:focus,
+.f [type="number"]:focus,
+.f [type="email"]:focus,
+.f [type="url"]:focus,
+.f [type="search"]:focus,
+.f [type="tel"]:focus,
+.f [type="color"]:focus,
+.f-ipt:focus {
+	border-color: #3b9afe;
+	color: #555;
+	background-color: #fafafa;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3);
+}
+.f select:disabled,
+.f textarea:disabled,
+.f [type="text"]:disabled,
+.f [type="password"]:disabled,
+.f [type="datetime"]:disabled,
+.f [type="datetime-local"]:disabled,
+.f [type="date"]:disabled,
+.f [type="month"]:disabled,
+.f [type="time"]:disabled,
+.f [type="week"]:disabled,
+.f [type="number"]:disabled,
+.f [type="email"]:disabled,
+.f [type="url"]:disabled,
+.f [type="search"]:disabled,
+.f [type="tel"]:disabled,
+.f [type="color"]:disabled,
+.f-ipt:disabled {
+	opacity: .615;
+	border-color: #ddd;
+	color: #999;
+	background-color: #f5f5f5;
+}
+.f select {
+	background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) no-repeat 100% center;
+}
+.f textarea,
+.f select[multiple],
+.f select[size] {
+	height: auto;
+}
+.f textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+.f-lab {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.f fieldset:disabled {
+	color: #999;
+}
+.f-ck {
+	cursor: pointer;
+}
+.f-ck + .f-ck {
+	margin-left: 10px;
+}
+ /* Placeholder
+ ========================================================================== */
+::-ms-input-placeholder {
+  color: #999 !important;
+}
+:::-moz-placeholder {
+  color: #999;
+}
+:::-webkit-input-placeholder {
+  color: #999;
+}
+::disabled:-ms-input-placeholder {
+  color: #999 !important;
+}
+::disabled::-moz-placeholder {
+  color: #999;
+}
+::disabled::-webkit-input-placeholder {
+  color: #999;
+}
+/* f-hoz
+ ========================================================================== */
+@media screen and ( max-width: 767px ) {
+	.f-hoz select,
+	.f-hoz textarea,
+	.f-hoz [type="text"],
+	.f-hoz [type="password"],
+	.f-hoz [type="datetime"],
+	.f-hoz [type="datetime-local"],
+	.f-hoz [type="date"],
+	.f-hoz [type="month"],
+	.f-hoz [type="time"],
+	.f-hoz [type="week"],
+	.f-hoz [type="number"],
+	.f-hoz [type="email"],
+	.f-hoz [type="url"],
+	.f-hoz [type="search"],
+	.f-hoz [type="tel"],
+	.f-hoz [type="color"],
+	.f-hoz .f-ipt {
+		width: 100%;
+	}
+}
+@media screen and ( min-width: 768px ) {
+	.f-hoz .f-lab {
+		float: left;
+		width: 120px;
+		margin-top: 6px;
+		margin-bottom: 0;
+		font-weight: normal;
+	}
+	.f-hoz .f-control {
+		margin-left: 120px;
+	}
+	.f-hoz .f-control-text {
+		padding-top: 5px;
+	}
+}
+/* Sub-object: `f-icon`
+ ========================================================================== */
+.f-icon {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+.f-icon > [class*='icon-'] {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	margin-top: -7px;
+	color: #999;
+	text-align: center;
+	pointer-events: none;
+}
+.f-icon:not(.right) > input {
+	padding-left: 30px !important;
+}
+.f-icon.right > [class*='icon-'] {
+	right: 0;
+}
+.f-icon.right > input {
+	padding-right: 30px !important;
+}
+.f-icon.f-control {
+	display: block;
+}
+/* f-fix
+ ========================================================================== */
+.f-fix .f-lab {
+	float: left;
+	width: 120px;
+	margin-top: 6px;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+.f-fix .f-control {
+	margin-left: 120px;
+}
+/* f-ipt size
+ ========================================================================== */
+.f-ipt-s {
+	height: 24px;
+	padding: 2px 4px;
+	font-size: 12px;
+}
+.f-ipt-m {
+	height: 38px;
+	padding: 8px;
+	font-size: 16px;
+}
+.f-ipt-l {
+	height: 44px;
+	padding: 11px;
+	font-size: 18px;
+}
+/* fixed width
+ ========================================================================== */
+.f-width-s {
+	width: 60px;
+}
+.f-width-m {
+	width: 240px;
+}
+.f-width-l {
+	width: 100%;
+}
+/* f-block
+ ========================================================================== */
+.f-block select, select.f-block,
+.f-block textarea, textarea.f-block,
+.f-block [type="text"], [type="text"].f-block,
+.f-block [type="password"], [type="password"].f-block,
+.f-block [type="datetime"], [type="datetime"].f-block,
+.f-block [type="datetime-local"], [type="datetime-local"].f-block,
+.f-block [type="date"], [type="date"].f-block,
+.f-block [type="month"], [type="month"].f-block,
+.f-block [type="time"], [type="time"].f-block,
+.f-block [type="week"], [type="week"].f-block,
+.f-block [type="number"], [type="number"].f-block,
+.f-block [type="email"], [type="email"].f-block,
+.f-block [type="url"], [type="url"].f-block,
+.f-block [type="search"], [type="search"].f-block,
+.f-block [type="tel"], [type="tel"].f-block,
+.f-block [type="color"], [type="color"].f-block,
+.f-block .f-ipt, .f-ipt.f-block {
+	width: 100%;
+}
+/* Validation states
+ ========================================================================== */
+.f-red {
+	border-color: #dc8d99 !important;
+	background: #fff7f8 !important;
+	color: #d85030 !important;
+}
+.f-green {
+	border-color: #8ec73b !important;
+	background: #fafff2 !important;
+	color: #659f13 !important;
+}

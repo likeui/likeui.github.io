@@ -1,0 +1,114 @@
+/*===============================BEGIN BACKGROUNDCOLOR STYLE===============================*/
+.bg-green {
+  background-color: #8ce83a;
+}.bg-green.hover:hover {
+  background-color: #86de37;
+}
+.bg-darkgreen {
+  background-color: #5cb85c;
+}.bg-darkgreen.hover:hover {
+  background-color: #51ad51;
+}
+.bg-blue {
+  background-color: #159cff;
+}.bg-blue.hover:hover {
+  background-color: #088ef0;
+}
+.bg-primary {
+  background-color: #70ceff;
+}.bg-primary.hover:hover {
+  background-color: #50c2fd;
+}
+.bg-noble {
+  background-color: #9088e6;
+}.bg-noble.hover:hover {
+  background-color: #867ee1;
+}
+.bg-red {
+  background-color: #fe6969;
+}.bg-red.hover:hover {
+  background-color: #ea5959;
+}
+.bg-pink {
+  background-color: #fc7db6;
+}.bg-pink.hover:hover {
+  background-color: #f171ab;
+}
+.bg-orange {
+  background-color: #ff9154;
+}.bg-orange.hover:hover {
+  background-color: #ff782d;
+}
+.bg-yellow {
+  background-color: #ffc64c;
+}.bg-yellow.hover:hover {
+  background-color: #ffb515;
+}
+.bg-plain {
+  color: #666;
+  background-color: #fff;
+}.bg-plain.hover:hover {
+  background-color: #f7f7f7;
+}
+/*===============================END BACKGROUNDCOLOR STYLE===============================*/
+
+
+/*===============================BEGIN TEXTCOLOR STYLE===============================*/
+.tc-t-shadow {
+  text-shadow: 1px 0 0 rgba(0,0,0,.5);
+}
+.tc-green {
+  color: #a5de37;
+}.tc-green.hover:hover {
+  color: #9cd62b;
+}
+.tc-darkgreen {
+  color: #5cb85c;
+}.tc-darkgreen.hover:hover {
+  color: #51ad51;
+}
+.tc-blue {
+  color: #2e83e4;
+}.tc-blue.hover:hover {
+  color: #2879d5;
+}
+.tc-primary {
+  color: #36b0ef;
+}.tc-primary.hover:hover {
+  color: #2da2df;
+}
+.tc-noble {
+  color: #867ee1;
+}.tc-noble.hover:hover {
+  color: #7d75d6;
+}
+.tc-red {
+  color: #ea5959;
+}.tc-red.hover:hover {
+  color: #df4949;
+}
+.tc-pink {
+  color: #f171ab;
+}.tc-pink.hover:hover {
+  color: #e1639c;
+}
+.tc-orange {
+  color: #ff782d;
+}.tc-orange.hover:hover {
+  color: #f86817;
+}
+.tc-yellow {
+  color: #ffb515;
+}.tc-yellow.hover:hover {
+  color: #f4a701;
+}
+.tc-gray {
+  color: #999;
+}.tc-gray.hover:hover {
+  color: #8f8f8f;
+}
+.tc-default {
+  color: #fff;
+}.tc-default.hover:hover {
+  color: #eee;
+}

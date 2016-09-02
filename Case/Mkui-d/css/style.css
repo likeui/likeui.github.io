@@ -1,0 +1,126 @@
+pre {
+    margin-bottom: 0;
+    background-color: #fcfcfc;
+}
+
+
+body {
+    background-color: #f7f7f7;
+}
+.box {
+    margin-left: 300px;
+}
+.box > h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 15px 20px;
+    position: relative;
+    background-color: #fff;
+}.box > h4:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #eee;
+}
+
+.box .demo,
+.box .code {
+    padding: 60px 20px 20px;
+    background-color: #fff;
+    position: relative;
+}
+.box .demo {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.box .demo.ise {
+    -webkit-user-select: inherit;
+    -moz-user-select: inherit;
+}
+.box .demo:before,
+.box .code:before {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+    display: table;
+
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 100px;
+}
+.box .demo:before {
+    content: 'Demo';
+    background-color: #70ceff;
+    -webkit-box-shadow: 0 2px 0 #36b0ef, 0 3px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 0 #36b0ef, 0 3px 3px rgba(0, 0, 0, .2);
+}
+.box .code:before {
+    content: 'Code';
+    background-color: #ffc64c;
+    -webkit-box-shadow: 0 2px 0 #d79302, 0 3px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 0 #d79302, 0 3px 3px rgba(0, 0, 0, .2);
+}
+.box .demo:after,
+.box .code:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width:1191px) {
+    .box {
+        margin-left: 0;
+    }
+    .hljs {
+        margin-left: 0;
+    }
+    .pre-numbering {
+        display: none;
+    }
+}
+
+.child-hd {
+  height: 130px;
+  width: 100%;
+  background-image: url(../../images/tour-bg.png);
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+
+#header .nav > li {
+  float: left;
+}
+@media only screen and (min-width: 641px) {
+    #header .navbar {
+      padding: 30px 0;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 30px;
+    width: 270px;
+    background-color: #fff;
+    transition: all .5s;
+}
+.menu .nav {
+    margin: 0 20px;
+}
+.menu li > a {
+    padding-left: 20px;
+}
+.nav-header {
+    font-size: 18px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,63 @@
+/* ========================================================================
+   Component: Table
+ ========================================================================== */
+.t {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* + .t {
+	margin-top: 15px;
+}
+.t th,
+.t td {
+	padding: 8px;
+}
+.t thead th {
+	vertical-align: bottom;
+}
+.t th {
+	text-align: left;
+}
+.t td {
+	vertical-align: middle;
+	border-top: 1px solid #ddd;
+}
+/*说明、表尾*/
+.t caption,
+.t tfoot {
+	font-size: 12px;
+	font-style: normal;
+	text-align: left;
+	color: #999;
+}
+/*边框*/
+.t-border tr th,
+.t-border tr td {
+	border: 1px solid #ddd;
+}
+/*鼠标移入*/
+.t-hover tbody tr:hover {
+	background-color: #f7f7f7;
+}
+/*隔行换色*/
+.t-striped tbody tr:nth-of-type(odd) {
+	background-color: #fafafa;
+}
+/*大小*/
+.t-s tr th,
+.t-s tr td {
+	padding: 4px 8px;
+}
+.t-m tr th,
+.t-m tr td {
+	padding: 10px;
+}
+.t-l tr th,
+.t-l tr td {
+	padding: 14px;
+}
+.t-responsive {
+	min-height: .01%;
+	overflow-x: auto;
+}

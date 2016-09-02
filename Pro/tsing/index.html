@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/kui.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" type="text/css" href="css/toast.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ontouchstart>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slide-1 swiper-no-swiping">
+				<img class="anime slideInDown" src="images/logo.jpg">
+				<img class="anime slideInRight" src="images/page1/1.png">
+				<img src="images/page1/2.png">
+				<div class="d-bo">
+					<div class="d-bo-hd">
+						<div>回顾历届奥运会中国队的辉煌战绩</div>
+						<h3>今年会刷新历史记录吗？</h3>
+						<button data-href="item4" class="btn anime pulse">查看中国队历届金牌总数</button>
+					</div>
+					<div class="d-bo-bd">
+						<h3>大胆写下你的猜测</h3>
+						<h5>看看你是不是奥运神算子！</h5>
+						<input id="goldIpt" class="d-ipt" type="text" placeholder="请输入你预测的中国队金牌总数">
+					</div>
+				</div>
+				<div id="page1_sub" class="slide-sub">
+					<img src="images/page1/box_sub.png">
+				</div>
+				<div class="slide-btm">
+					<span class="btm-cell">
+						<button data-href="item1" class="btn">怎么参加</button>
+					</span>
+					<span class="btm-cell k-tac">
+						<img src="images/arrow.png">
+					</span>
+					<span data-href="item3" class="btm-cell k-tar">
+						<button class="btn">礼品是啥</button>
+					</span>
+				</div>
+
+				<!-- 弹窗 -->
+				<div class="d-w">
+					<div class="d-mask"></div>
+					<!-- 活动规则 -->
+					<div id="item1" class="d-wind">
+						<div class="d-head">
+							活动规则
+							<img src="images/hd_close.png">
+						</div>
+						<div class="d-body">
+							<ul>
+								<li><span>活动参与时间：8月12日—8月14日</span></li>
+								<li><span>活动参与方式：在活动期间猜对本届奥运会中国队的金牌数，并且输入有效信息，即可正式参与本次活动（每辆车只可参加1次），活动结束后将在猜对金牌数的神算子中抽取获奖幸运儿。</span></li>
+								<li><span>开奖时间：里约奥运会结束后3天内微信公布</span></li>
+								<li><span>礼品领取方式：中奖幸运儿需在8月12日-12月45日前通过【中国人保】或【北京人保财险】微信为提交信息的车辆投保，礼品将在完成缴费后3个工作日内以短信形式发送至本次活动提交的手机号上</span></li>
+								<li><span>如需咨询，请联系【中国人保】或【北京人保财险】在线客服</span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 活动结束 -->
+					<div id="item2" class="d-wind">
+						<div class="d-head">
+							<img src="images/hd_close.png">
+						</div>
+						<div class="d-body k-tac d-look">
+							<img src="images/page1/d_look.jpg">
+							<p class="cl-gray">很遗憾，本活动已结束</p>
+							<div class="cl-red">请继续为奥运中国队的健儿加油呐喊哦！</div>
+						</div>
+					</div>
+					<!-- 礼品 -->
+					<div id="item3" class="d-wind">
+						<div class="d-head">
+							<img src="images/hd_close.png">
+						</div>
+						<div class="">
+							<img src="images/page1/d_lp.jpg">
+						</div>
+						<dl class="d-ft gift-btm">
+							<dt>
+								贴心
+								<br>
+								TIPS
+							</dt>
+							<dd>
+								神算子需在8月12日-12月15日期间，通过【中国人保】或【北京人保财险】微信为提交信息的车辆完成投保，就能正式获得竞猜礼品。
+							</dd>
+						</dl>
+					</div>
+					<!-- 奖牌数量 -->
+					<div id="item4" class="d-wind">
+						<div class="d-head">
+							<img src="images/hd_close.png">
+						</div>
+						<div class="d-body">
+							<dl class="medal">
+								<dt>2004年</dt>
+								<dd><b>32枚 </b><img src="images/page1/medal.jpg">	</dd>
+							</dl>
+							<dl class="medal">
+								<dt>2008年</dt>
+								<dd><b>51枚 </b><img src="images/page1/medal.jpg"> </dd>
+							</dl>
+							<dl class="medal">
+								<dt>2012年</dt>
+								<dd><b>38枚 </b><img src="images/page1/medal.jpg"> </dd>
+							</dl>
+							<dl class="medal">
+								<dt>2016年</dt>
+								<dd><b>? </b><img src="images/page1/medal.jpg"></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide slide-2 swiper-no-swiping">
+				<input id="uStatus" type="hidden" value="0">
+
+
+				<img class="anime slideInDown" src="images/logo.jpg">
+				<img class="anime slideInUp" src="images/page2/1.png">
+				<div class="d-bo">
+					<div class="d-bo-hd">
+						<div><em>输入以下信息才能增加拿大礼的机率哦！</em></div>
+						<div><b>(信息绝不外泄，请放心)</b></div>
+					</div>
+					<div class="d-bo-bd">
+						<form>
+							<div class="f-row">
+								<label>手机号</label>
+								<input id="mobileNum" type="text" maxlength="11">
+							</div>
+							<div class="f-code">
+								<div class="f-row">
+									<label>验证码</label>
+									<input id="codeNum" type="text" maxlength="6">
+								</div>
+								<button id="codeBtn" class="btn" type="button">获取验证码</button>
+							</div>
+							<div class="f-row">
+								<label>车牌号</label>
+								<input id="plateNum" type="text">
+							</div>
+							<div class="f-row">
+								<label>购车日期</label>
+								<select id="year">
+									<option value="2016">2000</option>
+									<option value="2016">2001</option>
+									<option value="2016">2002</option>
+									<option value="2016">2003</option>
+									<option value="2016">2004</option>
+									<option value="2016">2005</option>
+									<option value="2016">2006</option>
+									<option value="2016">2007</option>
+									<option value="2016">2008</option>
+									<option value="2016">2009</option>
+									<option value="2016">2010</option>
+									<option value="2016">2011</option>
+									<option value="2016">2012</option>
+									<option value="2016">2013</option>
+									<option value="2016">2014</option>
+									<option value="2016">2015</option>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2019">2020</option>
+								</select>
+								年
+								<select id="month">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								月
+							</div>
+						</form>
+					</div>
+				</div>
+					<!-- 弹窗 -->
+				<div id="page2Wrap" class="d-w">
+					<div class="d-mask"></div>
+					<!-- 活动规则 -->
+					<div class="d-wind">
+						<div class="d-head">
+							<img src="images/hd_close.png">
+						</div>
+						<div class="d-body k-tac">
+							<img class="i-wran" src="images/wran.jpg">
+							<h4>输入完整信息，才有机会赢大奖哦！</h4>
+						</div>
+					</div>
+				</div>
+				<div id="page2_sub" class="slide-sub">
+					<img src="images/page2/box_sub.png">
+				</div>
+				<div class="slide-btm">
+					<span class="btm-cell k-tac">
+						<img src="images/arrow.png">
+					</span>
+				</div>
+			</div>
+			<div class="swiper-slide slide-3 swiper-no-swiping">
+				<img class="anime slideInDown" src="images/logo.jpg">
+				<img class="anime slideInLeft" src="images/page3/1.png">
+				<div class="d-bo">
+					<div class="d-bo-hd">
+						<h3 class="k-mn"><em>快一起为奥运加加油</em></h3>
+					</div>
+					<div class="d-bo-bd">
+						<h3>我们已经收到您的信息</h3>
+						<h3>人保客服将在开奖后</h3>
+						<h3>致电中奖幸运儿噢！</h3>
+					</div>
+				</div>
+				<div class="slide-sub">
+					<a href="活动页面">
+						<img src="images/page3/link.png">
+					</a>
+					<div id="page3_shart" class="k-mt">
+						<img src="images/page3/share.png">
+					</div>
+				</div>
+				<div class="slide-btm">
+					<span class="btm-cell k-tac">
+						<img src="images/arrow.png">
+					</span>
+				</div>
+
+					<!-- 弹窗 -->
+				<div id="shareBox" class="d-w">
+					<img src="images/share.png">
+					<div class="d-mask"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<audio src="audio/bgm.mp3" autoplay loop></audio>
+	
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script>        
+		var mySwiper = new Swiper('.swiper-container', {
+			direction : 'vertical',
+			noSwiping: true,
+			initialSlide: 0
+		})
+	</script>
+</body>
+</html>

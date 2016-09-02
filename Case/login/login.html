@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pc登录页面</title>
+	<link rel="stylesheet" type="text/css" href="css/kui.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<style type="text/css">
+		.nav {
+			width: 1000px;
+			text-align: right;
+		}
+		.nav li {
+			display: inline-block;
+		}
+		.con > li {
+			display: none;
+			height: 450px;
+			padding: 30px;
+			background-color: #aaa;
+		}
+		.con > li:first-child {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="item1">默认登录</a></li>
+		<li><a href="item2">选项卡</a></li>
+		<li><a href="item3">居中登录</a></li>
+		<li><a href="item4">定位登录</a></li>
+	</ul>
+	<ul class="con">
+		<li id="item1">
+			<div class="k-login">
+				<div class="k-container">
+					<div class="k-login-wrap">
+						<div class="k-login-row k-login-hd">
+							欢迎登录
+						</div>
+						<div class="k-login-bd">
+							<div class="k-login-row">
+								<input class="k-login-ipt" type="text" placeholder="手机号/邮箱/身份证">
+							</div>
+							<div class="k-login-row">
+								<input class="k-login-ipt" type="text" placeholder="请输入密码">
+							</div>
+							<div class="k-login-row k-login-state">
+								<label for="state">
+									<input id="state" class="k-login-ckbox" type="checkbox">
+									记住状态
+								</label>
+								<a class="k-login-getpwd" href="">忘记密码？</a>
+							</div>
+							<div class="k-login-row">
+								<button class="k-login-btn">
+									登录
+								</button>
+							</div>
+							<div class="k-login-row k-login-tip">
+								<a class="k-reg-link" href="">免费注册</a>
+							</div>
+						</div>
+						<div class="k-login-ft">
+							<p>第三方账号登录：</p>
+							<ul>
+								<li>
+									<a href="">微信</a>
+								</li>
+								<li>
+									<a href="">QQ</a>
+								</li>
+								<li>
+									<a href="">新浪</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="item2">
+			<div class="k-login fadeIn anime">
+				<div class="k-container">
+					<div class="k-login-wrap k-login-b">
+						<div class="k-login-hd">
+							<ul class="k-login-tab">
+								<li class="active"><a href="#">用户登录</a></li>
+								<li><a href="#">快速登录</a></li>
+							</ul>
+						</div>
+						<div class="k-login-bd k-login-grid">
+							<div class="k-login-row">
+								<label>用户名</label>
+								<input class="k-login-ipt" type="text" placeholder="手机号/邮箱/身份证">
+							</div>
+							<div class="k-login-row">
+								<label>密码</label>
+								<input class="k-login-ipt" type="text" placeholder="请输入密码">
+							</div>
+							<div class="k-login-row">
+								<label class="k-login-state" for="state">
+									<input id="state" class="k-login-ckbox" type="checkbox">
+									记住状态
+								</label>
+								<a class="k-login-getpwd" href="">忘记密码？</a>
+							</div>
+							<div class="k-login-row">
+								<button class="k-login-btn">
+									登录
+								</button>
+							</div>
+							<div class="k-login-row k-login-tip">
+								
+							</div>
+						</div>
+						<div class="k-login-ft">
+							<p>第三方账号登录：</p>
+							<ul>
+								<li>
+									<a href="">微信</a>
+								</li>
+								<li>
+									<a href="">QQ</a>
+								</li>
+								<li>
+									<a href="">新浪</a>
+								</li>
+							</ul>
+							<a class="k-reg-link" href="">免费注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li id="item3">
+			<div class="k-login spaceInUp anime">
+				<div class="k-container">
+					<div class="k-login-wrap k-login-c">
+						<div class="k-login-hd">
+							欢迎登录
+						</div>
+						<div class="k-login-bd k-login-grid">
+							<div class="k-login-row">
+								<label>用户名</label>
+								<input class="k-login-ipt" type="text" placeholder="手机号/邮箱/身份证">
+							</div>
+							<div class="k-login-row">
+								<label>密码</label>
+								<input class="k-login-ipt" type="text" placeholder="请输入密码">
+							</div>
+							<div class="k-login-row">
+								<label class="k-login-state" for="state">
+									<input id="state" class="k-login-ckbox" type="checkbox">
+									记住状态
+								</label>
+								<a class="k-login-getpwd" href="">忘记密码？</a>
+							</div>
+							<div class="k-login-row">
+								<button class="k-login-btn">
+									登录
+								</button>
+							</div>
+							<div class="k-login-row k-login-tip">
+								123
+							</div>
+						</div>
+						<div class="k-login-r">
+							<p>本站不会向您收取任何费用</p>
+							<p>本站不会向您收取任何费用</p>
+							<p>本站不会向您收取任何费用</p>
+							<p>本站不会向您收取任何费用</p>
+							<p>本站不会向您收取任何费用</p>
+						</div>
+						<div class="k-login-ft">
+							<p>第三方账号登录：</p>
+							<ul>
+								<li>
+									<a href="">微信</a>
+								</li>
+								<li>
+									<a href="">QQ</a>
+								</li>
+								<li>
+									<a href="">新浪</a>
+								</li>
+							</ul>
+							<a class="k-reg-link" href="">免费注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li id="item4">
+			<div class="k-login-wrap k-login-d anime slideInDown">
+				<div class="k-login-row k-login-hd">
+					欢迎登录
+				</div>
+				<div class="k-login-bd">
+					<div class="k-login-row">
+						<input class="k-login-ipt" type="text" placeholder="手机号/邮箱/身份证">
+					</div>
+					<div class="k-login-row">
+						<input class="k-login-ipt" type="text" placeholder="请输入密码">
+					</div>
+					<div class="k-login-row k-login-state">
+						<label for="state">
+							<input id="state" class="k-login-ckbox" type="checkbox">
+							记住状态
+						</label>
+						<a class="k-login-getpwd" href="">忘记密码？</a>
+					</div>
+					<div class="k-login-row">
+						<button class="k-login-btn">
+							登录
+						</button>
+					</div>
+					<div class="k-login-row k-login-tip">
+						<a class="k-reg-link" href="">免费注册</a>
+					</div>
+				</div>
+				<div class="k-login-ft">
+					<p>第三方账号登录：</p>
+					<ul>
+						<li>
+							<a href="">微信</a>
+						</li>
+						<li>
+							<a href="">QQ</a>
+						</li>
+						<li>
+							<a href="">新浪</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(".nav a").click(function() {
+			var g = this.getAttribute("href");
+			$("#"+g).show().siblings().hide();
+
+			if ( g=="item4" ) {
+				var tt = this.offsetTop;
+				var tl = this.offsetLeft;
+				$(".k-login-d").css({
+					top: tt + 20,
+					left: tl
+				})
+			}
+			return false;
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* ==========================================================================
+    paging style
+  ========================================================================== */
+.paging {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.paging-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.paging-list > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.paging-list > li > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  cursor: pointer;
+}
+/* ==========================================================================
+    paging hvoer
+  ========================================================================== */
+.paging-list > li > a:hover,
+.paging-list > li > a:focus {
+  color: #333;
+  background-color: #f7f7f7;
+}
+/* ==========================================================================
+    paging active
+  ========================================================================== */
+.paging-list > li.active > a,
+.paging-list > li.active > a:hover,
+.paging-list > li.active > a:focus {
+  border-color: #ddd;
+  background-color: #fff;
+  cursor: default;
+}
+/* ==========================================================================
+    paging disabled
+  ========================================================================== */
+.paging-list > li.disabled > a {
+  color: #999;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* ==========================================================================
+    paging prev | next
+  ========================================================================== */
+.paging-prev a:before,
+.paging-next a:before {
+  position: relative;
+  top: -2px;
+}
+.paging-list > li.prev {
+  float: left;
+}
+.paging-list > li.next {
+  float: right;
+}
+.paging-list > li.prev > a,
+.paging-list > li.next > a {
+  border: 1px solid #ddd;
+}
+/* ==========================================================================
+    paging color
+  ========================================================================== */
+.orange .paging-list > li > a:hover,
+.orange .paging-list > li > a:focus {
+  color: #f60;
+  background-color: transparent;
+}
+.orange .paging-list > li.active > a,
+.orange .paging-list > li.active > a:hover,
+.orange .paging-list > li.active > a:focus {
+  color: #f60;
+  border-color: #f60;
+  cursor: default;
+}
+.primary .paging-list > li > a:hover,
+.primary .paging-list > li > a:focus {
+  color: #159CFF;
+  background-color: transparent;
+}
+.primary .paging-list > li.active > a,
+.primary .paging-list > li.active > a:hover,
+.primary .paging-list > li.active > a:focus {
+  color: #159CFF;
+  border-color: #159CFF;
+  cursor: default;
+}
+/* ==========================================================================
+    paging inverse
+  ========================================================================== */
+.inverse {
+  background-color: #303541;
+}
+.inverse .paging-list > li > a {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.inverse .paging-list > li > a:hover,
+.inverse .paging-list > li > a:focus {
+  color: #333;
+  background-color: #fff;
+}
+.inverse .paging-list > li.active > a,
+.inverse .paging-list > li.active > a:hover,
+.inverse .paging-list > li.active > a:focus {
+  color: #333;
+  background-color: #fff;
+}
+.inverse .paging-list > li.disabled > a {
+  color: #999;
+  border-color: #999;
+}
+/* ==========================================================================
+    paging size
+  ========================================================================== */
+.paging-m .paging-list > li > a {
+  padding: 11px 19px;
+  font-size: 18px;
+}
+.paging-s .paging-list > li > a {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+.paging-xs .paging-list > li > a {
+  padding: 3px 8px;
+  font-size: 12px;
+}
+/* ==========================================================================
+    paging align
+  ========================================================================== */
+.paging-left {
+  text-align: left;
+}
+.paging-right {
+  text-align: right;
+}
+.paging-justify > li {
+  display: table-cell;
+  width: 1%;
+}

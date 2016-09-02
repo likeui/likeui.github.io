@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>颜色</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.color-box > div {
+			text-align: center;
+		}
+		.color-box span{
+			display: block;
+			width: 40px;
+			height: 40px;
+			border-radius: 3px;
+			margin: 10px auto;
+			transition: all .5s;
+			position: relative;
+			z-index: 1;
+		}
+		.color-box span:hover {
+			-webkit-transform: scale(2, 2);
+			transform: scale(2, 2);
+			border-radius: 50%;
+			box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+			z-index: 2;
+		}
+		.group {
+		    float: left;
+		    text-align: center;
+		    width: 32%;
+		    text-transform: lowercase;
+		}
+		.group span {
+		    display: block;
+		    height: 40px;
+		    background-color: red;
+		}
+		.a-color {
+			margin-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+
+
+		<h4>背景颜色<small>bg [color]</small></h4>
+		<div class="demo color-box ise">
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-green"></span>bg-green</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-darkgreen"></span>bg-darkgreen</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-blue"></span>bg-blue</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-primary"></span>bg-primary</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-noble"></span>bg-noble</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-red"></span>bg-red</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-pink"></span>bg-pink</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-orange"></span>bg-orange</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-yellow"></span>bg-yellow</div>
+			<div class="ho-s-6 ho-m-2"><span class="hover bg-plain"></span>bg-plain</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-green">&lt;/span>bg-green&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-darkgreen">&lt;/span>bg-darkgreen&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-blue">&lt;/span>bg-blue&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-primary">&lt;/span>bg-primary&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-noble">&lt;/span>bg-noble&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-red">&lt;/span>bg-red&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-pink">&lt;/span>bg-pink&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-orange">&lt;/span>bg-orange&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-yellow">&lt;/span>bg-yellow&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="hover bg-plain">&lt;/span>bg-plain&lt;/div></code></pre>
+		</div>
+
+
+		<h4>文字颜色<small>cl [color]</small></h4>
+		<div class="demo color-box ise">
+			<div class="ho-s-6 ho-m-2"><span class="tc-green">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-darkgreen">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-blue">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-primary">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-noble">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-red">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-pink">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-orange">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-yellow">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-gray">文字颜色</span></div>
+			<div class="ho-s-6 ho-m-2"><span class="tc-default">文字颜色</span></div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-green">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-darkgreen">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-blue">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-primary">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-noble">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-red">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-pink">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-orange">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-yellow">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-gray">文字颜色&lt;/span>&lt;/div>
+&lt;div class="ho-s-6 ho-m-2">&lt;span class="tc-default">文字颜色&lt;/span>&lt;/div></code></pre>
+		</div>
+
+
+		<h4>WEB安全色</h4>
+		<div id="web_color" class="demo color-box ise">
+		</div>
+
+
+		<h4>颜色搭配</h4>
+		<div id="a_color" class="demo ise">
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script>
+//创建WEB安全色
+var webColor =  ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","DarkOrange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"];
+var c = "";
+for(var o in webColor) {
+	c += '<div class="ho-s-6 ho-m-2"><span style="background-color:'+webColor[o]+'"></span>'+webColor[o]+'</div>';
+}
+$("#web_color").append(c);
+
+
+//创建搭配颜色
+var aColor = 
+[{
+    title : "柔和、明亮、温柔 ",
+    desc : "亮度高的色彩搭配在一起就会得到柔和、明亮、温和的感觉。为了避免刺眼，设计师一般会用低亮度的前景色调和，同时色彩在色环之间的距离也有助于避免沉闷。",
+    color : [["#FFFFCC", "#CCFFFF", "#FFCCCC"], ["#FFCCCC", "#FFFF99", "#CCCCFF"], ["#FF9966", "#FF6666", "#FFCCCC"], ["#FFCC99", "#CCFF99", "#CCCCCC"], ["#FFCCCC", "#CCCCFF", "#CCFFCC"], ["#CCFFFF", "#CCCCCC", "#CCFF99"], ["#FFCCCC", "#FFFFFF", "#99CC99"], ["#99CCCC", "#FFCC99", "#FFCCCC"], ["#CCCCFF", "#FFCCCC", "#CCFFFF"], ["#FFCC99", "#FFFFCC", "#99CCCC"]]
+}, {
+    title : "柔和、洁净、爽朗 ",
+    desc : "对于柔和、清洁、爽朗的印象，色环中蓝到绿相邻的颜色应该是最适合的。并且亮度偏高。可以看到，几乎每个组合都有白色参与。当然在实际设计时，可以用蓝绿相反色相的高亮度有彩色代替白色。",
+    color : [["#CCFF99", "#FFFFFF", "#99CCFF"], ["#99CCCC", "#FFFFFF", "#CCFF99"], ["#CCFFCC", "#FFFFFF", "#66CCCC"], ["#CCCCFF", "#FFFFFF", "#99CCCC"], ["#CCFFCC", "#99CCCC", "#FFFFCC"], ["#CCFFFF", "#FFFFFF", "#CCCCFF"], ["#CCFFFF", "#FFFFFF", "#99CCFF"], ["#66CCFF", "#FFFFFF", "#CCFFFF"], ["#6699CC", "#FFFFFF", "#99CCFF"], ["#CCCCFF", "#FFFFFF", "#99CCFF"]]
+}, {
+    title : "可爱、快乐、有趣 ",
+    desc : "可爱、快乐、有趣印象中的色彩搭配特点是，色相分布均匀，冷暖搭配，饱和度高，色彩分辨度高。",
+    color : [["#66CCCC", "#CCFF66", "#FF99CC"], ["#FF9999", "#FFFFFF", "#FFCC99"], ["#FF6666", "#FFFF66", "#99CC66"], ["#666699", "#FFFFFF", "#FF9999"], ["#99CC33", "#FF9900", "#FFCC00"], ["#FF0033", "#FFFFFF", "#FF9966"], ["#FF9900", "#CCFF00", "#CC3399"], ["#99CC33", "#FFFFFF", "#FF6600"], ["#993366", "#CCCC33", "#666633"], ["#66CCCC", "#FFFFFF", "#666699"]]
+}, {
+    title : "活泼、快乐、有趣 ",
+    desc : "活泼、快乐、有趣相对前一种印象，色彩选择更加广泛，?最重要的变化是将纯白色用低饱和有彩色或者灰色取代。",
+    color : [["#CC9999", "#FFFF99", "#666699"], ["#FF9900", "#FFFF00", "#0099CC"], ["#CCCC99", "#CC3399", "#99CC00"], ["#FF6666", "#FFFF00", "#3399CC"], ["#CC6600", "#999999", "#CCCC33"], ["#FF9933", "#FFFFCC", "#009933"], ["#0099CC", "#CCCCCC", "#FF6666"], ["#FF6600", "#FFFF66", "#009966"], ["#CC6633", "#FFCC99", "#CC6600"], ["#CC0066", "#009999", "#FFCC33"]]
+}, {
+    title : "运动型、轻快 ",
+    desc : "运动的色彩要强化激烈、刺激的感受，同时还要体现健康、快乐、阳光。因此饱和度较高、亮度偏低的色彩在这类印象中经常登场。",
+    color : [["#FF6666", "#FFFF00", "#006699"], ["#FF9966", "#FFFFFF", "#0066CC"], ["#339933", "#FFCC33", "#336699"], ["#FF9900", "#FFFFCC", "#336699"], ["#CC6600", "#CCCC44", "#336699"], ["#99CC33", "#FFFFFF", "#0099CC"], ["#99CC33", "#FF6666", "#336699"], ["#336699", "#FFFFFF", "#99CCCC"], ["#FF0033", "#333399", "#CCCC00"], ["#33CC99", "#FFFF00", "#336699"]]
+}, {
+    title : "轻快、华丽、动感 ",
+    desc : "华丽的印象要求页面充斥有彩色，并且饱和度偏高，而亮度适当减弱则能强化这种印象。",
+    color : [["#990066", "#FFCC00", "#CC0033"], ["#FFCC33", "#333399", "#FF0033"], ["#666699", "#FFFF00", "#FF0033"], ["#FF0033", "#006699", "#FFFF33"], ["#FFCC00", "#009999", "#CC3366"], ["#FF0033", "#CCCC00", "#006699"], ["#CCCC00", "#FF9933", "#663399"], ["#FF9933", "#FFFF00", "#336699"], ["#CC3333", "#FFCCCC", "#99CC00"], ["#003399", "#FFFF00", "#FF6600"]]
+}, {
+    title : "狂野、充沛、动感 ",
+    desc : "狂野的印象空间中少不了低亮度的色彩，甚至可以用适当的黑色搭配。其他有彩色的饱和度高，对比强烈。",
+    color : [["#990066", "#FFFF00", "#003399"], ["#CC0033", "#000000", "#003399"], ["#003399", "#FFFF00", "#F00000"], ["#CC3333", "#CCCCCC", "#003366"], ["#CC0033", "#333333", "#CCCC00"], ["#000000", "#99CC00", "#CC0033"], ["#FF0033", "#333333", "#FF9900"], ["#990066", "#000000", "#009966"], ["#666666", "#FF6600", "#333333"], ["#993333", "#CCCC00", "#663366"]]
+}, {
+    title : "华丽、花哨、女性化 ",
+    desc : "女性化的页面中紫色和品红是主角、粉红、绿色也是常用色相。一般它们之间要进行高饱和的搭配。",
+    color : [["#FFFF99", "#993399", "#FF99CC"], ["#FF6666", "#FFFFFF", "#339999"], ["#FF99CC", "#003399", "#CCFF00"], ["#66CC99", "#FFFFFF", "#CC6699"], ["#CC3399", "#FFCC99", "#FF6666"], ["#FFCCCC", "#FFFFFF", "#993366"], ["#CC6699", "#FFFF00", "#666699"], ["#CC6699", "#99CC66", "#663366"], ["#FF33CC", "#CCCC99", "#663366"], ["#CC3399", "#FFCC99", "#FF6666"]]
+}, {
+    title : "回味、女性化、优雅 ",
+    desc : "优雅的感觉很奇特，色彩的饱和度一般要降下来。一般以蓝、红之间的相邻，调节亮度和饱和度进行搭配。",
+    color : [["#CCCCCC", "#CC99CC", "#CC3399"], ["#FFCCCC", "#FF99CC", "#CCCCFF"], ["#CC3399", "#9933CC", "#CC99CC"], ["#9999CC", "#FFFFCC", "#FFCCCC"], ["#663366", "#CCCCCC", "#CC99CC"], ["#FF9999", "#FFCCCC", "#FF99CC"], ["#996666", "#CC99CC", "#FFCCCC"], ["#CC9999", "#CCCCCC", "#FFCCCC"], ["#FF9999", "#996699", "#FFCCCC"], ["#996699", "#FFCCCC", "#CC99CC"]]
+}, {
+    title : "高尚、自然、安稳 ",
+    desc : "高尚一般要用低亮度的黄绿色，色彩亮度降下去，注意色彩的平衡，页面就会显得安稳。",
+    color : [["#CCCC33", "#FFFF99", "#CC9933"], ["#CC9966", "#CCCC66", "#669999"], ["#FF9966", "#996600", "#CCCC00"], ["#CCCC66", "#660033", "#CC6600"], ["#CCCC00", "#666600", "#CCCCFF"], ["#CC9933", "#009999", "#FFCC33"], ["#999966", "#CCCC99", "#339999"], ["#99CC99", "#669933", "#336633"], ["#666633", "#993", "#CC9966"], ["#660000", "#CC9900", "#CCCC99"]]
+}, {
+    title : "冷静、自然 ",
+    desc : "绿色是冷静、自然印象的主角，但是绿色作为页面的主要色彩，容易陷入过于消极的感觉传达，因此应该特别重视图案的设计。",
+    color : [["#FFFF99", "#99CC99", "#666600"], ["#996633", "#FFFF99", "#99CC66"], ["#006600", "#66CC66", "#CCFF99"], ["#666600", "#CCCC66", "#CCFFCC"], ["#669933", "#CCCC33", "#663300"], ["#666633", "#993", "#CC9966"], ["#003300", "#669933", "#CCCC99"], ["#006633", "#663300", "#CCCC66"], ["#666600", "#FFFFCC", "#999999"], ["#006633", "#333300", "#CCCC99"]]
+}, {
+    title : "传统、高雅、优雅 ",
+    desc : "传统的内容一般要降低色彩的饱和度，特别是棕色很适合。前面介绍紫色也是高雅和优雅印象的常用色相。",
+    color : [["#993", "#FFFFCC", "#CC99CC"], ["#CC9966", "#666666", "#CC9999"], ["#CCCC99", "#333333", "#9966CC"], ["#CCCC99", "#666666", "#CC9999"], ["#996699", "#CCCC99", "#669999"], ["#CC9966", "#999999", "#666666"], ["#339966", "#CCCCCC", "#996699"], ["#663366", "#999999", "#CCCCFF"], ["#996699", "#9999CC", "#CCCCFF"], ["#CCCC99", "#999999", "#663300"]]
+}, {
+    title : "传统、稳重、古典 ",
+    desc : "传统、稳重、古典都是保守的印象，色彩的选择上应该尽量用低亮度的暖色，这种搭配符合成熟的审美。",
+    color : [["#6699CC", "#663366", "#CCCC99"], ["#990033", "#CCFF66", "#FF9900"], ["#666699", "#660033", "#99CC99"], ["#663300", "#FF9933", "#FFFF66"], ["#990033", "#006633", "#CCCC00"], ["#660033", "#993", "#660099"], ["#993366", "#CCCC33", "#666633"], ["#996600", "#CCCC66", "#666600"], ["#009933", "#CC9900", "#666666"], ["#666633", "#CCCC33", "#CC3366"]]
+}, {
+    title : "忠厚、稳重、有品位 ",
+    desc : "亮度、饱和度偏低的色彩会给人忠厚、稳重的感觉。这样的搭配为了避免色彩过于保守，使页面僵化、消极，应当注重冷暖结合和明暗对比。",
+    color : [["#FFFFCC", "#CC9933", "#336666"], ["#336666", "#996633", "#CCCC33"], ["#336633", "#990033", "#FFCC99"], ["#333366", "#669999", "#996600"], ["#993333", "#CC9966", "#003300"], ["#336633", "#CCCC99", "#333366"], ["#663300", "#993", "#333333"], ["#663366", "#666666", "#333366"], ["#999900", "#990033", "#CC99CC"], ["#333366", "#990033", "#CCCCCC"]]
+}, {
+    title : "简单、洁净、进步 ",
+    desc : "简单、洁净的色彩在色相上可以用蓝、绿表现，并大面积留白。而进步的印象可以多用蓝色，搭配低饱和甚至灰色。",
+    color : [["#CCCCCC", "#FFFFFF", "#666699"], ["#CCFF66", "#FFFFFF", "#003366"], ["#99CCFF", "#FFFFFF", "#336699"], ["#CCCC33", "#FFFFFF", "#336699"], ["#0099FF", "#FFFFCC", "#666699"], ["#99CC33", "#CCCCCC", "#000000"], ["#CCCCCC", "#003366", "#99CCFF"], ["#0099CC", "#CCFF66", "#666666"], ["#3399CC", "#003366", "#CCCCCC"], ["#ABCDEF", "#ABCDEF", "#ABCDEF"]]
+}, {
+    title : "简单、时尚、高雅 ",
+    desc : "灰色是最为平衡的色彩，并且是塑料金属质感的主要色彩之一，因而要表达高雅、时尚，可以适当使用，甚至大面积使用。但是要注重图案和质感的构造。",
+    color : [["#99CCFF", "#FFFF66", "#666666"], ["#336666", "#FFFFFF", "#999999"], ["#0099CC", "#FFFFFF", "#666666"], ["#999999", "#CCCCCC", "#336666"], ["#CCCCCC", "#999999", "#663366"], ["#666666", "#CCCCCC", "#6699CC"], ["#999999", "#FFFFFF", "#333366"], ["#669999", "#CCCCCC", "#666666"], ["#999999", "#CCCCCC", "#333333"], ["#ABCDEF", "#ABCDEF", "#ABCDEF"]]
+}, {
+    title : "简单、进步、时尚 ",
+    desc : "表现进步的色彩主要以蓝色为主，搭配灰色。而色彩的明度统一、色相相邻，在色彩上会显得简洁。",
+    color : [["#333366", "#99CC33", "#336699"], ["#999999", "#003366", "#669999"], ["#003399", "#CCFF99", "#333333"], ["#993", "#336699", "#333333"], ["#666666", "#99CC33", "#003366"], ["#999999", "#336699", "#333333"], ["#3366CC", "#CCCC66", "#333300"], ["#6699CC", "#006699", "#000000"], ["#003366", "#CCCCCC", "#006699"], ["#000000", "#999999", "#003366"]]
+}]
+
+var a = "",t = "", v = "";
+for(var o in aColor) {
+	for (var i = 0; i < aColor[o].color.length; i++) {
+        v +=    '<div class="ho-m-4 ho-l-3">'+
+					'<div class="group">'+
+						'<span style="background-color:'+aColor[o].color[i][0]+'"></span>'+
+                    	'<i>'+aColor[o].color[i][0]+'</i>'+
+					'</div>'+
+					'<div class="group">'+
+						'<span style="background-color:'+aColor[o].color[i][1]+'"></span>'+
+                    	'<i>'+aColor[o].color[i][1]+'</i>'+
+					'</div>'+
+					'<div class="group">'+
+						'<span style="background-color:'+aColor[o].color[i][2]+'"></span>'+
+                    	'<i>'+aColor[o].color[i][2]+'</i>'+
+					'</div>'+
+				'</div>';
+    };
+
+	t +=    '<h5>'+aColor[o].title+'<small>'+aColor[o].desc+'</small></h5>'+
+			'<div class="ho a-color">'+
+				v +
+			'</div>';
+
+    v = "";
+}
+$("#a_color").append(t);
+
+
+//rgb转16进制
+function zero_fill_hex(num, digits) {
+	var s = num.toString(16);
+	while (s.length < digits)
+	s = "0" + s;
+	return s;
+}
+function rgb2hex(rgb) {
+	if (rgb.charAt(0) == '#')
+	return rgb;
+	var ds = rgb.split(/\D+/);
+	var decimal = Number(ds[1]) * 65536 + Number(ds[2]) * 256 + Number(ds[3]);
+	return "#" + zero_fill_hex(decimal, 6);
+}
+$("span").click(function(event) {
+	var tbgcl = $(this).css("background-color");
+	// alert(tbgcl);
+	// alert(rgb2hex(tbgcl));
+});
+
+</script>
+</body>
+</html>

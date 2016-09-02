@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+    <title id="title"></title>
+    <link rel="stylesheet" href="css/likeui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style>
+    p {
+        color: #999;
+        line-height: 26px;
+    }
+    span {
+        color: #3bb4f2;
+        font-size: 65%;
+    }
+    audio {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        margin: -15px 0 0 -150px;
+    }
+    video {
+        position: fixed;
+        top: 50px;
+        left: 50%;
+        width: 400px;
+        margin-left: -200px;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-inverse bg-red">
+        <div class="container">
+            <h1 class="navbar-brand">
+                Like UI
+            </h1>
+            <button class="navbar-toggle radius">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul id="top_nav" class="nav navbar-nav nav-pills">
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container pt2">
+    <div class="ui-box">
+        <h3>audio标签属性</h3>
+        <div class="example">
+            <p>
+                <code>src</code>：音频的URL
+            </p>
+            <p>
+                <code>preload</code>：预加载
+            </p>
+            <p>
+                <code>autoplay</code>：自动播放
+            </p>
+            <p>
+                <code>loop</code>：循环播放
+            </p>
+            <p>
+                <code>controls</code>：浏览器自带的控制条
+            </p>
+        </div>
+    </div>
+    <div class="ui-box">
+        <h3>video标签属性</h3>
+        <div class="example">
+            <p>
+                <code>src</code>：视频的URL
+            </p>
+            <p>
+                <code>poster</code>：视频封面，没有播放时显示的图片
+            </p>
+            <p>
+                <code>preload</code>：预加载
+            </p>
+            <p>
+                <code>autoplay</code>：自动播放
+            </p>
+            <p>
+                <code>loop</code>：循环播放
+            </p>
+            <p>
+                <code>controls</code>：浏览器自带的控制条
+            </p>
+            <p>
+                <code>width</code>：视频宽度
+            </p>
+            <p>
+                <code>height</code>：视频高度
+            </p>
+        </div>
+    </div>
+    <div class="ui-box">
+        <h3>创建对象</h3>
+        <div class="example">
+            <p>
+                <s>audio</s>使用<code>new Audio(src)</code>创建对象；
+            </p>
+            <p>
+                <s>audio、video</s>都可以使用<code>document.getElementById("media")</code>获取对象；或者<code>$("#Media")[0]</code>
+            </p>
+        </div>
+    </div>
+    <div class="ui-box">
+        <h3>Media方法</h3>
+        <div class="example">
+            <p>
+                <code>addTextTrack(kind,label,language)</code>向Media添加新的文本轨道
+            </p>
+            <p>
+                <code>canPlayType(type)</code>是否能播放某种格式的资源 
+            </p>
+            <p>
+                <code>load()</code>重新加载src指定的资源 
+            </p>
+            <p>
+                <code>play()</code>开始播放Media
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.play(); video.play()">播放</button>
+            </p>
+            <p>
+                <code>pause()</code>暂停播放Media
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.pause(); video.pause()">暂停</button>
+            </p>
+        </div>
+    </div>
+    <div class="ui-box">
+        <h3>Media属性</h3>
+        <div class="example">
+            <p>
+                <code>autoplay</code>设置或返回是否在加载完成后随即播放音频/视频 
+                <span> boolean </span>
+            </p>
+            <p>
+                <code>buffered</code>返回音视频的已缓冲部分
+                <span> TimeRanges </span>
+            </p>
+            <p>
+                <code>controller</code>返回音视频的当前媒体控制器
+                <span> MediaController </span>
+            </p>
+            <p>
+                <code>controls</code>设置或返回浏览器应当显示标准的音视频控件
+                <span> boolean </span>
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.controls = true; video.style.display = 'block';">显示</button>
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.controls = false; video.style.display = 'none'; ">隐藏</button>
+            </p>
+            <p>
+                <code>currentSrc</code>熟悉返回当前音频/视频的 URL
+                <span> string </span>
+            </p>
+            <p>
+                <code>currentTime</code>设置或返回音频/视频中的当前播放位置（以秒计）
+                <span> int </span>
+                <button class="btn btn-s btn-default btn-radius" onclick="alert(audio.currentTime)">测试</button>
+            </p>
+            <p>
+                <code>defaultMuted</code>设置或返回音频/视频默认是否静音
+                <span> boolean </span>
+            </p>
+            <p>
+                <code>defaultPlaybackRate</code>设置或返回音频/视频的默认播放速度
+                <span> int </span>
+            </p>
+            <p>
+                <code>duration</code>返回当前音频/视频的长度（以秒计）
+                <span> int </span>
+            </p>
+            <p>
+                <code>ended</code>返回音频/视频的播放是否已结束
+                <span> boolean </span>
+            </p>
+            <p>
+                <code>error</code>返回音频/视频的错误状态
+                <span> MediaError </span>
+            </p>
+            <p>
+                <code>loop</code>设置或返回音频/视频是否应在结束时重新播放
+                <span> boolean </span>
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.loop=true">循环</button>
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.loop=false">单次</button>
+            </p>
+            <p>
+                <code>mediaGroup</code>设置或返回音频/视频所属的组合（用于连接多个音频/视频元素）
+                <span> string </span>
+            </p>
+            <p>
+                <code>muted</code>设置或返回音频/视频是否静音
+                <span> boolean </span>
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.muted = true">静音</button>
+                <button class="btn btn-s btn-default btn-radius" onclick="audio.muted = false">解除</button>
+            </p>
+            <p>
+                <code>networkState</code>返回音频/视频的当前网络状态
+                <span> int </span>
+            </p>
+            <p>
+                <code>paused</code>设置或返回音频/视频是否暂停
+                <span> boolean </span>
+            </p>
+            <p>
+                <code>playbackRate</code>设置或返回音频/视频播放的速度
+                <span> playbackspeed </span>
+            </p>
+            <p>
+                <code>played</code>返回表示音频/视频已播放部分的 TimeRanges 对象
+                <span> TimeRanges </span>
+            </p>
+            <p>
+                <code>preload</code>设置或返回音频/视频是否应该在页面加载后进行加载
+                <span> string </span>
+            </p>
+            <p>
+                <code>readyState</code>返回音频/视频当前的就绪状态
+                <span> int </span>
+            </p>
+            <p>
+                <code>seekable</code>返回表示音频/视频可寻址部分的 TimeRanges 对象
+                <span> TimeRanges </span>
+            </p>
+            <p>
+                <code>seeking</code>返回用户目前是否在音频/视频中寻址
+                <span> boolean </span>
+            </p>
+            <p>
+                <code>src</code>设置或返回音频/视频元素的当前来源
+                <span> string </span>
+            </p>
+            <p>
+                <code>startDate</code>返回表示当前时间偏移的 Date 对象
+                <span> date </span>
+            </p>
+            <p>
+                <code>textTracks</code>返回表示可用文本轨道的 TextTrackList 对象
+                <span> TextTrackList </span>
+            </p>
+            <p>
+                <code>videoTracks</code>返回表示可用视频轨道的 VideoTrackList 对象
+                <span> VideoTrackList </span>
+            </p>
+            <p>
+                <code>volume</code>设置或返回音频/视频的音量
+                <span> int </span>
+                <button class="btn btn-s btn-default btn-radius" onclick="vol('firefox' , 'up' , this )">音量+</button>
+                <button class="btn btn-s btn-default btn-radius" onclick="vol('firefox' , 'down' ,this )">音量—</button>
+                当前音量：<span  id = "nowVol"> - </span>
+            </p>
+        </div>
+    </div>
+</div>
+<audio src="audio/bj.mp3" id="audio" controls="controls" ></audio>
+<video src="video/bd.mp4" id="video" controls poster="pic/bg.jpg"></video>
+
+<script>
+window.onload = function(){
+    initAudio();
+}
+var initAudio = function(){
+    audio = document.getElementById('audio');
+    // audio = $("#audio")[0]; //等同以上方法
+}
+
+function vol(id,type , obj){
+    if(type == 'up'){
+        var volume = audio.volume  + 0.1;
+        if(volume >=1 ){
+            volume = 1 ;
+        }
+    }else if(type == 'down'){
+        var volume = audio.volume  - 0.1;
+        if(volume <=0 ){
+            volume = 0 ;
+        }
+    }
+    audio.volume =  volume;
+    document.getElementById('nowVol').innerHTML = returnFloat1(audio.volume);
+}
+
+ //保留一位小数点
+function returnFloat1(value) {    
+    value = Math.round(parseFloat(value) * 10) / 10;
+    if (value.toString().indexOf(".") < 0){
+        value = value.toString() + ".0";
+    }
+    return value;
+}
+</script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

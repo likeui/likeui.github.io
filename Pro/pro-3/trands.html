@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/kui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ontouchstart>
+	<div class="n-nav">
+		<a class="k-fl">
+			取消
+		</a>
+		<div class="n-tit">
+			发动态
+		</div>
+		<a class="k-fr">
+			发表
+		</a>
+	</div><!--end n-nav-->
+
+
+
+	<div class="k-container k-container-cen k-container-pn">
+		<div class="view-box">
+			<textarea rows="6" placeholder="呃...说点什么吧？"></textarea>
+		</div>
+		<div class="view-btm u-t u-b">
+			<span class="u-r">
+				<i class="icon-xiangji"></i>
+			</span>
+			<span class="u-r">
+				<i class="icon-aui-icon-image"></i>
+				<input type="file" name="">
+			</span>
+			<span>
+				<i class="icon-map"></i>
+			</span>
+		</div>
+
+		<div class="l view-lab">
+			<div class="l-row">
+				<div class="l-hd">
+					标签
+				</div>
+				<div id="viewLab" class="l-bd">
+					<span data-id="0" class="k-lab bg-info">情感倾诉</span>
+					<span data-id="1" class="k-lab bg-primary">人际关系</span>
+					<span data-id="2" class="k-lab bg-yellow">生活糗事</span>
+					<span data-id="3" class="k-lab bg-red">随拍美景</span>
+					<span data-id="4" class="k-lab bg-green">职场小事</span>
+					<span data-id="5" class="k-lab bg-info">情绪宣泄</span>
+				</div>
+			</div>
+		</div>
+	</div><!--end k-container-->
+
+
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript">
+		var btm = $(".view-btm"),
+			btmCamera = btm.find("span").eq(0),
+			btmImages = btm.find("span").eq(1),
+			btmLotion = btm.find("span").eq(2);
+
+		btmCamera.on("click", function() {
+			alert("调用摄像头");
+		});
+
+		btmLotion.on("click", function() {
+			alert("可以用百度地图定位");
+		});
+
+		$("#viewLab span").on("click", function() {
+			$(this).toggleClass("active");
+
+			//以下内容用于测试
+			var testNUm = "";
+			$("#viewLab span").each(function(index, val) {
+				if($(val).hasClass("active")) {
+					testNUm += " " + $(val).attr("data-id");
+				}
+			});
+			alert("当前选中的标签ID：" + testNUm);
+		});
+	</script>
+</body>
+</html>

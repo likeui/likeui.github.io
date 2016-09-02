@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<link rel="stylesheet" href="css/kui.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/prettify.css">
+    <style type="text/css">
+    	.k-tit .k-lab.bg-info {
+			box-shadow: 0 2px 0 #36b0ef, 0 3px 3px rgba(0, 0, 0, .2);
+		}
+		.k-tit .k-lab.bg-yellow {
+			box-shadow: 0 2px 0 #d79302, 0 3px 3px rgba(0, 0, 0, .2);
+		}
+    </style>
+</head>
+<body ontouchstart>
+	
+	<div class="header">
+		<i class="i-menu nav-menu"></i>
+		<div class="nav-logo">
+			<img src="images/kui-logo.png">
+		</div>
+	</div>
+
+	<div class="side">
+		<div class="logo">
+			<img class="k-img" src="images/kui-logo.png">
+		</div>
+
+		<ul class="n">
+			<li>
+				<a href="index.html">首 页</a>
+			</li>
+			<li>
+				<a href="base.html">基 础</a>
+			</li>
+			<li>
+				<a href="grid.html">网 格</a>
+			</li>
+			<li>
+				<a href="anime.html">动 画</a>
+			</li>
+			<li>
+				<a href="button.html">按 钮</a>
+			</li>
+			<li>
+				<a href="color.html">颜 色</a>
+			</li>
+			<li class="active">
+				<a href="form.html">表 单</a>
+			</li>
+			<li>
+				<a href="icon.html">图 标</a>
+			</li>
+			<li>
+				<a href="table.html">表 格</a>
+			</li>
+		</ul>
+
+		<div class="k-ml k-mr u-b"></div>
+
+		<div class="link k-tac">
+            <a class="b b-bc-g">下载 KUI+</a>
+			<div class="k-mt k-h6 cl-gray">当前版本 1.0</div>
+		</div>
+	</div><!--end side-->
+
+	<div class="main">
+		<div class="k-container">
+
+
+			<div class="main-top">
+				<h2>
+					表单
+					<small>Form</small>
+				</h2>
+				<p>
+					所有表单类以
+					<span class="k-label k-bc-h">F</span>
+					开头
+				</p>
+			</div><!--end main-top-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					基本演示
+				</div>
+				<div class="l-row">
+					<div class="demo">
+						<h6>
+							表单元素有两种使用方法，一种是元素添加类
+							<code>f-ipt</code>，
+							一种是父级添加类
+							<code>f</code>
+						</h6>
+						<input class="f-ipt" type="text">
+						<div class="k-mg"></div>
+						<div class="f">
+							<input type="text">
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;input class="f-ipt" type="text">
+
+&lt;div class="f">
+	&lt;input type="text">
+&lt;/div>
+</pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					边框颜色
+				</div>
+				<div class="l-row">
+					<div class="demo">
+					
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+
+</pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					无边框
+				</div>
+				<div class="l-row">
+					<div class="demo">
+					1
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+
+</pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					禁用元素
+				</div>
+				<div class="l-row">
+					<div class="demo">
+					
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+
+</pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					
+				</div>
+				<div class="l-row">
+					<div class="demo">
+					
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+
+</pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					基本演示
+				</div>
+				<div class="l-row">
+					<ol>
+						<li>
+							默认样式下，表单元素会以行级形态展示
+						</li>
+						<li>
+							如果想表单内元素全部以块级显示，需要在外层容器上添加类
+							<code>.f-block</code>
+							<a id="toggleBlock" href="javascript:;">添加</a>
+						</li>
+						<li>
+							如果想使个别表单元素以块级显示，为元素添加类
+							<code>.f-block</code>
+						</li>
+					</ol>
+					<div class="demo">
+						<form id="form1" class="f">
+							<fieldset>
+								<legend>
+									表单标题
+								</legend>
+								<div class="f-row">
+									<label class="f-lab">姓名</label>
+									<input class="f-ipt f-block" type="text" placeholder="已添加了f-block的表单元素">
+								</div>
+								<div class="f-row">
+									<label class="f-lab">密码</label>
+									<input class="f-ipt" type="password" placeholder="请输入密码">
+								</div>
+								<div class="f-row">
+									<label class="f-lab">城市</label>
+									<select>
+										<optgroup label="山东">
+											<option>济南</option>
+											<option>枣庄</option>
+											<option>东营</option>
+											<option>日照</option>
+											<option>威海</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="f-row">
+									<label class="f-lab">说明</label>
+									<textarea class="f-ipt" rows="5" cols="30" placeholder="表单域"></textarea>
+								</div>
+								<hr>
+								<div class="f-row">
+									<label>
+										<input type="checkbox">
+										选我
+									</label>
+								</div>
+								<div class="f-row">
+									<label>
+										<input type="radio">
+										选我
+									</label>
+								</div>
+								<div class="f-row">
+									<span class="b b-red">提交</span>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;form id="form1" class="f">
+	&lt;fieldset>
+		&lt;legend>
+			表单标题
+		&lt;/legend>
+		&lt;div class="f-row">
+			&lt;label class="f-lab">姓名&lt;/label>
+			&lt;input class="f-ipt f-block" type="text" placeholder="已添加了f-block的表单元素">
+		&lt;/div>
+		&lt;div class="f-row">
+			&lt;label class="f-lab">密码&lt;/label>
+			&lt;input class="f-ipt" type="password" placeholder="请输入密码">
+		&lt;/div>
+		&lt;div class="f-row">
+			&lt;label class="f-lab">城市&lt;/label>
+			&lt;select>
+				&lt;optgroup label="山东">
+					&lt;option>济南&lt;/option>
+					&lt;option>枣庄&lt;/option>
+					&lt;option>东营&lt;/option>
+					&lt;option>日照&lt;/option>
+					&lt;option>威海&lt;/option>
+				&lt;/optgroup>
+			&lt;/select>
+		&lt;/div>
+		&lt;div class="f-row">
+			&lt;label class="f-lab">说明&lt;/label>
+			&lt;textarea class="f-ipt" rows="5" cols="30" placeholder="表单域">&lt;/textarea>
+		&lt;/div>
+		&lt;hr>
+		&lt;div class="f-row">
+			&lt;label>
+				&lt;input type="checkbox">
+				选我
+			&lt;/label>
+		&lt;/div>
+		&lt;div class="f-row">
+			&lt;label>
+				&lt;input type="radio">
+				选我
+			&lt;/label>
+		&lt;/div>
+		&lt;div class="f-row">
+			&lt;span class="b b-red">提交&lt;/span>
+		&lt;/div>
+	&lt;/fieldset>
+&lt;/form></pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					水平排列
+				</div>
+				<div class="l-row">
+					<ol>
+						<li>
+							在父级容器添加类
+							<code>.f-fix</code>
+							来使元素水平排列
+						</li>
+						<li>
+							如果想让单个表单元素填充到右端，需要为表单元素添加个容器
+							<code>.f-control</code>
+						</li>
+					</ol>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<form class="f f-fix">
+						<div class="f-row">
+							<label class="f-lab">姓名</label>
+							<input class="f-ipt" type="text" placeholder="请输入用户名">
+						</div>
+						<div class="f-row">
+							<label class="f-lab">密码</label>
+							<input class="f-ipt" type="password" placeholder="请输入密码">
+						</div>
+						<div class="f-row">
+							<label class="f-lab">城市</label>
+							<select>
+								<optgroup label="山东">
+									<option>济南</option>
+									<option>枣庄</option>
+									<option>东营</option>
+									<option>日照</option>
+									<option>威海</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class="f-row">
+							<label class="f-lab">说明</label>
+							<div class="f-control">
+								<textarea class="f-ipt f-block" rows="5" cols="30" placeholder="父级添加了f-conteol, 自身为block状态"></textarea>
+							</div>
+						</div>
+						<div class="f-row">
+							<div class="f-control">
+								<span class="b b-red">提交</span>
+							</div>
+						</div>
+					</form>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;form class="f f-fix">
+	&lt;div class="f-row">
+		&lt;label class="f-lab">姓名&lt;/label>
+		&lt;div class="f-control">
+			&lt;input class="f-ipt f-block" type="text" placeholder="父级有个f-conteol">
+		&lt;/div>
+	&lt;/div>
+	......
+	&lt;div class="f-row">
+		&lt;div class="f-control">
+			&lt;span class="b b-red">提交&lt;/span>
+		&lt;/div>
+	&lt;/div>
+&lt;/form></pre>		
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					禁用元素
+				</div>
+				<div class="l-row">
+					<ol>
+						<li>
+							表单内所有元素禁用，只需要在
+							<code>&lt;fieldset></code>
+							标签内添加属性
+							<code>disabled</code>
+						</li>
+						<li>
+							仅禁用单个元素，为要禁用的元素添加属性
+							<code>disabled</code>
+						</li>
+					</ol>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<form class="f">
+						<fieldset disabled>
+							<legend>
+								表单标题
+							</legend>
+							<div class="f-row">
+								<label class="f-lab">姓名</label>
+								<input class="f-ipt f-block" type="text" placeholder="已添加了f-block的表单元素">
+							</div>
+							<div class="f-row">
+								<label class="f-lab">密码</label>
+								<input class="f-ipt" type="password" placeholder="请输入密码">
+							</div>
+							<div class="f-row">
+								<label class="f-lab">城市</label>
+								<select>
+									<optgroup label="山东">
+										<option>济南</option>
+										<option>枣庄</option>
+										<option>东营</option>
+										<option>日照</option>
+										<option>威海</option>
+									</optgroup>
+								</select>
+							</div>
+							<div class="f-row">
+								<label class="f-lab">说明</label>
+								<textarea class="f-ipt" rows="5" cols="30" placeholder="表单域"></textarea>
+							</div>
+							<hr>
+							<div class="f-row">
+								<label>
+									<input type="checkbox" disabled>
+									选我
+								</label>
+							</div>
+							<div class="f-row">
+								<label>
+									<input type="radio" disabled>
+									选我
+								</label>
+							</div>
+							<div class="f-row">
+								<span class="b b-red">提交</span>
+							</div>
+						</fieldset>
+					</form>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;form class="f">
+	&lt;fieldset disabled>
+	......
+	&lt;/fieldset>
+&lt;/form></pre>	
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					行内表单
+				</div>
+				<div class="l-row">
+					<form class="f f-inline">
+						<div class="f-row">
+							<input type="text" placeholder="手机号">
+						</div>
+						<div class="f-row">
+							<input type="password" placeholder="密码">
+						</div>
+						<div class="f-row">
+							<label class="c">
+								<input id="c4" class="c-ipt" type="checkbox" name="checkbox">
+								<i class="c-c" class="k-checked"></i>
+								记住我
+							</label>
+						</div>
+						<span type="submit" class="b b-red">登录</span>
+					</form>
+				</div>
+			</div><!--end l-->
+
+	
+			<div class="l l-hoz">
+				<div class="l-top">
+					图标表单
+				</div>
+				<div class="l-row f-fix">
+					<p>
+						本示例需要与
+						<a href="icon.html">图标</a>
+						组件结合使用
+					</p>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<div class="f-row">
+						<label class="f-lab">左边图标</label>
+							
+						<div class="f-icon">
+							<i class="i-time"></i>
+							<input class="f-ipt" type="text" placeholder="时间">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-lab">右边图标</label>
+						<div class="f-icon right f-control">
+							<i class="i-map"></i>
+							<input class="f-ipt f-block" type="text" placeholder="地址">
+						</div>
+					</div>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;div class="f-row">
+	&lt;label class="f-lab">左边图标&lt;/label>
+	&lt;div class="f-icon">
+		&lt;i class="i-time">&lt;/i>
+		&lt;input class="f-ipt" type="text" placeholder="时间">
+	&lt;/div>
+&lt;/div>
+&lt;div class="f-row">
+	&lt;label class="f-lab">右边图标&lt;/label>
+	&lt;div class="f-icon right f-control">
+		&lt;i class="i-map">&lt;/i>
+		&lt;input class="f-ipt f-block" type="text" placeholder="地址">
+	&lt;/div>
+&lt;/div></pre>	
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					响应式表单
+				</div>
+				<div class="l-row">
+					<ol>
+						<li>在分辨率小于768px时，表单元素会以块级显示</li>
+						<li>在分辨率大于768px时，会以水平排列的方式显示</li>
+					</ol>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<form class="f f-hoz">
+						<fieldset>
+							<legend>
+								表单标题
+							</legend>
+							<div class="f-row">
+								<label class="f-lab">姓名</label>
+								<div class="f-control">
+									<input class="f-ipt" type="text" placeholder="请输入用户名">
+								</div>
+							</div>
+							<div class="f-row">
+								<label class="f-lab">密码</label>
+								<div class="f-control">
+									<input class="f-ipt" type="password" placeholder="请输入密码">
+								</div>
+							</div>
+							<div class="f-row">
+								<label class="f-lab">城市</label>
+								<div class="f-control">
+									<select>
+										<optgroup label="山东">
+											<option>济南</option>
+											<option>枣庄</option>
+											<option>东营</option>
+											<option>日照</option>
+											<option>威海</option>
+										</optgroup>
+									</select>
+								</div>
+							</div>
+							<div class="f-row">
+								<label class="f-lab">说明</label>
+								<div class="f-control">
+									<textarea class="f-ipt" rows="5" cols="30" placeholder="表单域"></textarea>
+								</div>
+							</div>
+							<hr>
+							<div class="f-row">
+								<label class="f-ck">
+									<input type="checkbox">
+									选我
+								</label>
+								<label class="f-ck">
+									<input type="checkbox">
+									选我
+								</label>
+								<label class="f-ck">
+									<input type="checkbox">
+									选我
+								</label>
+							</div>
+							<div class="f-row">
+								<label class="f-ck">
+									<input type="radio" name="radio">
+									选我
+								</label>
+								<label class="f-ck">
+									<input type="radio" name="radio">
+									选我
+								</label>
+								<label class="f-ck">
+									<input type="radio" name="radio">
+									选我
+								</label>
+							</div>
+							<div class="f-row">
+								<span class="b b-red">提交</span>
+							</div>
+						</fieldset>
+					</form>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;form class="f f-hoz">
+	&lt;fieldset>
+	......
+	&lt;/fieldset>
+&lt;/form></pre>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					表单尺寸
+				</div>
+				<div class="l-row">
+					<p>
+						添加类
+						<code>.f-ipt-l</code> |
+						<code>.f-ipt-m</code> |
+						<code>.f-ipt-s</code>
+						来改变表单元素的高度
+					</p>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<div class="f-row">
+						<input class="f-ipt f-ipt-l" type="text" placeholder="最大尺寸">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-ipt-m" type="text" placeholder="大个尺寸">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt" type="text" placeholder="默认尺寸">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-ipt-s" type="text" placeholder="迷你尺寸">
+					</div>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-ipt-l" type="text" placeholder="最大尺寸">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-ipt-m" type="text" placeholder="大个尺寸">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt" type="text" placeholder="默认尺寸">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-ipt-s" type="text" placeholder="迷你尺寸">
+&lt;/div></pre>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					宽度
+				</div>
+				<div class="l-row">
+					<p>
+						添加类
+						<code>.f-width-l</code> |
+						<code>.f-width-m</code> |
+						<code>.f-width-s</code>
+						来改变表单元素的宽度
+					</p>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<div class="f-row">
+						<input class="f-ipt f-width-l" type="text" placeholder="f-width-l">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-width-m" type="text" placeholder="f-width-m">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-inline" type="text" placeholder="default">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-width-s" type="text" placeholder="f-width-s">
+					</div>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-width-l" type="text" placeholder="f-width-l">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-width-m" type="text" placeholder="f-width-m">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt" type="text" placeholder="default">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-width-s" type="text" placeholder="f-width-s">
+&lt;/div></pre>
+				</div>
+			</div>
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					表单组
+				</div>
+				<div class="l-row">
+					<div class="f-row">
+						<input class="f-ipt" type="text">
+						<input class="f-ipt" type="text">
+						<input class="f-ipt" type="text">
+						<input class="f-ipt" type="text">
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					状态
+				</div>
+				<div class="l-row">
+					<p>
+						添加类
+						<code>.f-red</code> |
+						<code>.f-green</code>
+						来表示表单元素的验证状态
+					</p>
+					<h4 class="k-tit k-tit-b">
+						<span class="k-lab bg-info k-radius-c">Case</span>
+					</h4>
+					<div class="f-row">
+						<input class="f-ipt f-red" type="text" value="f-red">
+						<span>输入信息有误</span>
+					</div>
+					<div class="f-row">
+						<div class="f-icon right">
+							<i class="i-check"></i>
+							<input class="f-ipt f-green" type="text" value="f-green">
+						</div>
+					</div>
+					<h4 class="k-tit k-tit-a">
+						<span class="k-lab bg-yellow k-radius-c">Code</span>
+					</h4>
+<pre class="prettyprint beige">
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-red" type="text" value="f-red">
+&lt;/div>
+&lt;div class="f-row">
+	&lt;input class="f-ipt f-green" type="text" value="f-green">
+&lt;/div>
+</pre>
+				</div>
+			</div><!--end l-->
+
+
+		</div><!--end k-container-->
+	</div><!--end main-->
+	
+	<div class="main-shade"></div>
+
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+
+    <script type="text/javascript" src="../js/prettify.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            prettyPrint();
+        }
+        //添加 删除 f-block
+        var tb = $("#toggleBlock"),
+        	fb = $("#form1");
+        tb.on("click", function() {
+        	if( fb.is(".f-block") ) {
+        		tb.text("添加");
+        		fb.removeClass("f-block");
+        		return;
+        	}
+
+    		tb.text("删除");
+    		fb.addClass("f-block");
+        });
+    </script>
+</body>
+</html>

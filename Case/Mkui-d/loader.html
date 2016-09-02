@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>加载</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/anime.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.demo > div {
+			padding: 20px;
+    		display: table;
+		}
+		.demo>div>div {
+		    background: white;
+		    border: 1px solid #ddd;
+		    border-radius: 5px;
+		    display: table-cell;
+		    text-align: center;
+		    vertical-align: middle;
+		    height: 100px;
+		    overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div id="nav_menu" class="menu"></div>
+	<div class="box">
+		<h4>旋转<small>spinner 1-8</small></h4>
+		<div class="demo">
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-1"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-2"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-3"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-4"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-5"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-6"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-7">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="spinner-8"></span>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="spinner-1">&lt;/span>
+&lt;span class="spinner-2">&lt;/span>
+&lt;span class="spinner-3">&lt;/span>
+&lt;span class="spinner-4">&lt;/span>
+&lt;span class="spinner-5">&lt;/span>
+&lt;span class="spinner-6">&lt;/span>
+&lt;span class="spinner-7">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="spinner-8">&lt;/span></code></pre>
+		</div>
+
+	
+		<h4>脉动<small>pulse 1-5</small></h4>
+		<div class="demo">
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="pulse-1"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="pulse-2">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="pulse-3">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="pulse-4">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="pulse-5"></span>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="pulse-1">&lt;/span>
+&lt;span class="pulse-2">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="pulse-3">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="pulse-4">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="pulse-5">&lt;/span></code></pre>
+		</div>
+
+	
+		<h4>缩放<small>scale 1-5</small></h4>
+		<div class="demo">
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="scale-1"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="scale-2">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="scale-3">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="scale-4"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="scale-5"></span>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="scale-1">&lt;/span>
+&lt;span class="scale-2">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="scale-3">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="scale-4">&lt;/span>
+&lt;span class="scale-5">&lt;/span></code></pre>
+		</div>
+
+
+		<h4>运动<small>run 1-8</small></h4>
+		<div class="demo">
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-1"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-2"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-3"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-4"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-5">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-6"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-7"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-8"></span>
+				</div>
+			</div>
+			<div class="ho-s-6 ho-m-3 ho-l-2">
+				<div>
+					<span class="run-9"></span>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="run-1">&lt;/span>
+&lt;span class="run-2">&lt;/span>
+&lt;span class="run-3">&lt;/span>
+&lt;span class="run-4">&lt;/span>
+&lt;span class="run-5">
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+	&lt;span>&lt;/span>
+&lt;/span>
+&lt;span class="run-6">&lt;/span>
+&lt;span class="run-7">&lt;/span>
+&lt;span class="run-8">&lt;/span>
+&lt;span class="run-9">&lt;/span></code></pre>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

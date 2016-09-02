@@ -1,0 +1,100 @@
+pre {
+	overflow: auto;
+	padding: 10px 15px;
+	font: 12px/20px Consolas, "Courier New", FontAwesome, monospace;
+	-webkit-overflow-scrolling: touch;
+}
+pre.prettyprint {
+	background-color: #333;
+}
+.prettyprint .nocode {
+	color: #000;
+	background-color: none;
+}
+.prettyprint .str {
+	color: #f0e68c;
+}
+.prettyprint .kwd {
+	color: #58c9f3;
+}
+.prettyprint .com {
+	color: #777;
+}
+.prettyprint .typ {
+	color: #41cac0;
+}
+.prettyprint .lit {
+	color: #AE81FF;
+}
+.prettyprint .pun {
+	color: #F92672;
+}
+.prettyprint .pln {
+	color: #fff;
+}
+.prettyprint .tag {
+	color: #F92672;
+}
+.prettyprint .atn {
+	color: #78cd51;
+}
+.prettyprint .atv {
+	color: #f0e68c;
+}
+.prettyprint .dec {
+	color: #98fb98;
+}
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #666;
+}
+ol.linenums li {
+	padding-left: 10px;
+	border-left: 1px solid #666;
+}
+pre.linenums {
+	padding: 0;
+}
+pre.gray {
+	background-color: #fafafa;
+}
+.gray .kwd {
+	color: #3a95dc;
+}
+.gray .atn {
+	color: #3a95dc;
+}
+.gray .pln {
+	color: #333;
+}
+.gray .atv {
+	color: #78cd51;
+}
+.gray .str {
+	color: #78cd51;
+}
+pre.gray ol.linenums li {
+	border-color: #78cd51;
+}
+pre.gray ol.linenums li:nth-child(odd) {
+	background-color: #f7f7f7;
+}
+pre.beige {
+	background-color: #fefdee;
+}
+.beige .tag {
+	color: #1abc9c;
+}
+.beige .pln {
+	color: #666;
+}
+.beige .atn {
+	color: #07b0ff;
+}
+.beige .atv {
+	color: #ff6c00;
+}
+.beige .pun {
+	color: #999;
+}

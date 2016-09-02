@@ -1,0 +1,188 @@
+/* ==========================================================================
+   kui form.css 1.0
+   f : 表单;
+   f-border : 边框;
+   f-file : 文件域;
+   f-inline : input行级显示;
+   f-g : 表单组;
+   f-icon : 图标表单;
+   f-s : 搜索条;
+   ========================================================================== */
+
+input,
+select,
+textarea {
+	padding: 10px 0;
+	border: 0;
+	line-height: 24px;
+	-webkit-user-select: initial;
+}
+select,
+input[type="date"] {
+	padding: 9px 0;
+}
+.f-ipt-down input,
+.f-ipt-down select {
+	padding-right: 25px;
+}
+.f-g,
+.f-ipt {
+	position: relative;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.f-border:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 6px;
+	box-sizing: border-box;
+	-webkit-transform: scale(.5);
+			transform: scale(.5);
+	-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+	pointer-events: none;
+}
+.f-inline {
+	display: inline-block;
+	width: auto;
+}
+
+/*  ==========================================================================  */
+
+.f-file-t {
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f-ipt-file input[type="file"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.f-ipt-file:active {
+	background-color: #f4f4f4;
+}
+
+/*  ==========================================================================  */
+
+.f-g .f-ipt {
+	margin-bottom: 0;
+	margin-top: -1px;
+	padding: 0;
+	border-radius: 0;
+}
+.f-g .f-ipt:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	height: 1px;
+	-webkit-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+	border-bottom: 1px solid #ddd;
+	-webkit-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+}
+.f-g .f-ipt:last-child:after {
+	display: none;
+}
+
+/*  ==========================================================================  */
+
+.f-icon {
+	padding-left: 44px;
+}
+.f-icon i {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #999;
+}
+
+/*  ==========================================================================  */
+
+.f-s-bar {
+	position: relative;
+	padding: 7px 0;
+	overflow: hidden;
+	background-color: #eee;
+}
+.f-s-bar .f-ipt {
+	position: relative;
+	margin-bottom: 0;
+	background-color: transparent;
+	transition: all .2s;
+}
+.f-s input {
+	padding: 3px 10px 3px 30px;
+}
+.f-s-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	line-height: 30px;
+	text-align: center;
+	color: #999;
+	pointer-events: none;
+}
+.f-s-text i {
+	font-size: 16px;
+	vertical-align: -1px;
+}
+.f-s-icon {
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	z-index: 1;
+	font-size: 18px;
+	opacity: 0;
+	color: #999;
+}
+.f-s-cancel {
+	position: absolute;
+	top: 7px;
+	right: -50px;
+	padding-left: 10px;
+	line-height: 30px;
+	font-size: 14px;
+	transition: all .2s;
+}
+.f-s.active .f-ipt {
+	padding-right: 48px;
+}
+.f-s.active .f-s-text {
+	display: none;
+}
+.f-s.active .f-s-icon {
+	opacity: 1;
+}
+.f-s.active .f-s-cancel {
+	right: 10px;
+}
+.f-s .l {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: none;
+	box-shadow: 0 1px 6px rgba(0,0,0,.08);
+}

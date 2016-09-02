@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>布局</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.ho {
+			margin-right: -20px;
+		}
+		.ho-m-6 {
+			padding-right: 20px;
+		}
+	</style>
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+
+
+		<h4>基本面板-圆角/阴影<small>panel panel-default panel-radius box-shadow</small></h4>
+		<div class="demo">
+			<div class="panel panel-default panel-radius box-shadow">
+				<div class="panel-box">面板内容</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="panel panel-default panel-radius box-shadow">
+	&lt;div class="panel-box">面板内容&lt;/div>
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>面板组<small>panel</small></h4>
+		<div class="demo">
+			<div class="panel panel-default">
+				<div class="panel-hd">面板标题</div>
+				<div class="panel-box">面板内容</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="panel panel-default">
+	&lt;div class="panel-hd">面板标题&lt;/div>
+	&lt;div class="panel-box">面板内容&lt;/div>
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>面板组颜色<small>panel</small></h4>
+		<div class="demo">
+			<div class="ho">
+				<div class="ho-m-6">
+					<div class="panel panel-green">
+						<div class="panel-hd">pabel-green</div>
+						<div class="panel-box">面板内容</div>
+					</div>
+				</div>
+				<div class="ho-m-6">
+					<div class="panel panel-yellow">
+						<div class="panel-hd">pabel-yellow</div>
+						<div class="panel-box">面板内容</div>
+					</div>
+				</div>
+
+				<div class="ho-m-6">
+					<div class="panel panel-red">
+						<div class="panel-hd">pabel-red</div>
+						<div class="panel-box">面板内容</div>
+					</div>
+				</div>
+
+				<div class="ho-m-6">
+					<div class="panel panel-primary">
+						<div class="panel-hd">pabel-primary</div>
+						<div class="panel-box">面板内容</div>
+					</div>
+				</div>
+
+				<div class="ho-m-6">
+					<div class="panel panel-blue">
+						<div class="panel-hd">pabel-blue</div>
+						<div class="panel-box">面板内容</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="ho">
+	&lt;div class="ho-m-6">
+		&lt;div class="panel panel-green">
+			&lt;div class="panel-hd">pabel-green&lt;/div>
+			&lt;div class="panel-box">面板内容&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="ho-m-6">
+		&lt;div class="panel panel-yellow">
+			&lt;div class="panel-hd">pabel-yellow&lt;/div>
+			&lt;div class="panel-box">面板内容&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="ho-m-6">
+		&lt;div class="panel panel-red">
+			&lt;div class="panel-hd">pabel-red&lt;/div>
+			&lt;div class="panel-box">面板内容&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="ho-m-6">
+		&lt;div class="panel panel-primary">
+			&lt;div class="panel-hd">pabel-primary&lt;/div>
+			&lt;div class="panel-box">面板内容&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="ho-m-6">
+		&lt;div class="panel panel-blue">
+			&lt;div class="panel-hd">pabel-blue&lt;/div>
+			&lt;div class="panel-box">面板内容&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>标题<small>&lt;h1&gt;-&lt;h6&gt;</small></h4>
+		<div class="demo">
+			<h1>有内容的标题<small>副标题</small></h1>
+			<h2>有内容的标题<small>副标题</small></h2>
+			<h3>有内容的标题<small>副标题</small></h3>
+			<h4>有内容的标题<small>副标题</small></h4>
+			<h5>有内容的标题<small>副标题</small></h5>
+			<h6>有内容的标题<small>副标题</small></h6>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;h1>有内容的标题&lt;small>副标题&lt;/small>&lt;/h1>
+...
+&lt;h6>有内容的标题&lt;small>副标题&lt;/small>&lt;/h6></code></pre>
+		</div>
+
+
+		<h4>段落<small>&lt;p&gt;</small></h4>
+		<div class="demo">
+			<p>从前有座山，山上有座庙，庙里有个和尚讲故事...</p>
+			<p>从前有座山，山上有座庙，庙里有个和尚讲故事...</p>
+			<p>从前有座山，山上有座庙，庙里有个和尚讲故事...</p>
+			<p>从前有座山，山上有座庙，庙里有个和尚讲故事...</p>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;p>从前有座山，山上有座庙，庙里有个和尚讲故事...&lt;/p>
+...</code></pre>
+		</div>
+
+
+		<h4>文本样式<small>&lt;del&gt; | &lt;ins&gt; | &lt;small&gt; | &lt;b&gt; | &lt;em&gt;</small></h4>
+		<div class="demo">
+			<del>被遗忘的文字</del><br>
+			<ins>这是新来的吧</ins><br>
+			<small>你们都是大哥大</small><br>
+			<b>我是重量级的</b><br>
+			<em>我怎么倾斜了</em>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;del>被遗忘的文字&lt;/del>&lt;br>
+&lt;ins>这是新来的吧&lt;/ins>&lt;br>
+&lt;small>你们都是大哥大&lt;/small>&lt;br>
+&lt;b>我是重量级的&lt;/b>&lt;br>
+&lt;em>我怎么倾斜了&lt;/em></code></pre>
+		</div>
+
+
+		<h4>文本对齐<small>添加类：tac | tal |  tar |  twn</small></h4>
+		<div class="demo">
+			<p class="tac">文本居中</p>
+			<p class="tal">文本居左</p>
+			<p class="tar">文本居右</p>
+			<p class="taj">两端对齐</p>
+			<p class="twn">不换行哦不信你看！=================================================================================不换行哦不信你看！</p>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;p class="tac">文本居中&lt;/p>
+&lt;p class="tal">文本居左&lt;/p>
+&lt;p class="tar">文本居右&lt;/p>
+&lt;p class="taj">两端对齐&lt;/p>
+&lt;p class="twn">不换行哦不信你看！=================================================================================不换行哦不信你看！&lt;/p></code></pre>
+		</div>
+
+
+		<h4>大小写转换<small>添加类：text-uppercase | text-lowercase | text-capitalize</small></h4>
+		<div class="demo">
+			<p class="text-uppercase">大写like ui </p>
+			<p class="text-lowercase">小写like ui </p>
+			<p class="text-capitalize">驼峰like ui </p>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;p class="text-uppercase">大写like ui &lt;/p>
+&lt;p class="text-lowercase">小写like ui &lt;/p>
+&lt;p class="text-capitalize">驼峰like ui &lt;/p></code></pre>
+		</div>
+
+
+		<h4>文本溢出<small>添加类：ellipsis | ellipsis-2</small></h4>
+		<div class="demo">
+			<p class="ellipsis" style="width: 180px;">我就能显示一行,多了就显示不开了</p>
+			<p class="ellipsis-2" style="width: 180px;">我就能显示两行,多了就显示不开了！不信你看============</p>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;p class="ellipsis" style="width: 180px;">我就能显示一行,多了就显示不开了&lt;/p>
+&lt;p class="ellipsis-2" style="width: 180px;">我就能显示两行,多了就显示不开了！不信你看============&lt;/p></code></pre>
+		</div>
+
+
+		<h4>缩略语<small>&lt;abbr&gt; || &lt;dfn&gt;,需要添加title描述</small></h4>
+		<div class="demo">
+			<p>勇敢勇敢我的朋友，就算明天没有<abbr title="彩虹">彩虹</abbr></p>
+			<p>阳光总会在<dfn title="风雨后">风雨后</dfn></p>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;p>勇敢勇敢我的朋友，就算明天没有&lt;abbr title="彩虹">彩虹&lt;/abbr>&lt;/p>
+&lt;p>阳光总会在&lt;dfn title="风雨后">风雨后&lt;/dfn>&lt;/p></code></pre>
+		</div>
+
+
+		<h4>有序列表<small>ol>li</small></h4>
+		<div class="demo">
+			<ol>
+				<li>你好，我是有序列表</li>
+				<li>你好，我是有序列表</li>
+				<li>你好，我是有序列表</li>
+			</ol>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ol>
+	&lt;li>你好，我是有序列表&lt;/li>
+	&lt;li>你好，我是有序列表&lt;/li>
+	&lt;li>你好，我是有序列表&lt;/li>
+&lt;/ol></code></pre>
+		</div>
+
+
+		<h4>无序列表<small>ul>li</small></h4>
+		<div class="demo">
+			<ul>
+				<li>你好，我是无序列表</li>
+				<li>你好，我是无序列表</li>
+				<li>你好，我是无序列表</li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul>
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+
+		<h4>嵌套列表</h4>
+		<div class="demo">
+			<ul>
+				<li>你好，我是嵌套列表</li>
+				<li>你好，我是嵌套列表</li>
+				<li>你好，我是嵌套列表
+					<ul>
+						<li>好啊</li>
+						<li>好啊</li>
+					</ul>
+					<ol>
+						<li>不错不错</li>
+						<li>不错不错</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul>
+	&lt;li>你好，我是嵌套列表&lt;/li>
+	&lt;li>你好，我是嵌套列表&lt;/li>
+	&lt;li>你好，我是嵌套列表
+		&lt;ul>
+			&lt;li>好啊&lt;/li>
+			&lt;li>好啊&lt;/li>
+		&lt;/ul>
+		&lt;ol>
+			&lt;li>不错不错&lt;/li>
+			&lt;li>不错不错&lt;/li>
+		&lt;/ol>
+	&lt;/li>
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>无样式列表<small>添加类：list-none</small></h4>
+		<div class="demo">
+			<ul class="list-none">
+				<li>你好，我是嵌套列表</li>
+				<li>你好，我是嵌套列表</li>
+				<li>你好，我是嵌套列表</li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="list-none">
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>内联列表<small>添加类：list-inline</small></h4>
+		<div class="demo">
+			<ul class="list-inline">
+				<li>你好，我是嵌套列表</li>
+				<li>你好，我是嵌套列表</li>
+				<li>你好，我是嵌套列表</li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="list-inline">
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>描述<small>dl-dt+dd</small></h4>
+		<div class="demo">
+			<dl>
+				<dt>这里是标题</dt>
+				<dd>小丫么小儿郎，背着书包上学堂</dd>
+			</dl>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;dl>
+	&lt;dt>这里是标题&lt;/dt>
+	&lt;dd>小丫么小儿郎，背着书包上学堂&lt;/dd>
+&lt;/dl></code></pre>
+		</div>
+
+
+		<h4>水平描述<small>dl-horizontal</small></h4>
+		<div class="demo">
+			<dl class="dl-horizontal">
+				<dt>这里是标题</dt>
+				<dd>小丫么小儿郎，背着书包上学堂</dd>
+			</dl>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;dl class="dl-horizontal">
+	..
+&lt;/dl></code></pre>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

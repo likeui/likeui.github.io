@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<link rel="stylesheet" href="css/kui.css">
+	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
+</head>
+<body ontouchstart>
+	
+	<div class="header">
+		<i class="i-menu nav-menu"></i>
+		<div class="nav-logo">
+			<img src="images/kui-logo.png">
+		</div>
+	</div>
+
+	<div class="side">
+		<div class="logo">
+			<img class="k-img" src="images/kui-logo.png">
+		</div>
+
+		<ul class="n">
+			<li>
+				<a href="index.html">首 页</a>
+			</li>
+			<li>
+				<a href="base.html">基 础</a>
+			</li>
+			<li class="active">
+				<a href="grid.html">网 格</a>
+			</li>
+			<li>
+				<a href="anime.html">动 画</a>
+			</li>
+			<li>
+				<a href="button.html">按 钮</a>
+			</li>
+			<li>
+				<a href="color.html">颜 色</a>
+			</li>
+			<li>
+				<a href="form.html">表 单</a>
+			</li>
+			<li>
+				<a href="icon.html">图 标</a>
+			</li>
+			<li>
+				<a href="table.html">表 格</a>
+			</li>
+		</ul>
+
+		<div class="k-ml k-mr u-b"></div>
+
+		<div class="link k-tac">
+			<a class="b b-bc-g">下载 KUI+</a>
+			<div class="k-mt k-h6">当前版本 1.0</div>
+		</div>
+	</div><!--end side-->
+
+
+	<div class="main grid">
+		<div class="k-container">
+
+			
+			<div class="main-top">
+				<h2>
+					网格
+					<small class="">
+						Grid
+					</small>
+				</h2>
+				<p>
+					所有网格类以
+					<span class="k-label k-bc-h">G</span>
+					开头
+				</p>
+				<p>
+					使用CSS3的媒体查询进行响应式布局，仅支持现代浏览器
+				</p>
+			</div><!--end main-top-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					响应式断点
+				</div>
+				<div class="l-row">
+					<table class="t">
+						<thead>
+							<tr>
+								<th>大小</th>
+								<th>断点</th>
+								<th>设备</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>g-[1-12]</td>
+								<td>all</td>
+								<td>all</td>
+							</tr>
+							<tr>
+								<td>g-s-[1-12]</td>
+								<td>768px-1023px</td>
+								<td>平板电脑纵向</td>
+							</tr>
+							<tr>
+								<td>g-m-[1-12]</td>
+								<td>1024px-1279px</td>
+								<td>台式机或平板电脑横向</td>
+							</tr>
+							<tr>
+								<td>g-l-[1-12]</td>
+								<td>1280px +</td>
+								<td>大屏幕设备</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					基本样式
+					<small>
+						class：
+						g-[1-12] || 
+						g-[s || m || l]-[1-12]
+					</small>
+				</div>
+				<div class="l-row">
+					<h6>
+						网格系统最多可容纳12个网格列，遵循移动优先！如果仅使用 <code>g-[1-12]</code> 则会在任何设备都统一样式。使用方式如下：
+					</h6>
+					<div class="demo">
+						<div class="g">
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g">
+	&lt;div class="g-4">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	......
+&lt;/div></pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					删除间隔
+					<small>
+						class：g-del
+					</small>
+				</div>
+				<div class="l-row">
+					<h6>
+						默认情况下会有固定左边距15px，不需要内边距时可以添加类
+						<code>.g-del</code>
+					</h6>
+					<div class="demo">
+						<div class="g g-del">
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-del">
+	&lt;div class="g-4">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	......
+&lt;/div></pre>
+					</div>
+				</div>
+			</div><!--end l-->
+			
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					大间隔
+					<small>
+						class：g-lar
+					</small>
+				</div>
+				<div class="l-row">
+					<h6>
+						如果需要大一些的间隔，可以使用
+						<code>.g-lar</code>
+						它的内边距为30px
+					</h6>
+					<div class="demo">
+						<div class="g g-lar">
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-lar">
+	&lt;div class="g-4">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	......
+&lt;/div></pre>
+					</div>
+				</div>
+			</div><!--end l-->
+			
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					响应式间隔
+					<small>
+						class：g-res
+					</small>
+				</div>
+				<div class="l-row">
+					<h6>
+						响应式边距
+						<code>.g-res</code>
+						默认左边距为15px，会在屏幕分辨率大于768时，边距变为30px
+					</h6>
+					<div class="demo">
+						<div class="g g-res">
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-res">
+	&lt;div class="g-4">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	......
+&lt;/div></pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					响应式网格
+				</div>
+				<div class="l-row">
+					<h6>
+						本示例在
+						<code>s</code>
+						断点下为1:2平均分割，在
+						<code>m</code>
+						断点下为1:3分割，在
+						<code>l</code>
+						断点下为1:4分割
+					</h6>
+					<div class="demo">
+						<div class="g">
+							<div class="g-s-6 g-m-4 g-l-3">
+								<div class="bc-a k-pd">
+									g-s-6 g-m-4 g-l-3
+								</div>
+							</div>
+							<div class="g-s-6 g-m-4 g-l-3">
+								<div class="bc-a k-pd">
+									g-s-6 g-m-4 g-l-3
+								</div>
+							</div>
+							<div class="g-s-6 g-m-4 g-l-3">
+								<div class="bc-a k-pd">
+									g-s-6 g-m-4 g-l-3
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g">
+	&lt;div class="g-s-6 g-m-4 g-l-3">
+		&lt;div class="bc-a k-pd">
+			g-s-6 g-m-4 g-l-3
+		&lt;/div>
+	&lt;/div>
+	......
+&lt;/div></pre>
+					</div>
+					<h6>
+						<label class="k-label bc-c">说明</label>
+						可以通过调整浏览器大小查看效果
+					</h6>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					网格居中
+				</div>
+				<div class="l-row">
+					<h6>
+						需要与全局样式
+						<code>.k-container-cen</code>
+						配合使用
+					</h6>
+					<div class="demo">
+						<div class="g-6 k-container-cen">
+							<div class="bc-a k-pd">
+								g-6
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g-6 k-container-cen">
+	&lt;div class="bc-a k-pd">
+		g-6
+	&lt;/div>
+&lt;/div>
+</pre>
+					</div>
+					<h6>
+						<label class="k-label bc-c">说明</label> 
+						网格居中不可在父级是
+						<code>.g</code>
+						容器下使用，否则将会有左浮动。
+					</h6>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					九宫格
+					<small>
+						class：g-col
+					</small>
+				</div>
+				<div class="l-row">
+					<h6>
+						添加类
+						<code>.g-col</code>
+						来表示九宫格
+					</h6>
+					<div class="g g-col g-lar">
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+					</div>
+<pre class="prettyprint beige">
+&lt;div class="g g-col">
+	&lt;div class="g-4">
+		&lt;div class="k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	......
+&lt;/div>
+</pre>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l l-hoz">
+				<div class="l-top">
+					网格偏移
+				</div>
+				<div class="l-row">
+					<h6>
+						使用类
+						<code>.g-push-*</code>
+						使网格列向左偏移，
+						<code>.g-pull-*</code>
+						使网格列向右偏移
+					</h6>
+					<div class="demo">
+						<div class="g">
+							<div class="g-4 g-push-6">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4 g-pull-2">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+						</div>
+						<div class="g">
+							<div class="g-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+							<div class="g-4 g-push-4">
+								<div class="bc-a k-pd">
+									g-4
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g">
+	&lt;div class="g-4 g-push-6">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="g-4 g-pull-2">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+&lt;div class="g">
+	&lt;div class="g-4">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="g-4 g-push-4">
+		&lt;div class="bc-a k-pd">
+			g-4
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+</pre>
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+		</div><!--end k-container-->
+	</div><!--end main-->
+	
+	<div class="main-shade"></div>
+
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript" src="../js/prettify.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			prettyPrint();
+		}
+	</script>
+</body>
+</html>

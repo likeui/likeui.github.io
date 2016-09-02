@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>导航</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+		<h4>普通导航<small>nav</small></h4>
+		<div class="demo">
+			<ul class="nav">
+				<li><a href="">首页</a></li>
+				<li class="active"><a href="javascript:;">个人中心</a></li>
+				<li><a href="">用户中心</a></li>
+				<li class="nav-divider"></li>
+				<li class="disabled"><a href="javascript:;">禁用</a></li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="nav">
+	&lt;li>&lt;a href="">首页&lt;/a>&lt;/li>
+	&lt;li class="active">&lt;a href="javascript:;">个人中心&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="">用户中心&lt;/a>&lt;/li>
+	&lt;li class="nav-divider">&lt;/li>
+	&lt;li class="disabled">&lt;a href="javascript:;">禁用&lt;/a>&lt;/li>
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>选中背景<small>shadow</small></h4>
+		<div class="demo">
+			<ul class="nav shadow">
+				<li><a href="">首页</a></li>
+				<li class="active"><a href="javascript:;">个人中心</a></li>
+				<li><a href="">用户中心</a></li>
+				<li class="nav-divider"></li>
+				<li class="disabled"><a href="javascript:;">禁用</a></li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="nav shadow">
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>胶囊导航<small>nav-pills</small></h4>
+		<div class="demo">
+			<ul class="nav nav-pills">
+				<li><a href="">首页</a></li>
+				<li class="active"><a href="javascript:;">首页</a></li>
+				<li><a href="">首页</a></li>
+				<li class="nav-divider"></li>
+				<li class="disabled"><a href="javascript:;">首页</a></li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="nav nav-pills">
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>胶囊导航<small>nav-pills shadow</small></h4>
+		<div class="demo">
+			<ul class="nav nav-pills shadow">
+				<li><a href="">首页</a></li>
+				<li class="active"><a href="javascript:;">首页</a></li>
+				<li><a href="">首页</a></li>
+				<li class="nav-divider"></li>
+				<li class="disabled"><a href="javascript:;">首页</a></li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="nav nav-pills shadow">
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>标签式导航<small>nav-tabs</small></h4>
+		<div class="demo">
+			<ul class="nav nav-tabs">
+				<li><a href="">首页</a></li>
+				<li class="active"><a href="javascript:;">首页</a></li>
+				<li><a href="">首页</a></li>
+				<li class="disabled"><a href="javascript:;">首页</a></li>
+			</ul>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;ul class="nav nav-tabs">
+	...
+&lt;/ul></code></pre>
+		</div>
+
+
+		<h4>导航条<small>navbar</small></h4>
+		<div class="demo">
+			<header class="navbar">
+				<div class="container">
+					<h1 class="navbar-brand"><a href="">你好</a></h1>
+					<button class="navbar-toggle border radius">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="javascript:;">首页</a></li>
+							<li data-id="fixedTop"><a href="javascript:;">点击这里可以定位</a></li>
+							<li class="nav-divider"></li>
+							<li class="disabled"><a href="javascript:;">首页</a></li>
+							<li data-id="removeFixed"><a href="javascript:;">取消定位</a></li>
+						</ul>
+						<form class="navbar-form navbar-right">
+							<div class="form-group">
+								<input class="form-ipt" type="text"/>
+							</div>
+							<div class="form-group">
+								<button class="btn btn-block green">搜索</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;header class="navbar">
+	&lt;div class="container">
+		&lt;h1 class="navbar-brand">&lt;a href="">你好&lt;/a>&lt;/h1>
+		&lt;button class="navbar-toggle border radius">
+			&lt;span class="icon-bar">&lt;/span>
+			&lt;span class="icon-bar">&lt;/span>
+			&lt;span class="icon-bar">&lt;/span>
+		&lt;/button>
+		&lt;div class="navbar-collapse">
+			&lt;ul class="nav navbar-nav">
+				&lt;li class="active">&lt;a href="javascript:;">首页&lt;/a>&lt;/li>
+				&lt;li data-id="fixedTop">&lt;a href="javascript:;">点击这里可以定位&lt;/a>&lt;/li>
+				&lt;li class="nav-divider">&lt;/li>
+				&lt;li class="disabled">&lt;a href="javascript:;">首页&lt;/a>&lt;/li>
+				&lt;li data-id="removeFixed">&lt;a href="javascript:;">取消定位&lt;/a>&lt;/li>
+			&lt;/ul>
+			&lt;form class="navbar-form navbar-right">
+				&lt;div class="form-group">
+					&lt;input class="form-ipt" type="text"/>
+				&lt;/div>
+				&lt;div class="form-group">
+					&lt;button class="btn btn-block green">搜索&lt;/button>
+				&lt;/div>
+			&lt;/form>
+		&lt;/div>
+	&lt;/div>
+&lt;/header></code></pre>
+		</div>
+
+
+		<h4>导航条<small>navbar | navbar-inverse | nav-search</small></h4>
+		<div class="demo">
+			<header class="navbar">
+				<div class="container">
+					<h1 class="navbar-brand"><a href="">你好</a></h1>
+					<button class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-collapse">
+						<ul class="nav navbar-nav shadow primary">
+							<li class="active"><a href="javascript:;">首页</a></li>
+							<li data-id="fixedTop"><a href="javascript:;">点击这里可以定位</a></li>
+							<li class="nav-divider"></li>
+							<li class="disabled"><a href="javascript:;">首页</a></li>
+							<li data-id="removeFixed"><a href="javascript:;">取消定位</a></li>
+						</ul>
+						<form class="navbar-form navbar-right nav-search">
+							<div class="form-group">
+								<input class="form-ipt round" type="text"/>
+							</div>
+							<div class="form-group search-btn">
+								<i class="icon-search"></i>
+							</div>
+						</form>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;header class="navbar">
+	&lt;div class="container">
+		&lt;h1 class="navbar-brand">&lt;a href="">你好&lt;/a>&lt;/h1>
+		&lt;button class="navbar-toggle">
+			&lt;span class="icon-bar">&lt;/span>
+			&lt;span class="icon-bar">&lt;/span>
+			&lt;span class="icon-bar">&lt;/span>
+		&lt;/button>
+		&lt;div class="navbar-collapse">
+			&lt;ul class="nav navbar-nav shadow primary">
+				&lt;li class="active">&lt;a href="javascript:;">首页&lt;/a>&lt;/li>
+				&lt;li data-id="fixedTop">&lt;a href="javascript:;">点击这里可以定位&lt;/a>&lt;/li>
+				&lt;li class="nav-divider">&lt;/li>
+				&lt;li class="disabled">&lt;a href="javascript:;">首页&lt;/a>&lt;/li>
+				&lt;li data-id="removeFixed">&lt;a href="javascript:;">取消定位&lt;/a>&lt;/li>
+			&lt;/ul>
+			&lt;form class="navbar-form navbar-right nav-search">
+				&lt;div class="form-group">
+					&lt;input class="form-ipt round" type="text"/>
+				&lt;/div>
+				&lt;div class="form-group search-btn">
+					&lt;i class="icon-search">&lt;/i>
+				&lt;/div>
+			&lt;/form>
+		&lt;/div>
+	&lt;/div>
+&lt;/header></code></pre>
+		</div>
+
+
+		<h4>导航条<small>navbar | navbar-inverse | nav-search</small></h4>
+		<div class="demo">
+			<div class="container">
+				<header class="navbar navbar-inverse">
+					<h1 class="navbar-brand"><a href="">你好</a></h1>
+					<button class="navbar-toggle border radius">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-collapse">
+						<ul class="nav navbar-nav primary">
+							<li class="active"><a href="javascript:;">首页</a></li>
+							<li data-id="fixedTop"><a href="javascript:;">点击这里可以定位</a></li>
+							<li class="nav-divider"></li>
+							<li class="disabled"><a href="javascript:;">首页</a></li>
+							<li data-id="removeFixed"><a href="javascript:;">取消定位</a></li>
+						</ul>
+						<form class="navbar-form navbar-right nav-search">
+							<div class="form-group">
+								<input class="form-ipt round" type="text"/>
+							</div>
+							<div class="form-group search-btn">
+								<i class="icon-search"></i>
+							</div>
+						</form>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class="html">&lt;div class="container">
+	&lt;header class="navbar navbar-inverse">
+		&lt;h1 class="navbar-brand">&lt;a href="">你好&lt;/a>&lt;/h1>
+		&lt;button class="navbar-toggle border radius">
+			&lt;span class="icon-bar">&lt;/span>
+			&lt;span class="icon-bar">&lt;/span>
+			&lt;span class="icon-bar">&lt;/span>
+		&lt;/button>
+		&lt;div class="navbar-collapse">
+			&lt;ul class="nav navbar-nav primary">
+				&lt;li class="active">&lt;a href="javascript:;">首页&lt;/a>&lt;/li>
+				&lt;li data-id="fixedTop">&lt;a href="javascript:;">点击这里可以定位&lt;/a>&lt;/li>
+				&lt;li class="nav-divider">&lt;/li>
+				&lt;li class="disabled">&lt;a href="javascript:;">首页&lt;/a>&lt;/li>
+				&lt;li data-id="removeFixed">&lt;a href="javascript:;">取消定位&lt;/a>&lt;/li>
+			&lt;/ul>
+			&lt;form class="navbar-form navbar-right nav-search">
+				&lt;div class="form-group">
+					&lt;input class="form-ipt round" type="text"/>
+				&lt;/div>
+				&lt;div class="form-group search-btn">
+					&lt;i class="icon-search">&lt;/i>
+				&lt;/div>
+			&lt;/form>
+		&lt;/div>
+	&lt;/header>
+&lt;/div></code></pre>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script>
+	$("[data-id='fixedTop']").click(function(event) {
+		var tpar = $(this).parents('.navbar');
+		tpar.addClass('navbar-fixed-top border');
+		$("body").addClass('with-navbar-fixed-top');
+	});
+	$("[data-id=removeFixed]").click(function(event) {
+		var tpar = $(this).parents('.navbar');
+		tpar.removeClass('navbar-fixed-top border');
+		$("body").removeClass('with-navbar-fixed-top');
+	});
+</script>
+</body>
+</html>

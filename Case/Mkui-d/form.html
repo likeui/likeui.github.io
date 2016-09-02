@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>表单</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/button.css">
+
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+		<h4>默认输入框<small>如果不在类form里，则需要为输入框添加类form-ipt</small> </h4>
+		<div class="demo">
+			<input class="form-ipt" type="text" placeholder="默认输入框">
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;input class="form-ipt" type="text" placeholder="默认输入框"></code></pre>
+		</div>
+		
+		<h4>文件域<small>form-file</small> </h4>
+		<div class="demo">
+			<div class="ipt-group form-file">
+				<button type="button" class="btn noble radius">
+					<i class="icon-cloud-upload"></i> 选择要上传的文件</button>
+				<input type="file" multiple>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="ipt-group form-file">
+	&lt;button type="button" class="btn noble radius">
+		&lt;i class="icon-cloud-up">&lt;/i>
+		选择要上传的文件
+	&lt;/button>
+	&lt;input type="file" multiple>
+&lt;/div></code></pre>
+		</div>
+
+		<h4>文本域<small>在外层容器没有添加类：form时，需添加类：form-ipt</small> </h4>
+		<div class="demo">
+			<textarea class="form-ipt" rows="5" placeholder="默认文本域"></textarea>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;textarea class="form-ipt" rows="5" placeholder="默认文本域">&lt;/textarea></code></pre>
+		</div>
+
+		<h4>下拉列表<small>select</small> </h4>
+		<div class="demo">
+			<select class="form-ipt">
+				<option>选项一</option>
+				<option>选项二</option>
+				<option>选项三</option>
+			</select>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;select class="form-ipt">
+	&lt;option>选项一&lt;/option>
+	&lt;option>选项二&lt;/option>
+	&lt;option>选项三&lt;/option>
+&lt;/select></code></pre>
+		</div>
+
+		<h4>单选框<small>radio</small> </h4>
+		<div class="demo">
+			<label class="radio" for="lb1">
+				<input  type="radio" id="lb1">这是独占一行的单选框
+			</label>
+
+			<hr>
+
+			<label class="radio-inline" for="lb2">
+				<input type="radio" id="lb2" name="radio">这是一行多个的单选框
+			</label>
+			<label class="radio-inline" for="lb3">
+				<input type="radio" id="lb3" name="radio">这是一行多个的单选框
+			</label>
+			<label class="radio-inline" for="lb4">
+				<input type="radio" id="lb4" name="radio">这是一行多个的单选框
+			</label>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;label class="radio" for="lb1">
+	&lt;input  type="radio" id="lb1">这是独占一行的单选框
+&lt;/label>
+
+&lt;hr>
+
+&lt;label class="radio-inline" for="lb2">
+	&lt;input type="radio" id="lb2" name="radio">这是一行多个的单选框
+&lt;/label>
+&lt;label class="radio-inline" for="lb3">
+	&lt;input type="radio" id="lb3" name="radio">这是一行多个的单选框
+&lt;/label>
+&lt;label class="radio-inline" for="lb4">
+	&lt;input type="radio" id="lb4" name="radio">这是一行多个的单选框
+&lt;/label></code></pre>
+		</div>
+
+		
+		<h4>复选框<small>checkbox</small> </h4>
+		<div class="demo">
+			<label class="checkbox" for="ck1">
+				<input  type="checkbox" id="ck1">这是独占一行的单选框
+			</label>
+
+			<hr>
+
+			<label class="checkbox-inline" for="ck2">
+				<input type="checkbox" id="ck2" name="checkbox">这是一行多个的单选框
+			</label>
+			<label class="checkbox-inline" for="ck3">
+				<input type="checkbox" id="ck3" name="checkbox">这是一行多个的单选框
+			</label>
+			<label class="checkbox-inline" for="ck4">
+				<input type="checkbox" id="ck4" name="checkbox">这是一行多个的单选框
+			</label>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;label class="checkbox" for="lb1">
+	&lt;input  type="checkbox" id="lb1">这是独占一行的单选框
+&lt;/label>
+
+&lt;hr>
+
+&lt;label class="checkbox-inline" for="lb2">
+	&lt;input type="checkbox" id="lb2">这是一行多个的单选框
+&lt;/label>
+&lt;label class="checkbox-inline" for="lb3">
+	&lt;input type="checkbox" id="lb3">这是一行多个的单选框
+&lt;/label>
+&lt;label class="checkbox-inline" for="lb4">
+	&lt;input type="checkbox" id="lb4">这是一行多个的单选框
+&lt;/label></code></pre>
+		</div>
+
+
+		<h4>禁用表单<small>disabled</small> </h4>
+		<div class="demo">
+			<input class="form-ipt" type="text" placeholder="disabled" disabled>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;input class="form-ipt" type="text" placeholder="disabled" disabled></code></pre>
+		</div>
+
+
+		<h4>禁用域<small>添加fieldset标签，设置属性disabled</small> </h4>
+		<div class="demo">
+			<fieldset disabled class="form">
+				<div class="ipt-group">
+					<input class="form-ipt" type="text" placeholder="禁用的文本框">
+				</div>
+				<div class="ipt-group">
+					<select class="form-ipt">
+						<option>禁止选择我</option>
+					</select>
+				</div>
+				<div class="ipt-group">
+					<label class="checkbox">
+						<input type="checkbox"> 无法选中的复选框
+					</label>
+				</div>
+				<button class="btn gray" type="submit">Submit</button>
+			</fieldset>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;fieldset disabled>
+	&lt;div class="ipt-group">
+		&lt;input class="form-ipt" type="text" placeholder="禁用的文本框">
+	&lt;/div>
+	&lt;div class="ipt-group">
+		&lt;select class="form-ipt">
+			&lt;option>禁止选择我&lt;/option>
+		&lt;/select>
+	&lt;/div>
+	&lt;div class="ipt-group">
+		&lt;label class="checkbox">
+			&lt;input type="checkbox"> 无法选中的复选框
+		&lt;/label>
+	&lt;/div>
+	&lt;button class="btn gray" type="submit">Submit&lt;/button>
+&lt;/fieldset></code></pre>
+		</div>
+
+
+		<h4>表单排列<small>form-horizontal</small> </h4>
+		<div class="demo">
+			<form class="form form-horizontal">
+			    <div class="ipt-group">
+				    <label class="ho-m-4 ho-m-2 form-label">电子邮件</label>
+				    <div class="ho-m-8 ho-m-10">
+				        <input type="email" placeholder="输入你的电子邮件">
+				    </div>
+			    </div>
+			    <div class="ipt-group">
+				    <label for="doc-ipt-pwd-2" class="ho-m-4 ho-m-2 form-label">密码</label>
+				    <div class="ho-m-8 ho-m-10">
+				        <input type="password" id="doc-ipt-pwd-2" placeholder="设置一个密码吧">
+				    </div>
+			    </div>
+			    <div class="ipt-group">
+				    <div class="ho-m-offset-4 ho-m-8 ho-m-offset-2 ho-m-10">
+			            <label class="checkbox-inline">
+			                <input type="checkbox"> 记住十万年
+			        	</label>
+				    </div>
+			    </div>
+			    <div class="ipt-group">
+				    <div class="ho-m-offset-4 ho-m-8 ho-m-offset-2 ho-m-10">
+				        <button class="btn orange" type="submit">提交登入</button>
+				    </div>
+			    </div>
+			</form>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;form class="form form-horizontal">
+    &lt;div class="ipt-group">
+	    &lt;label class="ho-s-4 ho-m-2 form-label">电子邮件&lt;/label>
+	    &lt;div class="ho-s-8 ho-m-10">
+	        &lt;input type="email" placeholder="输入你的电子邮件">
+	    &lt;/div>
+    &lt;/div>
+    &lt;div class="ipt-group">
+	    &lt;label for="doc-ipt-pwd-2" class="ho-s-4 ho-m-2 form-label">密码&lt;/label>
+	    &lt;div class="ho-s-8 ho-m-10">
+	        &lt;input type="password" id="doc-ipt-pwd-2" placeholder="设置一个密码吧">
+	    &lt;/div>
+    &lt;/div>
+    &lt;div class="ipt-group">
+	    &lt;div class="ho-s-offset-4 ho-s-8 ho-m-offset-2 ho-m-10">
+            &lt;label class="checkbox-inline">
+                &lt;input type="checkbox"> 记住十万年
+        	&lt;/label>
+	    &lt;/div>
+    &lt;/div>
+    &lt;div class="ipt-group">
+	    &lt;div class="ho-s-offset-4 ho-s-8 ho-m-offset-2 ho-m-10">
+	        &lt;button type="submit" class="btn orange">提交登入&lt;/button>
+	    &lt;/div>
+    &lt;/div>
+&lt;/form></code></pre>
+		</div>
+
+
+		<h4>行内排列<small>form-inline</small> </h4>
+		<div class="demo">
+			<div class="form-inline">
+			    <div class="ipt-group">
+			    	<label class="form-label">手机号</label>
+			        <input class="form-ipt" type="password" placeholder="手机号">
+			    </div>
+			    <div class="ipt-group">
+		            <label class="checkbox">
+		                <input type="checkbox"> 记住我
+		        	</label>
+			    </div>
+			    <div class="ipt-group">
+				    <button type="submit" class="btn blue">提交登入</button>
+			    </div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="form-inline">
+    &lt;div class="ipt-group">
+    	&lt;label class="form-label">手机号&lt;/label>
+        &lt;input class="form-ipt" type="password" placeholder="手机号">
+    &lt;/div>
+    &lt;div class="ipt-group">
+        &lt;label class="checkbox">
+            &lt;input type="checkbox">记住我
+    	&lt;/label>
+    &lt;/div>
+    &lt;div class="ipt-group">
+	    &lt;button type="submit" class="btn blue">提交登入&lt;/button>
+    &lt;/div>
+&lt;/div></code></pre>
+		</div>
+
+
+		<h4>控件尺寸<small>input-l | input-m | input-s | input-xs</small> </h4>
+		<div class="demo">
+			<div class="form">
+				<div class="ho">
+				    <div class="ipt-group">
+					    <input type="text" class="input-l" placeholder="输入框">
+					</div>
+				    <div class="ipt-group">
+					    <input type="text" class="input-m" placeholder="输入框">
+					</div>
+				    <div class="ipt-group">
+					    <input type="text" placeholder="输入框">
+					</div>
+				    <div class="ipt-group">
+					    <input type="text" class="input-s" placeholder="输入框">
+					</div>
+				    <div class="ipt-group">
+					    <input type="text" class="input-xs" placeholder="输入框">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="form">
+	&lt;div class="ho">
+	    &lt;div class="ipt-group">
+		    &lt;input type="text" class="input-l" placeholder="输入框">
+		&lt;/div>
+	    &lt;div class="ipt-group">
+		    &lt;input type="text" class="input-m" placeholder="输入框">
+		&lt;/div>
+	    &lt;div class="ipt-group">
+		    &lt;input type="text" placeholder="输入框">
+		&lt;/div>
+	    &lt;div class="ipt-group">
+		    &lt;input type="text" class="input-s" placeholder="输入框">
+		&lt;/div>
+	    &lt;div class="ipt-group">
+		    &lt;input type="text" class="input-xs" placeholder="输入框">
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>	
+		</div>
+
+		<h4>组尺寸<small>ipt-group-l | ipt-group-m | ipt-group-s | ipt-group-xs</small> </h4>
+		<div class="demo">
+			<div class="form-horizontal">
+				<div class="ho">
+				    <div class="ipt-group ipt-group-l">
+					    <label class="ho-m-4 ho-m-2 form-label">标题</label>
+					    <div class="ho-m-8 ho-m-10">
+					        <input class="form-ipt" type="text" placeholder="输入框">
+					    </div>
+					</div>
+				    <div class="ipt-group ipt-group-m">
+					    <label class="ho-m-4 ho-m-2 form-label">标题</label>
+					    <div class="ho-m-8 ho-m-10">
+					        <input class="form-ipt" type="text" placeholder="输入框">
+					    </div>
+					</div>
+				    <div class="ipt-group">
+					    <label class="ho-m-4 ho-m-2 form-label">标题</label>
+					    <div class="ho-m-8 ho-m-10">
+					        <input class="form-ipt" type="text" placeholder="输入框">
+					    </div>
+					</div>
+				    <div class="ipt-group ipt-group-s">
+					    <label class="ho-m-4 ho-m-2 form-label">标题</label>
+					    <div class="ho-m-8 ho-m-10">
+					        <input class="form-ipt" type="text" placeholder="输入框">
+					    </div>
+					</div>
+				    <div class="ipt-group ipt-group-xs">
+					    <label class="ho-m-4 ho-m-2 form-label">标题</label>
+					    <div class="ho-m-8 ho-m-10">
+					        <input class="form-ipt" type="text" placeholder="输入框">
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="form-horizontal">
+	&lt;div class="ho">
+	    &lt;div class="ipt-group ipt-group-l">
+		    &lt;label class="ho-m-4 ho-m-2 form-label">标题&lt;/label>
+		    &lt;div class="ho-m-8 ho-m-10">
+		        &lt;input class="form-ipt" type="text" placeholder="输入框">
+		    &lt;/div>
+		&lt;/div>
+	    &lt;div class="ipt-group ipt-group-m">
+		    ...
+		&lt;/div>
+	    &lt;div class="ipt-group">
+		    ...
+		&lt;/div>
+	    &lt;div class="ipt-group ipt-group-s">
+		    ...
+		&lt;/div>
+	    &lt;div class="ipt-group ipt-group-xs">
+		    ...
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>	
+		</div>
+
+		<h4>输入框组<small>form-set</small> </h4>
+		<div class="demo">
+			<fieldset class="form-set">
+		        <input class="form-ipt" type="text" placeholder="取个名字">
+		        <input class="form-ipt" type="text" placeholder="设个密码">
+		        <input class="form-ipt" type="email" placeholder="填下邮箱">
+		    </fieldset>
+		    <button class="btn btn-block primary">注册账号</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;fieldset class="form-set">
+    &lt;input class="form-ipt" type="text" placeholder="取个名字">
+    &lt;input class="form-ipt" type="text" placeholder="设个密码">
+    &lt;input class="form-ipt" type="email" placeholder="填下邮箱">
+&lt;/fieldset>
+&lt;button class="btn btn-block primary">注册账号&lt;/button></code></pre>	
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

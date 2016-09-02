@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/kui.min.css">
+</head>
+<body ontouchstart>
+
+	<div class="k-container">
+
+		<div>
+			<div class="p-tit">搜索</div>
+			<div class="f-s">
+				<div class="f-s-bar">
+					<i class="f-s-icon icon-search"></i>
+					<div class="f-ipt">
+						<label class="f-s-text">
+							<i class="icon-search"></i>
+							<span>搜索</span>
+						</label>
+						<input type="text">
+					</div>
+					<a class="f-s-cancel">取消</a>
+				</div>
+				<div class="l">	</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				默认输入框
+			</div>
+			<div class="f-ipt">
+				<input type="text" placeholder="这里是默认输入框">
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				带边框的输入框
+			</div>
+			<div class="f-ipt f-border">
+				<input type="text" placeholder="这里是默认输入框">
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				上传按钮
+			</div>
+			<div class="f-ipt f-ipt-file">
+				<span class="f-file-t">上传文件</span>
+				<input type="file" placeholder="这里是默认输入框">
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				日期
+			</div>
+			<div class="f-ipt">
+				<input type="date" value="2015-05-15">
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				下拉列表
+			</div>
+			<div class="f-ipt a-d">
+				<select>
+					<option>下拉列表</option>
+					<option>天桥区</option>
+					<option>历下区</option>
+					<option>市中区</option>
+				</select>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				文本域
+			</div>
+			<div class="f-ipt">
+				<textarea placeholder="这里是默认文本域" ></textarea>
+				<div class="l-count"> <span>0</span>/500</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				开关
+			</div>
+			<div class="l">
+				<div class="l-row l-switch">
+					<div class="l-bd">
+						配合list.css
+					</div>
+					<div class="l-ft">
+						<input class="s-ipt" type="checkbox" checked>
+					</div>
+				</div>
+				<div class="l-row l-switch">
+					<div class="l-bd">
+						配合list.css
+					</div>
+					<div class="l-ft">
+						<input class="s-ipt" type="checkbox">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				单选
+			</div>
+			<div class="l c">
+				<div class="l-row">
+					<label for="c1">
+						选中的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c1" class="c-ipt" type="radio" name="radio" checked>
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="c2">
+						未选中的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c2" class="c-ipt" type="radio" name="radio">
+						<i class="c-c"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				复选
+			</div>
+			<div class="l c">
+				<div class="l-row">
+					<label for="v1">
+						默认的复选列表
+					</label>
+					<div class="l-ft">
+						<input id="v1" class="c-ipt" type="checkbox" name="checkbox" checked>
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="v2">
+						复选列表
+					</label>
+					<div class="l-ft">
+						<input id="v2" class="c-ipt" type="checkbox" name="checkbox">
+						<i class="c-c"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				行级显示
+			</div>
+			<div class="f-ipt f-inline">
+				<input type="text" placeholder="这是inline">
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				表单组
+			</div>
+			<div class="f-g f-border">
+				<div class="f-ipt">
+					<input type="text" placeholder="用户名"></input>
+				</div>
+				<div class="f-ipt">
+					<input type="password" placeholder="请输入您的密码"></input>
+				</div>
+			</div>
+			<div class="l">
+				<div class="l-row">
+					<div class="l-bd">
+						记住密码
+					</div>
+					<div class="l-ft">
+						<input class="s-ipt" type="checkbox" checked>
+					</div>
+				</div>
+			</div>
+			<div class="k-mg1">
+				<button class="b b-m"><i class="icon-lock"></i>提交信息</button>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				有图标的表单
+			</div>
+			<div class="f-ipt f-icon">
+				<i class="icon-user"></i>
+				<input type="text" placeholder="请输入账号">
+			</div>
+			<div class="f-ipt f-icon">
+				<i class="icon-lock"></i>
+				<input type="text" placeholder="请输入密码">
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript">
+		kui.search([{
+			id: 1,
+			text: "搜索内容1"
+		},{
+			id: 2,
+			text: "搜索内容2"
+		},{
+			id: 3,
+			text: "搜索内容3"
+		},{
+			id: 4,
+			text: "搜索内容4"
+		},{
+			id: 5,
+			text: "搜索内容5"
+		}]);
+	</script>
+</body>
+</html>

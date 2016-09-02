@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/kui.min.css">
+	<link rel="stylesheet" href="../css/prettify.css">
+	<style>
+		.swipe {overflow: hidden;visibility: hidden;position: relative;}
+		.swipe-wrap {overflow: hidden;position: relative;}
+		.swipe-wrap > figure {float: left;width: 100%;position: relative;}
+	</style>
+</head>
+<body>
+
+	<div class="k-container">
+
+
+
+		<div class="p-tit">取消浏览器的所有事件，使得active的样式在手机上正常生效</div>
+<pre class="prettyprint linenums gray">
+document.addEventListener('touchstart', function() {
+	return false;
+}, true);
+</pre>
+
+
+		
+		<div class="k-mg1">
+			<button id="textColorBtn" class="b">
+				<span>随</span>
+				<span>机</span>
+				<span>颜</span>
+				<span>色</span>
+			</button>
+		</div>
+
+
+
+
+		<div class="k-mg1">
+			<button id="arrayColorBtn" class="b">
+				数组颜色
+			</button>
+		</div>
+
+
+		<div class="k-mg1">
+			<button id="getFileBtn" class="b">
+				获取文件名
+			</button>
+		</div>
+
+
+		<div class="k-mg1">
+			<button id="" class="b">
+				页面缩放
+			</button>
+		</div>
+
+
+
+
+		<div class="k-mg1">
+			<a class="b b-block" href="../swipe/Swipe.html">Swipe.js</a>
+		</div>
+
+
+
+		<div class="k-mg1">
+			<a class="b b-block" href="../prettify.html">prettify.js</a>
+		</div>
+
+
+
+		<div class="k-mg1">
+			<a class="b b-block" href="../highlight.html">highlight.js</a>
+		</div>
+
+
+	</div>
+
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript" src="../js/prettify.min.js"></script>
+	<script type="text/javascript" src="../js/public.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			prettyPrint();
+
+			$("#textColorBtn").on('click', function(event) {
+				$(this).find("span").each(function(index, el) {
+					$(this).css("color", getRandomColor());
+				});
+			});
+
+			$("#arrayColorBtn").on('click', function(event) {
+				$(this).css({"background-color": getColorByRandom()});
+			});
+
+			$("#getFileBtn").on('click', function(event) {
+				alert(get_file_name());
+			});
+		}
+	</script>
+</body>
+</html>

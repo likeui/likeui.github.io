@@ -1,0 +1,51 @@
+.k-container {
+	padding: 0;
+}
+.h {
+	background-color: #fff;
+}
+.h > * {
+	color: #555;
+	padding: 15px 0;
+}
+.h > a:active {
+	color: #333;
+	background-color: #f7f7f7;
+}
+.h > a:before,
+.h > a:after {
+	top: 10px;
+	bottom: 10px;
+}
+
+.h-top {
+	text-align: center;
+}
+.h-top .h-8 {
+	color: #f55;
+	font-size: 16px;
+}
+.h-top .h-4 {
+	height: 50px;
+}
+.h-top .k-img {
+	width: 20px;
+	height: 20px;
+}
+
+.h-con {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.h-btm > a {
+	padding: 15px;
+}
+.h-btm .g-hd {
+	float: left;
+}
+.h-btm .g-bd,
+.h-btm .g-ft {
+	margin-left: 39px;
+}

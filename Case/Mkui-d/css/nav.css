@@ -1,0 +1,331 @@
+/* ==========================================================================
+    nav style
+  ========================================================================== */
+.nav {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 0;
+}
+/* ==========================================================================
+    nav hvoer
+  ========================================================================== */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+}
+/* ==========================================================================
+    nav active
+  ========================================================================== */
+.nav > li.active > a,
+.nav > li.active > a:hover,
+.nav > li.active > a:focus {
+  color: #f60;
+  cursor: default;
+}
+/* ==========================================================================
+    nav shadow
+  ========================================================================== */
+.nav.shadow > li > a:hover,
+.nav.shadow > li > a:focus {
+  color: #666;
+  background-color: #f7f7f7; 
+}
+.nav.shadow > li.active > a,
+.nav.shadow > li.active > a:hover,
+.nav.shadow > li.active > a:focus {
+  color: #333;
+  background-color: #f7f7f7; 
+}
+/* ==========================================================================
+    nav disabled
+  ========================================================================== */
+.nav > li.disabled > a {
+  color: #bbb;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #bbb;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+/* ==========================================================================
+    nav divider
+  ========================================================================== */
+.nav-divider {
+  margin: 15px;
+  border-top: 1px solid #ddd;
+}
+/* ==========================================================================
+    nav pills
+  ========================================================================== */
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li.nav-divider {
+  margin: 0 !important;
+}
+/* ==========================================================================
+    nav tabs
+  ========================================================================== */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+/* ==========================================================================
+    nav bar
+  ========================================================================== */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  background-color: #fff;
+}
+/* ==========================================================================
+    nav brand
+  ========================================================================== */
+.navbar-brand {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 18px;
+}
+.navbar-brand a {
+  padding: 0 10px;
+}
+.navbar-brand img {
+  vertical-align: top;
+}
+/* ==========================================================================
+    nav collapse
+  ========================================================================== */
+.navbar-collapse {
+  display: none;
+  width: 100%;
+  overflow-x: visible;
+  clear: both;
+  -webkit-overflow-scrolling: touch;
+}
+@media only screen and (min-width: 641px) {
+  .navbar-nav,
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    line-height: 50px;
+    padding: 0 15px;
+  }
+  .navbar-collapse {
+    width: auto;
+    clear: none;
+    display: block !important;
+    overflow: visible !important;
+  }
+  .navbar-nav .nav-divider {
+    margin: 0 !important;
+  }
+}
+/* ==========================================================================
+    nav toggle
+  ========================================================================== */
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin: 8px 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  background-image: none;
+}
+.navbar-toggle.border {
+  border-color: #ddd;
+}
+.navbar-toggle.radius {
+  border-radius: 3px;
+}
+.navbar-toggle:focus {
+  outline: 0;
+}
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #666;
+}
+.icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media only screen and (min-width: 641px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+/* ==========================================================================
+    nav form
+  ========================================================================== */
+.navbar-form {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.navbar-form .btn {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 641px) {
+  .navbar-left {
+    float:left!important;
+  }
+  .navbar-right {
+    float:right!important;
+  }
+  .navbar-form {
+    margin-bottom: 0;
+  }
+  .navbar-form .form-group {
+    float: left;
+  }
+  .navbar-form input[type="text"] {
+    height: 30px !important;
+    padding: 7.5px 15px !important;
+    font-size: 12px !important;
+  }
+  .navbar-form .btn {
+    margin-top: 0px;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-size: 12px;
+  }
+}
+/* ==========================================================================
+    nav form search
+  ========================================================================== */
+.nav-search {
+  position: relative;
+  padding-right: 40px;
+}
+.nav-search .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav-search .search-btn i {
+  display: inline-block;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+}
+@media only screen and (min-width: 641px) {
+  .nav-search .search-btn i {
+    width: 30px;
+    line-height: 30px;
+  }
+}
+/* ==========================================================================
+    nav inverse
+  ========================================================================== */
+.navbar-inverse {
+  background-color: #303541;
+  color: #aaa;
+}
+.navbar-inverse .navbar-nav > li a {
+  color: #aaa;
+}
+.navbar-inverse .navbar-brand a {
+  color: #aaa;
+}
+.navbar-inverse .navbar-brand a:hover,
+.navbar-inverse .navbar-brand a:focus {
+  color: #fff;
+}
+.navbar-inverse .navbar-toggle.border {
+  border-color: #aaa;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #aaa;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li.active > a:hover,
+.navbar-inverse .navbar-nav > li.active > a:focus {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-inverse .navbar-nav > li.disabled > a,
+.navbar-inverse .navbar-nav > li.disabled > a:hover,
+.navbar-inverse .navbar-nav > li.disabled > a:focus {
+  opacity: 0.5;
+}
+.navbar-inverse .navbar-form input[type="text"] {
+  border-color: transparent;
+}
+.navbar-inverse .nav-search i {
+  color: #aaa;
+}
+/* ==========================================================================
+    nav fixed
+  ========================================================================== */
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.navbar-fixed-top.box-shadow {
+  box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+.navbar-fixed-top.border {
+  border-bottom: 1px solid #ddd;
+}
+.with-navbar-fixed-top {
+  padding-top: 51px;
+}
+/* ==========================================================================
+    nav clearfix
+  ========================================================================== */
+.nav:before, .nav:after,
+.navbar-collapse:before, .navbar-collapse:after {
+  display: table;
+  content: '';
+}
+.nav:after,
+.navbar-collapse:after {
+  clear: both;
+}

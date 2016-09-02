@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/kui.min.css">
+</head>
+<body ontouchstart>
+
+	<div class="k-container">
+
+		<div>
+			<div class="p-tit">
+				开关
+				<small>input添加类s-ipt</small>
+			</div>
+			<div class="l">
+				<div class="l-row">
+					<div class="l-ft">
+						<input class="s-ipt" type="checkbox" checked>
+					</div>
+					<div class="l-bd">
+						已开启
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-ft">
+						<input class="s-ipt" type="checkbox">
+					</div>
+					<div class="l-bd">
+						未开启
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-ft">
+						<input class="s-ipt" type="checkbox" disabled>
+					</div>
+					<div class="l-bd">
+						禁用的
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				单选
+				<small>外层添加类c, input添加类c-ipt,input下级添加类c-c</small>
+			</div>
+			<div class="l c">
+				<div class="l-row">
+					<label for="c1">
+						选中的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c1" class="c-ipt" type="radio" name="radio" checked>
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="c2">
+						未选中的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c2" class="c-ipt" type="radio" name="radio">
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="c3">
+						禁用的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c3" class="c-ipt" type="radio" name="radio" disabled>
+						<i class="c-c"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				左单选
+				<small>在类.c同标签添加.left</small>
+			</div>
+			<div class="l c left">
+				<div class="l-row">
+					<label for="c4">
+						选中的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c4" class="c-ipt" type="radio" name="radio">
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="c5">
+						未选中的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c5" class="c-ipt" type="radio" name="radio">
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="c6">
+						禁用的单选列表
+					</label>
+					<div class="l-ft">
+						<input id="c6" class="c-ipt" type="radio" name="radio" disabled>
+						<i class="c-c"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				复选
+				<small>与radio一致</small>
+			</div>
+			<div class="l c">
+				<div class="l-row">
+					<label for="vv1">
+						选中的复选列表
+					</label>
+					<div class="l-ft">
+						<input id="vv1" class="c-ipt" type="checkbox" name="checkbox" checked>
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="vv2">
+						未选中的复选列表
+					</label>
+					<div class="l-ft">
+						<input id="vv2" class="c-ipt" type="checkbox" name="checkbox">
+						<i class="c-c"></i>
+					</div>
+				</div>
+				<div class="l-row">
+					<label for="vv3">
+						禁用的复选列表
+					</label>
+					<div class="l-ft">
+						<input id="vv3" class="c-ipt" type="checkbox" name="checkbox" disabled>
+						<i class="c-c"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+</body>
+</html>

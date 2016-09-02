@@ -1,0 +1,502 @@
+/* ==========================================================================
+    form style
+  ========================================================================== */
+.form select,
+.form textarea,
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form-ipt { 
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form select,
+select.form-ipt {
+  padding: 9px 15px;
+  background: #fff url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+') no-repeat 100% center;
+  -webkit-appearance: none !important;
+}
+.form textarea,
+textarea.form-ipt,
+select[multiple],
+select[size] {
+  height: auto;
+}
+select[multiple="multiple"] {
+  background-image: none;
+}
+.form select:focus,
+.form textarea:focus,
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="date"]:focus,
+.form input[type="month"]:focus,
+.form input[type="time"]:focus,
+.form input[type="week"]:focus,
+.form input[type="number"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="search"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="color"]:focus,
+.form-ipt:focus {
+  outline: 0;
+  border-color: #3bb4f2;
+  background-color: #fefffe;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59, 180, 242, 0.3);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59, 180, 242, 0.3);
+}
+.form select::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder,
+.form input[type="text"]::-webkit-input-placeholder,
+.form input[type="password"]::-webkit-input-placeholder,
+.form input[type="datetime"]::-webkit-input-placeholder,
+.form input[type="datetime-local"]::-webkit-input-placeholder,
+.form input[type="date"]::-webkit-input-placeholder,
+.form input[type="month"]::-webkit-input-placeholder,
+.form input[type="time"]::-webkit-input-placeholder,
+.form input[type="week"]::-webkit-input-placeholder,
+.form input[type="number"]::-webkit-input-placeholder,
+.form input[type="email"]::-webkit-input-placeholder,
+.form input[type="url"]::-webkit-input-placeholder,
+.form input[type="search"]::-webkit-input-placeholder,
+.form input[type="tel"]::-webkit-input-placeholder,
+.form input[type="color"]::-webkit-input-placeholder,
+.form-ipt::-webkit-input-placeholder {
+  color: #999;
+}
+.form select::-moz-placeholder,
+.form textarea::-moz-placeholder,
+.form input[type="text"]::-moz-placeholder,
+.form input[type="password"]::-moz-placeholder,
+.form input[type="datetime"]::-moz-placeholder,
+.form input[type="datetime-local"]::-moz-placeholder,
+.form input[type="date"]::-moz-placeholder,
+.form input[type="month"]::-moz-placeholder,
+.form input[type="time"]::-moz-placeholder,
+.form input[type="week"]::-moz-placeholder,
+.form input[type="number"]::-moz-placeholder,
+.form input[type="email"]::-moz-placeholder,
+.form input[type="url"]::-moz-placeholder,
+.form input[type="search"]::-moz-placeholder,
+.form input[type="tel"]::-moz-placeholder,
+.form input[type="color"]::-moz-placeholder,
+.form-ipt::-moz-placeholder {
+  color: #999;
+  opacity:1;
+}
+.form select:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder,
+.form input[type="text"]:-ms-input-placeholder,
+.form input[type="password"]:-ms-input-placeholder,
+.form input[type="datetime"]:-ms-input-placeholder,
+.form input[type="datetime-local"]:-ms-input-placeholder,
+.form input[type="date"]:-ms-input-placeholder,
+.form input[type="month"]:-ms-input-placeholder,
+.form input[type="time"]:-ms-input-placeholder,
+.form input[type="week"]:-ms-input-placeholder,
+.form input[type="number"]:-ms-input-placeholder,
+.form input[type="email"]:-ms-input-placeholder,
+.form input[type="url"]:-ms-input-placeholder,
+.form input[type="search"]:-ms-input-placeholder,
+.form input[type="tel"]:-ms-input-placeholder,
+.form input[type="color"]:-ms-input-placeholder,
+.form-ipt:-ms-input-placeholder {
+  color: #999;
+}
+.form select::placeholder,
+.form textarea::placeholder,
+.form input[type="text"]::placeholder,
+.form input[type="password"]::placeholder,
+.form input[type="datetime"]::placeholder,
+.form input[type="datetime-local"]::placeholder,
+.form input[type="date"]::placeholder,
+.form input[type="month"]::placeholder,
+.form input[type="time"]::placeholder,
+.form input[type="week"]::placeholder,
+.form input[type="number"]::placeholder,
+.form input[type="email"]::placeholder,
+.form input[type="url"]::placeholder,
+.form input[type="search"]::placeholder,
+.form input[type="tel"]::placeholder,
+.form input[type="color"]::placeholder,
+.form-ipt::placeholder {
+  color: #999;
+}
+.form select[disabled],
+.form textarea[disabled],
+.form input[type="text"][disabled],
+.form input[type="password"][disabled],
+.form input[type="datetime"][disabled],
+.form input[type="datetime-local"][disabled],
+.form input[type="date"][disabled],
+.form input[type="month"][disabled],
+.form input[type="time"][disabled],
+.form input[type="week"][disabled],
+.form input[type="number"][disabled],
+.form input[type="email"][disabled],
+.form input[type="url"][disabled],
+.form input[type="search"][disabled],
+.form input[type="tel"][disabled],
+.form input[type="color"][disabled],
+.form-ipt[disabled],
+.form select[readonly],
+.form textarea[readonly],
+.form input[type="text"][readonly],
+.form input[type="password"][readonly],
+.form input[type="datetime"][readonly],
+.form input[type="datetime-local"][readonly],
+.form input[type="date"][readonly],
+.form input[type="month"][readonly],
+.form input[type="time"][readonly],
+.form input[type="week"][readonly],
+.form input[type="number"][readonly],
+.form input[type="email"][readonly],
+.form input[type="url"][readonly],
+.form input[type="search"][readonly],
+.form input[type="tel"][readonly],
+.form input[type="color"][readonly],
+.form-ipt[readonly],
+fieldset[disabled] .form select,
+fieldset[disabled] .form textarea,
+fieldset[disabled] .form input[type="text"],
+fieldset[disabled] .form input[type="password"],
+fieldset[disabled] .form input[type="datetime"],
+fieldset[disabled] .form input[type="datetime-local"],
+fieldset[disabled] .form input[type="date"],
+fieldset[disabled] .form input[type="month"],
+fieldset[disabled] .form input[type="time"],
+fieldset[disabled] .form input[type="week"],
+fieldset[disabled] .form input[type="number"],
+fieldset[disabled] .form input[type="email"],
+fieldset[disabled] .form input[type="url"],
+fieldset[disabled] .form input[type="search"],
+fieldset[disabled] .form input[type="tel"],
+fieldset[disabled] .form input[type="color"],
+fieldset[disabled] .form-ipt {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+/* ==========================================================================
+    form group
+  ========================================================================== */
+.ipt-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.ipt-group:before,
+.ipt-group:after {
+  display: table;
+  content: " ";
+}
+.ipt-group:after {
+  clear: both;
+}
+/* ==========================================================================
+    form label
+  ========================================================================== */
+.form-label {
+  margin-bottom: 5px;
+}
+/* ==========================================================================
+    form file
+  ========================================================================== */
+.form-file {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.form-file input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 50em;
+}
+/* ==========================================================================
+    form radio || checkbox
+  ========================================================================== */
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  min-height: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.radio input[type=radio],
+.radio-inline input[type=radio],
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox] {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: -20px;
+}
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* ==========================================================================
+    form disabled area
+  ========================================================================== */
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+.radio[disabled],
+.radio-inline[disabled],
+.checkbox[disabled],
+.checkbox-inline[disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] .radio,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox,
+fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+/* ==========================================================================
+    form horizontal
+  ========================================================================== */
+@media only screen and (min-width:641px) {
+  .form-horizontal .form-label {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    text-align: right;
+  }
+}
+/* ==========================================================================
+    form inline
+  ========================================================================== */
+@media only screen and (min-width:641px) {
+  .form-inline .ipt-group {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .form-label {
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+  .form-inline .form-ipt {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+/* ==========================================================================
+    form input size
+  ========================================================================== */
+.input-l, .ipt-group-l .form-ipt {
+  height: 60px!important;
+  padding: 17.5px 30px !important;
+  font-size: 18px !important;
+  margin-top: 0;
+}.ipt-group-l .form-label {
+  font-size: 18px;
+  margin-top: 17.5px;
+}
+
+.input-m, .ipt-group-m .form-ipt {
+  height: 50px !important;
+  padding: 15px 25px !important;
+  font-size: 16px !important;
+}.ipt-group-m .form-label {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.input-s, .ipt-group-s .form-ipt {
+  height: 30px !important;
+  padding: 7.5px 15px !important;
+  font-size: 12px !important;
+}.ipt-group-s .form-label {
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 7.5px;
+}
+.input-xs, .ipt-group-xs .form-ipt {
+  height: 24px !important;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+}.ipt-group-xs .form-label {
+  font-size: 12px;
+  margin-top: 4px;
+}
+/* ==========================================================================
+    form tip
+  ========================================================================== */
+.form-warning .form-help,
+.form-warning .form-label,
+.form-warning .radio,
+.form-warning .checkbox,
+.form-warning .radio-inline,
+.form-warning .checkbox-inline,
+.form-warning label {
+  color: #f37b1d;
+}
+.form-warning [class*="icon-"] {
+  color: #f37b1d;
+}
+.form-warning .form-ipt {
+  border-color: #f37b1d !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.form-warning .form-ipt:focus {
+  background-color: #fefffe;
+  border-color: #d2620b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #f8b47e !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #f8b47e !important;
+}
+.form-error .form-help,
+.form-error .form-label,
+.form-error .radio,
+.form-error .checkbox,
+.form-error .radio-inline,
+.form-error .checkbox-inline,
+.form-error label {
+  color: #dd514c;
+}
+.form-error [class*="icon-"] {
+  color: #dd514c;
+}
+.form-error .form-ipt,
+.field-error {
+  border-color: #dd514c !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.form-error .form-ipt:focus,
+.field-error:focus {
+  background-color: #fefffe;
+  border-color: #cf2d27;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #eda4a2 !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #eda4a2 !important;
+}
+.form-success .form-help,
+.form-success .form-label,
+.form-success .radio,
+.form-success .checkbox,
+.form-success .radio-inline,
+.form-success .checkbox-inline,
+.form-success label {
+  color: #80cc80;
+}
+.form-success [class*="icon-"] {
+  color: #80cc80;
+}
+.form-success .form-ipt,
+.field-valid {
+  border-color: #80cc80 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.form-success .form-ipt:focus,
+.field-valid:focus {
+  background-color: #fefffe;
+  border-color: #459f45;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #a5d8a5 !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #a5d8a5 !important;
+}
+/* ==========================================================================
+    form feedback
+  ========================================================================== */
+.form-feedback {
+  position: relative;
+}
+.form-feedback .form-ipt {
+  padding-left: 10px !important;
+  padding-right: 30px !important;
+}
+.form-feedback [class*='icon-'] {
+  right: 5px;
+  left: auto;
+}
+/* ==========================================================================
+    form icon
+  ========================================================================== */
+.form-icon {
+  position: relative;
+}
+.form-icon .form-ipt {
+  padding-left: 1.875em !important;
+}
+.form-icon [class*='icon-'] {
+  position: absolute;
+  left: 6px;
+  bottom: 11px;
+  display: block;
+  width: 20px;
+  text-align: center;
+  z-index: 2;
+}
+/* ==========================================================================
+    form set
+  ========================================================================== */
+.form-set {
+  margin-bottom: 15px;
+  padding: 0;
+}
+.form-set>.form-ipt {
+  position: relative;
+  top: -1px;
+}
+.form-set>.form-ipt:focus {
+  z-index: 2;
+}
+.form-set>.form-ipt:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.form-set>.form-ipt:first-child {
+  top: 1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-set>.form-ipt:last-child {
+  top: -2px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}

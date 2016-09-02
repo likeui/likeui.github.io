@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/kui.min.css">
+</head>
+<body ontouchstart>
+
+	<div class="k-container">
+
+		<div>
+			<div class="p-tit">
+				普通列表
+			</div>
+			<div class="l">
+				<div class="l-row">
+					<div class="l-bd">
+						这是最基本的列表信息
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				跳转列表
+			</div>
+			<div class="l">
+				<a class="l-row a-r">
+					<div class="l-ft">
+						06-18
+					</div>
+					<div class="l-bd">
+						这里是可跳转的标题
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				文字列表
+			</div>
+			<div class="l x-t x-b">
+				<div class="l-row">
+					<div class="l-bd">
+						<div class="l-tit">
+							这里是评论列表的标题信息
+						</div>
+						<div class="l-btm">
+							评论的详细内容
+						</div>
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-bd">
+						<div class="l-tit">
+							这里是评论列表的标题信息
+						</div>
+						<div class="l-btm">
+							评论的详细内容
+						</div>
+						<div class="l-btm">
+							<span class="l-cell">
+								<i class="icon-time t-wran"></i>
+								2015-06-15
+							</span>
+							<span class="l-cell">
+								<i class="icon-msg t-primary"></i>
+								511阅读
+							</span>
+							<span class="l-cell">
+								<i class="icon-file t-info"></i>
+								128留言
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				头像
+			</div>
+			<div class="l l-img">
+				<div class="l-row a-r">
+					<div class="l-hd">
+						头像
+					</div>
+					<div class="l-bd">
+						<img src="images/img1.jpg">
+						<input type="file">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				表单列表
+			</div>
+			<div class="l l-form">
+				<div class="l-row disabled">
+					<div class="l-hd">
+						姓名
+					</div>
+					<div class="l-bd">
+						禁用的姓名
+					</div>
+				</div>
+				<a class="l-row disabled">
+					<div class="l-hd">
+						地址
+					</div>
+					<div class="l-bd">
+						济南市天桥区北园大街336豪鲁电子大厦832室
+					</div>
+				</a>
+				<a class="l-row">
+					<div class="l-ft">
+						自动
+					</div>
+					<div class="l-hd">
+						地址
+					</div>
+					<div class="l-bd">
+						济南市天桥区北园大街336豪鲁电子大厦832室
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				验证码列表
+			</div>
+			<div class="l l-form">
+				<div class="l-row">
+					<div class="l-hd">
+						手机
+					</div>
+					<div class="l-fm">
+						<input class="l-ipt" type="text" placeholder="输入您的手机号">
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-hd">
+						日期
+					</div>
+					<div class="l-fm">
+						<input class="l-ipt" type="datetime-local" value="2016-06-15">
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-hd">
+						地址
+					</div>
+					<div class="l-fm">
+						<textarea class="l-ipt" rows="3" placeholder="输入您的详细地址"></textarea>
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-hd">
+						验证码
+					</div>
+					<div class="l-fm">
+						<input class="l-ipt" type="text" placeholder="输入验证码">
+					</div>
+					<div class="l-ft">
+						<button data-id="getCodeBtn" class="b">获取验证码</button>
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-fm">
+						<input class="l-ipt" type="text" placeholder="输入验证码">
+					</div>
+					<div class="l-ft">
+						<button data-id="getCodeBtn" class="b">获取验证码</button>
+					</div>
+				</div>
+			</div>
+			<div class="p-tip">请输入您的验证码！</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				下拉列表
+			</div>
+			<div class="l l-form">
+				<div class="l-row a-r">
+					<div class="l-fm">
+						<select class="l-ipt">
+							<option value="1">微信</option>
+							<option value="2">QQ</option>
+						</select>
+					</div>
+				</div>
+				<div class="l-row a-d">
+					<div class="l-hd">
+						性别
+					</div>
+					<div class="l-fm">
+						<select class="l-ipt">
+							<option value="1">男</option>
+							<option value="2">女</option>
+						</select>
+					</div>
+					<div class="l-ft"></div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				图标列表
+			</div>
+			<div class="l">
+				<a class="l-row l-icon">
+					<div class="l-ft">
+						暂不可用
+					</div>
+					<div class="l-hd">
+						<img src="images/img1.jpg">
+					</div>
+					<div class="l-bd disabled">
+						个人中心
+					</div>
+				</a>
+				<a class="l-row l-icon a-r">
+					<div class="l-ft">
+						<span>请修改</span>
+					</div>
+					<div class="l-hd">
+						<img src="images/img2.jpg">
+					</div>
+					<div class="l-bd">
+						账户安全
+					</div>
+				</a>
+				<a class="l-row l-icon">
+					<div class="l-ft">
+						<span class="k-badge bg-primary">11M</span>
+					</div>
+					<div class="l-hd">
+						<img src="images/img3.jpg">
+					</div>
+					<div class="l-bd">
+						清除缓存
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				评论列表
+			</div>
+			<div class="l">
+				<div class="l-row l-talk">
+					<div class="l-hd">
+						<img src="images/img1.jpg">
+					</div>
+					<div class="l-bd">
+						<div class="l-tit">这里是评论列表的标题信息</div>
+						<div class="l-btm">评论的详细内容</div>
+						<div class="l-btm">
+							<span class="l-cell">
+								<i class="icon-time t-wran"></i>
+								2015-06-15
+							</span>
+							<span class="l-cell">
+								<i class="icon-msg t-primary"></i>
+								511阅读
+							</span>
+							<span class="l-cell">
+								<i class="icon-file t-info"></i>
+								128留言
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				左缩略图列表
+			</div>
+			<div class="l">
+				<div class="l-row l-view">
+					<div class="l-hd">
+						<img src="images/img1.jpg">
+					</div>
+					<div class="l-bd">
+						<div class="l-tit">
+							左边带缩略图的l列表，这里是列表的标题
+						</div>
+						<div class="l-btm">
+							<span class="l-cell">
+								<i class="icon-time t-wran"></i>
+								2015-06-15
+							</span>
+							<span class="l-cell">
+								<i class="icon-msg t-primary"></i>
+								511阅读
+							</span>
+							<span class="l-cell">
+								<i class="icon-file t-info"></i>
+								128留言
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				右缩略图列表
+			</div>
+			<div class="l">
+				<div class="l-row l-view right">
+					<div class="l-hd">
+						<img src="images/img1.jpg">
+					</div>
+					<div class="l-bd">
+						<div class="l-tit">
+							右边带缩略图的l列表，这里是列表的标题右边带缩略图的l列表，这里是列表的标题
+						</div>
+						<div class="l-btm">
+							<span class="l-cell">
+								<i class="icon-time t-wran"></i>
+								2015-06-15
+							</span>
+							<span class="l-cell">
+								<i class="icon-msg t-primary"></i>
+								511阅读
+							</span>
+							<span class="l-cell">
+								<i class="icon-file t-info"></i>
+								128留言
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				上传
+			</div>
+			<div class="l">
+				<div class="l-row a-r">
+					<div class="l-bd">
+						图片上传
+					</div>
+				</div>
+				<div class="l-row u">
+					<ul>
+						<li class="u-c" style="background-image: url(images/vcode.jpg)">
+							<div class="u-d">删除</div>
+						</li>
+						<li class="u-c u-s">
+							<div class="u-t">
+								<i class="icon-info-bd"></i>
+							</div>
+							<img src="images/img1.jpg">
+						</li>
+						<li class="u-c u-s">
+							<div class="u-t">50%</div>
+							<img src="images/img2.jpg">
+						</li>
+					</ul>
+					<div class="u-b">
+						<input type="file" multiple>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				文本域
+			</div>
+			<div class="l">
+				<div class="l-row">
+					<div class="l-fm">
+						<textarea class="l-ipt" placeholder="请输入评论！"></textarea>
+						<div class="l-count">
+							<span>0</span>/200
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="k-mg1">
+			<button class="b b-primary b-m">保存信息</button>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript">
+		kui.getCode();
+	</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div class="wrap bgimg"><img src="images/bg.jpg"/></div>
+	
+	<div class="wrap container">
+
+		<div class="tops bounceInDown">
+			<div class="box scale">
+				<span></span>
+				<span></span>
+				<img src="images/myhdimg.jpg"/>
+			</div>
+		</div>
+
+		<div class="btms">
+			<div class="hd slideInLeft">这哭是标题</div>
+			<div class="ft slideInRight">这里是之外</div>
+		</div>
+		
+		
+		<div class="myinfo">
+			<h4>李 珂</h4>
+			<h6>
+				<span>男</span>
+				<span>24岁</span>
+				<span>山东·滕州</span>
+			</h6>
+		</div>
+		<ul class="way zoomIn">
+			<li>
+				<i class="iconfont icon-phone"></i>
+				15098712987
+			</li>
+			<li>
+				<i class="iconfont icon-qq"></i>
+				794566321
+			</li>
+			<li>
+				<i class="iconfont icon-email"></i>
+				794566321@qq.com
+			</li>
+		</ul>
+		<div class="btn-group btms bounceInUp">
+			<button id="goList" class="btn btn-red btn-block">了解我</button>
+		</div>
+	</div>
+
+    <div class="wrap main">
+        <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">slider1</div>
+    <div class="swiper-slide">slider2</div>
+    <div class="swiper-slide">slider3</div>
+  </div>
+</div>
+    </div>
+</body>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script src="js/fullPage.min.js"></script>
+<script type="text/javascript">
+	setTimeout(function() {
+        $(document).one('touchstart', function(event) {
+            $(".tops").css({
+                transform: 'scale(.6,.6)',
+                marginTop: '10%'
+            });
+            $("body").css({
+                backgroundColor: '#f3b68d'
+            });
+            $(".btms").fadeOut(200);
+            
+            $(".myinfo").fadeIn(200);
+            
+            $(".way").show();
+            
+            $(".btn-group").show(); 
+        });
+
+       $("#goList").on('touchstart', function() {
+            $("body").css({
+                backgroundColor: '#4c5263'
+            });
+            $(".container").remove();
+
+            $(".main").show();
+        });
+       
+
+
+	},1000);
+</script>
+<script> 
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 5000,//可选选项，自动滑动
+    height: 300,
+})
+</script>
+</html>

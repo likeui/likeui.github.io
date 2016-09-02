@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/kui.min.css">
+	<link rel="stylesheet" href="css/anime.css">
+	<style type="text/css">
+		.anime-box {
+			position: fixed;
+			top: 48px;
+			right: 0;
+			left: 0;
+			z-index: 2;
+			height: 60px;
+		}
+		.anime-w {
+			position: relative;
+			z-index: 3;
+			width: 40px;
+			height: 40px;
+			margin: 4px auto;
+			background-color: #eee;
+			border-radius: 3px;
+		}
+		.anime-w div {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: #f55;
+			border-radius: 3px;
+		}
+		.anime-w div i {
+			margin: 8px;
+			color: #fff;
+		}
+		.anime-delay .t-tab {
+			margin-right: -5px;
+			margin-bottom: 10px;
+			background-color: transparent;
+		}
+		.anime-delay .k-bar-tab .t-cell {
+			padding-right: 5px;
+		}
+	</style>
+</head>
+<body ontouchstart>
+
+	<div class="bar t-nav fixed">
+		<div class="tit">
+			<div class="anime-w">
+				<div><i class="icon-shopping"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="k-container">
+
+		<div>
+			<div class="p-tit">
+				循环动画
+			</div>
+			<div class="k-mg1">
+				<button class="anime floating loop b b-green">
+					<i class="icon-thumb-up"></i>
+				</button>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				反向动画
+			</div>
+			<div class="k-mg1">
+				<button class="anime floating loop reverse b b-info">
+					<i class="icon-thumb-up"></i>
+				</button>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				暂停动画
+			</div>
+			<div class="k-mg1">
+				<button class="anime floating loop paused b b-wran">
+					<i class="icon-thumb-up"></i>
+				</button>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				延迟动画
+			</div>
+			<div class="anime-delay">
+				<div class="h h-g">
+					<a class="h-2" href="javascript:;">
+						<span class="anime b">0s</span>
+					</a>
+					<a class="h-2" href="javascript:;">
+						<span class="anime delay-1 b">1s</span>
+					</a>
+					<a class="h-2" href="javascript:;">
+						<span class="anime delay-2 b">2s</span>
+					</a>
+					<a class="h-2" href="javascript:;">
+						<span class="anime delay-3 b">3s</span>
+					</a>
+					<a class="h-2" href="javascript:;">
+						<span class="anime delay-4 b">4s</span>
+					</a>
+					<a class="h-2" href="javascript:;">
+						<span class="anime delay-5 b">5s</span>
+					</a>
+				</div>
+				<div class="k-mg1">
+					<button id="replay" class="anime b">执行</button>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Base
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">magic</a></div>
+				<div class="h-6"><a class="b b-plain">swap</a></div>
+				<div class="h-6"><a class="b b-plain">jello</a></div>
+				<div class="h-6"><a class="b b-plain">bounce</a></div>
+				<div class="h-6"><a class="b b-plain">flash</a></div>
+				<div class="h-6"><a class="b b-plain">pulse</a></div>
+				<div class="h-6"><a class="b b-plain">rubberBand</a></div>
+				<div class="h-6"><a class="b b-plain">shake</a></div>
+				<div class="h-6"><a class="b b-plain">swing</a></div>
+				<div class="h-6"><a class="b b-plain">tada</a></div>
+				<div class="h-6"><a class="b b-plain">wobble</a></div>
+				<div class="h-6"><a class="b b-plain">floating</a></div>
+				<div class="h-6"><a class="b b-plain">hinge</a></div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Tin
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">tinInUp</a>
+					<a class="b b-plain">tinInRight</a>
+					<a class="b b-plain">tinInDown</a>
+					<a class="b b-plain">tinInLeft</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">tinOutUp</a>
+					<a class="b b-plain">tinOutRight</a>
+					<a class="b b-plain">tinOutDown</a>
+					<a class="b b-plain">tinOutLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Open
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">openInUp</a>
+					<a class="b b-plain">openInRight</a>
+					<a class="b b-plain">openInDown</a>
+					<a class="b b-plain">openInLeft</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">openOutUp</a>
+					<a class="b b-plain">openOutRight</a>
+					<a class="b b-plain">openOutDown</a>
+					<a class="b b-plain">openOutLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Bounce
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">bounceIn</a>
+					<a class="b b-plain">bounceInUp</a>
+					<a class="b b-plain">bounceInRight</a>
+					<a class="b b-plain">bounceInDown</a>
+					<a class="b b-plain">bounceInLeft</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">bounceOut</a>
+					<a class="b b-plain">bounceOutUp</a>
+					<a class="b b-plain">bounceOutRight</a>
+					<a class="b b-plain">bounceOutDown</a>
+					<a class="b b-plain">bounceOutLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Fade
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">fadeIn</a>
+					<a class="b b-plain">fadeInUp</a>
+					<a class="b b-plain">fadeInRight</a>
+					<a class="b b-plain">fadeInDown</a>
+					<a class="b b-plain">fadeInLeft</a>
+					<a class="b b-plain">fadeInUpBig</a>
+					<a class="b b-plain">fadeInRightBig</a>
+					<a class="b b-plain">fadeInDownBig</a>
+					<a class="b b-plain">fadeInLeftBig</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">fadeOut</a>
+					<a class="b b-plain">fadeOutUp</a>
+					<a class="b b-plain">fadeOutRight</a>
+					<a class="b b-plain">fadeOutDown</a>
+					<a class="b b-plain">fadeOutLeft</a>
+					<a class="b b-plain">fadeOutUpBig</a>
+					<a class="b b-plain">fadeOutRightBig</a>
+					<a class="b b-plain">fadeOutDownBig</a>
+					<a class="b b-plain">fadeOutLeftBig</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Rotate
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">rotateIn</a>
+					<a class="b b-plain">rotateInDownLeft</a>
+					<a class="b b-plain">rotateInDownRight</a>
+					<a class="b b-plain">rotateInUpLeft</a>
+					<a class="b b-plain">rotateInUpRight</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">rotateOut</a>
+					<a class="b b-plain">rotateOutDownLeft</a>
+					<a class="b b-plain">rotateOutDownRight</a>
+					<a class="b b-plain">rotateOutUpLeft</a>
+					<a class="b b-plain">rotateOutUpRight</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">rotateUp</a>
+					<a class="b b-plain">rotateRight</a>
+					<a class="b b-plain">rotateDown</a>
+					<a class="b b-plain">rotateLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Space
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">spaceInUp</a>
+					<a class="b b-plain">spaceInRight</a>
+					<a class="b b-plain">spaceInDown</a>
+					<a class="b b-plain">spaceInLeft</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">spaceOutUp</a>
+					<a class="b b-plain">spaceOutRight</a>
+					<a class="b b-plain">spaceOutDown</a>
+					<a class="b b-plain">spaceOutLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Zoom
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">zoomIn</a>
+					<a class="b b-plain">zoomInUp</a>
+					<a class="b b-plain">zoomInRight</a>
+					<a class="b b-plain">zoomInDown</a>
+					<a class="b b-plain">zoomInLeft</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">zoomOut</a>
+					<a class="b b-plain">zoomOutUp</a>
+					<a class="b b-plain">zoomOutRight</a>
+					<a class="b b-plain">zoomOutDown</a>
+					<a class="b b-plain">zoomOutLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Slide
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">slideInUp</a>
+					<a class="b b-plain">slideInRight</a>
+					<a class="b b-plain">slideInDown</a>
+					<a class="b b-plain">slideInLeft</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">slideOutUp</a>
+					<a class="b b-plain">slideOutRight</a>
+					<a class="b b-plain">slideOutDown</a>
+					<a class="b b-plain">slideOutLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Flip
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">flip</a>
+					<a class="b b-plain">flipInX</a>
+					<a class="b b-plain">flipInY</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">flipOutX</a>
+					<a class="b b-plain">flipOutY</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Pull
+			</div>
+			<div class="h h-g">
+				<div class="h-6">
+					<a class="b b-plain">pull</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">pullUp</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">pullRight</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">pullDown</a>
+				</div>
+				<div class="h-6">
+					<a class="b b-plain">pullLeft</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Puff
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">puffIn</a></div>
+				<div class="h-6"><a class="b b-plain">puffOut</a></div>
+			</div>
+		</div>
+
+		<div>
+			<div class="p-tit">
+				Roll
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">rollIn</a></div>
+				<div class="h-6"><a class="b b-plain">rollOut</a></div>
+			</div>
+		</div>
+		
+		<div>
+			<div class="p-tit">
+				Lightspeed
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">lightSpeedIn</a></div>
+				<div class="h-6"><a class="b b-plain">lightSpeedOut</a></div>
+			</div>
+		</div>
+		
+		<div>
+			<div class="p-tit">
+				Bomb
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">bombRightOut</a></div>
+				<div class="h-6"><a class="b b-plain">bombLeftOut</a></div>
+			</div>
+		</div>
+		
+		<div>
+			<div class="p-tit">
+				TwisterIn
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">twisterInDown</a></div>
+				<div class="h-6"><a class="b b-plain">twisterInUp</a></div>
+			</div>
+		</div>
+		
+		<div>
+			<div class="p-tit">
+				Vanish
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">vanishIn</a></div>
+				<div class="h-6"><a class="b b-plain">vanishOut</a></div>
+			</div>
+		</div>
+
+		<div class="k-mb1">
+			<div class="p-tit">
+				Other
+			</div>
+			<div class="h h-g">
+				<div class="h-6"><a class="b b-plain">swashIn</a></div>
+				<div class="h-6"><a class="b b-plain">swashOut</a></div>
+				<div class="h-6"><a class="b b-plain">boingInUp</a></div>
+				<div class="h-6"><a class="b b-plain">boingOutDown</a></div>
+				<div class="h-6"><a class="b b-plain">foolishOut</a></div>
+				<div class="h-6"><a class="b b-plain">foolishIn</a></div>
+				<div class="h-6"><a class="b b-plain">holeOut</a></div>
+			</div>
+		</div>
+
+	</div>
+	
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript">
+		$(".h-g .b").on('click', function(event) {
+			var that = $(this), tval = that.text();
+			$(".anime-w div").removeClass().addClass("anime "+tval);
+		});
+
+		$("#replay").on("click", function(event) {
+			var btn = $(".anime-delay .h .b");
+			btn.addClass('fadeIn');
+			btn.each(function(index, el) {
+				index += 1;
+				setTimeout(function() {
+					$(el).removeClass('fadeIn');
+				}, index * 1000);
+			});
+		});
+	</script>
+</body>
+</html>

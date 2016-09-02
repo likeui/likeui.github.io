@@ -1,0 +1,210 @@
+/* ==========================================================================
+    table style
+  ========================================================================== */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  height: 40px;
+  line-height: 1.428571429;
+  padding: 10px;
+}
+.table>thead>tr>th {
+  text-align: left;
+  vertical-align: bottom;
+  border-bottom: 1px solid #ddd;
+}
+.table>caption+thead>tr:first-child>th,
+.table>colgroup+thead>tr:first-child>th,
+.table>thead:first-child>tr:first-child>th,
+.table>caption+thead>tr:first-child>td,
+.table>colgroup+thead>tr:first-child>td,
+.table>thead:first-child>tr:first-child>td {
+  border-top: 0;
+}
+.table>tbody+tbody {
+  border-top: 1px solid #ddd;
+}
+/* ==========================================================================
+    table border
+  ========================================================================== */
+.table-border {
+  border: 1px solid #ddd;
+}
+.table-border>thead>tr>th,
+.table-border>tbody>tr>th,
+.table-border>tfoot>tr>th,
+.table-border>thead>tr>td,
+.table-border>tbody>tr>td,
+.table-border>tfoot>tr>td {
+  border: 1px solid #ddd;
+}
+/* ==========================================================================
+    table striped
+  ========================================================================== */
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #f9f9f9;
+}
+/* ==========================================================================
+    table hover
+  ========================================================================== */
+.table-hover>tbody>tr:hover>td,
+.table-hover>tbody>tr:hover>th {
+  background-color: #eee;
+}
+/* ==========================================================================
+    table cell
+  ========================================================================== */
+.table>thead>tr>td.active,
+.table>tbody>tr>td.active,
+.table>tfoot>tr>td.active,
+.table>thead>tr>th.active,
+.table>tbody>tr>th.active,
+.table>tfoot>tr>th.active,
+.table>thead>tr.active>td,
+.table>tbody>tr.active>td,
+.table>tfoot>tr.active>td,
+.table>thead>tr.active>th,
+.table>tbody>tr.active>th,
+.table>tfoot>tr.active>th {
+  background-color: #ffffdd;
+}
+.table>thead>tr>td.disabled,
+.table>tbody>tr>td.disabled,
+.table>tfoot>tr>td.disabled,
+.table>thead>tr>th.disabled,
+.table>tbody>tr>th.disabled,
+.table>tfoot>tr>th.disabled,
+.table>thead>tr.disabled>td,
+.table>tbody>tr.disabled>td,
+.table>tfoot>tr.disabled>td,
+.table>thead>tr.disabled>th,
+.table>tbody>tr.disabled>th,
+.table>tfoot>tr.disabled>th {
+  color: #999;
+}
+.table>thead>tr>td.primary,
+.table>tbody>tr>td.primary,
+.table>tfoot>tr>td.primary,
+.table>thead>tr>th.primary,
+.table>tbody>tr>th.primary,
+.table>tfoot>tr>th.primary,
+.table>thead>tr.primary>td,
+.table>tbody>tr.primary>td,
+.table>tfoot>tr.primary>td,
+.table>thead>tr.primary>th,
+.table>tbody>tr.primary>th,
+.table>tfoot>tr.primary>th {
+  color: #0b76ac;
+  background-color: rgba(14, 144, 210, 0.115);
+}
+.table>thead>tr>td.success,
+.table>tbody>tr>td.success,
+.table>tfoot>tr>td.success,
+.table>thead>tr>th.success,
+.table>tbody>tr>th.success,
+.table>tfoot>tr>th.success,
+.table>thead>tr.success>td,
+.table>tbody>tr.success>td,
+.table>tfoot>tr.success>td,
+.table>thead>tr.success>th,
+.table>tbody>tr.success>th,
+.table>tfoot>tr.success>th {
+  color: #5eb95e;
+  background-color: rgba(94, 185, 94, 0.115);
+}
+.table>thead>tr>td.warning,
+.table>tbody>tr>td.warning,
+.table>tfoot>tr>td.warning,
+.table>thead>tr>th.warning,
+.table>tbody>tr>th.warning,
+.table>tfoot>tr>th.warning,
+.table>thead>tr.warning>td,
+.table>tbody>tr.warning>td,
+.table>tfoot>tr.warning>td,
+.table>thead>tr.warning>th,
+.table>tbody>tr.warning>th,
+.table>tfoot>tr.warning>th { 
+  color: #f37b1d;
+  background-color: rgba(243, 123, 29, 0.115);
+}
+.table>thead>tr>td.danger,
+.table>tbody>tr>td.danger,
+.table>tfoot>tr>td.danger,
+.table>thead>tr>th.danger,
+.table>tbody>tr>th.danger,
+.table>tfoot>tr>th.danger,
+.table>thead>tr.danger>td,
+.table>tbody>tr.danger>td,
+.table>tfoot>tr.danger>td,
+.table>thead>tr.danger>th,
+.table>tbody>tr.danger>th,
+.table>tfoot>tr.danger>th {
+  color: #dd514c;
+  background-color: rgba(221, 81, 76, 0.115);
+}
+/* ==========================================================================
+    table size
+  ========================================================================== */
+.table-m>thead>tr>th,
+.table-m>tbody>tr>th,
+.table-m>tfoot>tr>th,
+.table-m>thead>tr>td,
+.table-m>tbody>tr>td,
+.table-m>tfoot>tr>td {
+  height: 50px;
+  padding: 15px;
+}
+.table-s>thead>tr>th,
+.table-s>tbody>tr>th,
+.table-s>tfoot>tr>th,
+.table-s>thead>tr>td,
+.table-s>tbody>tr>td,
+.table-s>tfoot>tr>td {
+  height: 30px;
+  padding: 5px;
+  font-size: 12px;
+}
+.table-xs>thead>tr>th,
+.table-xs>tbody>tr>th,
+.table-xs>tfoot>tr>th,
+.table-xs>thead>tr>td,
+.table-xs>tbody>tr>td,
+.table-xs>tfoot>tr>td {
+  height: 24px;
+  line-height: 1;
+  padding: 5px;
+  font-size: 12px;
+}
+/* ==========================================================================
+    table responsive
+  ========================================================================== */
+@media screen and (max-width:1980px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive>.table {
+    margin-bottom: 0;
+  }
+  .table-responsive>.table>thead>tr>th,
+  .table-responsive>.table>tbody>tr>th,
+  .table-responsive>.table>tfoot>tr>th,
+  .table-responsive>.table>thead>tr>td,
+  .table-responsive>.table>tbody>tr>td,
+  .table-responsive>.table>tfoot>tr>td {
+    white-space: nowrap;
+  }
+}

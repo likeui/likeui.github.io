@@ -1,0 +1,371 @@
+ body {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 2s;
+  background-color: #49cdd9;
+  -webkit-user-select: none;
+}
+.bgimg {
+  opacity: .05;
+}
+.bgimg img {
+  float: left;
+  height: 100%;
+}
+.bgimg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+.btms {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 8%;
+}
+
+
+.tops {
+  margin-top: 30%;
+  text-align: center;
+  transition: all 1s;
+}
+.tops .hdimg {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+
+  position: relative;
+}
+.hdimg span,
+.hdimg img {
+  position: absolute;
+  border-radius: 50%;
+}
+.hdimg span {
+  opacity: 0;
+  background-color: rgba(255,255,255,.4);
+}
+.hdimg span:nth-child(1) {
+  left: 0;
+  width: 140px;
+  height: 140px;
+}
+.hdimg span:nth-child(2) {
+  left: 10px;
+  top: 10px;
+  width: 120px;
+  height: 120px;
+}
+.hdimg img {
+  left: 20px;
+  top: 20px;
+  width: 100px;
+  height: 100px; 
+}
+
+.job {
+  bottom: 20%;
+}
+.btms .hd {
+  color: #fff;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 1px;
+  background-color: rgba(255,255,255,.4);
+}
+.btms .ft {
+  color: #44c3cf;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+  background-color: rgba(255,255,255,.4);
+}
+
+.myinfo {
+  text-align: center;
+  color: #fff;
+
+  display: none;
+}
+
+.way {
+  position: absolute;
+  bottom: 22%;
+  width: 100%;
+
+  text-align: center;
+  display: none;
+}
+.way li {
+  padding: 10px 0;
+  margin-left: 60px;
+  margin-bottom: 3px;
+
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  background-color: rgba(255,255,255,.4);
+  position: relative;
+}
+.way li i {
+  position: absolute;
+  left: -60px;
+  top: 0;
+
+  float: left;
+  width: 57px;
+  padding: 10px 0;
+
+  font-size: 24px;
+  line-height: 20px;
+  background-color: rgba(255,255,255,.4);
+}
+
+.btn-group {
+  display: none;
+}
+
+.title {
+  text-align: center;
+  margin: 10% 0;
+  font-size: 24px;
+  color: #fff;
+}
+.self-bd p {
+  margin: 0 20px 30px;
+  text-indent: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.arrow {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 9;
+  width: 30px;
+  height: 18px;
+  margin-left: -15px;
+  background-image: url(../images/arrow.png);
+}
+
+.swiper-container {
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.swiper-container-vertical > .swiper-wrapper {
+	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
+	flex-direction: column
+}
+.swiper-wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: transform;
+}
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-o-transform: translate(0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0)
+}
+.swiper-slide, .swiper-wrapper {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.swiper-slide{
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-pagination {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+.swiper-pagination-bullet {
+	display: none;
+	color: #fff;
+}
+.swiper-pagination-bullet-active {
+	display: block;
+}
+.swiper-pagination-bullet h5 {
+	padding-left: 30px;
+}
+
+.reveal {
+  position: absolute;
+  bottom: 0;
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
+}
+.reveal .swiper-wrapper {
+	margin-top: 25%;
+}
+.reveal .swiper-slide {
+  width: 80%;
+  /*-webkit-flex-shrink: 0;
+          flex-shrink: 0;*/
+}
+.reveal img {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.skill {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.skill > li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #fff;
+}
+.skill > li:nth-child(1) {
+  background-color: #4ECDC4;
+}
+.skill > li:nth-child(2) {
+  background-color: #f80;
+}
+.skill > li:nth-child(3) {
+  background-color: #f55;
+}
+.skill > li:nth-child(4) {
+  background-color: #b0e18e;
+}
+.skill > li:nth-child(5) {
+  background-color: #ec7171;
+}
+.skill > li:nth-child(6) {
+  background-color: #60b5eb;
+}
+.skill > li:nth-child(7) {
+  background-color: #4c5263;
+}
+.skill > li:nth-child(8) {
+  background-color: #f3b68d;
+}
+.skill > li:nth-child(9) {
+  background-color: #f55;
+}
+.skill > li:nth-child(10) {
+  background-color: #4ECDC4;
+}
+.skill > li:nth-child(11) {
+  background-color: #60b5eb;
+}
+
+.timeline {
+  position: absolute;
+  top: 150px;
+  bottom: 100px;
+  width: 100%;
+}
+.timeline-box {
+  height: 100%;
+  margin: 0 5%;
+  position: relative;
+}
+.timeline-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  border-left: 1px solid #3a96a1;
+  border-right: 1px solid #81e5f1;
+  margin-left: -1px;
+  background-color: #fff;
+}
+.timeline-row {
+  position: absolute;
+  width: 100%;
+  font-size: 14px;
+}
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  background-color: #a0dde4;
+  border-radius: 50%;
+}
+.timeline-time {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  left: 55%;
+  color: #fff;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+.timeline-con {
+  position: absolute;
+  top: -30px;
+  right: 55%;
+  color: #fff;
+}
+.timeline-con .hd {
+  padding: 5px;
+  margin-bottom: 1px;
+  border-radius: 2px 2px 0 0;
+  background-color: rgba(255,255,255,.4);
+}
+.timeline-con .ft {
+  padding: 5px;
+  text-align: right;
+  border-radius: 0 0 2px 2px;
+  background-color: rgba(255,255,255,.4);
+}
+.timeline-row:nth-child(1) .timeline-icon {
+  background-color: #9bec99;
+}
+.timeline-row:nth-child(2) {
+  top: 50%;
+}
+.timeline-row:nth-child(2) .timeline-time {
+  left: 0;
+  right: 55%;
+  text-align: right;
+}
+.timeline-row:nth-child(2) .timeline-con {
+  left: 55%;
+  right: 0;
+}
+.timeline-row:nth-child(3) {
+  bottom: 0;
+}

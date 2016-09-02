@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+    <title id="title"></title>
+	<link rel="stylesheet" href="css/likeui.css">
+    <link rel="stylesheet" href="css/demo.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<header>
+	<div class="navbar navbar-inverse bg-red">
+		<div class="container">
+			<h1 class="navbar-brand">
+				Like UI
+			</h1>
+			<button class="navbar-toggle radius">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-collapse collapse">
+				<ul id="top_nav" class="nav navbar-nav nav-pills">
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="container">
+	
+	<div class="t-gray pd2">2015-07-02修改-新增</div>
+
+	<div class="ui-box">
+		<h4>transform-style<small>语法：<code>transform-style: flat | preserve-3d;</code></small></h4>
+		<div class="example clearfix">
+			<div class="ho v1">
+				<div class="ho-s-6 panel">
+				    <div class="spin rbox">
+				        <span></span>
+				    </div>
+					<div class="tac fstyle">transform-style: flat;</div>
+				</div>
+				<div class="ho-s-6 panel">
+				    <div class="spin rbox preserve3d">
+				        <span></span>
+				    </div>
+					<div class="tac fstyle">transform-style: preserve-3d;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui-box">
+		<h4>perspective<small>语法：<code>perspective: none | number;</code></small></h4>
+		<div class="example clearfix">
+			<div class="ho v2">
+				<div class="ho-s-6 panel">
+			        <div class="rbox">
+			            <span></span>
+			        </div>
+					<div class="tac fstyle">perspective: none;</div>
+				</div>
+				<div class="ho-s-6 panel">
+			        <div class="rbox perspective">
+			            <span></span>
+			        </div>
+					<div class="tac fstyle">perspective: 500;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui-box">
+		<h4>CASE<small>结合<code>transform-style</code>和<code>perspective</code>使用</small></h4>
+		<div class="example clearfix">
+			<div class="ho v3">
+				<div class="ho-s-6 ho-m-3 panel">
+				    <div class="cube v3c">
+				        <div class="front">1</div>
+				        <div class="back">6</div>
+				        <div class="right">4</div>
+				        <div class="left">3</div>
+				        <div class="top">5</div>
+				        <div class="bottom">2</div>
+				    </div>
+					<div class="tac fstyle">case1</div>
+				</div>
+				<div class="ho-s-6 ho-m-3 panel">
+				    <div class="cube v3a">
+				        <div class="front">1</div>
+				        <div class="back">6</div>
+				        <div class="right">4</div>
+				        <div class="left">3</div>
+				        <div class="top">5</div>
+				        <div class="bottom">2</div>
+				    </div>
+					<div class="tac fstyle">case2</div>
+				</div>
+				<div class="ho-s-6 ho-m-3 panel">
+				    <div class="cube">
+				        <div class="front">1</div>
+				        <div class="back">6</div>
+				        <div class="right">4</div>
+				        <div class="left">3</div>
+				        <div class="top">5</div>
+				        <div class="bottom">2</div>
+				    </div>
+					<div class="tac fstyle">case3</div>
+				</div>
+				<div class="ho-s-6 ho-m-3 panel perspective">
+				    <div class="cube">
+				        <div class="front">1</div>
+				        <div class="back">6</div>
+				        <div class="right">4</div>
+				        <div class="left">3</div>
+				        <div class="top">5</div>
+				        <div class="bottom">2</div>
+				    </div>
+					<div class="tac fstyle">case4</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui-box">
+		<h4>backface-visibility<small>语法：<code>backface-visibility: visible | hidden;</code></small></h4>
+		<div class="example clearfix">
+			<div class="ho v4">
+				<div class="ho-s-6 panel">
+			        <div class="rbox v4c">
+			            <span>第一页</span>
+			            <span>第二页</span>
+			        </div>
+					<div class="tac fstyle">backface-visibility: visible;</div>
+				</div>
+				<div class="ho-s-6 panel">
+			        <div class="rbox v4c backface">
+			            <span>第一页</span>
+			            <span>第二页</span>
+			        </div>
+					<div class="tac fstyle">backface-visibility: hidden;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui-box">
+		<h4>CASE<small>结合<code>transform-style</code>和<code>backface-visibility</code>使用</small></h4>
+		<div class="example clearfix">
+			<div class="ho v5">
+				<div class="ho-s-6 panel">
+			        <div class="cube">
+				        <div class="front">1</div>
+				        <div class="back">6</div>
+				        <div class="right">4</div>
+				        <div class="left">3</div>
+				        <div class="top">5</div>
+				        <div class="bottom">2</div>
+				    </div>
+					<div class="tac fstyle">backface-visibility: hidden;</div>
+				</div>
+				<div class="ho-s-6 panel">
+			        <div class="cube backface">
+				        <div class="front">1</div>
+				        <div class="back">6</div>
+				        <div class="right">4</div>
+				        <div class="left">3</div>
+				        <div class="top">5</div>
+				        <div class="bottom">2</div>
+				    </div>
+					<div class="tac fstyle">backface-visibility: hidden;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui-box">
+		<h4>transform-origin<small>语法：<code>transform-origin: x-axis y-axis z-axis;</code></small></h4>
+		<div class="ho lsig fstyle">
+			<div class="ho-s-6">
+				<ul>
+					<li> top = top center = center top = 50% 0</li>
+					<li> right = right center = center right = 100%或(100% 50%)</li>
+					<li> bottom = bottom center = center bottom = 50% 100%</li>
+					<li> left = left center = center left = 0或(0 50%)</li>
+					<li> center = center center = 50%或（50% 50%）</li>
+					<li> top left = left top = 0 0</li>
+					<li> right top = top right = 100% 0</li>
+					<li> bottom right = right bottom = 100% 100%</li>
+					<li> bottom left = left bottom = 0 100%</li>
+				</ul>
+			</div>
+			<div class="ho-s-6">
+				<p> x-axis：<code>length | % | left | right | center</code></p>
+				<p> y-axis：<code>length | % | top | bottom | center</code></p>
+				<p> z-axis：<code>length</code></p>
+			</div>
+		</div>
+		<div class="example clearfix">
+			<div class="ho v6">
+				<div class="ho-s-6 ho-m-3 panel">
+			        <div class="rbox v6a">
+			            <span>left</span>
+			        </div>
+					<div class="tac fstyle">transform-origin: left;</div>
+				</div>
+				<div class="ho-s-6 ho-m-3 panel">
+			        <div class="rbox v6b">
+			            <span>right</span>
+			        </div>
+					<div class="tac fstyle">transform-origin: right;</div>
+				</div>
+				<div class="ho-s-6 ho-m-3 panel">
+			        <div class="rbox v6c">
+			            <span>top</span>
+			        </div>
+					<div class="tac fstyle">transform-origin: top;</div>
+				</div>
+				<div class="ho-s-6 ho-m-3 panel">
+			        <div class="rbox v6d">
+			            <span>bottom</span>
+			        </div>
+					<div class="tac fstyle">transform-origin: bottom;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

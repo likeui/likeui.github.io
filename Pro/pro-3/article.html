@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/kui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ontouchstart>
+	<div class="n-nav">
+		<a class="k-fl">
+			返回
+		</a>
+		<div class="n-tit">
+			正文
+		</div>
+		<a class="k-fr" href='view.html'>
+			评论
+		</a>
+	</div><!--end n-nav-->
+
+
+
+	<div class="k-container k-container-cen">
+		<div>
+			<h4 class="art-tit u-b">
+				<b>正文内容</b>
+			</h4>
+			<div class="art-con">
+				当你孤单你会想起谁，你想不想找个人来陪，你的快乐伤悲，只有我能体会，让我再陪你走一回。
+			</div>
+			<h6 class="l-btm">
+				<span class="cl-gray">2016-08-14</span>
+				<div class="l-ft">
+					<span><i class="icon-message"></i> 864万 </span>
+					<span><i class="icon-heart"></i> 77万 </span>
+				</div>
+			</h6>
+		</div>
+
+
+		<div style="margin-top: 50px">
+			<h4 class="art-tit u-b">
+				<b>评论</b>
+			</h4>
+			<div class="l l-talk">
+
+				<div class="l-row">
+					<div class="l-hd">
+						<img src="http://tupian.qqjay.com/tou3/2015/0831/788c2a518f3fea4d658dd578f08d5eac.jpg">
+					</div>
+					<div class="l-bd">
+						<div class="l-tit">武大郎</div>
+						<div class="l-dec">
+							从今天起，做一个幸福的人！喂马，劈柴，周游世界；从明天起，关心粮食和蔬菜；我有一所大房子，面朝大海，春暖花开
+						</div>
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-hd">
+						<img src="http://c.hiphotos.baidu.com/baike/s%3D220/sign=951a71a47d3e6709ba0042fd0bc69fb8/d833c895d143ad4be38fcb4380025aafa50f068b.jpg">
+					</div>
+					<div class="l-bd">
+						<div class="l-tit">武松</div>
+						<div class="l-dec">
+							有时，当我们不甚了解一件事情的原委时，切莫过早给它下一个定论！更不要站在任何道德制高点批评甚至批判别人
+						</div>
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-hd">
+						<img src="http://c.hiphotos.baidu.com/baike/s%3D220/sign=951a71a47d3e6709ba0042fd0bc69fb8/d833c895d143ad4be38fcb4380025aafa50f068b.jpg">
+					</div>
+					<div class="l-bd">
+						<div class="l-tit">武松</div>
+						<div class="l-dec">
+							.l-talk里面如果没内容会显示 text-null
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="text-null">
+				<i class="icon-weibiaoti2"></i>
+				<p>暂时没有评论内容</p>
+			</div>
+		</div>
+	</div><!--end k-container-->
+
+
+
+	<div id="layer">
+		<div class="d-mask" style="display: none;"></div>
+		<ul class="d-menu" style="display: none;">
+			<li><a class="u-b" href="">全部</a></li>
+			<li><a class="u-b" href="">我发布的</a></li>
+			<li><a class="u-b" href="">学校社区</a></li>
+			<li><a class="u-b" href="">人际关系</a></li>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript">
+		$.trim($(".l-talk").html()) == "" ? $(".text-null").show() : "";
+	</script>
+</body>
+</html>

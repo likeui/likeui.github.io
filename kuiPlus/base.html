@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<link rel="stylesheet" href="css/kui.css">
+	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
+</head>
+<body ontouchstart>
+	
+	<div class="header">
+		<i class="icon-menu nav-menu"></i>
+		<div class="nav-logo">
+			<img src="images/kui-logo.png">
+		</div>
+	</div>
+
+	<div class="side">
+		<div class="logo">
+			<img class="k-img" src="images/kui-logo.png">
+		</div>
+
+		<ul class="n">
+			<li>
+				<a href="index.html">首 页</a>
+			</li>
+			<li class="active">
+				<a href="base.html">基 础</a>
+			</li>
+			<li>
+				<a href="grid.html">网 格</a>
+			</li>
+			<li>
+				<a href="anime.html">动 画</a>
+			</li>
+			<li>
+				<a href="button.html">按 钮</a>
+			</li>
+			<li>
+				<a href="color.html">颜 色</a>
+			</li>
+			<li>
+				<a href="form.html">表 单</a>
+			</li>
+			<li>
+				<a href="icon.html">图 标</a>
+			</li>
+			<li>
+				<a href="table.html">表 格</a>
+			</li>
+		</ul>
+
+		<div class="k-ml k-mr u-b"></div>
+
+		<div class="link k-tac">
+			<a class="b b-wran b-round">下载 KUI+</a>
+			<div class="k-mt k-h6 cl-gray">当前版本 1.0</div>
+		</div>
+	</div><!--end side-->
+
+
+	<div class="main">
+		<div class="k-container">
+
+			<div class="l l-hoz">
+				<div class="l-top">标题</div>
+				<div class="l-row">
+					<p>使用 <code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 标签来定义你的标题，也可以使用自定义类 <code>.k-h1</code> 到 <code>.k-h6</code> 也可以改变标题大小</p>
+					<h1>h1 : Heading <small>explain</small></h1>
+					<h2>h2 : Heading <small>explain</small></h2>
+					<h3>h3 : Heading <small>explain</small></h3>
+					<h4>h4 : Heading <small>explain</small></h4>
+					<h5>h5 : Heading <small>explain</small></h5>
+					<h6>h6 : Heading <small>explain</small></h6>
+<pre class="prettyprint gray">
+&lt;h1>h1 : Heading &lt;small>explain&lt;/small>&lt;/h1>
+&lt;h2>h2 : Heading &lt;small>explain&lt;/small>&lt;/h2>
+&lt;h3>h3 : Heading &lt;small>explain&lt;/small>&lt;/h3>
+&lt;h4>h4 : Heading &lt;small>explain&lt;/small>&lt;/h4>
+&lt;h5>h5 : Heading &lt;small>explain&lt;/small>&lt;/h5>
+&lt;h6>h6 : Heading &lt;small>explain&lt;/small>&lt;/h6></pre>
+				</div>
+			</div>
+
+			<div class="l l-hoz">
+				<div class="l-top">段落</div>
+				<div class="l-row">
+					<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
+<pre class="prettyprint gray">
+&lt;p>......&lt;/p></pre>
+				</div>
+			</div>
+
+			<div class="l l-hoz">
+				<div class="l-top">文章</div>
+				<div class="l-row">
+					<article>
+						<h2>阿萨大三的</h2>
+						<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
+					</article>
+<pre class="prettyprint gray">
+&lt;p>......&lt;/p></pre>
+				</div>
+			</div>
+
+			<div class="l l-hoz">
+				<div class="l-top">文本级语义</div>
+				<div class="l-row">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>标签</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="b b-s b-green">&lt;a></span></td>
+								<td>将文本转换为超文本使用 <a href="">a 标签</a></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;em></span></td>
+								<td>强调文本使用 <em>em 标签</em> </td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;b></span></td>
+								<td>文本加粗显示使用 <b>b 标签</b></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;strong></span></td>
+								<td>强调任何额外的更重要文本使用 <b>strong 标签</b></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;code></span></td>
+								<td>定义内联代码片段使用 <code>code 标签</span></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;del></span></td>
+								<td>标记文档中已被修改或删除的文本使用 <del>del 标签</del></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;ins></span></td>
+								<td>标记文档中插入的文本使用 <ins>ins 标签</ins></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;mark></span></td>
+								<td>高亮显示文本使用 <mark>mark 标签</mark>，它没有任何语义含义</td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;q></span></td>
+								<td>定义引入的语录在 <q>q 标签 <q>里面使用</q> q</q> 标签</td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;abbr></span></td>
+								<td>定义一个标题的缩写使用 <abbr title="Abbreviation Element">abbr 标签</abbr></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;dfn></span></td>
+								<td>定义一个项目术语名称使用 <dfn>dfn 标签</dfn></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;small></span></td>
+								<td>缩小显示不重要的文本使用 <small>small 标签</small></td>
+							</tr>
+							<tr>
+								<td><span class="b b-s b-green">&lt;big></span></td>
+								<td>放大显示不重要的文本使用 <big>big 标签</big></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+					<div class="l l-hoz">
+						<div class="l-top">水平线</div>
+						<div class="l-row">
+							<hr>
+						</div>
+						<pre class="prettyprint gray">
+&lt;hr></pre>
+					</div>
+
+				</div>
+
+		</div><!--end k-container-->
+	</div><!--end main-->
+
+	<script type="text/javascript" src="../js/prettify.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			prettyPrint();
+		}
+	</script>
+</body>
+</html>

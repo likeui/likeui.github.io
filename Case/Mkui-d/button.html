@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>按钮</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/icon.css">
+
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.btn {
+			margin-bottom: 5px;
+		}
+		.btn.box {
+			margin-left: 0;
+		}
+	</style>
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+		<h4>基本样式<small>添加类：btn</small></h4>
+		<div class="demo">
+			<a class="btn">普通按钮</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn">普通按钮&lt;/a></code></pre>
+		</div>
+
+		<h4>选中样式<small>添加类：active</small></h4>
+		<div class="demo">
+			<a class="btn active">按下去了</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn active">按下去了&lt;/a></code></pre>
+		</div>
+
+		<h4>禁用按钮<small>添加类或添加属性disabled</small></h4>
+		<div class="demo">
+			<a class="btn disabled">禁用按钮</a><br>
+			<button class="btn" disabled>禁用按钮</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn">禁用按钮&lt;/a>&lt;br>
+&lt;button class="btn" disabled>禁用按钮&lt;/button></code></pre>
+		</div>
+
+		<h4>按钮大小<small>btn-xl | btn-l | btn-m | btn-s | btn-xs</small></h4>
+		<div class="demo">
+			<a class="btn btn-xl">按钮</a><br>
+			<a class="btn btn-l">按钮</a><br>
+			<a class="btn btn-m">按钮</a><br>
+			<a class="btn">按钮</a><br>
+			<a class="btn btn-s">按钮</a><br>
+			<a class="btn btn-xs">按钮</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-xl"按钮&lt;/a>&lt;br>
+&lt;a class="btn btn-l">按钮&lt;/a>&lt;br>
+&lt;a class="btn btn-m">按钮&lt;/a>&lt;br>
+&lt;a class="btn">按钮&lt;/a>&lt;br>
+&lt;a class="btn btn-s">按钮&lt;/a>&lt;br>
+&lt;a class="btn btn-xs">按钮&lt;/a></code></pre>
+		</div>
+
+		<h4>独行按钮<small>添加类btn-block</small></h4>
+		<div class="demo">
+			<a class="btn btn-block">这个按钮好长</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-block">这个按钮好长&lt;/a></code></pre>
+		</div>
+
+		<h4>文字阴影<small>添加类：text-shadow</small></h4>
+		<div class="demo">
+			<a class="btn text-shadow">看我有阴影</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn text-shadow">看我有阴影&lt;/a></code></pre>
+		</div>
+
+		<h4>按钮阴影<small>添加类：box-shadow</small></h4>
+		<div class="demo">
+			<a class="btn box-shadow">外层的阴影</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn box-shadow">外层的阴影&lt;/a></code></pre>
+		</div>
+
+		<h4>棱角按钮<small>添加类：btn-angular</small></h4>
+		<div class="demo">
+			<a class="btn btn-angular">我有棱角</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-angular">我有棱角&lt;/a></code></pre>
+		</div>
+
+		<h4>有图标的按钮<small>需要和icon.css配合使用</small></h4>
+		<div class="demo">
+			<a class="btn"><i class="iconfont icon-menu"></i>菜单</a>
+			<a class="btn"><i class="iconfont icon-email"></i>邮箱</a>
+			<a class="btn"><i class="iconfont icon-calendar"></i>日期</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn">&lt;i class="iconfont icon-menu">&lt;/i>菜单&lt;/a>
+&lt;a class="btn">&lt;i class="iconfont icon-appicon06">&lt;/i>邮箱&lt;/a>
+&lt;a class="btn">&lt;i class="iconfont icon-icon">&lt;/i>邮箱&lt;/a></code></pre>
+		</div>
+
+		<h4>按钮颜色<small>green | darkgreen | blue | primary | noble | red | pink | orange | yellow | plain </small></h4>
+		<div class="demo">
+			<a class="btn green">绿色</a>
+			<a class="btn darkgreen">深绿</a>
+			<a class="btn blue">蓝色</a>
+			<a class="btn primary">浅蓝</a>
+			<a class="btn noble">紫色</a>
+			<a class="btn red">红色</a>
+			<a class="btn pink">粉色</a>
+			<a class="btn orange">橘红</a>
+			<a class="btn yellow">黄色</a>
+			<a class="btn plain">白色</a>
+			<a class="btn">默认</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn green">绿色&lt;/a>
+&lt;a class="btn darkgreen">深绿&lt;/a>
+&lt;a class="btn blue">蓝色&lt;/a>
+&lt;a class="btn primary">浅蓝&lt;/a>
+&lt;a class="btn noble">紫色&lt;/a>
+&lt;a class="btn red">红色&lt;/a>
+&lt;a class="btn pink">粉色&lt;/a>
+&lt;a class="btn orange">橘红&lt;/a>
+&lt;a class="btn yellow">黄色&lt;/a>
+&lt;a class="btn plain">白色&lt;/a>
+&lt;a class="btn">默认&lt;/a></code></pre>
+		</div>
+
+		<h4>带边框的按钮<small>添加类：btn-border</small></h4>
+		<div class="demo">
+			<a class="btn btn-border green">绿色</a>
+			<a class="btn btn-border darkgreen">深绿</a>
+			<a class="btn btn-border blue">蓝色</a>
+			<a class="btn btn-border primary">浅蓝</a>
+			<a class="btn btn-border noble">紫色</a>
+			<a class="btn btn-border red">红色</a>
+			<a class="btn btn-border pink">粉色</a>
+			<a class="btn btn-border orange">橘红</a>
+			<a class="btn btn-border yellow">黄色</a>
+			<a class="btn btn-border plain">白色</a>
+			<a class="btn btn-border">默认</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-border green">绿色&lt;/a>
+&lt;a class="btn btn-border darkgreen">深绿&lt;/a>
+&lt;a class="btn btn-border blue">蓝色&lt;/a>
+&lt;a class="btn btn-border primary">浅蓝&lt;/a>
+&lt;a class="btn btn-border noble">紫色&lt;/a>
+&lt;a class="btn btn-border red">红色&lt;/a>
+&lt;a class="btn btn-border pink">粉色&lt;/a>
+&lt;a class="btn btn-border orange">橘红&lt;/a>
+&lt;a class="btn btn-border yellow">黄色&lt;/a>
+&lt;a class="btn btn-border plain">白色&lt;/a>
+&lt;a class="btn btn-border">默认&lt;/a></code></pre>
+		</div>
+
+		<h4>渐变按钮<small>添加类：btn-shade</small></h4>
+		<div class="demo">
+			<a class="btn btn-shade green">绿色</a>
+			<a class="btn btn-shade darkgreen">深绿</a>
+			<a class="btn btn-shade blue">蓝色</a>
+			<a class="btn btn-shade primary">浅蓝</a>
+			<a class="btn btn-shade noble">紫色</a>
+			<a class="btn btn-shade red">红色</a>
+			<a class="btn btn-shade pink">粉色</a>
+			<a class="btn btn-shade orange">橘红</a>
+			<a class="btn btn-shade yellow">黄色</a>
+			<a class="btn btn-shade plain">白色</a>
+			<a class="btn btn-shade">默认</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-shade green">绿色&lt;/a>
+&lt;a class="btn btn-shade darkgreen">深绿&lt;/a>
+&lt;a class="btn btn-shade blue">蓝色&lt;/a>
+&lt;a class="btn btn-shade primary">浅蓝&lt;/a>
+&lt;a class="btn btn-shade noble">紫色&lt;/a>
+&lt;a class="btn btn-shade red">红色&lt;/a>
+&lt;a class="btn btn-shade pink">粉色&lt;/a>
+&lt;a class="btn btn-shade orange">橘红&lt;/a>
+&lt;a class="btn btn-shade yellow">黄色&lt;/a>
+&lt;a class="btn btn-shade plain">白色&lt;/a>
+&lt;a class="btn btn-shade">默认&lt;/a></code></pre>
+		</div>
+
+		<h4>方形按钮<small>添加类：btn-square</small></h4>
+		<div class="demo">
+			<a class="btn btn-square green">+</a>
+			<a class="btn btn-square darkgreen">+</a>
+			<a class="btn btn-square blue">+</a>
+			<a class="btn btn-square primary">+</a>
+			<a class="btn btn-square noble">+</a>
+			<a class="btn btn-square red">+</a>
+			<a class="btn btn-square pink">+</a>
+			<a class="btn btn-square orange">+</a>
+			<a class="btn btn-square yellow">+</a>
+			<a class="btn btn-square plain">+</a>
+			<a class="btn btn-square">+</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-square green">+&lt;/a>
+&lt;a class="btn btn-square darkgreen">+&lt;/a>
+&lt;a class="btn btn-square blue">+&lt;/a>
+&lt;a class="btn btn-square primary">+&lt;/a>
+&lt;a class="btn btn-square noble">+&lt;/a>
+&lt;a class="btn btn-square red">+&lt;/a>
+&lt;a class="btn btn-square pink">+&lt;/a>
+&lt;a class="btn btn-square orange">+&lt;/a>
+&lt;a class="btn btn-square yellow">+&lt;/a>
+&lt;a class="btn btn-square plain">+&lt;/a>
+&lt;a class="btn btn-square">+&lt;/a></code></pre>
+		</div>
+
+		<h4>大圆角按钮<small>添加类：btn-box</small></h4>
+		<div class="demo">
+			<a class="btn btn-box green">+</a>
+			<a class="btn btn-box darkgreen">+</a>
+			<a class="btn btn-box blue">+</a>
+			<a class="btn btn-box primary">+</a>
+			<a class="btn btn-box noble">+</a>
+			<a class="btn btn-box red">+</a>
+			<a class="btn btn-box pink">+</a>
+			<a class="btn btn-box orange">+</a>
+			<a class="btn btn-box yellow">+</a>
+			<a class="btn btn-box plain">+</a>
+			<a class="btn btn-box">+</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-box green">+&lt;/a>
+&lt;a class="btn btn-box darkgreen">+&lt;/a>
+&lt;a class="btn btn-box blue">+&lt;/a>
+&lt;a class="btn btn-box primary">+&lt;/a>
+&lt;a class="btn btn-box noble">+&lt;/a>
+&lt;a class="btn btn-box red">+&lt;/a>
+&lt;a class="btn btn-box pink">+&lt;/a>
+&lt;a class="btn btn-box orange">+&lt;/a>
+&lt;a class="btn btn-box yellow">+&lt;/a>
+&lt;a class="btn btn-box plain">+&lt;/a>
+&lt;a class="btn btn-box">+&lt;/a></code></pre>
+		</div>
+
+		<h4>椭圆按钮<small>添加类：btn-pill</small></h4>
+		<div class="demo">
+			<a class="btn btn-pill green">+</a>
+			<a class="btn btn-pill darkgreen">+</a>
+			<a class="btn btn-pill blue">+</a>
+			<a class="btn btn-pill primary">+</a>
+			<a class="btn btn-pill noble">+</a>
+			<a class="btn btn-pill red">+</a>
+			<a class="btn btn-pill pink">+</a>
+			<a class="btn btn-pill orange">+</a>
+			<a class="btn btn-pill yellow">+</a>
+			<a class="btn btn-pill plain">+</a>
+			<a class="btn btn-pill">+</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-pill green">+&lt;/a>
+&lt;a class="btn btn-pill darkgreen">+&lt;/a>
+&lt;a class="btn btn-pill blue">+&lt;/a>
+&lt;a class="btn btn-pill primary">+&lt;/a>
+&lt;a class="btn btn-pill noble">+&lt;/a>
+&lt;a class="btn btn-pill red">+&lt;/a>
+&lt;a class="btn btn-pill pink">+&lt;/a>
+&lt;a class="btn btn-pill orange">+&lt;/a>
+&lt;a class="btn btn-pill yellow">+&lt;/a>
+&lt;a class="btn btn-pill plain">+&lt;/a>
+&lt;a class="btn btn-pill">+&lt;/a></code></pre>
+		</div>
+
+		<h4>圆形按钮<small>添加类：btn-circle</small></h4>
+		<div class="demo">
+			<a class="btn btn-circle green">+</a>
+			<a class="btn btn-circle darkgreen">+</a>
+			<a class="btn btn-circle blue">+</a>
+			<a class="btn btn-circle primary">+</a>
+			<a class="btn btn-circle noble">+</a>
+			<a class="btn btn-circle red">+</a>
+			<a class="btn btn-circle pink">+</a>
+			<a class="btn btn-circle orange">+</a>
+			<a class="btn btn-circle yellow">+</a>
+			<a class="btn btn-circle plain">+</a>
+			<a class="btn btn-circle">+</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-circle green">+&lt;/a>
+&lt;a class="btn btn-circle darkgreen">+&lt;/a>
+&lt;a class="btn btn-circle blue">+&lt;/a>
+&lt;a class="btn btn-circle primary">+&lt;/a>
+&lt;a class="btn btn-circle noble">+&lt;/a>
+&lt;a class="btn btn-circle red">+&lt;/a>
+&lt;a class="btn btn-circle pink">+&lt;/a>
+&lt;a class="btn btn-circle orange">+&lt;/a>
+&lt;a class="btn btn-circle yellow">+&lt;/a>
+&lt;a class="btn btn-circle plain">+&lt;/a>
+&lt;a class="btn btn-circle">+&lt;/a></code></pre>
+		</div>
+
+		<h4>边框按钮<small>添加类：btn-o</small></h4>
+		<div class="demo">
+			<a class="btn btn-o green">绿色</a>
+			<a class="btn btn-o darkgreen">深绿</a>
+			<a class="btn btn-o blue">蓝色</a>
+			<a class="btn btn-o primary">浅蓝</a>
+			<a class="btn btn-o noble">紫色</a>
+			<a class="btn btn-o red">红色</a>
+			<a class="btn btn-o pink">粉色</a>
+			<a class="btn btn-o orange">橘红</a>
+			<a class="btn btn-o yellow">黄色</a>
+			<a class="btn btn-o plain">白色</a>
+			<a class="btn btn-o">默认</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-o green">绿色&lt;/a>
+&lt;a class="btn btn-o darkgreen">深绿&lt;/a>
+&lt;a class="btn btn-o blue">蓝色&lt;/a>
+&lt;a class="btn btn-o primary">浅蓝&lt;/a>
+&lt;a class="btn btn-o noble">紫色&lt;/a>
+&lt;a class="btn btn-o red">红色&lt;/a>
+&lt;a class="btn btn-o pink">粉色&lt;/a>
+&lt;a class="btn btn-o orange">橘红&lt;/a>
+&lt;a class="btn btn-o yellow">黄色&lt;/a>
+&lt;a class="btn btn-o plain">白色&lt;/a>
+&lt;a class="btn btn-o">默认&lt;/a></code></pre>
+		</div>
+
+		<h4>3D按钮<small>添加类：threed</small></h4>
+		<div class="demo">
+			<a class="btn threed green">绿色</a>
+			<a class="btn threed darkgreen">深绿</a>
+			<a class="btn threed blue">蓝色</a>
+			<a class="btn threed primary">浅蓝</a>
+			<a class="btn threed noble">紫色</a>
+			<a class="btn threed red">红色</a>
+			<a class="btn threed pink">粉色</a>
+			<a class="btn threed orange">橘红</a>
+			<a class="btn threed yellow">黄色</a>
+			<a class="btn threed plain">白色</a>
+			<a class="btn threed">默认</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn threed green">绿色&lt;/a>
+&lt;a class="btn threed darkgreen">深绿&lt;/a>
+&lt;a class="btn threed blue">蓝色&lt;/a>
+&lt;a class="btn threed primary">浅蓝&lt;/a>
+&lt;a class="btn threed noble">紫色&lt;/a>
+&lt;a class="btn threed red">红色&lt;/a>
+&lt;a class="btn threed pink">粉色&lt;/a>
+&lt;a class="btn threed orange">橘红&lt;/a>
+&lt;a class="btn threed yellow">黄色&lt;/a>
+&lt;a class="btn threed plain">白色&lt;/a>
+&lt;a class="btn threed">默认&lt;/a></code></pre>
+		</div>
+
+		<h4>阴影按钮<small>添加类：btn-shadow</small></h4>
+		<div class="demo">
+			<a class="btn btn-shadow green">绿色</a>
+			<a class="btn btn-shadow darkgreen">深绿</a>
+			<a class="btn btn-shadow blue">蓝色</a>
+			<a class="btn btn-shadow primary">浅蓝</a>
+			<a class="btn btn-shadow noble">紫色</a>
+			<a class="btn btn-shadow red">红色</a>
+			<a class="btn btn-shadow pink">粉色</a>
+			<a class="btn btn-shadow orange">橘红</a>
+			<a class="btn btn-shadow yellow">黄色</a>
+			<a class="btn btn-shadow plain">白色</a>
+			<a class="btn btn-shadow">默认</a>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;a class="btn btn-shadow green">绿色&lt;/a>
+&lt;a class="btn btn-shadow darkgreen">深绿&lt;/a>
+&lt;a class="btn btn-shadow blue">蓝色&lt;/a>
+&lt;a class="btn btn-shadow primary">浅蓝&lt;/a>
+&lt;a class="btn btn-shadow noble">紫色&lt;/a>
+&lt;a class="btn btn-shadow red">红色&lt;/a>
+&lt;a class="btn btn-shadow pink">粉色&lt;/a>
+&lt;a class="btn btn-shadow orange">橘红&lt;/a>
+&lt;a class="btn btn-shadow yellow">黄色&lt;/a>
+&lt;a class="btn btn-shadow plain">白色&lt;/a>
+&lt;a class="btn btn-shadow">默认&lt;/a></code></pre>
+		</div>
+
+		<h4>下拉菜单<small>外层添加类：btn-dropdown</small></h4>
+		<div class="demo">
+			<span class="btn-dropdown">
+				<button class="btn btn-angular"> 下拉菜单 <i class="icon-caret-down"></i></button>
+				<ul class="btn-dropdown-list is-below">
+					<li><a>123</a></li>
+					<li class='btn-dropdown-divider'><a>123</a></li>
+					<li><a>123</a></li>
+				</ul>
+			</span>
+			<span class="btn-dropdown">
+				<button class="btn"> 上拉菜单 <i class="icon-caret-up"></i></button>
+				<ul class="btn-dropdown-list is-above">
+					<li><a>123</a></li>
+					<li class='btn-dropdown-divider'><a>123</a></li>
+					<li><a>123</a></li>
+				</ul>
+			</span>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="btn-dropdown">
+	&lt;button class="btn btn-angular"> 下拉菜单 &lt;i class="icon-caret-down">&lt;/i>&lt;/button>
+	&lt;ul class="btn-dropdown-list is-below">
+		&lt;li>&lt;a>123&lt;/a>&lt;/li>
+		&lt;li class='btn-dropdown-divider'>&lt;a>123&lt;/a>&lt;/li>
+		&lt;li>&lt;a>123&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/span>
+&lt;span class="btn-dropdown">
+	&lt;button class="btn"> 上拉菜单 &lt;i class="icon-caret-up">&lt;/i>&lt;/button>
+	&lt;ul class="btn-dropdown-list is-above">
+		&lt;li>&lt;a>123&lt;/a>&lt;/li>
+		&lt;li class='btn-dropdown-divider'>&lt;a>123&lt;/a>&lt;/li>
+		&lt;li>&lt;a>123&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/span></code></pre>
+		</div>
+
+		<h4>按钮组大小<small>btn-group-m | btn-group-s | btn-group-xs</small></h4>
+		<div class="demo">
+			<span class="btn-group btn-group-m">
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+			</span>
+			<br>
+			<span class="btn-group">
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+			</span>
+			<br>
+			<span class="btn-group btn-group-s">
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+			</span>
+			<br>
+			<span class="btn-group btn-group-xs">
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+				<button class="btn">按钮组</button>
+			</span>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="btn-group btn-group-m">
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+&lt;/span>
+&lt;br>
+&lt;span class="btn-group">
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+&lt;/span>
+&lt;br>
+&lt;span class="btn-group btn-group-s">
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+&lt;/span>
+&lt;br>
+&lt;span class="btn-group btn-group-xs">
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+	&lt;button class="btn">按钮组&lt;/button>
+&lt;/span></code></pre>
+		</div>
+
+		<h4>下拉按钮组<small>添加类：btn-group</small></h4>
+		<div class="demo">
+			<span class="btn-group">
+				<span class="btn-dropdown">
+					<button class="btn"> 搜索 <i class="icon-search"></i></button>
+					<ul class="btn-dropdown-list is-below">
+						<li><a href="http://www.baidu.com">百度</a></li>
+						<li><a href="http://www.sina.com.cn/">新浪</a></li>
+						<li class='btn-dropdown-divider'><a href="http://www.qq.com/">腾讯</a></li>
+					</ul>
+				</span>
+				<button class="btn">菜单二</button>
+				<button class="btn">菜单三</button>
+			</span>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;span class="btn-group">
+	&lt;span class="btn-dropdown">
+		&lt;button class="btn"> button &lt;i class="icon-search">&lt;/i>&lt;/button>
+		&lt;ul class="btn-dropdown-list is-below">
+			&lt;li>&lt;a href="http://www.baidu.com">百度&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="http://www.sina.com.cn/">新浪&lt;/a>&lt;/li>
+			&lt;li class='btn-dropdown-divider'>&lt;a href="http://www.qq.com/">腾讯&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/span>
+	&lt;button class="btn">菜单二&lt;/button>
+	&lt;button class="btn">菜单三&lt;/button>
+&lt;/span></code></pre>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script>
+	//点击其它
+	function docTagert(obj) {
+		$(document).on("click",function(e){ 
+			if($(e.target).closest(obj).length == 0){ 
+				obj.removeClass('active').next().slideUp(200);
+			}
+		});
+	}
+	//点击下拉
+	$(".btn-dropdown .btn").on('click', function(event) {
+		var that = $(this);
+		docTagert(that);
+		if(that.is(".active")){
+			that.removeClass('active').next().slideUp(200);
+		}else{
+			that.addClass('active').next().slideDown(200);
+		}
+	});
+</script>
+</body>
+</html>

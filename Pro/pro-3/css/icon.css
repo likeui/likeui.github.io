@@ -1,0 +1,26 @@
+@font-face {
+	font-family: kui;
+	src: url('../fonts/kui.ttf') format('truetype');
+}
+[class^="icon-"],
+[class*="icon-"] {
+	display: inline-block;
+	font-family: "kui" !important;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	/*-webkit-text-stroke-width: 0.2px;*/
+}
+.icon-message:before { content: "\e82e"; }
+.icon-heart:before { content: "\e631"; }
+.icon-edit:before { content: "\e66a"; }
+.icon-menu-copy:before { content: "\e694"; }
+.icon-xiaolian:before { content: "\e69e"; }
+.icon-aui-icon-image:before { content: "\e612"; vertical-align: -2px;}
+.icon-xiangji:before { content: "\e620"; }
+.icon-map:before { content: "\e657"; }
+.icon-weibiaoti2:before { content: "\e672"; }
+.icon-down:before { content: "\e61e"; }

@@ -1,0 +1,333 @@
+body,
+.main-shade {
+	-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+}
+.main-shade {
+	opacity: 0;
+	background-color: #000;
+}
+body.active {
+	overflow: hidden;
+	-webkit-transform: translate3d(240px, 0, 0);
+			transform: translate3d(240px, 0, 0);
+}
+body.active .main-shade {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	opacity: .6;
+}
+.header {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, .95);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+}
+.nav-menu {
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	font-size: 24px;
+	cursor: pointer;
+}
+.nav-logo {
+	width: 64px;
+	margin: 0 auto;
+}
+
+
+
+
+.side {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 240px;
+	background-color: #fafafa;
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+			transition: transform .5s ease-in-out;
+	-webkit-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+}
+.side .logo {
+	text-align: center;
+	background-color: #2a3542;
+}
+.side .k-img {
+	width: 64px;
+	height: 64px;
+	margin: 40px auto;
+}
+.side .n {
+	padding: 0;
+	margin: 40px 0;
+	list-style: none;
+}
+.side .n > li {
+	padding: 0 20px;
+	margin-bottom: 10px;
+}
+.side .n > li > a {
+	color: #666;
+	padding: 4px 20px;
+	text-align: center;
+}
+.side .n > li.active > a,
+.side .n > li > a:hover {
+	color: #fff;
+	background-color: #2a3542;
+	border-radius: 100px;
+}
+.side .link {
+	padding: 40px 15px;
+}
+
+
+
+
+
+.main {
+	padding-top: 79px;
+}
+.main-top {
+	margin-bottom: 50px;
+}
+.main-top a {
+	color: #58c9f3;
+}
+.main-con .n-a {
+	margin-bottom: 30px;
+}
+.main-con .n-a > li {
+	margin-bottom: 15px;
+}
+.main-con .n-a > li > a,
+.main-con .n-a > li.active > a {
+	border-radius: 100px;
+}
+.main-h .l-row {
+	padding: 0;
+	overflow: hidden;
+}
+.main-h .l-img {
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+			transition: transform .5s ease-in-out;
+}
+.main-h .l-img:hover {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2);
+			transform: scale3d(1.2, 1.2, 1.2);
+}
+@media screen and ( max-width: 767px ) {
+	.main-con .n-a > li {
+		float: left;
+		width: 50%;
+		text-align: center;
+	}
+}
+@media screen and ( min-width: 768px ) {
+	.header {
+		display: none;
+	}
+	.side {
+		-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+	}
+	.main {
+		padding-top: 50px;
+		margin-left: 240px;
+	}
+	.main-con {
+		margin: 0 60px;
+	}
+	.main-con .h {
+		margin-left: -30px;
+	}
+	.main-con .h > div {
+		padding-left: 30px;
+	}
+	.main-con .l {
+		margin-bottom: 30px;
+	}
+	.main-con .l-top {
+		padding: 12px 30px;
+	}
+	.main-con .l-row {
+		padding: 30px;
+	}
+	.main-con pre {
+		padding: 10px 30px;
+	}
+	.main-h .l:hover {
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+	}
+}
+
+
+.l-top small {
+	font-family: Monaco,Menlo,Consolas,"Courier New",FontAwesome,monospace;
+	vertical-align: top;
+	color: #999;
+}
+.demo,
+.code {
+	position: relative;
+	padding-top: 35px;
+}
+.demo:before,
+.code:before {
+	content: 'Demo';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+
+	font-size: 12px;
+	text-align: center;
+
+	color: #fff;
+	border-radius: 10px;
+	background-color: #58c9f3;
+
+}
+.demo:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.l-row:not(.not) .demo button,
+.l-row:not(.not) .demo .b {
+	float: left;
+}
+.code {
+	margin-top: 30px;
+}
+.code > :last-child {
+	margin-bottom: 0;
+}
+.code:before {
+	content: 'Code';
+	background-color: #ffd000;
+}
+
+
+/*按钮*/
+.button .l-row:not(.not) button,
+.button .l-row:not(.not) .b {
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+
+/*网格*/
+.grid .demo .bc-a {
+	background-color: #fafafa;
+}
+
+
+/*颜色*/
+.color .demo {
+	text-align: center;
+}
+.color .demo span {
+	float: left;
+	width: 10%;
+	height: 40px;
+	line-height: 40px;
+}
+.color .webcolor > div {
+	height: 80px;
+}
+.color .webcolor span {
+	float: left;
+	width: 30px;
+	height: 65px;
+}
+.color .webcolor .color-name {
+	margin-left: 40px;
+}
+.color .webcolor .color-txt {
+	margin-left: 40px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #999;
+	text-transform: lowercase;
+}
+.color .group {
+	float: left;
+    text-align: center;
+    width: 33.33333333%;
+    text-transform: lowercase;
+}
+.color .group span {
+    display: block;
+    height: 40px;
+}
+
+
+/*动画*/
+.anime .preview {
+	position: fixed;
+	top: 50%;
+	right: 50px;
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	background-color: #000;
+	border-radius: 3px;
+	transition: all .5s;
+}
+.anime .preview .box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #f55;
+	border-radius: 3px;
+}
+.anime .preview .box i {
+	color: #fff;
+	font-size: 24px;
+	line-height: 40px;
+}
+@media screen and ( max-width: 767px ) {
+	.anime .preview {
+		top: 12px;
+		right: 15px;
+		left: auto;
+		margin-top: 0;
+	}
+}
+.anime button,
+.anime .b {
+	margin: 0 5px 5px 0;
+}
+
+
+/*图标*/
+.iconbox .k-mb {
+	text-align: center;
+	background-color: #fafafa;
+	transition: all .3s;
+}
+.iconbox .k-mb:hover {
+	color: #fff;
+	background-color: #f55;
+}
+.iconbox .k-mb p {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 12px;
+	line-height: 16px;
+}
+.iconbox .k-mb i {
+	margin-top: 20px;
+	font-size: 36px;
+}

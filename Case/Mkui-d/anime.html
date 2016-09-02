@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>动画</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/button.css">
+
+	<link rel="stylesheet" href="css/anime.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.btn {
+			margin-right: 5px;
+			margin-bottom: 10px;
+		}
+		.test {
+		 	position: relative;
+			z-index: 11;
+			transition: all .5s;
+			margin-top: 35px;
+		}
+		.test > div {
+			position: absolute;
+			right: 0;
+			width: 60px;
+			height: 60px;
+			border-radius: 3px;
+		}
+		.test > div:nth-child(1) {
+			background-color: #333;
+		}
+		.test > div:nth-child(2) {
+			background-color: #f55;
+			color: #fff;
+			text-align: center;
+			line-height: 60px;
+		}
+		.anime-box {
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd">
+	<div class="container">
+		<div class="test"><div></div><div><i class="icon-shoping-cart"></i></div></div>
+	</div>
+</section>
+<div class="container">
+	<div class="box">
+		<h4>使用方法</h4>
+		<div class="demo">
+			<button class="btn green btn-box anime bounce">
+				<i class="icon-heart"></i>
+			</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;button class="btn green btn-box anime bounce">
+	&lt;i class="icon-heart">&lt;/i>
+&lt;/button></code></pre>
+		</div>
+
+
+		<h4>循环动画<small>loop</small></h4>
+		<div class="demo">
+			<button class="btn green btn-box anime bounce loop">
+				<i class="icon-heart"></i>
+			</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;button class="btn green btn-box anime bounce loop">
+	&lt;i class="icon-heart">&lt;/i>
+&lt;/button></code></pre>
+		</div>
+
+
+		<h4>反向动画<small>reverse</small></h4>
+		<div class="demo">
+			<button class="btn green btn-box anime bounce loop reverse">
+				<i class="icon-heart"></i>
+			</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;button class="btn green btn-box anime bounce loop reverse">
+	&lt;i class="icon-heart">&lt;/i>
+&lt;/button></code></pre>
+		</div>
+
+
+		<h4>暂停动画<small>paused</small></h4>
+		<div class="demo">
+			<button class="btn green btn-box anime bounce paused">
+				<i class="icon-heart"></i>
+			</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;button class="btn green btn-box anime bounce paused">
+	&lt;i class="icon-heart">&lt;/i>
+&lt;/button></code></pre>
+		</div>
+
+
+		<h4>延迟动画<small>delay-[1-5]</small></h4>
+		<div class="demo">
+			<button id="replay" class="btn">执行动画</button>
+			<hr>
+			<button class="btn darkgreen anime">0s</button>
+			<button class="btn blue anime delay-1">1s</button>
+			<button class="btn noble anime delay-2">2s</button>
+			<button class="btn red anime delay-3">3s</button>
+			<button class="btn pink anime delay-4">4s</button>
+			<button class="btn orange anime delay-5">5s</button>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;button class="btn darkgreen anime fadeIn">0s&lt;/button>
+&lt;button class="btn blue anime fadeIn delay-1">1s&lt;/button>
+&lt;button class="btn noble anime fadeIn delay-2">2s&lt;/button>
+&lt;button class="btn red anime fadeIn delay-3">3s&lt;/button>
+&lt;button class="btn pink anime fadeIn delay-4">4s&lt;/button>
+&lt;button class="btn orange anime fadeIn delay-5">5s&lt;/button></code></pre>	
+		</div>
+
+
+		<h4 id="isign">动画实例</h4>
+		<div class="demo">
+			<h5>Base</h5>
+			<div class="anime-box">
+				<button>magic</button>
+				<button>swap</button>
+				<button>jello</button>
+				<button>bounce</button>
+				<button>flash</button>
+				<button>pulse</button>
+				<button>rubberBand</button>
+				<button>shake</button>
+				<button>swing</button>
+				<button>tada</button>
+				<button>wobble</button>
+				<button>floating</button>
+				<button>hinge</button>
+			</div>
+
+
+			<h5>Tin</h5>
+			<div class="anime-box">
+				<button>tinInRight</button>
+				<button>tinInLeft</button>
+				<button>tinInUp</button>
+				<button>tinInDown</button>
+				<br>
+				<button>tinOutRight</button>
+				<button>tinOutLeft</button>
+				<button>tinOutUp</button>
+				<button>tinOutDown</button>
+			</div>
+
+
+			<h5>Open</h5>
+			<div class="anime-box">
+				<button>openInDown</button>
+				<button>openInUp</button>
+				<button>openInRight</button>
+				<button>openInLeft</button>
+				<br>
+				<button>openOutDown</button>
+				<button>openOutLeft</button>
+				<button>openOutRight</button>
+				<button>openOutUp</button>
+			</div>
+
+				
+			<h5>Bounce</h5>
+			<div class="anime-box">
+				<button>bounceIn</button>
+				<button>bounceInDown</button>
+				<button>bounceInLeft</button>
+				<button>bounceInRight</button>
+				<button>bounceInUp</button>
+				<br>
+				<button>bounceOut</button>
+				<button>bounceOutDown</button>
+				<button>bounceOutLeft</button>
+				<button>bounceOutRight</button>
+				<button>bounceOutUp</button>
+			</div>
+
+
+			<h5>Fade</h5>
+			<div class="anime-box">
+				<button>fadeIn</button>
+				<button>fadeInDown</button>
+				<button>fadeInDownBig</button>
+				<button>fadeInLeft</button>
+				<button>fadeInLeftBig</button>
+				<button>fadeInRight</button>
+				<button>fadeInRightBig</button>
+				<button>fadeInUp</button>
+				<button>fadeInUpBig</button>
+				<br>
+				<button>fadeOut</button>
+				<button>fadeOutDown</button>
+				<button>fadeOutDownBig</button>
+				<button>fadeOutLeft</button>
+				<button>fadeOutLeftBig</button>
+				<button>fadeOutRight</button>
+				<button>fadeOutRightBig</button>
+				<button>fadeOutUp</button>
+				<button>fadeOutUpBig</button>
+			</div>
+
+
+			<h5>Rotate</h5>
+			<div class="anime-box">
+				<button>rotateIn</button>
+				<button>rotateInDownLeft</button>
+				<button>rotateInDownRight</button>
+				<button>rotateInUpLeft</button>
+				<button>rotateInUpRight</button>
+				<br>
+				<button>rotateOut</button>
+				<button>rotateOutDownLeft</button>
+				<button>rotateOutDownRight</button>
+				<button>rotateOutUpLeft</button>
+				<button>rotateOutUpRight</button>
+				<br>
+				<button>rotateDown</button>
+				<button>rotateUp</button>
+				<button>rotateRight</button>
+				<button>rotateLeft</button>
+			</div>
+
+
+			<h5>Space</h5>
+			<div class="anime-box">
+				<button>spaceOutUp</button>
+				<button>spaceOutDown</button>
+				<button>spaceOutRight</button>
+				<button>spaceOutLeft</button>
+				<br>
+				<button>spaceInUp</button>
+				<button>spaceInDown</button>
+				<button>spaceInRight</button>
+				<button>spaceInLeft</button>
+			</div>
+				
+				
+			<h5>Zoom</h5>
+			<div class="anime-box">
+				<button>zoomIn</button>
+				<button>zoomInDown</button>
+				<button>zoomInLeft</button>
+				<button>zoomInRight</button>
+				<button>zoomInUp</button>
+				<br>
+				<button>zoomOut</button>
+				<button>zoomOutDown</button>
+				<button>zoomOutLeft</button>
+				<button>zoomOutRight</button>
+				<button>zoomOutUp</button>
+			</div>
+				
+				
+			<h5>Slide</h5>
+			<div class="anime-box">
+				<button>slideInUp</button>
+				<button>slideInDown</button>
+				<button>slideInLeft</button>
+				<button>slideInRight</button>
+				<br>
+				<button>slideOutUp</button>
+				<button>slideOutDown</button>
+				<button>slideOutLeft</button>
+				<button>slideOutRight</button>
+			</div>
+				
+				
+			<h5>Flip</h5>
+			<div class="anime-box">
+				<button>flip</button>
+				<button>flipInX</button>
+				<button>flipInY</button>
+				<button>flipOutX</button>
+				<button>flipOutY</button>
+			</div>
+		
+		
+			<h5>Pull</h5>
+			<div class="anime-box">
+				<button>pull</button>
+				<button>pullUp</button>
+				<button>pullDown</button>
+				<button>pullLeft</button>
+				<button>pullRight</button>
+			</div>
+		
+		
+			<h5>Puff</h5>
+			<div class="anime-box">
+				<button>puffIn</button>
+				<button>puffOut</button>
+			</div>
+		
+		
+			<h5>Roll</h5>
+			<div class="anime-box">
+				<button>rollIn</button>
+				<button>rollOut</button>
+			</div>
+		
+		
+			<h5>Lightspeed</h5>
+			<div class="anime-box">
+				<button>lightSpeedIn</button>
+				<button>lightSpeedOut</button>
+			</div>
+		
+		
+			<h5>Bomb</h5>
+			<div class="anime-box">
+				<button>bombRightOut</button>
+				<button>bombLeftOut</button>
+			</div>
+		
+		
+			<h5>TwisterIn</h5>
+			<div class="anime-box">
+				<button>twisterInDown</button>
+				<button>twisterInUp</button>
+			</div>
+		
+		
+			<h5>Vanish</h5>
+			<div class="anime-box">
+				<button>vanishIn</button>
+				<button>vanishOut</button>
+			</div>
+
+
+			<h5>Other</h5>
+			<div class="anime-box">
+				<button>swashIn</button>
+				<button>swashOut</button>
+				<button>boingInUp</button>
+				<button>boingOutDown</button>
+				<br>
+				<button>foolishOut</button>
+				<button>foolishIn</button>
+				<button>holeOut</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script>
+	var isign = $('#isign'), test = $(".test");
+
+	$(document).scroll(function(event) {
+		var top = $(this).scrollTop();
+		if(top > isign.offset().top - 50) {
+			test.css({
+				transform:'translate(0,'+(top)+'px)',
+				webkitTransform:'translate(0,'+(top)+'px)',
+			});
+		}else {
+			test.removeAttr('style')
+		}
+	});
+
+	$(".anime-box button").each(function(index, el) {
+		$(this).addClass('btn plain btn-shade box-shadow').click(function(event) {
+			var that = $(this), tval = that.text();
+			test.find("div").eq(1).removeClass().addClass("anime "+tval);
+		});
+	});
+
+	$("#replay").click(function(event) {
+		var that = $(this), tbtn = that.siblings('.btn');
+		tbtn.addClass('fadeIn');
+		tbtn.each(function(index, el) {
+			index += 1;
+			setTimeout(function() {
+				$(el).removeClass('fadeIn');
+			}, index * 1000);
+		});
+	});
+</script>
+</body>
+</html>

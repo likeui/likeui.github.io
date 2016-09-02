@@ -1,0 +1,374 @@
+/* ==========================================================================
+   kui button.css 1.0
+   b : 按钮样式 除button标签外都是行级标签;
+   b-border : 按钮边框;
+   b-o : 透明背景的边框;
+   b-inline : 行级显示;
+   b-block : 块级显示;
+   b-box : 圆角按钮;
+   b-circle : 圆按钮;
+   b-square : 方形按钮;
+   b-round : 胶囊按钮
+   b-s : 高度24;
+   b-m : 高度40;
+   b-l : 高度48;
+   b-g-inline : 容器下的按钮行级显示;
+   b-g-block : 容器下的按钮块级显示;
+   b-auto : 容器下的按钮自动排列;
+   b-g : 按钮组;
+   ========================================================================== */
+.b {
+	position: relative;
+	display: inline-block;
+	padding: 6px 14px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-width: 0;
+	border-radius: 2px;
+	color: #fff;
+	background-color: #41cac0;
+	transition: all .1s;
+}
+button.b {
+	display: block;
+	width: 100%;
+}
+.b:active,
+.b.active {
+	color: #218880;
+	background-color: #3dbcb3;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+}
+button.b:not(.disabled):active,
+button.b:not(.disabled).active {
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15);
+}
+.b.disabled,
+.b:disabled {
+	color: #218880;
+	background-color: #41cac0;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
+	opacity: .8;
+}
+.b-border:after,
+.b-o:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	border: 1px solid rgba(0, 0, 0, .15);
+	box-sizing: border-box;
+	-webkit-transform: scale(.5);
+			transform: scale(.5);
+	-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+	border-radius: 4px;
+	pointer-events: none;
+}
+.b-o {
+	color: #3dbcb3;
+}
+.b-o:active {
+	color: #218880;
+}
+.b-o:after {
+	border-color: #3dbcb3;
+}
+.b-g-inline .b,
+.b.b-inline,
+.b-box,
+.b-circle,
+.b-square {
+	display: inline-block;
+	width: auto;
+}
+.b-g-block .b,
+.b-block {
+	display: block;
+	width: 100%;
+}
+
+/*  ==========================================================================  */
+
+.b-box,
+.b-circle,
+.b-square {
+	padding: 6px 7px;
+}
+.b-box {
+	border-radius: 8px;
+}
+.b-box:after {
+	border-radius: 16px;
+}
+.b-square,
+.b-square:after {
+	border-radius: 0;
+}
+.b-circle,
+.b-circle:after {
+	border-radius: 50%;
+}
+.b-round {
+	border-radius: 1000px;
+}
+.b-round:after {
+	border-radius: 2000px;
+}
+.b i {
+	vertical-align: -1px;
+	font-size: 14px;
+}
+.b-box i,
+.b-circle i,
+.b-square i {
+	vertical-align: -2px;
+	font-size: 18px;
+}
+.b .k-badge {
+	vertical-align: 1px;
+	background-color: rgba(0, 0, 0,.15);
+}
+
+.b-s,
+.b-g-s > .b {
+	padding: 2px 12px;
+	font-size: 12px;
+}
+.b-s i,
+.b-g-s > .b i {
+	font-size: 12px;
+}
+.b-s.b-box,
+.b-s.b-circle,
+.b-s.b-square {
+	padding: 2px 5px;
+}
+.b-s.b-box i,
+.b-s.b-circle i,
+.b-s.b-square i {
+	vertical-align: -1px;
+	font-size: 14px;
+}
+
+.b-m,
+.b-g-m > .b {
+	padding: 10px 20px;
+	font-size: 16px;
+}
+.b-m i,
+.b-g-m > .b i {
+	font-size: 16px;
+}
+.b-m.b-box,
+.b-m.b-circle,
+.b-m.b-square {
+	padding: 8px;
+}
+.b-m.b-box i,
+.b-m.b-circle i,
+.b-m.b-square i {
+	vertical-align: -4px;
+	font-size: 24px;
+}
+
+.b-l,
+.b-g-l > .b {
+	padding: 14px 25px;
+	font-size: 18px;
+}
+.b-l i,
+.b-g-l > .b i {
+	font-size: 20px;
+}
+.b-l.b-box,
+.b-l.b-circle,
+.b-l.b-square {
+	padding: 9px;
+}
+.b-l.b-box i,
+.b-l.b-circle i,
+.b-l.b-square i {
+	vertical-align: -4px;
+	font-size: 30px;
+}
+
+/*  ==========================================================================  */
+
+.b-plain {
+	color: #444;
+	background-color: #fff;
+}
+.b.b-plain:active,
+.b.b-plain.active,
+.b.b-plain.disabled,
+.b.b-plain:disabled {
+	color: #ccc;
+	background-color: #fafafa;
+}
+.b-gray {
+	color: #666;
+	background-color: #efefef;
+}
+.b.b-gray:active,
+.b.b-gray.active,
+.b.b-gray.disabled,
+.b.b-gray:disabled {
+	color: #aaa;
+	background-color: #e2e2e2;
+}
+.b-green {
+	background-color: #78cd51;
+}
+.b.b-green:active,
+.b.b-green.active,
+.b.b-green.disabled,
+.b.b-green:disabled {
+	color: #348f34;
+	background-color: #71c14c;
+}
+.b-info {
+	background-color: #58c9f3;
+}
+.b.b-info:active,
+.b.b-info.active,
+.b.b-info.disabled,
+.b.b-info:disabled {
+	color: #2894bc;
+	background-color: #53bfe7;
+}
+.b-yellow {
+	background-color: #ffd000;
+}
+.b.b-yellow:active,
+.b.b-yellow.active,
+.b.b-yellow.disabled,
+.b.b-yellow:disabled {
+	color: #ad8d00;
+	background-color: #f0c400;
+}
+.b-wran {
+	background-color: #f55;
+}
+.b.b-wran:active,
+.b.b-wran.active,
+.b.b-wran.disabled,
+.b.b-wran:disabled {
+	color: #c02929;
+	background-color: #e44b4b;
+}
+.b-blue {
+	background-color: #3b9afe;
+}
+.b.b-blue:active,
+.b.b-blue.active,
+.b.b-blue.disabled,
+.b.b-blue:disabled {
+	color: #1269c4;
+	background-color: #2a87e9;
+}
+
+/*  ==========================================================================  */
+
+.b-o {
+	background-color: transparent;
+}
+.b-o.b-plain {
+	color: #444;
+}
+.b-o.b-plain:after {
+	border-color: #fff;
+}
+.b-o.b-gray:active {
+	color: #ccc;
+}
+.b-o.b-gray:after {
+	border-color: #ddd;
+}
+.b-o.b-green {
+	color: #71c14c;
+}
+.b-o.b-green:active {
+	color: #348f34;
+}
+.b-o.b-green:after {
+	border-color: #71c14c;
+}
+.b-o.b-info {
+	color: #53bfe7;
+}
+.b-o.b-info:active {
+	color: #2894bc;
+}
+.b-o.b-info:after {
+	border-color: #53bfe7;
+}
+.b-o.b-yellow {
+	color: #f0c400;
+}
+.b-o.b-yellow:active {
+	color: #ad8d00;
+}
+.b-o.b-yellow:after {
+	border-color: #f0c400;
+}
+.b-o.b-wran {
+	color: #e44b4b;
+}
+.b-o.b-wran:active {
+	color: #c02929;
+}
+.b-o.b-wran:after {
+	border-color: #e44b4b;
+}
+.b-o.b-blue {
+	color: #2a87e9;
+}
+.b-o.b-blue:active {
+	color: #1269c4;
+}
+.b-o.b-blue:after {
+	border-color: #2a87e9;
+}
+
+/*  ==========================================================================  */
+
+.b-g {
+	display: inline-block;
+	vertical-align: middle;
+}
+.b-g .b {
+	position: relative;
+	float: left;
+	margin: 0 0 0 -1px;
+}
+.b-auto {
+	display: table;
+	table-layout: fixed;
+	border-collapse: separate;
+}
+.b-auto .b {
+	float: none;
+	display: table-cell;
+	width: 1%;
+	margin: 0;
+}
+.b-g .b:not(:first-child):not(:last-child),
+.b-g .b:not(:first-child):not(:last-child):after {
+	border-radius: 0;
+}
+.b-g .b:first-child:not(:last-child),
+.b-g .b:first-child:not(:last-child):after {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.b-g .b:last-child:not(:first-child),
+.b-g .b:last-child:not(:first-child):after {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}

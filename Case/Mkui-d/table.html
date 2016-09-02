@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>表格</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+
+	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+		<h4 class="page-header">基本样式<small>table</small></h4>
+		<div class="demo">
+			<table class="table">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr class="active">
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>	
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;table class="table">
+&lt;thead>
+    &lt;tr>
+        &lt;th>组件名称&lt;/th>
+        &lt;th>Email&lt;/th>
+        &lt;th>创建时间&lt;/th>
+    &lt;/tr>
+&lt;/thead>
+&lt;tbody>
+    &lt;tr class="active">
+        &lt;td>like UI&lt;/td>
+        &lt;td>794566321@qq.com&lt;/td>
+        &lt;td>2015-05-27&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>like UI(Active)&lt;/td>
+        &lt;td>794566321@qq.com&lt;/td>
+        &lt;td>2015-05-27&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>like UI&lt;/td>
+        &lt;td>794566321@qq.com&lt;/td>
+        &lt;td>2015-05-27&lt;/td>
+    &lt;/tr>
+&lt;/tbody>
+&lt;/table></code></pre>
+		</div>
+
+		<h4 class="page-header">基本边框<small>table-border</small></h4>
+		<div class="demo">
+			<table class="table table-border">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;table class="table table-border">
+...
+&lt;/table></code></pre>
+		</div>
+
+		<h4 class="page-header">隔行换色<small>table-striped</small></h4>
+		<div class="demo">
+			<table class="table table-border table-striped">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;table class="table table-border table-striped">
+...
+&lt;/table></code></pre>
+		</div>
+
+		<h4 class="page-header">鼠标移入<small>table-hover</small></h4>
+		<div class="demo">
+			<table class="table table-hover">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;table class="table table-hover">
+...
+&lt;/table></code></pre>
+		</div>
+
+		<h4 class="page-header">单元格效果<small>active | disabled | primary | success | warning | danger</small></h4>
+		<div class="demo">
+			<table class="table">
+			    <thead>
+			        <tr>
+			            <th>Class</th>
+			            <th>Status</th>
+			            <th>target</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>active</td>
+			            <td class="active">激活</td>
+			            <td>td</td>
+			        </tr>
+			        <tr class="active">
+			            <td>active</td>
+			            <td>激活</td>
+			            <td>tr</td>
+			        </tr>
+			        <tr>
+			            <td>disabled</td>
+			            <td class="disabled">禁用</td>
+			            <td>td</td>
+			        </tr>
+			        <tr class="disabled">
+			            <td>disabled</td>
+			            <td>禁用</td>
+			            <td>tr</td>
+			        </tr>
+			        <tr>
+			            <td>paimary</td>
+			            <td class="primary">蓝色</td>
+			            <td>td</td>
+			        </tr>
+			        <tr class="primary">
+			            <td>paimary</td>
+			            <td>蓝色</td>
+			            <td>tr</td>
+			        </tr>
+			        <tr>
+			            <td>success</td>
+			            <td class="success">绿色</td>
+			            <td>td</td>
+			        </tr>
+			        <tr class="success">
+			            <td>success</td>
+			            <td>绿色</td>
+			            <td>tr</td>
+			        </tr>
+			        <tr>
+			            <td>warning</td>
+			            <td class="warning">橙色</td>
+			            <td>td</td>
+			        </tr>
+			        <tr class="warning">
+			            <td>warning</td>
+			            <td>橙色</td>
+			            <td>tr</td>
+			        </tr>
+			        <tr>
+			            <td>danger</td>
+			            <td class="danger">红色</td>
+			            <td>td</td>
+			        </tr>
+			        <tr class="danger">
+			            <td>danger</td>
+			            <td>红色</td>
+			            <td>tr</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;table class="table">
+	...
+	&lt;tbody>
+		...
+        &lt;tr>
+            &lt;td>danger&lt;/td>
+            &lt;td class="danger">红色&lt;/td>
+            &lt;td>td&lt;/td>
+        &lt;/tr>
+	    &lt;tr class="danger">
+	        &lt;td>danger&lt;/td>
+	        &lt;td>红色&lt;/td>
+	        &lt;td>tr&lt;/td>
+	    &lt;/tr>
+	&lt;/tbody>
+&lt;/table></code></pre>
+		</div>
+
+		<h4 class="page-header">表格大小<small>table-m | table-s | table-xs</small></h4>
+		<div class="demo">
+			<table class="table table-border table-m">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+			<table class="table table-border">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+			<table class="table table-border table-s">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+			<table class="table table-border table-xs">
+			    <thead>
+			        <tr>
+			            <th>组件名称</th>
+			            <th>Email</th>
+			            <th>创建时间</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			        <tr>
+			            <td>like UI</td>
+			            <td>794566321@qq.com</td>
+			            <td>2015-05-27</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;table class="table table-border table-m">
+	...
+&lt;/table>
+&lt;table class="table table-border">
+	...
+&lt;/table>
+&lt;table class="table table-border table-s">
+	...
+&lt;/table>
+&lt;table class="table table-border table-xs">
+	...
+&lt;/table></code></pre>
+		</div>
+
+		<h4 class="page-header">响应式表格<small>table-responsive</small></h4>
+		<div class="demo">
+			<div class="table-responsive">
+				<table class="table table-border">
+				    <thead>
+				        <tr>
+				            <th>组件名称</th>
+				            <th>Email</th>
+				            <th>创建时间</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+				            <td>like UI</td>
+				            <td>794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				        <tr>
+				            <td>like UI</td>
+				            <td>794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				        <tr>
+				            <td>like UI</td>
+				            <td>794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				    </tbody>
+				</table>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="table-responsive">
+	&lt;table class="table table-border">
+	...
+	&lt;/table>
+&lt;/div></code></pre>
+		</div>
+
+		<h4 class="page-header">所有样式</h4>
+		<div class="demo">
+			<div class="table-responsive">
+				<table class="table table-border table-hover table-s table-striped">
+				    <thead>
+				        <tr>
+				            <th>组件名称</th>
+				            <th>Email</th>
+				            <th>创建时间</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+				            <td class="active">like UI</td>
+				            <td class="primary">794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				        <tr>
+				            <td>like UI</td>
+				            <td>794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				        <tr>
+				            <td>like UI</td>
+				            <td>794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				        <tr>
+				            <td>like UI</td>
+				            <td>794566321@qq.com</td>
+				            <td>2015-05-27</td>
+				        </tr>
+				    </tbody>
+				</table>
+			</div>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;div class="table-responsive">
+	&lt;table class="table table-border table-hover table-s table-striped">
+	    &lt;thead>
+	        &lt;tr>
+	            &lt;th>组件名称&lt;/th>
+	            &lt;th>Email&lt;/th>
+	            &lt;th>创建时间&lt;/th>
+	        &lt;/tr>
+	    &lt;/thead>
+	    &lt;tbody>
+	        &lt;tr>
+	            &lt;td class="active">like UI&lt;/td>
+	            &lt;td class="primary">794566321@qq.com&lt;/td>
+	            &lt;td>2015-05-27&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>like UI&lt;/td>
+	            &lt;td>794566321@qq.com&lt;/td>
+	            &lt;td>2015-05-27&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>like UI&lt;/td>
+	            &lt;td>794566321@qq.com&lt;/td>
+	            &lt;td>2015-05-27&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>like UI&lt;/td>
+	            &lt;td>794566321@qq.com&lt;/td>
+	            &lt;td>2015-05-27&lt;/td>
+	        &lt;/tr>
+	    &lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

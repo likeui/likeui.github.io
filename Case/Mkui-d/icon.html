@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
+	<title>图标</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/monokai.min.css">
+
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#icons li {
+			text-align: center;
+			padding: 20px 5px 5px;
+		}
+		#icons li:hover {
+			background-color: #f2f2f2;
+			border-radius: 3px;
+			color: #ff4400;
+		}
+		#icons li:hover [class^="icon-"], 
+		#icons li:hover [class*=" icon-"] {
+			-webkit-transform: scale(2,2) translateY(-5px);
+			transform: scale(2,2) translateY(-5px);
+		}
+	</style>
+</head>
+<body>
+<header id="header"></header>
+<section class="child-hd"></section>
+<div class="container">
+	<div class="box">
+		<h4>默认图标<small>icon-[*]</small></h4>
+		<div class="demo">
+			<i class="icon-heart-full"></i>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;i class="icon-heart-full"></i></code></pre>
+		</div>
+
+
+		<h4>旋转动画<small>icon-spin</small></h4>
+		<div class="demo">
+			<i class="icon-spin icon-spinner"></i>
+			<i class="icon-spin icon-spinner1"></i>
+			<i class="icon-spin icon-spinner2"></i>
+			<i class="icon-spin icon-cog"></i>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;i class="icon-spin icon-spinner">&lt;/i>
+&lt;i class="icon-spin icon-spinner1">&lt;/i>
+&lt;i class="icon-spin icon-spinner2">&lt;/i>
+&lt;i class="icon-spin icon-cog">&lt;/i></code></pre>
+		</div>
+
+
+		<h4>图标大小<small>icon-s | icon-m | icon-l</small></h4>
+		<div class="demo">
+			<i class="icon-heart-full icon-xl"></i>喵
+			<i class="icon-heart-full icon-l"></i>喵
+			<i class="icon-heart-full icon-m"></i>喵
+			<i class="icon-heart-full"></i>喵
+			<i class="icon-heart-full icon-s"></i>喵
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;i class="icon-heart-full icon-xl">&lt;/i>喵
+&lt;i class="icon-heart-full icon-l">&lt;/i>喵
+&lt;i class="icon-heart-full icon-m">&lt;/i>喵
+&lt;i class="icon-heart-full">&lt;/i>喵
+&lt;i class="icon-heart-full icon-s">&lt;/i>喵</code></pre>
+		</div>
+
+
+		<h4>图标按钮<small>icn-btn</small></h4>
+		<div class="demo">
+			<i class="icon-btn icon-heart-full"></i>
+			<i class="icon-btn icon-heart-full green"></i>
+			<i class="icon-btn icon-heart-full darkgreen"></i>
+			<i class="icon-btn icon-heart-full blue"></i>
+			<i class="icon-btn icon-heart-full primary"></i>
+			<i class="icon-btn icon-heart-full noble"></i>
+			<i class="icon-btn icon-heart-full red"></i>
+			<i class="icon-btn icon-heart-full pink"></i>
+			<i class="icon-btn icon-heart-full orange"></i>
+			<i class="icon-btn icon-heart-full yellow"></i>
+			<i class="icon-btn icon-heart-full plain"></i>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;i class="icon-btn icon-heart-full">&lt;/i>
+&lt;i class="icon-btn icon-heart-full green">&lt;/i>
+&lt;i class="icon-btn icon-heart-full darkgreen">&lt;/i>
+&lt;i class="icon-btn icon-heart-full blue">&lt;/i>
+&lt;i class="icon-btn icon-heart-full primary">&lt;/i>
+&lt;i class="icon-btn icon-heart-full noble">&lt;/i>
+&lt;i class="icon-btn icon-heart-full red">&lt;/i>
+&lt;i class="icon-btn icon-heart-full pink">&lt;/i>
+&lt;i class="icon-btn icon-heart-full orange">&lt;/i>
+&lt;i class="icon-btn icon-heart-full yellow">&lt;/i>
+&lt;i class="icon-btn icon-heart-full plain">&lt;/i></code></pre>
+		</div>
+
+
+		<h4>图标旋转<small>icon-rotate-90 | icon-rotate-180 | icon-rotate-270</small></h4>
+		<div class="demo">
+			<i class="icon-heart-full"></i>
+			<i class="icon-heart-full icon-rotate-90"></i>
+			<i class="icon-heart-full icon-rotate-180"></i>
+			<i class="icon-heart-full icon-rotate-270"></i>
+		</div>
+		<div class="code">
+<pre><code class='html'>&lt;i class="icon-heart-full">&lt;/i>
+&lt;i class="icon-heart-full icon-rotate-90">&lt;/i>
+&lt;i class="icon-heart-full icon-rotate-180">&lt;/i>
+&lt;i class="icon-heart-full icon-rotate-270">&lt;/i></code></pre>
+		</div>
+
+
+		<h4>图标列表<small id="count"></small></h4>
+		<div id="icons" class="demo ise"></div>
+		
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highlight.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script>
+var icons = 
+[{
+	title: "分享",
+	value: [
+			"angle-up","angle-right","angle-down","angle-left",
+			"angle-double-up","angle-double-right","angle-double-down","angle-double-left",
+			"caret-up","caret-right","caret-down","caret-left",
+			"arrow-up","arrow-right","arrow-down","arrow-left",
+	]
+},{
+	title: "加载",
+	value: [
+			"spinner","spinner1","spinner2",
+	]
+},{
+	title: "上传下载",
+	value: [
+			"cloud-download","cloud-upload","outbox","inbox",
+	]
+},{
+	title: "分享",
+	value: [
+			"relay","goback","renovate","repeat",
+			"share","send",
+	]
+},{
+	title: "位置",
+	value: [
+			"map","map1",
+	]
+},{
+	title: "性别",
+	value: [
+			"woman","male",
+	]
+},{
+	title: "符号",
+	value: [
+			"check","check-circle",
+			"remove","remove-circle",
+			"plus","plus-circle","plus-dotted",
+			"minus","minus-circle","minus-dotted",
+			"info","info-circle",
+			"exclamation","exclamation-circle",
+			"question","question-circle",
+	]
+},{
+	title: "软件",
+	value: [
+			"qq","qq-full","sina","t-weixin","t-weibo",
+			"friend-circle",
+	]
+},{
+	title: "列表",
+	value: [
+			"list","list-table","menu","more",
+			"table",
+	]
+},{
+	title: "形状",
+	value: [
+			"heart","heart-full","star","star-full",
+			"star-half","heart-help","chart","fingerprint"
+	]
+},{
+	title: "信息",
+	value: [
+			"cog","user-circle","user","email",
+			"edit","calendar","lock","key",
+	]
+},{
+	title: "媒体",
+	value: [
+			"video","camera","music","image",
+			"mic-full","mic","stop","play",
+			"telephone","iphone","phonebook"
+	]
+},{
+	title: "其他",
+	value: ["brooch","clock","thumb-up","sort",
+			"shoping-cart","rmb","rmb-circle","search",
+			"home","gotop","dustbin","qrcode"
+	]
+}]
+var a = "", t = "", v = "", count = 0;
+for(var o in icons){
+	a += "<a>"+icons[o].title+"</a>";
+
+	for (var i = 0; i < icons[o].value.length; i++) {
+		count++;
+		v += "<li class='ho-s-6 ho-m-3'><i class="+'icon-'+icons[o].value[i]+"></i><div style='height:40px'></div></li>";
+	};
+
+	t +=    '<div class="icons-box">'+
+				'<h5><b>'+icons[o].title+'</b><small>'+icons[o].value.length+'个</small></h5>'+
+				'<ul class="ho list-none">'+v+'</ul>'+
+			'</div>';
+    v = "";
+}
+$("#icons").append(t);
+$("#count").text("总共"+count+"个图标");
+
+//快速复制
+$(".icons-box li").each(function(index, val) {
+	var that = $(this), t_i = that.find('i');
+	that.find("div").append(t_i.attr("class"));
+});
+</script>
+</body>
+</html>
