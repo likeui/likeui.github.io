@@ -1,3 +1,6 @@
+html {
+	background-color: #f7f7f7;
+}
 body,
 .main-shade {
 	-webkit-transition: all .3s ease;
