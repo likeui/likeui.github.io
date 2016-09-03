@@ -649,6 +649,8 @@
 .l-hoz .l-btm {
 	padding: 15px 0;
 }
+
+
 @media screen and ( min-width: 768px ) {
 	.l-res + .l-res {
 		margin-top: 30px;
@@ -668,6 +670,17 @@
 	}
 }
 
+
+.l--row-del {
+	padding: 0;
+	overflow: hidden;
+}
+
+
+.l-lar .l-row,
+.l-lar .l-btm {
+	padding: 30px;
+}
 
 
 

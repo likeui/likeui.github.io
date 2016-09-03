@@ -1,3 +1,4 @@
+/*通用样式*/
 body,
 .main-shade {
 	-webkit-transition: all .3s ease;
@@ -21,6 +22,8 @@ body.active .main-shade {
 	z-index: 9;
 	opacity: .6;
 }
+
+
 .header {
 	position: fixed;
 	right: 0;
@@ -28,6 +31,11 @@ body.active .main-shade {
 	z-index: 2;
 	background-color: rgba(255, 255, 255, .95);
 	box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+}
+@media screen and ( min-width: 768px ) {
+	.header {
+		display: none;
+	}
 }
 .n-menu {
 	position: absolute;
@@ -42,8 +50,6 @@ body.active .main-shade {
 }
 
 
-
-
 .side {
 	position: fixed;
 	top: 0;
@@ -55,6 +61,12 @@ body.active .main-shade {
 			transition: transform .5s ease-in-out;
 	-webkit-transform: translate3d(-100%, 0, 0);
 			transform: translate3d(-100%, 0, 0);
+}
+@media screen and ( min-width: 768px ) {
+	.side {
+		-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+	}
 }
 .side .logo {
 	text-align: center;
@@ -90,9 +102,6 @@ body.active .main-shade {
 }
 
 
-
-
-
 .main {
 	padding-top: 79px;
 }
@@ -102,88 +111,10 @@ body.active .main-shade {
 .main-top a {
 	color: #58c9f3;
 }
-.main-con .n-a {
-	margin-bottom: 30px;
-}
-.main-con .n-a > li {
-	margin-bottom: 15px;
-}
-.main-con .n-a > li > a,
-.main-con .n-a > li.active > a {
-	border-radius: 100px;
-}
-.main-h .l-row {
-	padding: 0;
-	overflow: hidden;
-}
-.main-h .l-img {
-	-webkit-transition: -webkit-transform .5s ease-in-out;
-			transition: transform .5s ease-in-out;
-}
-.main-h .l-img:hover {
-	-webkit-transform: scale3d(1.2, 1.2, 1.2);
-			transform: scale3d(1.2, 1.2, 1.2);
-}
-.index .main-h span {
-	height: 30px;
-	margin-top: -5px;
-	line-height: 30px;
-	text-align: right;
-	overflow: hidden;
-}
-.index .main-h span label,
-.index .main-h span a {
-	display: block;
-	-webkit-transition: -webkit-transform .3s;
-			transition: transform .3s;
-}
-.index .main-h span:hover label,
-.index .main-h span:hover a {
-	-webkit-transform: translateY(-30px);
-			transform: translateY(-30px);
-}
-@media screen and ( max-width: 767px ) {
-	.main-con .n-a > li {
-		float: left;
-		width: 50%;
-		text-align: center;
-	}
-}
 @media screen and ( min-width: 768px ) {
-	.header {
-		display: none;
-	}
-	.side {
-		-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-	}
 	.main {
 		padding-top: 50px;
 		margin-left: 240px;
-	}
-	.main-con {
-		margin: 0 60px;
-	}
-	.main-con .h {
-		margin-left: -30px;
-	}
-	.main-con .h > div {
-		padding-left: 30px;
-	}
-	.main-con .l {
-		margin-bottom: 30px;
-	}
-	.main-con .l-top {
-		padding: 12px 30px;
-	}
-	.main-con .l-row {
-		padding: 30px;
-	}
-	.main-con pre {
-		padding: 10px 30px;
-	}
-	.main-h .l:hover {
-		box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
 	}
 }
 
@@ -232,6 +163,54 @@ body.active .main-shade {
 .code:before {
 	content: 'Code';
 	background-color: #ffd000;
+}
+
+
+/*首页*/
+.index {
+	background-color: #f4f4f4;
+}
+.index .side {
+	background-color: #fff;
+}
+.index .l {
+	-webkit-transition: box-shadow .3s;
+			transition: box-shadow .3s;
+}
+@media screen and ( min-width: 768px ) {
+	.index .l:hover {
+		box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	}
+}
+.index .l-row {
+	padding: 0;
+	overflow: hidden;
+}
+.index .l-img {
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+			transition: transform .5s ease-in-out;
+}
+.index .l-img:hover {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2);
+			transform: scale3d(1.2, 1.2, 1.2);
+}
+.index .l-btm span {
+	height: 30px;
+	margin-top: -5px;
+	line-height: 30px;
+	text-align: right;
+	overflow: hidden;
+}
+.index .l-btm span label,
+.index .l-btm span a {
+	display: block;
+	-webkit-transition: -webkit-transform .3s;
+			transition: transform .3s;
+}
+.index .l:hover .l-btm label,
+.index .l:hover .l-btm a {
+	-webkit-transform: translateY(-30px);
+			transform: translateY(-30px);
 }
 
 
