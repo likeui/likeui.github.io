@@ -286,8 +286,15 @@ button:disabled,
 .b-o.b-bc-a {
 	padding: 6px 12px;
 }
-.b-o.b-bc-b {
-	border-color: #ddd;
+.b-o.b-bc-b:hover,
+.b-o.b-bc-b:focus {
+	color: #555;
+}
+.b-o.b-bc-b,
+.b-o.b-bc-b.disabled,
+.b-o.b-bc-b:disabled {
+	color: #fff;
+	border-color: #fff;
 }
 .b-o.b-bc-c:hover,
 .b-o.b-bc-c:focus {

@@ -93,16 +93,16 @@ body.active .main-shade {
 	right: 15px;
 }
 .banner2 .g > *:nth-child(2) {
-	-webkit-animation-delay: .5s;
-			animation-delay: .5s;
+	-webkit-animation-delay: .3s;
+			animation-delay: .3s;
 }
 .banner2 .g > *:nth-child(3) {
-	-webkit-animation-delay: 1s;
-			animation-delay: 1s;
+	-webkit-animation-delay: .6s;
+			animation-delay: .6s;
 }
 .banner2 .g > *:nth-child(4) {
-	-webkit-animation-delay: 1.5s;
-			animation-delay: 1.5s;
+	-webkit-animation-delay: .9s;
+			animation-delay: .9s;
 }
 .banner2 .k-pd {
 	display: block;

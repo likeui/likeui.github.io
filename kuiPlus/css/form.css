@@ -73,14 +73,16 @@
 	max-width: 100%;
 	height: 32px;
 	padding: 5px;
+
+	vertical-align: middle;
 	border: 1px solid #ddd;
 	color: #555;
-	vertical-align: middle;
-	-webkit-appearance: none;
 	background-color: #fff;
+
+	border-radius: 2px;
 	-webkit-transition: all linear 0.2s;
 			transition: all linear 0.2s;
-	border-radius: 2px;
+	-webkit-appearance: none;
 }
 .f select:focus,
 .f textarea:focus,
@@ -101,7 +103,6 @@
 .f-ipt:focus {
 	border-color: #3b9afe;
 	color: #555;
-	background-color: #fafafa;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3);
 }
 .f select:disabled,
@@ -122,19 +123,25 @@
 .f [type="color"]:disabled,
 .f-ipt:disabled {
 	opacity: .615;
-	border-color: #ddd;
 	color: #999;
-	background-color: #f5f5f5;
+	background-color: #fafafa;
 }
-.f select {
+.f select,
+select.f-ipt {
 	background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) no-repeat 100% center;
 }
-.f textarea,
+
 .f select[multiple],
-.f select[size] {
+select[multiple].f-ipt,
+.f select[size],
+select[size].f-ipt,
+.f textarea,
+textarea.f-ipt {
 	height: auto;
 }
-.f textarea {
+.f textarea,
+textarea.f-ipt {
+	resize: none;
 	overflow: auto;
 	vertical-align: top;
 }
@@ -151,6 +158,37 @@
 }
 .f-ck + .f-ck {
 	margin-left: 10px;
+}
+/*圆角*/
+.f-br-a {
+	border-radius: 0;
+}
+.f-br-b {
+	border-radius: 2px;
+}
+.f-br-c {
+	border-radius: 5px;
+}
+.f-br-d {
+	border-radius: 1000px;
+}
+.f-br-e {
+	border-radius: 50%;
+}
+/*文件域*/
+.f-file {
+	overflow: hidden;
+}
+.f-file input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 14px;
+	background-color: #fff;
+	height: 40px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
 }
  /* Placeholder
  ========================================================================== */
