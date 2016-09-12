@@ -52,94 +52,43 @@
 }
 /* Style
  ========================================================================== */
-.f select,
-.f textarea,
-.f input:not([type]),
-.f [type="text"],
-.f [type="password"],
-.f [type="datetime"],
-.f [type="datetime-local"],
-.f [type="date"],
-.f [type="month"],
-.f [type="time"],
-.f [type="week"],
-.f [type="number"],
-.f [type="email"],
-.f [type="url"],
-.f [type="search"],
-.f [type="tel"],
-.f [type="color"],
 .f-ipt {
+	width: 100%;
 	max-width: 100%;
 	height: 32px;
 	padding: 5px;
 
+	line-height: 20px;
 	vertical-align: middle;
 	border: 1px solid #ddd;
 	color: #555;
 	background-color: #fff;
 
-	border-radius: 2px;
+	border-radius: 3px;
 	-webkit-transition: all linear 0.2s;
 			transition: all linear 0.2s;
 	-webkit-appearance: none;
 }
-.f select:focus,
-.f textarea:focus,
-.f [type="text"]:focus,
-.f [type="password"]:focus,
-.f [type="datetime"]:focus,
-.f [type="datetime-local"]:focus,
-.f [type="date"]:focus,
-.f [type="month"]:focus,
-.f [type="time"]:focus,
-.f [type="week"]:focus,
-.f [type="number"]:focus,
-.f [type="email"]:focus,
-.f [type="url"]:focus,
-.f [type="search"]:focus,
-.f [type="tel"]:focus,
-.f [type="color"]:focus,
 .f-ipt:focus {
 	border-color: #3b9afe;
 	color: #555;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3);
 }
-.f select:disabled,
-.f textarea:disabled,
-.f [type="text"]:disabled,
-.f [type="password"]:disabled,
-.f [type="datetime"]:disabled,
-.f [type="datetime-local"]:disabled,
-.f [type="date"]:disabled,
-.f [type="month"]:disabled,
-.f [type="time"]:disabled,
-.f [type="week"]:disabled,
-.f [type="number"]:disabled,
-.f [type="email"]:disabled,
-.f [type="url"]:disabled,
-.f [type="search"]:disabled,
-.f [type="tel"]:disabled,
-.f [type="color"]:disabled,
 .f-ipt:disabled {
 	opacity: .615;
 	color: #999;
 	background-color: #fafafa;
 }
-.f select,
 select.f-ipt {
+	padding-right: 20px;
 	background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) no-repeat 100% center;
 }
 
-.f select[multiple],
 select[multiple].f-ipt,
-.f select[size],
 select[size].f-ipt,
-.f textarea,
 textarea.f-ipt {
 	height: auto;
 }
-.f textarea,
 textarea.f-ipt {
 	resize: none;
 	overflow: auto;
@@ -190,6 +139,7 @@ textarea.f-ipt {
 	filter: alpha(opacity=0);
 	cursor: pointer;
 }
+
  /* Placeholder
  ========================================================================== */
 ::-ms-input-placeholder {
@@ -210,29 +160,208 @@ textarea.f-ipt {
 ::disabled::-webkit-input-placeholder {
   color: #999;
 }
-/* f-hoz
+
+/* Horizontal
  ========================================================================== */
-@media screen and ( max-width: 767px ) {
-	.f-hoz select,
-	.f-hoz textarea,
-	.f-hoz [type="text"],
-	.f-hoz [type="password"],
-	.f-hoz [type="datetime"],
-	.f-hoz [type="datetime-local"],
-	.f-hoz [type="date"],
-	.f-hoz [type="month"],
-	.f-hoz [type="time"],
-	.f-hoz [type="week"],
-	.f-hoz [type="number"],
-	.f-hoz [type="email"],
-	.f-hoz [type="url"],
-	.f-hoz [type="search"],
-	.f-hoz [type="tel"],
-	.f-hoz [type="color"],
-	.f-hoz .f-ipt {
-		width: 100%;
+.f-hoz .f-ipt,
+.f-hoz select.f-ipt {
+	width: auto;
+}
+.f-hoz .f-bd {
+	margin-left: 90px;
+}
+.f-hoz .f-label {
+	float: left;
+	width: 75px;
+	text-align: right;
+}
+.f-hoz .f-tip {
+	display: none;
+}
+
+
+.f-top {
+	font-weight: 600;
+}
+.f-top + .f-row {
+	margin-top: 15px;
+}
+.f-row {
+	position: relative;
+	line-height: 32px;
+}
+.f-tip {
+	font-size: 12px;
+	color: #f55;
+}
+/* Responsive
+ ========================================================================== */
+@media screen and ( min-width: 768px ) {
+	.f-res .f-ipt {
+		width: auto;
+	}
+	.f-res .f-label {
+		float: left;
+		width: 120px;
+		text-align: right;
+	}
+	.f-res .f-bd {
+		margin-left: 150px;
+	}
+	.f-res .f-tip {
+		position: absolute;
+		top: 0;
+		left: 380px;
 	}
 }
+/* radio && checkbox
+ ========================================================================== */
+.f-mul {
+	display: inline-block;
+	cursor: pointer;
+}
+.f-mul {
+	margin-right: 15px;
+}
+.f-mul [type="radio"],
+.f-mul [type="checkbox"] {
+	position: absolute;
+	left: -9999em;
+}
+.f-mul .f-box {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: -5px;
+	border: 1px solid #ddd;
+}
+.f-mul [type="radio"] + .f-box {
+	border-radius: 50%;
+}
+.f-mul [type="radio"] + .f-box:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 2;
+	border-width: 5px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: transparent;
+	transition: all .3s;
+	-webkit-transform: scale(0);
+			transform: scale(0);
+}
+.f-mul [type="radio"]:checked + .f-box:before {
+	border-color: #3b9afe;
+	-webkit-transform: scale(1);
+			transform: scale(1);
+}
+.f-mul [type="checkbox"] + .f-box {
+	border-radius: 3px;
+}
+.f-mul [type="checkbox"] + .f-box:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	z-index: 2;
+	width: 10px;
+	height: 5px;
+	border-width: 0 0 2px 2px;
+	border-style: solid;
+	border-color: transparent;
+	transition: all .3s;
+	-webkit-transform: scale(0) rotate(-45deg);
+			transform: scale(0) rotate(-45deg);
+}
+.f-mul [type="checkbox"]:checked + .f-box:before {
+	border-color: #3b9afe;
+	-webkit-transform: scale(1) rotate(-45deg);
+			transform: scale(1) rotate(-45deg);
+}
+/*禁用*/
+.f-mul [type="radio"]:disabled + .f-box,
+.f-mul [type="checkbox"]:disabled + .f-box {
+	border-color: #f4f4f4;
+	background-color: #f4f4f4;
+}
+/*填充式*/
+.f-mul-fill [type="radio"]:checked + .f-box {
+	border-color: #3b9afe;
+	background-color: #3b9afe;
+}
+.f-mul-fill [type="radio"]:checked + .f-box:before {
+	border-color: #fff;
+}
+.f-mul-fill [type="checkbox"]:checked + .f-box {
+	border-color: #3b9afe;
+	background-color: #3b9afe;
+}
+.f-mul-fill [type="checkbox"]:checked + .f-box:before {
+	border-color: #fff;
+}
+/* switch
+ ========================================================================== */
+.f-switch {
+	position: relative;
+	width: 52px;
+	height: 30px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 16px;
+	background-color: #fff;
+	-webkit-appearance: none;
+}
+.f-switch:checked {
+	background-color: #3b9afe;
+}
+.f-switch:before,
+.f-switch:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+	transition: all .3s;
+}
+.f-switch:before {
+	width: 50px;
+	height: 28px;
+	background-color: #fff;
+}
+.f-switch:checked:before {
+	-webkit-transform: scale(0);
+			transform: scale(0);
+}
+.f-switch:after {
+	width: 30px;
+	height: 28px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.f-switch:checked:after {
+	-webkit-transform: translateX(20px);
+			transform: translateX(20px);
+}
+.f-switch:disabled:before {
+	background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and ( min-width: 768px ) {
 	.f-hoz .f-lab {
 		float: left;
@@ -308,32 +437,16 @@ textarea.f-ipt {
 /* fixed width
  ========================================================================== */
 .f-width-s {
-	width: 60px;
+	width: 60px !important;
 }
 .f-width-m {
-	width: 240px;
+	width: 300px !important;
 }
 .f-width-l {
-	width: 100%;
+	width: 100% !important;
 }
 /* f-block
  ========================================================================== */
-.f-block select, select.f-block,
-.f-block textarea, textarea.f-block,
-.f-block [type="text"], [type="text"].f-block,
-.f-block [type="password"], [type="password"].f-block,
-.f-block [type="datetime"], [type="datetime"].f-block,
-.f-block [type="datetime-local"], [type="datetime-local"].f-block,
-.f-block [type="date"], [type="date"].f-block,
-.f-block [type="month"], [type="month"].f-block,
-.f-block [type="time"], [type="time"].f-block,
-.f-block [type="week"], [type="week"].f-block,
-.f-block [type="number"], [type="number"].f-block,
-.f-block [type="email"], [type="email"].f-block,
-.f-block [type="url"], [type="url"].f-block,
-.f-block [type="search"], [type="search"].f-block,
-.f-block [type="tel"], [type="tel"].f-block,
-.f-block [type="color"], [type="color"].f-block,
 .f-block .f-ipt, .f-ipt.f-block {
 	width: 100%;
 }
