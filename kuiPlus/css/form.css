@@ -4,22 +4,6 @@
 .f > :last-child {
 	margin-bottom: 0;
 }
-.f-row + .f-row:not(.f-inline) {
-	margin-top: 15px;
-}
-.f-row:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-@media screen and ( min-width: 768px ) {
-	.f-inline .f-row {
-		display: inline-block;
-	}
-	.f-inline .f-row + .f-row {
-		margin-top: 0;
-	}
-}
 .f fieldset {
 	padding: 0;
 	margin: 0;
@@ -28,10 +12,9 @@
 .f legend {
 	position: relative;
 	width: 100%;
-	padding: 0;
+	padding: 5px 0 15px;
 	margin-bottom: 15px;
 	font-size: 16px;
-	line-height: 30px;
 	border: 0;
 }
 .f legend:after {
@@ -50,8 +33,18 @@
 	font: inherit;
 	font-weight: bold;
 }
-/* Style
- ========================================================================== */
+.f-row {
+	position: relative;
+}
+.f-row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.f-row + .f-row:not(.f-inline) {
+	margin-top: 15px;
+}
+/*基本样式*/
 .f-ipt {
 	width: 100%;
 	max-width: 100%;
@@ -70,9 +63,14 @@
 	-webkit-appearance: none;
 }
 .f-ipt:focus {
-	border-color: #3b9afe;
+	position: relative;
+	z-index: 2;
+	border-color: #58c9f3;
 	color: #555;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3);
+	box-shadow: 0 0 5px rgba(59, 180, 242, .3);
+}
+.f-ipt:active {
+	background-color: #fafafa;
 }
 .f-ipt:disabled {
 	opacity: .615;
@@ -80,10 +78,10 @@
 	background-color: #fafafa;
 }
 select.f-ipt {
+	width: auto;
 	padding-right: 20px;
 	background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) no-repeat 100% center;
 }
-
 select[multiple].f-ipt,
 select[size].f-ipt,
 textarea.f-ipt {
@@ -92,12 +90,24 @@ textarea.f-ipt {
 textarea.f-ipt {
 	resize: none;
 	overflow: auto;
-	vertical-align: top;
 }
-.f-lab {
-	display: block;
+/*表单布局*/
+.f-top {
+	font-weight: 600;
+}
+.f-top + .f-row {
+	margin-top: 15px;
+}
+.f-label {
+	display: inline-block;
 	margin-bottom: 5px;
-	font-weight: bold;
+	text-align: right;
+	color: #333;
+}
+.f-tip {
+	min-width: 120px;
+	font-size: 12px;
+	color: #f55;
 }
 .f fieldset:disabled {
 	color: #999;
@@ -128,7 +138,7 @@ textarea.f-ipt {
 .f-file {
 	overflow: hidden;
 }
-.f-file input {
+.f-file [type="file"] {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -139,7 +149,31 @@ textarea.f-ipt {
 	filter: alpha(opacity=0);
 	cursor: pointer;
 }
-
+/*地址*/
+.f-area {
+	height: 32px;
+}
+.f-area:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.f-area select {
+	float: left;
+	width: 33.39%;
+}
+.f-area select:not(:first-child) {
+	margin-left: -1px;
+}
+.f-area select:first-child {
+	border-radius: 3px 0 0 3px;
+}
+.f-area select:last-child {
+	border-radius: 0 3px 3px 0;
+} 
+.f-area select:not(:first-child):not(:last-child) {
+	border-radius: 0;
+}
  /* Placeholder
  ========================================================================== */
 ::-ms-input-placeholder {
@@ -163,47 +197,47 @@ textarea.f-ipt {
 
 /* Horizontal
  ========================================================================== */
-.f-hoz .f-ipt,
-.f-hoz select.f-ipt {
-	width: auto;
+.f-hoz .f-row {
+	line-height: 32px;
 }
 .f-hoz .f-bd {
 	margin-left: 90px;
+	width: 320px;
 }
 .f-hoz .f-label {
 	float: left;
-	width: 75px;
-	text-align: right;
+	width: 120px;
+	margin-bottom: 0;
 }
 .f-hoz .f-tip {
-	display: none;
+	margin-left: 90px;
 }
-
-
-.f-top {
-	font-weight: 600;
+.f-hoz .f-bd {
+	margin-left: 150px;
 }
-.f-top + .f-row {
-	margin-top: 15px;
-}
-.f-row {
-	position: relative;
-	line-height: 32px;
-}
-.f-tip {
-	font-size: 12px;
-	color: #f55;
+.f-hoz .f-tip {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	margin-left: 0;
 }
 /* Responsive
  ========================================================================== */
+.f-res .f-tip {
+	line-height: 32px;
+}
 @media screen and ( min-width: 768px ) {
-	.f-res .f-ipt {
-		width: auto;
+	.f-res .f-row {
+		line-height: 32px;
+	}
+	.f-res .f-bd {
+		margin-left: 90px;
+		width: 320px;
 	}
 	.f-res .f-label {
 		float: left;
 		width: 120px;
-		text-align: right;
+		margin-bottom: 0;
 	}
 	.f-res .f-bd {
 		margin-left: 150px;
@@ -211,7 +245,7 @@ textarea.f-ipt {
 	.f-res .f-tip {
 		position: absolute;
 		top: 0;
-		left: 380px;
+		left: 500px;
 	}
 }
 /* radio && checkbox
@@ -254,7 +288,7 @@ textarea.f-ipt {
 			transform: scale(0);
 }
 .f-mul [type="radio"]:checked + .f-box:before {
-	border-color: #3b9afe;
+	border-color: #58c9f3;
 	-webkit-transform: scale(1);
 			transform: scale(1);
 }
@@ -277,7 +311,7 @@ textarea.f-ipt {
 			transform: scale(0) rotate(-45deg);
 }
 .f-mul [type="checkbox"]:checked + .f-box:before {
-	border-color: #3b9afe;
+	border-color: #58c9f3;
 	-webkit-transform: scale(1) rotate(-45deg);
 			transform: scale(1) rotate(-45deg);
 }
@@ -289,15 +323,15 @@ textarea.f-ipt {
 }
 /*填充式*/
 .f-mul-fill [type="radio"]:checked + .f-box {
-	border-color: #3b9afe;
-	background-color: #3b9afe;
+	border-color: #58c9f3;
+	background-color: #58c9f3;
 }
 .f-mul-fill [type="radio"]:checked + .f-box:before {
 	border-color: #fff;
 }
 .f-mul-fill [type="checkbox"]:checked + .f-box {
-	border-color: #3b9afe;
-	background-color: #3b9afe;
+	border-color: #58c9f3;
+	background-color: #58c9f3;
 }
 .f-mul-fill [type="checkbox"]:checked + .f-box:before {
 	border-color: #fff;
@@ -314,7 +348,7 @@ textarea.f-ipt {
 	-webkit-appearance: none;
 }
 .f-switch:checked {
-	background-color: #3b9afe;
+	background-color: #58c9f3;
 }
 .f-switch:before,
 .f-switch:after {
@@ -353,69 +387,52 @@ textarea.f-ipt {
 
 
 
-
-
-
-
-
-
-
-
-
+/*行*/
 @media screen and ( min-width: 768px ) {
-	.f-hoz .f-lab {
-		float: left;
-		width: 120px;
-		margin-top: 6px;
-		margin-bottom: 0;
-		font-weight: normal;
+	.f-inline .f-row,
+	.f-inline .f-bd {
+		display: inline-block;
 	}
-	.f-hoz .f-control {
-		margin-left: 120px;
+	.f-inline .f-row + .f-row {
+		margin-top: 0;
+		margin-left: 15px;
 	}
-	.f-hoz .f-control-text {
-		padding-top: 5px;
+	.f-inline .f-mul {
+		margin-right: 0;
 	}
 }
+
+
+
+
+
+
+
+
+
 /* Sub-object: `f-icon`
  ========================================================================== */
 .f-icon {
 	position: relative;
-	display: inline-block;
-	max-width: 100%;
 }
-.f-icon > [class*='icon-'] {
+.f-icon > [class*='i-'] {
 	position: absolute;
 	top: 50%;
 	width: 30px;
-	margin-top: -7px;
-	color: #999;
+	margin-top: -9px;
+	font-size: 18px;
 	text-align: center;
 	pointer-events: none;
+	color: #999;
 }
 .f-icon:not(.right) > input {
 	padding-left: 30px !important;
 }
-.f-icon.right > [class*='icon-'] {
+.f-icon.right > [class*='i-'] {
 	right: 0;
 }
 .f-icon.right > input {
 	padding-right: 30px !important;
-}
-.f-icon.f-control {
-	display: block;
-}
-/* f-fix
- ========================================================================== */
-.f-fix .f-lab {
-	float: left;
-	width: 120px;
-	margin-top: 6px;
-	margin-bottom: 0;
-	font-weight: normal;
-}
-.f-fix .f-control {
-	margin-left: 120px;
 }
 /* f-ipt size
  ========================================================================== */
@@ -436,20 +453,17 @@ textarea.f-ipt {
 }
 /* fixed width
  ========================================================================== */
-.f-width-s {
-	width: 60px !important;
+.f-ipt.f-width-s {
+	width: 60px;
 }
-.f-width-m {
-	width: 300px !important;
+.f-ipt.f-width-m {
+	width: 240px;
 }
-.f-width-l {
-	width: 100% !important;
+.f-ipt.f-width-l {
+	width: 400px;
 }
-/* f-block
- ========================================================================== */
-.f-block .f-ipt, .f-ipt.f-block {
-	width: 100%;
-}
+
+
 /* Validation states
  ========================================================================== */
 .f-red {
@@ -461,4 +475,17 @@ textarea.f-ipt {
 	border-color: #8ec73b !important;
 	background: #fafff2 !important;
 	color: #659f13 !important;
+}
+
+.f-group .f-ipt {
+	margin-top: -1px;
+}
+.f-group .f-ipt:first-child {
+	border-radius: 3px 3px 0 0;
+}
+.f-group .f-ipt:last-child {
+	border-radius: 0 0 3px 3px;
+}
+.f-group .f-ipt:not(:first-child):not(:last-child) {
+	border-radius: 0;
 }

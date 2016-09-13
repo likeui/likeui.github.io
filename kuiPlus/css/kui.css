@@ -9,7 +9,7 @@
 }
 html {
 	font: 14px/20px "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif;
-	color: #555;
+	color: #666;
 	background-color: #fff;
 	/* Prevent adjustments of font size after orientation changes in IE and iOS */
 	-webkit-text-size-adjust: 100%;
@@ -72,7 +72,7 @@ svg:not(:root) {
 ========================================================================  */
 a {
 	text-decoration: none;
-	color: #555;
+	color: #666;
 	background-color: transparent;
 	/* Remove gaps in links underline in iOS 8+ and Safari 8+ */
 	-webkit-text-decoration-skip: objects;
@@ -126,11 +126,11 @@ big {
 }
 ins {
 	text-decoration: none;
-	color: #555;
+	color: #666;
 	background-color: #ffa;
 }
 mark {
-	color: #555;
+	color: #666;
 	background-color: #ffa;
 }
 i {
@@ -361,7 +361,7 @@ pre {
 	padding: 10px;
 	background-color: #f5f5f5;
 	font: 12px / 18px Consolas, monospace, serif;
-	color: #555;
+	color: #666;
 	-moz-tab-size: 4;
 	tab-size: 4;
 	overflow: auto;
