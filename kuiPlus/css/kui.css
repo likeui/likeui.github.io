@@ -8,8 +8,8 @@
 			box-sizing: border-box;
 }
 html {
-	font: 14px/20px "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif;
-	color: #666;
+	font: 14px/1.4286 "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif;
+	color: #34495e;
 	background-color: #fff;
 	/* Prevent adjustments of font size after orientation changes in IE and iOS */
 	-webkit-text-size-adjust: 100%;
@@ -72,7 +72,7 @@ svg:not(:root) {
 ========================================================================  */
 a {
 	text-decoration: none;
-	color: #666;
+	color: #34495e;
 	background-color: transparent;
 	/* Remove gaps in links underline in iOS 8+ and Safari 8+ */
 	-webkit-text-decoration-skip: objects;
@@ -86,14 +86,17 @@ a:focus {
 	outline: 5px auto -webkit-focus-ring-color;
 	outline-offset: -2px;
 }
-a.k-hover-a {
-	color: #3b9afe;
+a.k-link-a {
+	color: #1abc9c;
 }
-a.k-hover-a:hover {
-	color: #1d8acb;
+a.k-link-a:hover {
 	text-decoration: underline;
 }
-a.k-hover-b:hover {
+a.k-link-b:hover {
+	color: #1abc9c;
+	text-decoration: underline;
+}
+a.k-link-c:hover {
 	color: #f60;
 	text-decoration: underline;
 }
@@ -115,22 +118,18 @@ big {
 	padding: 1px 4px;
 	font-size: 12px;
 	font-family: Consolas, monospace, serif;
-	border: 1px solid rgba(0, 0, 0, .05);
 	color: #d05;
 	background-color: #fafafa;
 	white-space: nowrap;
 	vertical-align: top;
 }
-:not(pre) > kbd {
-	color: #4b0;
-}
 ins {
 	text-decoration: none;
-	color: #666;
+	color: #34495e;
 	background-color: #ffa;
 }
 mark {
-	color: #666;
+	color: #34495e;
 	background-color: #ffa;
 }
 i {
@@ -209,6 +208,18 @@ html [type="button"],
 	-webkit-appearance: button; /* 1 */
 	font: inherit; /* 2 */
 }
+::-ms-input-placeholder {
+	font-size: 14px;
+	color: #95a5a6;
+}
+::-moz-placeholder {
+	font-size: 14px;
+	color: #95a5a6;
+}
+::-webkit-input-placeholder {
+	font-size: 14px;
+	color: #95a5a6;
+}
 /*  Block elements
 ========================================================================  */
 blockquote,
@@ -246,13 +257,13 @@ h3,
 h4,
 h5,
 h6 {
+	font-weight: 500;
 	margin: 0 0 15px 0;
-	font-weight: 400;
+	color: #34495e;
 }
-
 h1, .k-h1 {
-	font-size: 36px;
-	line-height: 42px;
+	font-size: 32px;
+	line-height: 40px;
 }
 h2, .k-h2 {
 	font-size: 24px;
@@ -260,21 +271,21 @@ h2, .k-h2 {
 }
 h3, .k-h3 {
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 28px;
 }
 h4, .k-h4 {
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 24px;
 }
 h5, .k-h5 {
 	font-size: 14px;
 	line-height: 20px;
-	color: #777;
+	color: #95a5a6;
 }
 h6, .k-h6 {
 	font-size: 12px;
 	line-height: 18px;
-	color: #777;
+	color: #95a5a6;
 }
 * + h1,
 * + h2,
@@ -282,7 +293,7 @@ h6, .k-h6 {
 * + h4,
 * + h5,
 * + h6 {
-	margin-top: 25px;
+	margin-top: 15px;
 }
 h1 small, .k-h1 small,
 h2 small, .k-h2 small,
@@ -290,8 +301,9 @@ h3 small, .k-h3 small,
 h4 small, .k-h4 small,
 h5 small, .k-h5 small,
 h6 small, .k-h6 small {
+	font-weight: 400;
 	line-height: 1;
-	color: #999;
+	color: #95a5a6;
 }
 /*  Lists
 ==========================================================================  */
@@ -335,7 +347,7 @@ hr:after {
 	position: absolute;
 	right: 0;
 	left: 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #dee5ed;
 	-webkit-transform: scaleY(.5);
 			transform: scaleY(.5);
 	-webkit-transform-origin: 0 100%;
@@ -350,7 +362,7 @@ address {
 ==========================================================================  */
 blockquote {
 	padding-left: 15px;
-	border-left: 5px solid #ddd;
+	border-left: 5px solid #dee5ed;
 	font-size: 16px;
 	line-height: 22px;
 	font-style: italic;
@@ -361,7 +373,7 @@ pre {
 	padding: 10px;
 	background-color: #f5f5f5;
 	font: 12px / 18px Consolas, monospace, serif;
-	color: #666;
+	color: #34495e;
 	-moz-tab-size: 4;
 	tab-size: 4;
 	overflow: auto;
@@ -389,7 +401,7 @@ iframe {
 }
 @media screen and ( min-width: 768px ) {
 	.k-container {
-		padding: 0 30px;	
+		padding: 0 30px;
 	}
 }
 .k-container-pn {
@@ -405,25 +417,24 @@ iframe {
 ==========================================================================  */
 .k-label, 
 .k-badge {
-	padding: 2px 6px;
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	padding: 3px 6px;
 
-	font-size: 12px;
 	line-height: 1;
+	font-size: 10px;
 	font-weight: normal;
 	white-space: nowrap;
-	vertical-align: baseline;
+	vertical-align: 1px;
 
 	color: #fff;
 	background-color: rgba(0, 0, 0, .15);
 }
 .k-label {
-	display: inline;
-
-	border-radius: 2px;
+	border-radius: 3px;
 }
 .k-badge {
-	display: inline-block;
-
 	border-radius: 100px;
 }
 .k-badge:empty,
@@ -437,7 +448,7 @@ iframe {
 	height: auto;
 	padding: 4px;
 
-	border: 1px solid #ddd;
+	border: 1px solid #dee5ed;
 	background-color: #fff;
 }
 a.k-thumbnail:hover,
@@ -454,6 +465,20 @@ a.k-thumbnail:focus {
 }
 .k-thumbnail-l {
 	width: 300px;
+}
+.k-tit {
+	margin: 15px 10px 5px;
+	font-weight: 400;
+}
+.k-tip {
+	margin: 5px 10px 15px;
+	font-size: 12px;
+	color: #999;
+}
+.k-link {
+	display: block;
+	padding: 12px 15px;
+	text-align: center;
 }
 /*  Wrap modifiers
 ==========================================================================  */
@@ -564,7 +589,7 @@ a.k-thumbnail:focus {
 .k-br-e {
 	border-radius: 50% !important;
 }
-/*  Box-shadoe
+/*  Box-shadow
 ==========================================================================  */
 .k-bs-a:hover {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
@@ -627,111 +652,77 @@ a.k-thumbnail:focus {
 /*  Background Color
 ==========================================================================  */
 .k-bc-a {
-	background-color: #fafafa;
+	color: #95a5a6;
+	background-color: #dee5ed;
 }
 .k-bc-b {
+	color: #95a5a6;
 	background-color: #fff;
 }
 .k-bc-c {
-	background-color: #78cd51;
+	background-color: #28d772;
 }
 .k-bc-d {
-	background-color: #58c9f3;
+	background-color: #1abc9c;
 }
 .k-bc-e {
-	background-color: #41cac0;
+	background-color: #50c7f9;
 }
 .k-bc-f {
-	background-color: #ffd000;
-}
-.k-bc-g {
-	background-color: #ff5555;
-}
-.k-bc-h {
 	background-color: #3b9afe;
 }
+.k-bc-g {
+	background-color: #f6c903;
+}
+.k-bc-h {
+	background-color: #ff861d;
+}
 .k-bc-i {
-	background-color: #bf46ec;
+	background-color: #e45853;
 }
 .k-bc-j {
-	background-color: #ff76ca;
+	background-color: #fd86cf;
 }
-.k-bc-c, .k-bc-d, .k-bc-e, .k-bc-f, .k-bc-g, .k-bc-h, .k-bc-i, .k-bc-j {
+.k-bc-k {
+	background-color: #be62e4;
+}
+.k-bc-c, .k-bc-d, .k-bc-e, .k-bc-f, .k-bc-g, .k-bc-h, .k-bc-i, .k-bc-j, .k-bc-k {
 	color: #fff;
 }
 /*  Text Color
 ==========================================================================  */
-.k-cl-a,
-.k-bd-a {
-	color: #999;
+.k-cl-a {
+	color: #95a5a6;
 }
-.k-cl-b,
-.k-bd-b {
+.k-cl-b {
 	color: #fff;
 }
-.k-cl-c,
-.k-bd-c {
-	color: #78cd51;
+.k-cl-c {
+	color: #28d772;
 }
-.k-cl-d,
-.k-bd-d {
-	color: #58c9f3;
+.k-cl-d {
+	color: #1abc9c;
 }
-.k-cl-e,
-.k-bd-e {
-	color: #41cac0;
+.k-cl-e {
+	color: #50c7f9;
 }
-.k-cl-f,
-.k-bd-f {
-	color: #ffd000;
-}
-.k-cl-g,
-.k-bd-g {
-	color: #ff5555;
-}
-.k-cl-h,
-.k-bd-h {
+.k-cl-f {
 	color: #3b9afe;
 }
-.k-cl-i,
-.k-bd-i {
-	color: #bf46ec;
+.k-cl-g {
+	color: #f6c903;
 }
-.k-cl-j,
-.k-bd-j {
-	color: #ff76ca;
+.k-cl-h {
+	color: #ff861d;
 }
-/*  Border Color
-==========================================================================  */
-.k-bd-a {
-	border: 1px solid #999;
+.k-cl-i {
+	color: #e45853;
 }
-.k-bd-b {
-	border: 1px solid #fff;
+.k-cl-j {
+	color: #fd86cf;
 }
-.k-bd-c {
-	border: 1px solid #78cd51;
-}
-.k-bd-d {
-	border: 1px solid #58c9f3;
-}
-.k-bd-e {
-	border: 1px solid #41cac0;
-}
-.k-bd-f {
-	border: 1px solid #ffd000;
-}
-.k-bd-g {
-	border: 1px solid #ff5555;
-}
-.k-bd-h {
-	border: 1px solid #3b9afe;
-}
-.k-bd-i {
-	border: 1px solid #bf46ec;
-}
-.k-bd-j {
-	border: 1px solid #ff76ca;
+.k-cl-k {
+	color: #be62e4;
 }
 /*  Line
 ==========================================================================  */
@@ -750,7 +741,7 @@ a.k-thumbnail:focus {
 	left: 0;
 	z-index: 2;
 
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #dee5ed;
 
 	-webkit-transform: scaleY(.5);
 			transform: scaleY(.5);
@@ -777,7 +768,7 @@ a.k-thumbnail:focus {
 	bottom: 0;
 	z-index: 2;
 
-	border-left: 1px solid #ccc;
+	border-left: 1px solid #dee5ed;
 
 	-webkit-transform: scaleX(.5);
 			transform: scaleX(.5);

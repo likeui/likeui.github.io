@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
 	<link rel="stylesheet" href="css/kui.css">
 	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="../css/icon.css">
@@ -37,11 +38,17 @@
 			<li class="active">
 				<a href="grid.html">网 格</a>
 			</li>
+            <li>
+                <a href="list.html">列 表</a>
+            </li>
 			<li>
 				<a href="anime.html">动 画</a>
 			</li>
 			<li>
 				<a href="button.html">按 钮</a>
+			</li>
+			<li>
+				<a href="dialog.html">弹 窗</a>
 			</li>
 			<li>
 				<a href="color.html">颜 色</a>
@@ -92,7 +99,7 @@
 				<div class="l-top">
 					响应式断点
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<table class="t">
 						<thead>
 							<tr>
@@ -137,7 +144,7 @@
 						g-[s || m || l]-[1-12]
 					</small>
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						网格系统最多可容纳12个网格列，遵循移动优先！如果仅使用 <code>g-[1-12]</code> 则会在任何设备都统一样式。使用方式如下：
 					</h6>
@@ -182,7 +189,7 @@
 						class：g-del
 					</small>
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						默认情况下会有固定左边距15px，不需要内边距时可以添加类
 						<code>.g-del</code>
@@ -228,7 +235,7 @@
 						class：g-lar
 					</small>
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						如果需要大一些的间隔，可以使用
 						<code>.g-lar</code>
@@ -275,7 +282,7 @@
 						class：g-res
 					</small>
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						响应式边距
 						<code>.g-res</code>
@@ -319,7 +326,7 @@
 				<div class="l-top">
 					响应式网格
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						本示例在
 						<code>s</code>
@@ -371,7 +378,7 @@
 				<div class="l-top">
 					网格居中
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						需要与全局样式
 						<code>.k-container-cen</code>
@@ -410,7 +417,7 @@
 						class：g-col
 					</small>
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						添加类
 						<code>.g-col</code>
@@ -481,7 +488,7 @@
 				<div class="l-top">
 					网格偏移
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						使用类
 						<code>.g-push-*</code>
@@ -545,8 +552,6 @@
 					</div>
 				</div>
 			</div><!--end l-->
-
-
 		</div><!--end k-container-->
 	</div><!--end main-->
 	

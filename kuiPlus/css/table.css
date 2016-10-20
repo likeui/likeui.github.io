@@ -21,7 +21,7 @@
 }
 .t td {
 	vertical-align: middle;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid #dee5ed;
 }
 /*说明、表尾*/
 .t caption,
@@ -34,13 +34,16 @@
 /*边框*/
 .t-border tr th,
 .t-border tr td {
-	border: 1px solid #ddd;
+	border: 1px solid #dee5ed;
 }
 /*鼠标移入*/
 .t-hover tbody tr:hover {
 	background-color: #f7f7f7;
 }
 /*隔行换色*/
+.t-striped td {
+	border: 0;
+}
 .t-striped tbody tr:nth-of-type(odd) {
 	background-color: #fafafa;
 }

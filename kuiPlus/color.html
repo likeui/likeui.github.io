@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/kui.css">
 	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="../css/icon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
@@ -37,11 +38,17 @@
 			<li>
 				<a href="grid.html">网 格</a>
 			</li>
+            <li>
+                <a href="list.html">列 表</a>
+            </li>
 			<li>
 				<a href="anime.html">动 画</a>
 			</li>
 			<li>
 				<a href="button.html">按 钮</a>
+			</li>
+			<li>
+				<a href="dialog.html">弹 窗</a>
 			</li>
 			<li class="active">
 				<a href="color.html">颜 色</a>
@@ -82,239 +89,9 @@
 
 			<div class="l l-hoz">
 				<div class="l-top">
-					文字颜色
-					<small>
-						class：k-cl-[a-j]
-					</small>
-				</div>
-				<div class="l-row">
-					<div class="demo">
-						<span class="k-cl-a">灰</span>
-						<span class="k-cl-b">白</span>
-						<span class="k-cl-c">绿</span>
-						<span class="k-cl-d">浅</span>
-						<span class="k-cl-e">青</span>
-						<span class="k-cl-f">黄</span>
-						<span class="k-cl-g">红</span>
-						<span class="k-cl-h">蓝</span>
-						<span class="k-cl-i">紫</span>
-						<span class="k-cl-j">粉</span>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;span class="k-cl-a">灰&lt;/span>
-&lt;span class="k-cl-b">白&lt;/span>
-&lt;span class="k-cl-c">绿&lt;/span>
-&lt;span class="k-cl-d">浅&lt;/span>
-&lt;span class="k-cl-e">青&lt;/span>
-&lt;span class="k-cl-f">黄&lt;/span>
-&lt;span class="k-cl-g">红&lt;/span>
-&lt;span class="k-cl-h">蓝&lt;/span>
-&lt;span class="k-cl-i">紫&lt;/span>
-&lt;span class="k-cl-j">粉&lt;/span>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-		
-			<div class="l l-hoz">
-				<div class="l-top">
-					背景颜色
-					<small>
-						class：k-bc-[a-j]
-					</small>
-				</div>
-				<div class="l-row">
-					<div class="demo">
-						<span class="k-bc-a">灰</span>
-						<span class="k-bc-b">白</span>
-						<span class="k-bc-c">绿</span>
-						<span class="k-bc-d">浅</span>
-						<span class="k-bc-e">青</span>
-						<span class="k-bc-f">黄</span>
-						<span class="k-bc-g">红</span>
-						<span class="k-bc-h">蓝</span>
-						<span class="k-bc-i">紫</span>
-						<span class="k-bc-j">粉</span>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;span class="k-bc-a">灰&lt;/span>
-&lt;span class="k-bc-b">白&lt;/span>
-&lt;span class="k-bc-c">浅&lt;/span>
-&lt;span class="k-bc-d">蓝&lt;/span>
-&lt;span class="k-bc-e">青&lt;/span>
-&lt;span class="k-bc-f">黄&lt;/span>
-&lt;span class="k-bc-g">红&lt;/span>
-&lt;span class="k-bc-h">蓝&lt;/span>
-&lt;span class="k-bc-i">紫&lt;/span>
-&lt;span class="k-bc-j">粉&lt;/span>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-			
-		
-			<div class="l l-hoz">
-				<div class="l-top">
-					边框颜色
-					<small>
-						class：k-bd-[a-j]
-					</small>
-				</div>
-				<div class="l-row">
-					<div class="demo">
-						<span class="k-bd-a">灰</span>
-						<span class="k-bd-b">白</span>
-						<span class="k-bd-c">绿</span>
-						<span class="k-bd-d">浅</span>
-						<span class="k-bd-e">青</span>
-						<span class="k-bd-f">黄</span>
-						<span class="k-bd-g">红</span>
-						<span class="k-bd-h">蓝</span>
-						<span class="k-bd-i">紫</span>
-						<span class="k-bd-j">粉</span>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;span class="k-bd-a">灰&lt;/span>
-&lt;span class="k-bd-b">白&lt;/span>
-&lt;span class="k-bd-c">浅&lt;/span>
-&lt;span class="k-bd-d">蓝&lt;/span>
-&lt;span class="k-bd-e">青&lt;/span>
-&lt;span class="k-bd-f">黄&lt;/span>
-&lt;span class="k-bd-g">红&lt;/span>
-&lt;span class="k-bd-h">蓝&lt;/span>
-&lt;span class="k-bd-i">紫&lt;/span>
-&lt;span class="k-bd-j">粉&lt;/span>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-hoz">
-				<div class="l-top">
-					角标
-					<small>
-						class：k-badge
-					</small>
-				</div>
-				<div class="l-row">
-					<div class="demo">
-						<span>
-							<label class="k-badge k-bc-a">1</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-b">2</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-c">3</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-d">4</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-e">5</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-f">6</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-g">7</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-h">8</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-i">9</label>
-						</span>
-						<span>
-							<label class="k-badge k-bc-j">10</label>
-						</span>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;label class="k-badge k-bc-a">1&lt;/label>
-&lt;label class="k-badge k-bc-b">2&lt;/label>
-&lt;label class="k-badge k-bc-c">3&lt;/label>
-&lt;label class="k-badge k-bc-d">4&lt;/label>
-&lt;label class="k-badge k-bc-e">5&lt;/label>
-&lt;label class="k-badge k-bc-f">6&lt;/label>
-&lt;label class="k-badge k-bc-g">7&lt;/label>
-&lt;label class="k-badge k-bc-h">8&lt;/label>
-&lt;label class="k-badge k-bc-i">9&lt;/label>
-&lt;label class="k-badge k-bc-j">10&lt;/label>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-hoz">
-				<div class="l-top">
-					标签
-					<small>
-						class：k-label
-					</small>
-				</div>
-				<div class="l-row">
-					<div class="demo">
-						<span>
-							<label class="k-label k-bc-a">1</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-b">2</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-c">3</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-d">4</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-e">5</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-f">6</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-g">7</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-h">8</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-i">9</label>
-						</span>
-						<span>
-							<label class="k-label k-bc-j">10</label>
-						</span>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;label class="k-label k-bc-a">1&lt;/label>
-&lt;label class="k-label k-bc-b">2&lt;/label>
-&lt;label class="k-label k-bc-c">3&lt;/label>
-&lt;label class="k-label k-bc-d">4&lt;/label>
-&lt;label class="k-label k-bc-e">5&lt;/label>
-&lt;label class="k-label k-bc-f">6&lt;/label>
-&lt;label class="k-label k-bc-g">7&lt;/label>
-&lt;label class="k-label k-bc-h">8&lt;/label>
-&lt;label class="k-label k-bc-i">9&lt;/label>
-&lt;label class="k-label k-bc-j">10&lt;/label>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-hoz">
-				<div class="l-top">
 					WEB标准色
 				</div>
-				<div class="l-row">
+				<div class="l-dec">
 					<h6>
 						WEB标准颜色是由W3C组织定义的，可以直接以英文名称形式在网页脚本中使用的一组RGB颜色。WEB标准色共计140种，其中Aqua与Cyan异名同色（青色），Fuchsia与Magenta异名同色（洋红），所以实际上共有138种。
 					</h6>
@@ -329,7 +106,7 @@
 				<div class="l-top">
 					颜色搭配
 				</div>
-				<div id="dpColor" class="l-row">
+				<div id="dpColor" class="l-dec">
 				</div>
 			</div><!--end l-->
 		</div><!--end k-container-->

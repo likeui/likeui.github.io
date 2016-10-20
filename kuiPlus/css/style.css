@@ -108,8 +108,15 @@ body.active .main-shade {
 .main-top {
 	margin-bottom: 50px;
 }
-.main-top a {
-	color: #58c9f3;
+.l-top {
+	padding: 15px 0;
+	font-size: 16px;
+}
+.l-top:after {
+	display: none;
+}
+.l-dec {
+	padding: 0 0 50px 0;
 }
 @media screen and ( min-width: 768px ) {
 	.main {
@@ -120,7 +127,7 @@ body.active .main-shade {
 
 
 .l-top small {
-	font-family: Monaco,Menlo,Consolas,"Courier New",FontAwesome,monospace;
+	font-family: Monaco, Menlo, Consolas, "Courier New", FontAwesome, monospace;
 	vertical-align: top;
 	color: #999;
 }
@@ -138,20 +145,20 @@ body.active .main-shade {
 	width: 50px;
 
 	font-size: 12px;
+	line-height: 20px;
 	text-align: center;
 
 	color: #fff;
 	border-radius: 10px;
-	background-color: #58c9f3;
-
+	background-color: #50c7f9;
 }
 .demo:after {
 	content: '';
 	display: block;
 	clear: both;
 }
-.l-row:not(.not) .demo button,
-.l-row:not(.not) .demo .b {
+.l-dec:not(.not) .demo button,
+.l-dec:not(.not) .demo .b {
 	float: left;
 }
 .code {
@@ -162,61 +169,109 @@ body.active .main-shade {
 }
 .code:before {
 	content: 'Code';
-	background-color: #ffd000;
+	background-color: #f6c903;
 }
 
 
 /*首页*/
-.index {
-	background-color: #f4f4f4;
+.index .top {
+	display: none;
+	position: absolute;
+	width: 100%;
+	padding: 40px 0;
+	text-align: center;
+	color: #fff;
 }
-.index .side {
-	background-color: #fff;
+.index .top-time {
+	font-size: 64px;
+	line-height: 1.2;
 }
-.index .l {
-	-webkit-transition: box-shadow .3s;
-			transition: box-shadow .3s;
+@media screen and ( max-width: 768px ) {
+	.index {
+		height: 100%;
+		overflow: hidden;
+		background-image: url(../images/bg.jpg);
+		background-size: 100% 100%;
+	}
+	.index .main {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding-top: 0;
+	}
+	.index .top {
+		display: block;
+	}
+	.index .g > * {
+		width: 25%;
+		text-align: center;
+	}
+	.index .l-img {
+		width: 60px;
+		height: 60px;
+		border-radius: 10px;
+	}
+	.index .l-row {
+		min-height: 30px;
+		padding: 2px 0;
+		background-color: transparent;
+	}
+	.index .l-row .l-ft {
+		color: #fff;
+	}
+	.index .header,
+	.index .l-row .k-label,
+	.index .l-row a {
+		display: none;
+	}
 }
 @media screen and ( min-width: 768px ) {
+	.index {
+		background-color: #f4f4f4;
+	}
+	.index .l {
+		margin-bottom: 30px;
+		-webkit-transition: box-shadow .3s;
+				transition: box-shadow .3s;
+	}
 	.index .l:hover {
 		box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 	}
+	.index .l-img {
+		-webkit-transition: -webkit-transform .3s ease-in-out;
+				transition: transform .3s ease-in-out;
+	}
+	.index .l-img:hover {
+		-webkit-transform: scale3d(1.2, 1.2, 1.2);
+				transform: scale3d(1.2, 1.2, 1.2);
+	}
+	.index .l-row .l-ft {
+		float: right;
+	}
+	.index .l-row .l-ft label,
+	.index .l-row .l-ft a {
+		display: block;
+		-webkit-transition: -webkit-transform .3s;
+				transition: transform .3s;
+	}
+	.index .l-row .l-ft {
+		height: 30px;
+		margin-top: -5px;
+		line-height: 30px;
+		text-align: right;
+		overflow: hidden;
+	}
+	.index .l:hover .l-ft label,
+	.index .l:hover .l-ft a {
+		-webkit-transform: translateY(-30px);
+				transform: translateY(-30px);
+	}
 }
-.index .l-row {
-	padding: 0;
-	overflow: hidden;
-}
-.index .l-img {
-	-webkit-transition: -webkit-transform .5s ease-in-out;
-			transition: transform .5s ease-in-out;
-}
-.index .l-img:hover {
-	-webkit-transform: scale3d(1.2, 1.2, 1.2);
-			transform: scale3d(1.2, 1.2, 1.2);
-}
-.index .l-btm span {
-	height: 30px;
-	margin-top: -5px;
-	line-height: 30px;
-	text-align: right;
-	overflow: hidden;
-}
-.index .l-btm span label,
-.index .l-btm span a {
-	display: block;
-	-webkit-transition: -webkit-transform .3s;
-			transition: transform .3s;
-}
-.index .l:hover .l-btm label,
-.index .l:hover .l-btm a {
-	-webkit-transform: translateY(-30px);
-			transform: translateY(-30px);
-}
-
 
 /*按钮*/
-.button .l-row:not(.not) button,
-.button .l-row:not(.not) .b {
+.button .l-dec:not(.not) button,
+.button .l-dec:not(.not) .b {
 	margin-right: 5px;
 	margin-bottom: 5px;
 }
@@ -327,4 +382,33 @@ body.active .main-shade {
 .iconbox .k-mb i {
 	margin-top: 20px;
 	font-size: 36px;
+}
+
+
+
+/*弹层*/
+.d-style1 .l-hd,
+.d-style1 .l-ft {
+	margin: 30px 0;
+}
+.d-style1 .l-bd .l-img {
+	width: 40px;
+	margin: 0 20px;
+}
+#dialog5 .d-style1 .l-top {
+	padding: 20px 15px;
+	color: #fff;
+	background-image: url(../pic/d-kt2.png);
+	background-repeat: no-repeat;
+	background-position: 85% bottom;
+	background-color: #1caff6;
+}
+#dialog14 .d-dialog {
+	width: 600px;
+}
+@media screen and ( min-width: 768px ) {
+	.d-style1 .l-bd .l-img {
+		width: 60px;
+		margin: 0 50px;
+	}
 }

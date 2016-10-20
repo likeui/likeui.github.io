@@ -34,8 +34,20 @@
 	</div>
 
 	<div class="k-container">
-
+		<button>test</button>
 	</div>
 
+	<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+	var toast=function(title){
+		$("body").append('<div id="test">'+title+'</div>');
+	}
+	toast('im test');
+		
+		$("button").on('click', function(event) {
+			event.preventDefault();
+			$("#test").remove();
+		});
+	</script>
 </body>
 </html>

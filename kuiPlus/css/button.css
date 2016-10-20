@@ -6,22 +6,23 @@ button,
 	position: relative;
 
 	display: inline-block;
-	padding: 6px 12px;
+	padding: 6px 15px;
 	margin-bottom: 0;
 
 	text-align: center;
 	line-height: 20px;
+	font-size: 14px;
 	white-space: nowrap;
 
 	cursor: pointer;
 	outline: 0;
 	border: 0;
-	color: #555;
-	background: #fafafa;
-	border-radius: 2px;
+	color: #fff;
+	background: #54687b;
+	border-radius: 3px;
 
-	-webkit-transition: all .14s linear;
-			transition: all .14s linear;
+	-webkit-transition: all .15s linear;
+			transition: all .15s linear;
 	-webkit-user-select: none;
 	-webkit-appearance: none;
 }
@@ -30,14 +31,15 @@ button,
  button:focus,
 .b:hover,
 .b:focus {
-	background: #e7e7e7;
+	color: #fff;
+	background: #34495e;
 }
 /*按下*/
 button.active,
 button:active,
 .b.active,
 .b:active {
-	color: #bbb;
+	color: #161f27;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 button.active,
@@ -49,166 +51,189 @@ button.disabled,
 button:disabled,
 .b.disabled,
 .b:disabled {
-	color: #999;
-	background: #e7e7e7;
+	top: 0 !important;
+	border-color: transparent;
+	color: #fff;
+	background: #95a5a6 !important;
 	cursor: default !important;
-	opacity: .4 !important;
+	opacity: .6;
 
-	text-shadow: none !important;
 	box-shadow: none !important;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 /*链接样式*/
 .b-bc-a {
-	color: #006aff;
+	color: #1abc9c !important;
 	border: 0 !important;
 	background: transparent !important;
 	box-shadow: none !important;
 }
-.b-bc-a.active,
-.b-bc-a:active {
-	color: #006aff;
-	opacity: .6;
+.b-bc-a:hover,
+.b-bc-a:focus {
+	color: #1abc9c !important;
 }
+.b-bc-a.active,
+.b-bc-a:active,
 .b-bc-a.disabled,
 .b-bc-a:disabled {
-	color: #006aff;
+	color: #1abc9c;
+	background: transparent !important;
+	opacity: .4;
 }
 .b-bc-a:after {
 	display: none;
 }
 /*白色*/
 .b-bc-b {
+	color: #54687b;
 	background: #fff;
 }
 .b-bc-b:hover,
 .b-bc-b:focus {
+	color: #54687b !important;
 	background: #fafafa;
 }
+.b-bc-b:active,
+.b-bc-b.active,
 .b-bc-b.disabled,
 .b-bc-b:disabled {
-	background: transparent;
+	color: #dee5ed !important;
+	background: #fafafa !important;
 }
 /*绿色*/
+.b-bc-c {
+	background: #28d772;
+}
 .b-bc-c:hover,
 .b-bc-c:focus {
-	background: #69c042;
+	background: #18b75b !important;
 }
 .b-bc-c.active,
-.b-bc-c:active {
-	color: #388b12;
-}
-.b-bc-c,
+.b-bc-c:active,
 .b-bc-c.disabled,
 .b-bc-c:disabled {
-	color: #fff;
-	background: #78cd51;
-}
-/*浅蓝*/
-.b-bc-d:hover,
-.b-bc-d:focus {
-	background: #31bef3;
-}
-.b-bc-d.active,
-.b-bc-d:active {
-	color: #1d8db7;
-}
-.b-bc-d,
-.b-bc-d.disabled,
-.b-bc-d:disabled {
-	color: #fff;
-	background: #58c9f3;
+	color: #048e3e !important;
+	background: #18b75b !important;
 }
 /*青绿*/
-.b-bc-e:hover,
-.b-bc-e:focus {
-	background: #15af91;
-}
-.b-bc-e.active,
-.b-bc-e:active {
-	color: #048981;
-}
-.b-bc-e,
-.b-bc-e.disabled,
-.b-bc-e:disabled {
-	color: #fff;
+.b-bc-d {
 	background: #1abc9c;
 }
-/*黄色*/
-.b-bc-f:hover,
-.b-bc-f:focus {
-	background: #f6c903;
+.b-bc-d:hover,
+.b-bc-d:focus {
+	background: #029f80 !important;
 }
-.b-bc-f.active,
-.b-bc-f:active {
-	color: #e09400;
+.b-bc-d.active,
+.b-bc-d:active,
+.b-bc-d.disabled,
+.b-bc-d:disabled {
+	color: #007b34 !important;
+	background: #029f80 !important;
 }
-.b-bc-f,
-.b-bc-f.disabled,
-.b-bc-f:disabled {
-	color: #fff;
-	background: #ffd000;
+/*浅蓝*/
+.b-bc-e {
+	background: #50c7f9;
 }
-/*红色*/
-.b-bc-g:hover,
-.b-bc-g:focus {
-	background: #e44b4b;
+.b-bc-e:hover,
+.b-bc-e:focus {
+	background: #28afe8 !important;
 }
-.b-bc-g.active,
-.b-bc-g:active {
-	color: #c41414;
-}
-.b-bc-g,
-.b-bc-g.disabled,
-.b-bc-g:disabled {
-	color: #fff;
-	background: #ff5555;
+.b-bc-e.active,
+.b-bc-e:active,
+.b-bc-e.disabled,
+.b-bc-e:disabled {
+	color: #138bbe !important;
+	background: #28afe8 !important;
 }
 /*蓝色*/
- {
+.b-bc-f {
+	background: #3b9afe;
+}
+.b-bc-f:hover,
+.b-bc-f:focus {
+	background: #2786e9 !important;
+}
+.b-bc-f.active,
+.b-bc-f:active,
+.b-bc-f.disabled,
+.b-bc-f:disabled {
+	color: #0760bd !important;
+	background: #2786e9 !important;
+}
+/*黄色*/
+.b-bc-g {
+	background: #f6c903;
+}
+.b-bc-g:hover,
+.b-bc-g:focus {
+	background: #efa900 !important;
+}
+.b-bc-g.active,
+.b-bc-g:active,
+.b-bc-g.disabled,
+.b-bc-g:disabled {
+	color: #d27700 !important;
+	background: #efa900 !important;
+}
+/*橙色*/
+.b-bc-h {
+	background: #ff861d;
 }
 .b-bc-h:hover,
 .b-bc-h:focus {
-	background: #2a87e9;
+	background: #f60 !important;
 }
 .b-bc-h.active,
-.b-bc-h:active {
-	color: #0062c7;
-}
-.b-bc-h,
+.b-bc-h:active,
 .b-bc-h.disabled,
 .b-bc-h:disabled {
-	color: #fff;
-	background: #3b9afe;
+	color: #c84700 !important;
+	background: #f60 !important;
 }
-/*紫色*/
+/*红色*/
+.b-bc-i {
+	background: #e45853;
+}
 .b-bc-i:hover,
 .b-bc-i:focus {
-	background: #ab3ed3; 
+	background: #d93d37 !important;
 }
 .b-bc-i.active,
-.b-bc-i:active {
-	color: #8c2ab1;
-}
-.b-bc-i,
+.b-bc-i:active ,
 .b-bc-i.disabled,
 .b-bc-i:disabled {
-	color: #fff;
-	background: #bf46ec;
+	color: #af100a !important;
+	background: #d93d37 !important;
 }
 /*粉色*/
+.b-bc-j {
+	background: #fd86cf;
+}
 .b-bc-j:hover,
 .b-bc-j:focus {
-	background: #f364bc;
+	background: #ea51af !important;
 }
 .b-bc-j.active,
-.b-bc-j:active {
-	color: #db359b;
-}
-.b-bc-j,
+.b-bc-j:active,
 .b-bc-j.disabled,
 .b-bc-j:disabled {
-	color: #fff;
-	background: #ff76ca;
+	color: #bf2182 !important;
+	background: #ea51af !important;
+}
+/*紫色*/
+.b-bc-k {
+	background: #be62e4;
+}
+.b-bc-k:hover,
+.b-bc-k:focus {
+	background: #a530d5 !important;
+}
+.b-bc-k.active,
+.b-bc-k:active,
+.b-bc-k.disabled,
+.b-bc-k:disabled {
+	color: #830ab5 !important;
+	background: #a530d5 !important;
 }
 /*细边框*/
 .b-bd-a:after {
@@ -234,193 +259,122 @@ button:disabled,
 }
 /*粗边框*/
 .b-bd-b {
-	padding: 5px 11px;
-	border: 1px solid #ccc;
+	padding: 5px 14px;
+	border: 1px solid #34495e;
 }
 .b-bd-b:after {
 	display: none;
 }
 .b-bd-b.b-bc-a {
-	padding: 6px 12px;
+	padding: 6px 15px;
 }
 .b-bd-b.b-bc-b {
-	border-color: #dddddd;
+	border-color: #dee5ec;
 }
 .b-bd-b.b-bc-c {
-	border-color: #69c042;
+	border-color: #18b75b;
 }
 .b-bd-b.b-bc-d {
-	border-color: #31bef3;
+	border-color: #029f80;
 }
 .b-bd-b.b-bc-e {
-	border-color: #15af91;
+	border-color: #28afe8;
 }
 .b-bd-b.b-bc-f {
-	border-color: #f6c903;
+	border-color: #2786e9;
 }
 .b-bd-b.b-bc-g {
-	border-color: #e44b4b;
+	border-color: #efa900;
 }
 .b-bd-b.b-bc-h {
-	border-color: #2a87e9;
+	border-color: #f60;
 }
 .b-bd-b.b-bc-i {
-	border-color: #ab3ed3;
+	border-color: #d93d37;
 }
 .b-bd-b.b-bc-j {
-	border-color: #f364bc;
+	border-color: #ea51af;
+}
+.b-bd-b.b-bc-k {
+	border-color: #a530d5;
 }
 /*空心按钮*/
 .b-o {
-	padding: 5px 11px;
-	border: 1px solid #bbb;
+	padding: 5px 14px;
+	color: #34495e;
+	border: 1px solid #34495e;
 	background: transparent;
 }
 .b-o:after {
 	display: none;
 }
-.b-o.disabled,
-.b-o:disabled {
-	background: transparent;
-}
+/*链接样式*/
 .b-o.b-bc-a {
-	padding: 6px 12px;
+	padding: 6px 15px;
 }
-.b-o.b-bc-b:hover,
-.b-o.b-bc-b:focus {
-	color: #555;
-}
-.b-o.b-bc-b,
-.b-o.b-bc-b.disabled,
-.b-o.b-bc-b:disabled {
+/*白色*/
+.b-o.b-bc-b {
 	color: #fff;
 	border-color: #fff;
 }
-.b-o.b-bc-c:hover,
-.b-o.b-bc-c:focus {
+/*绿色*/
+.b-o.b-bc-c {
+	color: #18b75b;
+	border-color: #18b75b;
+}
+/*青绿*/
+.b-o.b-bc-d {
+	color: #029f80;
+	border-color: #029f80;
+}
+/*浅蓝*/
+.b-o.b-bc-e {
+	color: #28afe8;
+	border-color: #28afe8;
+}
+/*蓝色*/
+.b-o.b-bc-f {
+	color: #2786e9;
+	border-color: #2786e9;
+}
+/*黄色*/
+.b-o.b-bc-g {
+	color: #efa900;
+	border-color: #efa900;
+}
+/*橙色*/
+.b-o.b-bc-h {
+	color: #f60;
+	border-color: #f60;
+}
+/*红色*/
+.b-o.b-bc-i {
+	color: #d93d37;
+	border-color: #d93d37;
+}
+/*粉色*/
+.b-o.b-bc-j {
+	color: #ea51af;
+	border-color: #ea51af;
+}
+/*紫色*/
+.b-o.b-bc-k {
+	color: #a530d5;
+	border-color: #a530d5;
+}
+.b-o.b-bc-c:hover, .b-o.b-bc-d:hover, .b-o.b-bc-e:hover, .b-o.b-bc-f:hover, .b-o.b-bc-g:hover, .b-o.b-bc-h:hover, .b-o.b-bc-i:hover, .b-o.b-bc-j:hover, .b-o.b-bc-k:hover,
+.b-o.b-bc-c:focus, .b-o.b-bc-d:focus, .b-o.b-bc-e:focus, .b-o.b-bc-f:focus, .b-o.b-bc-g:focus, .b-o.b-bc-h:focus, .b-o.b-bc-i:focus, .b-o.b-bc-j:focus, .b-o.b-bc-k:focus {
 	color: #fff;
-}
-.b-o.b-bc-c.active,
-.b-o.b-bc-c:active {
-	color: #388b12;
-}
-.b-o.b-bc-c,
-.b-o.b-bc-c.disabled,
-.b-o.b-bc-c:disabled {
-	color: #69c042;
-	border-color: #69c042;
-}
-.b-o.b-bc-d:hover,
-.b-o.b-bc-d:focus {
-	color: #fff;
-}
-.b-o.b-bc-d.active,
-.b-o.b-bc-d:active {
-	color: #1d8db7;
-}
-.b-o.b-bc-d,
-.b-o.b-bc-d.disabled,
-.b-o.b-bc-d:disabled {
-	color: #31bef3;
-	border-color: #31bef3;
-}
-.b-o.b-bc-e:hover,
-.b-o.b-bc-e:focus {
-	color: #fff;
-}
-.b-o.b-bc-e.active,
-.b-o.b-bc-e:active {
-	color: #048981;
-}
-.b-o.b-bc-e,
-.b-o.b-bc-e.disabled,
-.b-o.b-bc-e:disabled {
-	color: #15af91;
-	border-color: #15af91;
-}
-.b-o.b-bc-f:hover,
-.b-o.b-bc-f:focus {
-	color: #fff;
-}
-.b-o.b-bc-f.active,
-.b-o.b-bc-f:active {
-	color: #e09400;
-}
-.b-o.b-bc-f,
-.b-o.b-bc-f.disabled,
-.b-o.b-bc-f:disabled {
-	color: #f6c903;
-	border-color: #f6c903;
-}
-.b-o.b-bc-g:hover,
-.b-o.b-bc-g:focus {
-	color: #fff;
-}
-.b-o.b-bc-g.active,
-.b-o.b-bc-g:active {
-	color: #c41414;
-}
-.b-o.b-bc-g,
-.b-o.b-bc-g.disabled,
-.b-o.b-bc-g:disabled {
-	color: #e44b4b;
-	border-color: #e44b4b;
-}
-.b-o.b-bc-h:hover,
-.b-o.b-bc-h:focus {
-	color: #fff;
-}
-.b-o.b-bc-h.active,
-.b-o.b-bc-h:active {
-	color: #0062c7;
-}
-.b-o.b-bc-h,
-.b-o.b-bc-h.disabled,
-.b-o.b-bc-h:disabled {
-	color: #2a87e9;
-	border-color: #2a87e9;
-}
-.b-o.b-bc-i:hover,
-.b-o.b-bc-i:focus {
-	color: #fff;
-}
-.b-o.b-bc-i.active,
-.b-o.b-bc-i:active {
-	color: #8c2ab1;
-}
-.b-o.b-bc-i,
-.b-o.b-bc-i.disabled,
-.b-o.b-bc-i:disabled {
-	color: #ab3ed3;
-	border-color: #ab3ed3;
-}
-.b-o.b-bc-j:hover,
-.b-o.b-bc-j:focus {
-	color: #fff;
-}
-.b-o.b-bc-j.active,
-.b-o.b-bc-j:active {
-	color: #db359b;
-}
-.b-o.b-bc-j,
-.b-o.b-bc-j.disabled,
-.b-o.b-bc-j:disabled {
-	color: #f364bc;
-	border-color: #f364bc;
 }
 /*3d*/
 .b-3d {
 	top: 0;
-	box-shadow: 0 3px 0 #ddd, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #2d4053, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.active, 
 .b-3d:active {
 	top: 2px;
-	box-shadow: 0 1px 0 #ddd;
-}
-.b-3d.disabled,
-.b-3d:disabled {
-	position: inherit;
+	box-shadow: 0 1px 0 #2d4053;
 }
 .b-3d.b-bc-b {
 	box-shadow: 0 3px 0 #e7e7e7, 0 4px 3px rgba(0, 0, 0, .2);
@@ -430,239 +384,178 @@ button:disabled,
 	box-shadow: 0 1px 0 #e7e7e7;
 }
 .b-3d.b-bc-c {
-	box-shadow: 0 3px 0 #6ab547, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #12ab53, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-c.active,
 .b-3d.b-bc-c:active {
-	box-shadow: 0 1px 0 #6ab547;
+	box-shadow: 0 1px 0 #12ab53;
 }
 .b-3d.b-bc-d {
-	box-shadow: 0 3px 0 #36b0ef, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #029275, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-d.active,
 .b-3d.b-bc-d:active {
-	box-shadow: 0 1px 0 #36b0ef;
+	box-shadow: 0 1px 0 #029275;
 }
 .b-3d.b-bc-e {
-	box-shadow: 0 3px 0 #169f84, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #23a4db, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-e.active,
 .b-3d.b-bc-e:active {
-	box-shadow: 0 1px 0 #169f84;
+	box-shadow: 0 1px 0 #23a4db;
 }
 .b-3d.b-bc-f {
-	box-shadow: 0 3px 0 #dfb601, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #247dda, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-f.active,
 .b-3d.b-bc-f:active {
-	box-shadow: 0 1px 0 #dfb601;
+	box-shadow: 0 1px 0 #247dda;
 }
 .b-3d.b-bc-g {
-	box-shadow: 0 3px 0 #d34444, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #e3a100, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-g.active,
 .b-3d.b-bc-g:active {
-	box-shadow: 0 1px 0 #d34444;
+	box-shadow: 0 1px 0 #e3a100;
 }
 .b-3d.b-bc-h {
-	box-shadow: 0 3px 0 #247dda, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #f16101, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-h.active,
 .b-3d.b-bc-h:active {
-	box-shadow: 0 1px 0 #247dda;
+	box-shadow: 0 1px 0 #f16101;
 }
 .b-3d.b-bc-i {
-	box-shadow: 0 3px 0 #a12ecc, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #be4642, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-i.active,
 .b-3d.b-bc-i:active {
-	box-shadow: 0 1px 0 #a12ecc;
+	box-shadow: 0 1px 0 #be4642;
 }
 .b-3d.b-bc-j {
-	box-shadow: 0 3px 0 #e84fad, 0 4px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 3px 0 #d947a1, 0 4px 3px rgba(0, 0, 0, .2);
 }
 .b-3d.b-bc-j:active,
 .b-3d.b-bc-j.active {
-	box-shadow: 0 1px 0 #e84fad;
+	box-shadow: 0 1px 0 #d947a1;
+}
+.b-3d.b-bc-k {
+	box-shadow: 0 3px 0 #9b2ac9, 0 4px 3px rgba(0, 0, 0, .2);
+}
+.b-3d.b-bc-k:active,
+.b-3d.b-bc-k.active {
+	box-shadow: 0 1px 0 #9b2ac9;
 }
 /*渐变*/
 .b-shade {
-	padding: 5px 11px;
-	border: 1px solid #ddd;
-	background: linear-gradient(#fff, #ddd);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4);
+	padding: 5px 14px;
+	border: 1px solid #34495e;
+	background: linear-gradient(#54687b, #34495e);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
 	-webkit-transition-duration: 0s;
 			transition-duration: 0s;
 }
-.b-shade:focus,
-.b-shade:hover {
-	background: linear-gradient(#ffffff, #d2d2d2);
-}
 .b-shade.active,
 .b-shade:active {
-	background: #ddd;
+	background: #34495e;
 	box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15);
 }
-.b-shade.disabled,
-.b-shade:disabled {
-	background: #ddd;
-}
 .b-shade.b-bc-b {
-	background: linear-gradient(#ffffff, #f2f2f2);
-}
-.b-shade.b-bc-b:focus,
-.b-shade.b-bc-b:hover {
-	background: linear-gradient(#ffffff, #e7e7e7);
+	border-color: #dee5ec;
+	background: linear-gradient(#fff, #eee);
 }
 .b-shade.b-bc-b.active,
 .b-shade.b-bc-b:active {
-	background: #fafafa;
+	background: #eee;
 }
-.b-shade.b-bc-b.disabled,
-.b-shade.b-bc-b:disabled {
-	background: #fafafa;
-}
+/*绿色*/
 .b-shade.b-bc-c {
-	border-color: #69c042;
-	background: linear-gradient(#85e459, #78cd51);
-}
-.b-shade.b-bc-c:focus,
-.b-shade.b-bc-c:hover {
-	background: linear-gradient(#85e459, #71c14c);
+	border-color: #18b75b;
+	background: linear-gradient(#28d772, #18b75b);
 }
 .b-shade.b-bc-c.active,
 .b-shade.b-bc-c:active {
-	background: #69c042;
+	background: #18b75b;
 }
-.b-shade.b-bc-c.disabled,
-.b-shade.b-bc-c:disabled {
-	background: #78cd51;
-}
+/*青绿*/
 .b-shade.b-bc-d {
-	border-color: #31bef3;
-	background: linear-gradient(#82dcfd, #58c9f3);
-}
-.b-shade.b-bc-d:focus,
-.b-shade.b-bc-d:hover {
-	background: linear-gradient(#82dcfd, #53bfe7);
+	border-color: #029f80;
+	background: linear-gradient(#1abc9c, #029f80);
 }
 .b-shade.b-bc-d.active,
 .b-shade.b-bc-d:active {
-	background: #31bef3;
+	background: #029f80;
 }
-.b-shade.b-bc-d.disabled,
-.b-shade.b-bc-d:disabled {
-	background: #58c9f3;
-}
+/*浅蓝*/
 .b-shade.b-bc-e {
-	border-color: #15af91;
-	background: linear-gradient(#48dfd4, #1abc9c);
-}
-.b-shade.b-bc-e:focus,
-.b-shade.b-bc-e:hover {
-	background: linear-gradient(#48dfd4, #15af91);
+	border-color: #28afe8;
+	background: linear-gradient(#50c7f9, #28afe8);
 }
 .b-shade.b-bc-e.active,
 .b-shade.b-bc-e:active {
-	background: #15af91;
+	background: #28afe8;
 }
-.b-shade.b-bc-e.disabled,
-.b-shade.b-bc-e:disabled {
-	background: #1abc9c;
-}
+/*蓝色*/
 .b-shade.b-bc-f {
-	border-color: #f6c903;
-	background: linear-gradient(#fcdf5b, #ffd000);
-}
-.b-shade.b-bc-f:focus,
-.b-shade.b-bc-f:hover {
-	background: linear-gradient(#fcdf5b, #f6c903);
+	border-color: #2786e9;
+	background: linear-gradient(#3b9afe, #2786e9);
 }
 .b-shade.b-bc-f.active,
 .b-shade.b-bc-f:active {
-	background: #f6c903;
+	background: #2786e9;
 }
-.b-shade.b-bc-f.disabled,
-.b-shade.b-bc-f:disabled {
-	background: #ffd000;
-}
+/*黄色*/
 .b-shade.b-bc-g {
-	border-color: #e44b4b;
-	background: linear-gradient(#ff7575, #ff5555);
-}
-.b-shade.b-bc-g:focus,
-.b-shade.b-bc-g:hover {
-	background: linear-gradient(#ff7575, #e44b4b);
+	border-color: #efa900;
+	background: linear-gradient(#f6c903, #efa900);
 }
 .b-shade.b-bc-g.active,
 .b-shade.b-bc-g:active {
-	background: #e44b4b;
+	background: #efa900;
 }
-.b-shade.b-bc-g.disabled,
-.b-shade.b-bc-g:disabled {
-	background: #ff5555;
-}
+/*橙色*/
 .b-shade.b-bc-h {
-	border-color: #2a87e9;
-	background: linear-gradient(#57a8fd, #3b9afe);
-}
-.b-shade.b-bc-h:focus,
-.b-shade.b-bc-h:hover {
-	background: linear-gradient(#57a8fd, #2a87e9);
+	border-color: #f60;
+	background: linear-gradient(#ff861d, #f60);
 }
 .b-shade.b-bc-h.active,
 .b-shade.b-bc-h:active {
-	background: #2a87e9;
+	background: #f60;
 }
-.b-shade.b-bc-h.disabled,
-.b-shade.b-bc-h:disabled {
-	background: #3b9afe;
-}
+/*红色*/
 .b-shade.b-bc-i {
-	border-color: #ab3ed3;
-	background: linear-gradient(#d86fff, #bf46ec);
-}
-.b-shade.b-bc-i:focus,
-.b-shade.b-bc-i:hover {
-	background: linear-gradient(#d86fff, #ab3ed3);
+	border-color: #d93d37;
+	background: linear-gradient(#e45853, #d93d37);
 }
 .b-shade.b-bc-i.active,
 .b-shade.b-bc-i:active {
-	background: #ab3ed3;
+	background: #d93d37;
 }
-.b-shade.b-bc-i.disabled,
-.b-shade.b-bc-i:disabled {
-	background: #bf46ec;
-}
+/*粉色*/
 .b-shade.b-bc-j {
-	border-color: #f364bc;
-	background: linear-gradient(#ff92d5, #ff76ca);
-}
-.b-shade.b-bc-j:focus,
-.b-shade.b-bc-j:hover {
-	background: linear-gradient(#ff92d5, #f364bc);
+	border-color: #ea51af;
+	background: linear-gradient(#fd86cf, #ea51af);
 }
 .b-shade.b-bc-j.active,
 .b-shade.b-bc-j:active {
-	background: #f364bc;
+	background: #ea51af;
 }
-.b-shade.b-bc-j.disabled,
-.b-shade.b-bc-j:disabled {
-	background: #f364bc;
+/*紫色*/
+.b-shade.b-bc-k {
+	border-color: #a530d5;
+	background: linear-gradient(#be62e4, #a530d5);
 }
-/*角*/
+.b-shade.b-bc-k.active,
+.b-shade.b-bc-k:active {
+	background: #a530d5;
+}
+/*边角*/
 .b-br-a,
 .b-br-a:after {
 	border-radius: 0;
 }
-.b-br-b {
-	border-radius: 5px;
-}
+.b-br-b,
 .b-br-b:after {
-	border-radius: 10px;
-}
-.b-br-c,
-.b-br-c:after {
 	border-radius: 200px;
 }
 /*形状*/
