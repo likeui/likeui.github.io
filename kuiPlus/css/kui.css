@@ -399,11 +399,6 @@ iframe {
 
 	-webkit-overflow-scrolling: touch;
 }
-@media screen and ( min-width: 768px ) {
-	.k-container {
-		padding: 0 30px;
-	}
-}
 .k-container-pn {
 	padding: 0;
 }

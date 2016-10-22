@@ -2,6 +2,8 @@
  * Component: list
  ========================================================================== */
 .l {
+	position: relative;
+	display: block;
 	padding: 0;
 	margin: 0;
 }

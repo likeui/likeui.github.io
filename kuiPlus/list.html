@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="list">
 <head>
 	<meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no"> 
@@ -19,8 +19,10 @@
     	.main-top {
     		padding: 0 15px;
     	}
-    	.k-container {
-    		padding: 0;
+    	@media screen and ( max-width: 767px ) {
+	    	.k-container {
+	    		padding: 0;
+	    	}
     	}
     </style>
 </head>
@@ -28,14 +30,14 @@
 	<div class="header">
 		<i class="i-menu n-menu"></i>
 		<div class="n-logo">
-			<img src="images/kui-logo.png">
+			<img src="images/logo.png">
 		</div>
 	</div><!--end header-->
 
 
 	<div class="side">
 		<div class="logo">
-			<img class="k-img" src="images/kui-logo.png">
+			<img class="k-img" src="images/logo.png">
 		</div>
 
 
@@ -86,7 +88,7 @@
 	</div><!--end side-->
 
 
-	<div class="main list">
+	<div class="main">
 		<div class="k-container">
 			<div class="main-top">
 				<h2>
@@ -253,31 +255,33 @@
 				<div class="l-top">
 					开关列表
 				</div>
-				<div class="l-row">
-					<img class="l-img" src="pic/004.svg" />
-					<div class="l-hd">
-						单曲循环
+				<div>
+					<div class="l-row">
+						<img class="l-img" src="pic/004.svg" />
+						<div class="l-hd">
+							单曲循环
+						</div>
+						<div class="l-ft">
+							<input class="f-switch" type="checkbox" checked>
+						</div>
 					</div>
-					<div class="l-ft">
-						<input class="f-switch" type="checkbox" checked>
+					<div class="l-row">
+						<img class="l-img" src="pic/005.svg" />
+						<div class="l-hd">
+							夜间模式
+						</div>
+						<div class="l-ft">
+							<input class="f-switch" type="checkbox">
+						</div>
 					</div>
-				</div>
-				<div class="l-row">
-					<img class="l-img" src="pic/005.svg" />
-					<div class="l-hd">
-						夜间模式
-					</div>
-					<div class="l-ft">
-						<input class="f-switch" type="checkbox">
-					</div>
-				</div>
-				<div class="l-row">
-					<img class="l-img" src="pic/006.svg" />
-					<div class="l-hd">
-						定时
-					</div>
-					<div class="l-ft">
-						<input class="f-switch" type="checkbox">
+					<div class="l-row">
+						<img class="l-img" src="pic/006.svg" />
+						<div class="l-hd">
+							定时
+						</div>
+						<div class="l-ft">
+							<input class="f-switch" type="checkbox">
+						</div>
 					</div>
 				</div>
 				<div class="l-btm">
