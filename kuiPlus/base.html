@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/kui.css">
 	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" href="css/dialog.css">
 	<link rel="stylesheet" href="../css/icon.css">
@@ -15,69 +16,74 @@
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	<div class="header">
-		<i class="i-menu n-menu"></i>
-		<div class="n-logo">
-			<img src="images/logo.png">
+	<div class="n n-bar">
+		<div class="n-left">
+			<i class="i-menu"></i>
 		</div>
-	</div><!--end header-->
-
-
-	<div class="side">
-		<div class="logo">
-			<img class="k-img" src="images/logo.png">
+		<div class="n-tit">
+			Base
 		</div>
+	</div><!--end n-bar-->
 
 
-		<ul class="n">
-			<li>
-				<a href="index.html">首 页</a>
-			</li>
-			<li class="active">
-				<a href="base.html">基 础</a>
-			</li>
-			<li>
-				<a href="grid.html">网 格</a>
-			</li>
-            <li>
-                <a href="list.html">列 表</a>
-            </li>
-			<li>
-				<a href="anime.html">动 画</a>
-			</li>
-			<li>
-				<a href="button.html">按 钮</a>
-			</li>
-			<li>
-				<a href="dialog.html">弹 窗</a>
-			</li>
-			<li>
-				<a href="color.html">颜 色</a>
-			</li>
-			<li>
-				<a href="form.html">表 单</a>
-			</li>
-			<li>
-				<a href="icon.html">图 标</a>
-			</li>
-			<li>
-				<a href="table.html">表 格</a>
-			</li>
-		</ul>
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="logo">
+				KUI
+			</div>
 
 
-		<div class="k-ml k-mr u-b"></div>
+			<ul class="sidenav">
+				<li>
+					<a href="index.html">首 页</a>
+				</li>
+				<li class="active">
+					<a href="base.html">基 础</a>
+				</li>
+				<li>
+					<a href="anime.html">动 画</a>
+				</li>
+				<li>
+					<a href="button.html">按 钮</a>
+				</li>
+				<li>
+					<a href="color.html">颜 色</a>
+				</li>
+				<li>
+					<a href="dialog.html">弹 窗</a>
+				</li>
+				<li>
+					<a href="form.html">表 单</a>
+				</li>
+				<li>
+					<a href="grid.html">网 格</a>
+				</li>
+				<li>
+					<a href="icon.html">图 标</a>
+				</li>
+	            <li>
+	                <a href="list.html">列 表</a>
+	            </li>
+	            <li>
+	                <a href="nav.html">导 航</a>
+	            </li>
+				<li>
+					<a href="table.html">表 格</a>
+				</li>
+			</ul>
 
 
-		<div class="link k-tac">
-            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-			<div class="k-mt k-h6 cl-gray">当前版本 1.0</div>
-		</div>
-	</div><!--end side-->
+			<div class="link k-tac">
+	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
+				<div class="k-mt k-h6">当前版本 1.0</div>
+			</div>
+		</div><!--end side-->
+	</div>
 
 
 	<div class="main">
-		<div class="k-container k-container-cen">
+		<div class="k-container">
 			<div class="main-top">
 				<h2>
 					基础
@@ -91,11 +97,11 @@
 			</div><!--end main-top-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					默认文字色
-				</div>
-				<div class="l-dec k-oa">
+				</h4>
+				<div class="l-row">
 					<table class="t t-border">
 						<thead>
 							<tr>
@@ -120,11 +126,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					标题
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<h6>
 							<kbd>&lt;h1&gt;
@@ -157,11 +163,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					链接
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<a href="#">默认链接样式</a><br>
 						<a class="k-link-a" href="#">有颜色的链接样式</a><br>
@@ -180,11 +186,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					标签
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<label class="k-label">标签</label>
 						<label class="k-label k-bc-a">标签</label>
@@ -211,11 +217,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					徽章
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<label class="k-badge">徽章</label>
 						<label class="k-badge k-bc-a">徽章</label>
@@ -242,11 +248,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					文字颜色
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<label class="k-cl-a">文字颜色</label>
 						<label class="k-cl-b">文字颜色</label>
@@ -271,11 +277,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					浮动
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo k-tac">
 						<span class="k-fl">左浮动</span>
 						<span class="k-fr">右浮动</span>
@@ -292,11 +298,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					对齐方式
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<div class="k-tal">左对齐</div>
 						<div class="k-tar">右对齐</div>
@@ -313,11 +319,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					段落
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
 					</div>
@@ -330,14 +336,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					文章
 					<small>
 						label：article
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<article>
 							<h3>文章标题</h3>
@@ -353,9 +359,11 @@
 			</div><!--end l-->
 			
 
-			<div class="l l-hoz">
-				<div class="l-top">水平线</div>
-				<div class="l-dec">
+			<div class="l l-res">
+				<h4 class="l-top">
+					水平线
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<hr>
 					</div>
@@ -368,9 +376,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">文本级语义</div>
-				<div class="l-dec">
+			<div class="l l-res">
+				<h4 class="l-top">
+					文本语义
+				</h4>
+				<div class="l-row">
 					<table class="t">
 						<thead>
 							<tr>
@@ -435,11 +445,85 @@
 					</table>
 				</div>
 			</div><!--end l-->
+
+
+			<div class="l l-res">
+				<h4 class="l-top">
+					手机布局
+				</h4>
+				<div class="l-row">
+					<div class="g">
+						<div class="g-3">
+							<div class="k-icon k-bc-c active">
+								<img src="images/001.svg">
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+						<div class="g-3">
+							<div class="k-icon k-bc-d active">
+								<img src="images/002.svg">
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+						<div class="g-3">
+							<div class="k-icon k-bc-e active">
+								<img src="images/003.svg">
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+						<div class="g-3">
+							<div class="k-icon k-bc-f active">
+								<img src="images/004.svg">
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+					</div>
+					<div class="g">
+						<div class="g-3">
+							<div class="k-icon k-bc-g">
+								<i class="i-home"></i>
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+						<div class="g-3">
+							<div class="k-icon k-bc-h">
+								<i class="i-user"></i>
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+						<div class="g-3">
+							<div class="k-icon k-bc-i">
+								<i class="i-msg"></i>
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+						<div class="g-3">
+							<div class="k-icon k-bc-j">
+								<i class="i-sina"></i>
+							</div>
+							<div class="k-ft">
+								第一个
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--end l-->
 		</div><!--end k-container-->
 	</div><!--end main-->
-	
-	<div class="main-shade"></div>
-
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="../js/prettify.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>

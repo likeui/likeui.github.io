@@ -39,18 +39,13 @@
 	background-color: #fff;
 }
 /*图标*/
-.d-icon {
-	position: relative;
-	display: block;
-	width: 60px;
-	height: 60px;
+.d .k-icon {
 	margin: 0 auto 20px;
-	border-radius: 50%;
 }
-.d-icon:after {
+.d .k-icon:after {
 	content: '';
 	position: absolute;
-	top: 13px;
+	top: 15px;
 	left: 0;
 	width: 100%;
 	color: #fff;
@@ -62,9 +57,9 @@
 .d-succ {
 	background-color: #28d772;
 }
-.d-succ:after {
-	top: 15px;
-	left: 23px;
+.d .d-succ:after {
+	top: 10px;
+	left: 19px;
 	width: 12px;
 	height: 22px;
 	border-width: 0 2px 2px 0;
@@ -76,16 +71,14 @@
 .d-warn {
 	background-color: #e45853;
 }
-.d-warn:after {
+.d .d-warn:after {
 	content: '!';
-	font-size: 24px;
 }
 .d-info {
 	background-color: #3b9afe;
 }
-.d-info:after {
+.d .d-info:after {
 	content: 'i';
-	font-size: 24px;
 }
 /*入场动画*/
 [data-anime="zoom"] {

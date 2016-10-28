@@ -8,78 +8,76 @@
 	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="../css/icon.css">
 	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/prettify.css">
-    <style type="text/css">
-    	.k-tit .k-lab.bg-info {
-			box-shadow: 0 2px 0 #36b0ef, 0 3px 3px rgba(0, 0, 0, .2);
-		}
-		.k-tit .k-lab.bg-yellow {
-			box-shadow: 0 2px 0 #d79302, 0 3px 3px rgba(0, 0, 0, .2);
-		}
-    </style>
 </head>
 <body ontouchstart>
-	<div class="header">
-		<i class="i-menu n-menu"></i>
-		<div class="n-logo">
-			<img src="images/logo.png">
+	<div class="n n-bar">
+		<div class="n-left">
+			<i class="i-menu"></i>
 		</div>
-	</div><!--end header-->
-
-
-	<div class="side">
-		<div class="logo">
-			<img class="k-img" src="images/logo.png">
+		<div class="n-tit">
+			Form
 		</div>
+	</div><!--end n-bar-->
 
 
-		<ul class="n">
-			<li>
-				<a href="index.html">首 页</a>
-			</li>
-			<li>
-				<a href="base.html">基 础</a>
-			</li>
-			<li>
-				<a href="grid.html">网 格</a>
-			</li>
-            <li>
-                <a href="list.html">列 表</a>
-            </li>
-			<li>
-				<a href="anime.html">动 画</a>
-			</li>
-			<li>
-				<a href="button.html">按 钮</a>
-			</li>
-			<li>
-				<a href="dialog.html">弹 窗</a>
-			</li>
-			<li>
-				<a href="color.html">颜 色</a>
-			</li>
-			<li class="active">
-				<a href="form.html">表 单</a>
-			</li>
-			<li>
-				<a href="icon.html">图 标</a>
-			</li>
-			<li>
-				<a href="table.html">表 格</a>
-			</li>
-		</ul>
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="logo">
+				KUI
+			</div>
 
 
-		<div class="k-ml k-mr u-b"></div>
+			<ul class="sidenav">
+				<li>
+					<a href="index.html">首 页</a>
+				</li>
+				<li>
+					<a href="base.html">基 础</a>
+				</li>
+				<li>
+					<a href="anime.html">动 画</a>
+				</li>
+				<li>
+					<a href="button.html">按 钮</a>
+				</li>
+				<li>
+					<a href="color.html">颜 色</a>
+				</li>
+				<li>
+					<a href="dialog.html">弹 窗</a>
+				</li>
+				<li class="active">
+					<a href="form.html">表 单</a>
+				</li>
+				<li>
+					<a href="grid.html">网 格</a>
+				</li>
+				<li>
+					<a href="icon.html">图 标</a>
+				</li>
+	            <li>
+	                <a href="list.html">列 表</a>
+	            </li>
+	            <li>
+	                <a href="nav.html">导 航</a>
+	            </li>
+				<li>
+					<a href="table.html">表 格</a>
+				</li>
+			</ul>
 
 
-		<div class="link k-tac">
-            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-			<div class="k-mt k-h6">当前版本 1.0</div>
-		</div>
-	</div><!--end side-->
+			<div class="link k-tac">
+	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
+				<div class="k-mt k-h6">当前版本 1.0</div>
+			</div>
+		</div><!--end side-->
+	</div>
 
 
 	<div class="main">
@@ -97,14 +95,14 @@
 			</div><!--end main-top-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					文本框
 					<small>
 						class="f-ipt"
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<input class="f-ipt" type="text" placeholder="普通的文本框">
 					</div>
@@ -117,11 +115,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					下拉框
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<select class="f-ipt">
 							<optgroup label="山东">
@@ -150,11 +148,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					文本域
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<textarea class="f-ipt" rows="3" placeholder="多行文本框"></textarea>
 					</div>
@@ -167,13 +165,13 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					文件域
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
-						<button class="f-file b-o">
+						<button class="f-file b-bc-k b-o">
 							<i class="i-file"></i>
 								浏览文件
 							<input type="file">
@@ -192,14 +190,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					禁用元素
 					<small>
 						disabled
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<input class="f-ipt" type="text" disabled>
 					</div>
@@ -212,14 +210,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					单选框
 					<small>
 						c
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<input type="radio" name="radioa">
 						默认式
@@ -254,14 +252,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					多选框
 					<small>
 						c
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<input type="checkbox" name="checkbox">
 						默认式
@@ -296,14 +294,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					开关
 					<small>
 						switch
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<input class="f-switch" type="checkbox">
 					</div>
@@ -316,11 +314,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					叠放表单
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<h6>
 						默认状态下，表单会以叠放状态显示。需要按照本示例布局
 					</h6>
@@ -460,11 +458,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					水平排列
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo f f-hoz k-oa">
 						<div class="f-top">
 							完成您的订单
@@ -591,11 +589,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					响应式
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo f f-res">
 						<div class="f-top">
 							完成您的订单
@@ -724,11 +722,11 @@
 			</div><!--end l-->
 			
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					禁用块
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<h6>
 						通过添加
 						<code>fieldset</code>
@@ -861,11 +859,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					行级表单
-				</div>
-				<div class="l-dec not">
+				</h4>
+				<div class="l-row">
 					<div class="demo f f-inline">
 						<div class="f-row">
 							<label class="f-label">
@@ -905,11 +903,11 @@
 			</div><!--end l-->
 
 	
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					图标表单
-				</div>
-				<div class="l-dec f-fix">
+				</h4>
+				<div class="l-row f-fix">
 					<h6>
 						本示例需要与
 						<a class="k-hover-a" href="icon.html">图标</a>
@@ -944,11 +942,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					表单尺寸
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<h6>
 						添加类
 						<code>.f-ipt-l</code> ||
@@ -990,11 +988,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					宽度
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<h6>
 						添加类
 						<code>.f-width-l</code> |
@@ -1035,11 +1033,11 @@
 				</div>
 			</div>
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					表单组
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<div class="f-group">
 							<input class="f-ipt" type="text" placeholder="请输入用户名">
@@ -1058,11 +1056,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					状态
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<h6>
 						添加类
 						<code>.f-red</code> ||
@@ -1095,9 +1093,6 @@
 			</div><!--end l-->
 		</div><!--end k-container-->
 	</div><!--end main-->
-	
-	<div class="main-shade"></div>
-
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
     <script type="text/javascript" src="../js/prettify.min.js"></script>

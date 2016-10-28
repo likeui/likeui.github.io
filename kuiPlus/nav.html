@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
@@ -19,7 +20,7 @@
 			<i class="i-menu"></i>
 		</div>
 		<div class="n-tit">
-			Color
+			Nav
 		</div>
 	</div><!--end n-bar-->
 
@@ -45,7 +46,7 @@
 				<li>
 					<a href="button.html">按 钮</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="color.html">颜 色</a>
 				</li>
 				<li>
@@ -63,7 +64,7 @@
 	            <li>
 	                <a href="list.html">列 表</a>
 	            </li>
-	            <li>
+	            <li class="active">
 	                <a href="nav.html">导 航</a>
 	            </li>
 				<li>
@@ -71,8 +72,8 @@
 				</li>
 			</ul>
 
-
-			<div class="link k-tac">
+			
+			<div class="k-tac">
 	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
 				<div class="k-mt k-h6">当前版本 1.0</div>
 			</div>
@@ -80,45 +81,127 @@
 	</div>
 
 
+	<div class="n n-tab n-fixed">
+		<span class="n-cell active">
+			<i class="i-home"></i>
+			<div class="n-ft">
+				图片
+			</div>
+		</span>
+		<span class="n-cell">
+			<i class="i-phonebook"></i>
+			<div class="n-ft">
+				通讯录
+			</div>
+		</span>
+		<span class="n-cell">
+			<i class="i-time"></i>
+			<label class="k-badge">1</label>
+			<div class="n-ft">
+				发现
+			</div>
+		</span>
+		<span class="n-cell">
+			<i class="i-user"></i>
+			<label class="k-badge"></label>
+			<div class="n-ft">
+				我
+			</div>
+		</span>
+	</div><!--end n-tab-->
+
+
 	<div class="main">
 		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					颜色
-					<small>
-						Color
-					</small>
-				</h2>
-            </div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					WEB标准色
-				</h4>
-				<div class="l-row">
-					<h6>
-						WEB标准颜色是由W3C组织定义的，可以直接以英文名称形式在网页脚本中使用的一组RGB颜色。WEB标准色共计140种，其中Aqua与Cyan异名同色（青色），Fuchsia与Magenta异名同色（洋红），所以实际上共有138种。
-					</h6>
-					<div id="webColor" class="g webcolor">
-						
+			<div class="l">
+				<div class="l-top">
+					顶部导航
+				</div>
+				<div class="n k-bc-b">
+					<div class="n-left k-back">
+					</div>
+					<div class="n-tit">
+						这是导航标题
+						这是导航标题
+						这是导航标题
+						这是导航标题
+					</div>
+					<div class="n-right">
+						<i class="i-menu"></i>
 					</div>
 				</div>
 			</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					颜色搭配
-				</h4>
-				<div id="dpColor" class="l-row">
+			<div class="l">
+				<div class="l-top">
+					顶部导航
+				</div>
+				<div class="n k-bc-b">
+					<div class="n-left">
+						<i class="i-map"></i>
+						济南
+					</div>
+					<div class="n-tit">
+						选择地址
+					</div>
+					<div class="n-right">
+						保存
+					</div>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l">
+				<div class="l-top">
+					选项卡
+				</div>
+				<div class="n n-tab n-a">
+					<a class="n-cell active">
+						选项卡一
+					</a>
+					<a class="n-cell">
+						选项卡一
+					</a>
+					<a class="n-cell">
+						选项卡一
+					</a>
+					<a class="n-cell">
+						选项卡一
+					</a>
+				</div>
+			</div><!--end l-->
+
+
+			<div class="l">
+				<div class="l-top">
+					选项卡二
+				</div>
+				<div class="n n-tab n-b">
+					<a class="n-cell active">
+						选项卡一
+					</a>
+					<a class="n-cell">
+						选项卡一
+					</a>
+					<a class="n-cell">
+						选项卡一
+					</a>
+					<a class="n-cell">
+						选项卡一
+					</a>
 				</div>
 			</div><!--end l-->
 		</div><!--end k-container-->
 	</div><!--end main-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
-	<script type="text/javascript" src="js/color.js"></script>
 	<script type="text/javascript" src="../js/prettify.min.js"></script>
+
+	<script type="text/javascript">
+		$(".n-cell").on("click", function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+	</script>
 </body>
 </html>

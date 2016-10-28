@@ -8,70 +8,76 @@
 	<link rel="stylesheet" href="../css/icon.css">
 	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	<div class="header">
-		<i class="i-menu n-menu"></i>
-		<div class="n-logo">
-			<img src="images/logo.png">
+	<div class="n n-bar">
+		<div class="n-left">
+			<i class="i-menu"></i>
 		</div>
-	</div><!--end header-->
-
-
-	<div class="side">
-		<div class="logo">
-			<img class="k-img" src="images/logo.png">
+		<div class="n-tit">
+			Icon
 		</div>
+	</div><!--end n-bar-->
 
 
-		<ul class="n">
-			<li>
-				<a href="index.html">首 页</a>
-			</li>
-			<li>
-				<a href="base.html">基 础</a>
-			</li>
-			<li>
-				<a href="grid.html">网 格</a>
-			</li>
-            <li>
-                <a href="list.html">列 表</a>
-            </li>
-			<li>
-				<a href="anime.html">动 画</a>
-			</li>
-			<li>
-				<a href="button.html">按 钮</a>
-			</li>
-			<li>
-				<a href="dialog.html">弹 窗</a>
-			</li>
-			<li>
-				<a href="color.html">颜 色</a>
-			</li>
-			<li>
-				<a href="form.html">表 单</a>
-			</li>
-			<li class="active">
-				<a href="icon.html">图 标</a>
-			</li>
-			<li>
-				<a href="table.html">表 格</a>
-			</li>
-		</ul>
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="logo">
+				KUI
+			</div>
 
 
-		<div class="k-ml k-mr u-b"></div>
+			<ul class="sidenav">
+				<li>
+					<a href="index.html">首 页</a>
+				</li>
+				<li>
+					<a href="base.html">基 础</a>
+				</li>
+				<li>
+					<a href="anime.html">动 画</a>
+				</li>
+				<li>
+					<a href="button.html">按 钮</a>
+				</li>
+				<li>
+					<a href="color.html">颜 色</a>
+				</li>
+				<li>
+					<a href="dialog.html">弹 窗</a>
+				</li>
+				<li>
+					<a href="form.html">表 单</a>
+				</li>
+				<li>
+					<a href="grid.html">网 格</a>
+				</li>
+				<li class="active">
+					<a href="icon.html">图 标</a>
+				</li>
+	            <li>
+	                <a href="list.html">列 表</a>
+	            </li>
+	            <li>
+	                <a href="nav.html">导 航</a>
+	            </li>
+				<li>
+					<a href="table.html">表 格</a>
+				</li>
+			</ul>
 
 
-		<div class="link k-tac">
-            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-			<div class="k-mt k-h6 cl-gray">当前版本 1.0</div>
-		</div>
-	</div><!--end side-->
+			<div class="link k-tac">
+	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
+				<div class="k-mt k-h6">当前版本 1.0</div>
+			</div>
+		</div><!--end side-->
+	</div>
 
 
 	<div class="main">
@@ -117,14 +123,14 @@
 			</div><!--end main-top-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					基本使用
 					<small>
 						class：i-*
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<p>
 							<i class="i-user-fill"></i> 用户图标
@@ -147,14 +153,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					图标角度
 					<small>
 						class: i-rotate-[90 || 180 || 270]
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<p>
 							<i class="i-heart-fill"></i>
@@ -185,14 +191,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					图标大小
 					<small>
 						class: i-[s || m || l]
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<p>
 							<i class="i-home-fill"></i>
@@ -223,14 +229,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					图表旋转
 					<small>
 						class: i-spin
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<i class="i-repeat i-spin"></i>
 					</div>
@@ -243,14 +249,14 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					图标按钮
 					<small>
 						class: i-b && k-bc-[a-j]
 					</small>
-				</div>
-				<div class="l-dec">
+				</h4>
+				<div class="l-row">
 					<div class="demo">
 						<i class="i-b i-heart k-bc-a"></i>
 						<i class="i-b i-heart k-bc-b"></i>
@@ -282,11 +288,11 @@
 			</div><!--end l-->
 
 
-			<div class="l l-hoz">
-				<div class="l-top">
+			<div class="l l-res">
+				<h4 class="l-top">
 					图标大全
-				</div>
-				<div class="l-dec iconbox">
+				</h4>
+				<div class="l-row iconbox">
 					<div class="g">
 						<div class="g-4 g-s-3 g-m-2">
 							<div class="k-mb">
