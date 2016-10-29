@@ -14,7 +14,122 @@
     <link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+
+
+			<ul class="n-nav">
+				<li>
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li>
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li>
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li>
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li class="active">
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li>
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li>
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -24,640 +139,304 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
-			</div>
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				表单
+				<small>Form</small>
+			</h2>
+			<p>
+				所有表单类以
+				<span class="k-label k-bc-h">F</span>
+				开头
+			</p>
+		</div><!--end main-top-->
 
 
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li>
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li>
-					<a href="button.html">按 钮</a>
-				</li>
-				<li>
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li class="active">
-					<a href="form.html">表 单</a>
-				</li>
-				<li>
-					<a href="grid.html">网 格</a>
-				</li>
-				<li>
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li>
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-
-			<div class="link k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="main">
-		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					表单
-					<small>Form</small>
-				</h2>
-				<p>
-					所有表单类以
-					<span class="k-label k-bc-h">F</span>
-					开头
-				</p>
-			</div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					文本框
-					<small>
-						class="f-ipt"
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<input class="f-ipt" type="text" placeholder="普通的文本框">
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				文本框
+				<small>
+					class="f-ipt"
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<input class="f-ipt" type="text" placeholder="普通的文本框">
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;input class="f-ipt" type="text">
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					下拉框
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<select class="f-ipt">
-							<optgroup label="山东">
-								<option>济南</option>
-								<option>枣庄</option>
-								<option>东营</option>
-								<option>日照</option>
-								<option>威海</option>
-							</optgroup>
-						</select>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				下拉框
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<select class="f-ipt">
+						<optgroup label="山东">
+							<option>济南</option>
+							<option>枣庄</option>
+							<option>东营</option>
+							<option>日照</option>
+							<option>威海</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;select class="f-ipt">
-	&lt;optgroup label="山东">
-		&lt;option>济南&lt;/option>
-		&lt;option>枣庄&lt;/option>
-		&lt;option>东营&lt;/option>
-		&lt;option>日照&lt;/option>
-		&lt;option>威海&lt;/option>
-	&lt;/optgroup>
+&lt;optgroup label="山东">
+	&lt;option>济南&lt;/option>
+	&lt;option>枣庄&lt;/option>
+	&lt;option>东营&lt;/option>
+	&lt;option>日照&lt;/option>
+	&lt;option>威海&lt;/option>
+&lt;/optgroup>
 &lt;/select>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					文本域
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<textarea class="f-ipt" rows="3" placeholder="多行文本框"></textarea>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				文本域
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<textarea class="f-ipt" rows="3" placeholder="多行文本框"></textarea>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;textarea class="f-ipt" rows="3" placeholder="多行文本框">&lt;/textarea>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					文件域
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<button class="f-file b-bc-k b-o">
-							<i class="i-file"></i>
-								浏览文件
-							<input type="file">
-						</button>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				文件域
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<button class="f-file b-bc-k b-o">
+						<i class="i-file"></i>
+							浏览文件
+						<input type="file">
+					</button>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;button class="f-file b-o">
-	&lt;i class="i-file">&lt;/i>
-	浏览文件
-	&lt;input type="file">
+&lt;i class="i-file">&lt;/i>
+浏览文件
+&lt;input type="file">
 &lt;/button>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					禁用元素
-					<small>
-						disabled
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<input class="f-ipt" type="text" disabled>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				禁用元素
+				<small>
+					disabled
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<input class="f-ipt" type="text" disabled>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;input class="f-ipt" type="text" disabled>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					单选框
-					<small>
-						c
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
+		<div class="l l-res">
+			<h4 class="l-top">
+				单选框
+				<small>
+					c
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<input type="radio" name="radioa">
+					默认式
+					<label class="f-mul f-mul-fill">
+						<input type="radio" name="radioa" checked>
+						<span class="f-box"></span>
+						填充式
+					</label>
+					<label class="f-mul">
 						<input type="radio" name="radioa">
-						默认式
-						<label class="f-mul f-mul-fill">
-							<input type="radio" name="radioa" checked>
-							<span class="f-box"></span>
-							填充式
-						</label>
-						<label class="f-mul">
-							<input type="radio" name="radioa">
-							<span class="f-box"></span>
-							边框式
-						</label>
-					</div>
-					<div class="code">
+						<span class="f-box"></span>
+						边框式
+					</label>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;input type="radio" name="radioa">
 默认式
 &lt;label class="f-mul f-mul-fill">
-	&lt;input type="radio" name="radio" checked>
-	&lt;span class="f-box">&lt;/span>
-	填充式
+&lt;input type="radio" name="radio" checked>
+&lt;span class="f-box">&lt;/span>
+填充式
 &lt;/label>
 &lt;label class="f-mul">
-	&lt;input type="radio" name="radio">
-	&lt;span class="f-box">&lt;/span>
-	边框式
+&lt;input type="radio" name="radio">
+&lt;span class="f-box">&lt;/span>
+边框式
 &lt;/label>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					多选框
-					<small>
-						c
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
+		<div class="l l-res">
+			<h4 class="l-top">
+				多选框
+				<small>
+					c
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<input type="checkbox" name="checkbox">
+					默认式
+					<label class="f-mul f-mul-fill">
+						<input type="checkbox" name="checkbox" checked>
+						<span class="f-box"></span>
+						填充式
+					</label>
+					<label class="f-mul">
 						<input type="checkbox" name="checkbox">
-						默认式
-						<label class="f-mul f-mul-fill">
-							<input type="checkbox" name="checkbox" checked>
-							<span class="f-box"></span>
-							填充式
-						</label>
-						<label class="f-mul">
-							<input type="checkbox" name="checkbox">
-							<span class="f-box"></span>
-							边框式
-						</label>
-					</div>
-					<div class="code">
+						<span class="f-box"></span>
+						边框式
+					</label>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;input type="checkbox" name="checkbox">
 默认式
 &lt;label class="f-mul f-mul-fill">
-	&lt;input type="checkbox" name="checkbox" checked>
-	&lt;span class="f-box">&lt;/span>
-	填充式
+&lt;input type="checkbox" name="checkbox" checked>
+&lt;span class="f-box">&lt;/span>
+填充式
 &lt;/label>
 &lt;label class="f-mul">
-	&lt;input type="checkbox" name="checkbox">
-	&lt;span class="f-box">&lt;/span>
-	边框式
+&lt;input type="checkbox" name="checkbox">
+&lt;span class="f-box">&lt;/span>
+边框式
 &lt;/label>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					开关
-					<small>
-						switch
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<input class="f-switch" type="checkbox">
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				开关
+				<small>
+					switch
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<input class="f-switch" type="checkbox">
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;input class="f-switch" type="checkbox">
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					叠放表单
-				</h4>
-				<div class="l-row">
-					<h6>
-						默认状态下，表单会以叠放状态显示。需要按照本示例布局
-					</h6>
-					<div class="demo f">
-						<div class="f-top">
-							完成您的订单
-							<i class="i-info-bd"></i>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								邮箱
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="794566321@qq.com">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								手机号
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="15098712987">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								款式
-							</label>
-							<div class="f-bd">
-								<label class="f-mul">
-									<input type="radio" name="radio" checked>
-									<span class="f-box"></span>
-									大款
-								</label>
-								<label class="f-mul">
-									<input type="radio" name="radio">
-									<span class="f-box"></span>
-									小款
-								</label>
-								<label class="f-mul">
-									<input type="radio" name="radio" disabled>
-									<span class="f-box"></span>
-									中款
-								</label>
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								数量
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								所在城市
-							</label>
-							<div class="f-bd">
-								<div class="f-area">
-									<select class="f-ipt">
-										<option>山东省</option>
-									</select>
-									<select class="f-ipt">
-										<option>济南市</option>
-									</select>
-									<select class="f-ipt">
-										<option>天桥区</option>
-									</select>
-								</div>
-								<div class="k-mt">
-									<input class="f-ipt" type="text" placeholder="请填写街道地址">
-								</div>
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								给卖家留言
-							</label>
-							<div class="f-bd">
-								<textarea class="f-ipt" rows="5" cols="60"></textarea>
-							</div>
-						</div>
-						<div class="f-row">
-							<div class="f-bd">
-								<label class="f-mul f-mul-fill">
-									<input type="checkbox" name="checkbox">
-									<span class="f-box"></span>
-									使用运费险0.5元
-								</label>
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								货到付款
-							</label>
-							<div class="f-bd">
-								<input class="f-switch" type="checkbox">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								到货日期
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="date" value="2015-09-18">
-							</div>
-						</div>
-						<div class="f-row">
-							<div class="f-bd">
-								<button class="b-bc-h">提交</button>
-							</div>
-						</div>	
+		<div class="l l-res">
+			<h4 class="l-top">
+				叠放表单
+			</h4>
+			<div class="l-row">
+				<h6>
+					默认状态下，表单会以叠放状态显示。需要按照本示例布局
+				</h6>
+				<div class="demo f">
+					<div class="f-top">
+						完成您的订单
+						<i class="i-info-bd"></i>
 					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;form class="f">
-	&lt;div class="f-top">
-		完成您的订单
-		&lt;i class="i-info-bd">&lt;/i>
-	&lt;/div>
-	&lt;div class="f-row">
-		&lt;label class="f-label">
-			邮箱
-		&lt;/label>
-		&lt;div class="f-bd">
-			&lt;input class="f-ipt" type="text" placeholder="794566321@qq.com">
-		&lt;/div>
-	&lt;/div>
-	&lt;div class="f-row">
-		......
-	&lt;/div>
-&lt;/form>	
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					水平排列
-				</h4>
-				<div class="l-row">
-					<div class="demo f f-hoz k-oa">
-						<div class="f-top">
-							完成您的订单
-							<i class="i-info-bd"></i>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								邮箱
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="794566321@qq.com">
-							</div>
-							<div class="f-tip">
-								<i class="i-info-bd"></i>
-								请填写邮箱
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								手机号
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="15098712987">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								款式
-							</label>
-							<div class="f-bd">
-								<label class="f-mul">
-									<input type="radio" name="radio" checked>
-									<span class="f-box"></span>
-									大款
-								</label>
-								<label class="f-mul">
-									<input type="radio" name="radio">
-									<span class="f-box"></span>
-									小款
-								</label>
-								<label class="f-mul">
-									<input type="radio" name="radio" disabled>
-									<span class="f-box"></span>
-									中款
-								</label>
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								数量
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt f-width-s" type="text">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								所在城市
-							</label>
-							<div class="f-bd">
-								<div class="f-area">
-									<select class="f-ipt">
-										<option>山东省</option>
-									</select>
-									<select class="f-ipt">
-										<option>济南市</option>
-									</select>
-									<select class="f-ipt">
-										<option>天桥区</option>
-									</select>
-								</div>
-								<div class="k-mt">
-									<input class="f-ipt" type="text" placeholder="请填写街道地址">
-								</div>
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								给卖家留言
-							</label>
-							<div class="f-bd">
-								<textarea class="f-ipt" rows="5" cols="60"></textarea>
-							</div>
-						</div>
-						<div class="f-row">
-							<div class="f-bd">
-								<label class="f-mul f-mul-fill">
-									<input type="checkbox" name="checkbox">
-									<span class="f-box"></span>
-									使用运费险0.5元
-								</label>
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								货到付款
-							</label>
-							<div class="f-bd">
-								<input class="f-switch" type="checkbox">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								到货日期
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="date" value="2015-09-18">
-							</div>
-						</div>
-						<div class="f-row">
-							<div class="f-bd">
-								<button class="b-bc-h">提交</button>
-							</div>
+					<div class="f-row">
+						<label class="f-label">
+							邮箱
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="794566321@qq.com">
 						</div>
 					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="f f-hoz">
-	......
-&lt;/div>
-</pre>
+					<div class="f-row">
+						<label class="f-label">
+							手机号
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="15098712987">
+						</div>
 					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					响应式
-				</h4>
-				<div class="l-row">
-					<div class="demo f f-res">
-						<div class="f-top">
-							完成您的订单
-							<i class="i-info-bd"></i>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								邮箱
+					<div class="f-row">
+						<label class="f-label">
+							款式
+						</label>
+						<div class="f-bd">
+							<label class="f-mul">
+								<input type="radio" name="radio" checked>
+								<span class="f-box"></span>
+								大款
 							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="794566321@qq.com">
-							</div>
-							<div class="f-tip">
-								<i class="i-cross-bd"></i>
-								请填写邮箱
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								手机号
+							<label class="f-mul">
+								<input type="radio" name="radio">
+								<span class="f-box"></span>
+								小款
 							</label>
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="15098712987">
-							</div>
-							<div class="f-tip">
-								<i class="i-cross-bd"></i>
-								请填写手机号
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								款式
+							<label class="f-mul">
+								<input type="radio" name="radio" disabled>
+								<span class="f-box"></span>
+								中款
 							</label>
-							<div class="f-bd">
-								<label class="f-mul">
-									<input type="radio" name="radio" checked>
-									<span class="f-box"></span>
-									大款
-								</label>
-								<label class="f-mul">
-									<input type="radio" name="radio">
-									<span class="f-box"></span>
-									小款
-								</label>
-								<label class="f-mul">
-									<input type="radio" name="radio" disabled>
-									<span class="f-box"></span>
-									中款
-								</label>
-							</div>
 						</div>
-						<div class="f-row">
-							<label class="f-label">
-								数量
-							</label>
-							<div class="f-bd">
-								<input class="f-ipt f-width-s" type="text">
-							</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							数量
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text">
 						</div>
-						<div class="f-row">
-							<label class="f-label">
-								所在城市
-							</label>
-							<div class="f-bd">
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							所在城市
+						</label>
+						<div class="f-bd">
+							<div class="f-area">
 								<select class="f-ipt">
 									<option>山东省</option>
 								</select>
@@ -667,6 +446,419 @@
 								<select class="f-ipt">
 									<option>天桥区</option>
 								</select>
+							</div>
+							<div class="k-mt">
+								<input class="f-ipt" type="text" placeholder="请填写街道地址">
+							</div>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							给卖家留言
+						</label>
+						<div class="f-bd">
+							<textarea class="f-ipt" rows="5" cols="60"></textarea>
+						</div>
+					</div>
+					<div class="f-row">
+						<div class="f-bd">
+							<label class="f-mul f-mul-fill">
+								<input type="checkbox" name="checkbox">
+								<span class="f-box"></span>
+								使用运费险0.5元
+							</label>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							货到付款
+						</label>
+						<div class="f-bd">
+							<input class="f-switch" type="checkbox">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							到货日期
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="date" value="2015-09-18">
+						</div>
+					</div>
+					<div class="f-row">
+						<div class="f-bd">
+							<button class="b-bc-h">提交</button>
+						</div>
+					</div>	
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;form class="f">
+&lt;div class="f-top">
+	完成您的订单
+	&lt;i class="i-info-bd">&lt;/i>
+&lt;/div>
+&lt;div class="f-row">
+	&lt;label class="f-label">
+		邮箱
+	&lt;/label>
+	&lt;div class="f-bd">
+		&lt;input class="f-ipt" type="text" placeholder="794566321@qq.com">
+	&lt;/div>
+&lt;/div>
+&lt;div class="f-row">
+	......
+&lt;/div>
+&lt;/form>	
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				水平排列
+			</h4>
+			<div class="l-row">
+				<div class="demo f f-hoz k-oa">
+					<div class="f-top">
+						完成您的订单
+						<i class="i-info-bd"></i>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							邮箱
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="794566321@qq.com">
+						</div>
+						<div class="f-tip">
+							<i class="i-info-bd"></i>
+							请填写邮箱
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							手机号
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="15098712987">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							款式
+						</label>
+						<div class="f-bd">
+							<label class="f-mul">
+								<input type="radio" name="radio" checked>
+								<span class="f-box"></span>
+								大款
+							</label>
+							<label class="f-mul">
+								<input type="radio" name="radio">
+								<span class="f-box"></span>
+								小款
+							</label>
+							<label class="f-mul">
+								<input type="radio" name="radio" disabled>
+								<span class="f-box"></span>
+								中款
+							</label>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							数量
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt f-width-s" type="text">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							所在城市
+						</label>
+						<div class="f-bd">
+							<div class="f-area">
+								<select class="f-ipt">
+									<option>山东省</option>
+								</select>
+								<select class="f-ipt">
+									<option>济南市</option>
+								</select>
+								<select class="f-ipt">
+									<option>天桥区</option>
+								</select>
+							</div>
+							<div class="k-mt">
+								<input class="f-ipt" type="text" placeholder="请填写街道地址">
+							</div>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							给卖家留言
+						</label>
+						<div class="f-bd">
+							<textarea class="f-ipt" rows="5" cols="60"></textarea>
+						</div>
+					</div>
+					<div class="f-row">
+						<div class="f-bd">
+							<label class="f-mul f-mul-fill">
+								<input type="checkbox" name="checkbox">
+								<span class="f-box"></span>
+								使用运费险0.5元
+							</label>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							货到付款
+						</label>
+						<div class="f-bd">
+							<input class="f-switch" type="checkbox">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							到货日期
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="date" value="2015-09-18">
+						</div>
+					</div>
+					<div class="f-row">
+						<div class="f-bd">
+							<button class="b-bc-h">提交</button>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="f f-hoz">
+......
+&lt;/div>
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				响应式
+			</h4>
+			<div class="l-row">
+				<div class="demo f f-res">
+					<div class="f-top">
+						完成您的订单
+						<i class="i-info-bd"></i>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							邮箱
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="794566321@qq.com">
+						</div>
+						<div class="f-tip">
+							<i class="i-cross-bd"></i>
+							请填写邮箱
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							手机号
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="15098712987">
+						</div>
+						<div class="f-tip">
+							<i class="i-cross-bd"></i>
+							请填写手机号
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							款式
+						</label>
+						<div class="f-bd">
+							<label class="f-mul">
+								<input type="radio" name="radio" checked>
+								<span class="f-box"></span>
+								大款
+							</label>
+							<label class="f-mul">
+								<input type="radio" name="radio">
+								<span class="f-box"></span>
+								小款
+							</label>
+							<label class="f-mul">
+								<input type="radio" name="radio" disabled>
+								<span class="f-box"></span>
+								中款
+							</label>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							数量
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt f-width-s" type="text">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							所在城市
+						</label>
+						<div class="f-bd">
+							<select class="f-ipt">
+								<option>山东省</option>
+							</select>
+							<select class="f-ipt">
+								<option>济南市</option>
+							</select>
+							<select class="f-ipt">
+								<option>天桥区</option>
+							</select>
+							<div class="k-mt">
+								<input class="f-ipt" type="text" placeholder="请填写街道地址">
+							</div>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							给卖家留言
+						</label>
+						<div class="f-bd">
+							<textarea class="f-ipt" rows="5" cols="60"></textarea>
+						</div>
+					</div>
+					<div class="f-row">
+						<div class="f-bd">
+							<label class="f-mul f-mul-fill">
+								<input type="checkbox" name="checkbox">
+								<span class="f-box"></span>
+								使用运费险0.5元
+							</label>
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							货到付款
+						</label>
+						<div class="f-bd">
+							<input class="f-switch" type="checkbox">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							到货日期
+						</label>
+						<div class="f-bd">
+							<input class="f-ipt" type="date" value="2015-09-18">
+						</div>
+					</div>
+					<div class="f-row">
+						<div class="f-bd">
+							<button class="b-bc-h">提交</button>
+						</div>
+					</div>	
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="f f-res">
+......
+&lt;/div>
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+		
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				禁用块
+			</h4>
+			<div class="l-row">
+				<h6>
+					通过添加
+					<code>fieldset</code>
+					标签，并设置属性为disabled
+					将所有表单元素禁用
+				</h6>
+				<div class="demo f f-res">
+					<fieldset disabled>
+						<legend>
+							完成您的订单
+							<i class="i-info-bd"></i>
+						</legend>
+						<div class="f-row">
+							<label class="f-label">
+								邮箱
+							</label>
+							<div class="f-bd">
+								<input class="f-ipt" type="text" placeholder="794566321@qq.com">
+							</div>
+						</div>
+						<div class="f-row">
+							<label class="f-label">
+								手机号
+							</label>
+							<div class="f-bd">
+								<input class="f-ipt" type="text" placeholder="15098712987">
+							</div>
+						</div>
+						<div class="f-row">
+							<label class="f-label">
+								款式
+							</label>
+							<div class="f-bd">
+								<label class="f-mul">
+									<input type="radio" name="radio" checked>
+									<span class="f-box"></span>
+									大款
+								</label>
+								<label class="f-mul">
+									<input type="radio" name="radio">
+									<span class="f-box"></span>
+									小款
+								</label>
+								<label class="f-mul">
+									<input type="radio" name="radio" disabled>
+									<span class="f-box"></span>
+									中款
+								</label>
+							</div>
+						</div>
+						<div class="f-row">
+							<label class="f-label">
+								数量
+							</label>
+							<div class="f-bd">
+								<input class="f-ipt f-width-s" type="text">
+							</div>
+						</div>
+						<div class="f-row">
+							<label class="f-label">
+								所在城市
+							</label>
+							<div class="f-bd">
+								<div class="f-area">
+									<select class="f-ipt">
+										<option>山东省</option>
+									</select>
+									<select class="f-ipt">
+										<option>济南市</option>
+									</select>
+									<select class="f-ipt">
+										<option>天桥区</option>
+									</select>
+								</div>
 								<div class="k-mt">
 									<input class="f-ipt" type="text" placeholder="请填写街道地址">
 								</div>
@@ -709,390 +901,255 @@
 							<div class="f-bd">
 								<button class="b-bc-h">提交</button>
 							</div>
-						</div>	
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="f f-res">
-	......
-&lt;/div>
-</pre>
-					</div>
+						</div>
+					</fieldset>
 				</div>
-			</div><!--end l-->
-			
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					禁用块
-				</h4>
-				<div class="l-row">
-					<h6>
-						通过添加
-						<code>fieldset</code>
-						标签，并设置属性为disabled
-						将所有表单元素禁用
-					</h6>
-					<div class="demo f f-res">
-						<fieldset disabled>
-							<legend>
-								完成您的订单
-								<i class="i-info-bd"></i>
-							</legend>
-							<div class="f-row">
-								<label class="f-label">
-									邮箱
-								</label>
-								<div class="f-bd">
-									<input class="f-ipt" type="text" placeholder="794566321@qq.com">
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									手机号
-								</label>
-								<div class="f-bd">
-									<input class="f-ipt" type="text" placeholder="15098712987">
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									款式
-								</label>
-								<div class="f-bd">
-									<label class="f-mul">
-										<input type="radio" name="radio" checked>
-										<span class="f-box"></span>
-										大款
-									</label>
-									<label class="f-mul">
-										<input type="radio" name="radio">
-										<span class="f-box"></span>
-										小款
-									</label>
-									<label class="f-mul">
-										<input type="radio" name="radio" disabled>
-										<span class="f-box"></span>
-										中款
-									</label>
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									数量
-								</label>
-								<div class="f-bd">
-									<input class="f-ipt f-width-s" type="text">
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									所在城市
-								</label>
-								<div class="f-bd">
-									<div class="f-area">
-										<select class="f-ipt">
-											<option>山东省</option>
-										</select>
-										<select class="f-ipt">
-											<option>济南市</option>
-										</select>
-										<select class="f-ipt">
-											<option>天桥区</option>
-										</select>
-									</div>
-									<div class="k-mt">
-										<input class="f-ipt" type="text" placeholder="请填写街道地址">
-									</div>
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									给卖家留言
-								</label>
-								<div class="f-bd">
-									<textarea class="f-ipt" rows="5" cols="60"></textarea>
-								</div>
-							</div>
-							<div class="f-row">
-								<div class="f-bd">
-									<label class="f-mul f-mul-fill">
-										<input type="checkbox" name="checkbox">
-										<span class="f-box"></span>
-										使用运费险0.5元
-									</label>
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									货到付款
-								</label>
-								<div class="f-bd">
-									<input class="f-switch" type="checkbox">
-								</div>
-							</div>
-							<div class="f-row">
-								<label class="f-label">
-									到货日期
-								</label>
-								<div class="f-bd">
-									<input class="f-ipt" type="date" value="2015-09-18">
-								</div>
-							</div>
-							<div class="f-row">
-								<div class="f-bd">
-									<button class="b-bc-h">提交</button>
-								</div>
-							</div>
-						</fieldset>
-					</div>
-					<div class="code">
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="f">
-	&lt;fieldset disabled>
-		......
-	&lt;/fieldset>
-&lt;/div>
-</pre>	
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					行级表单
-				</h4>
-				<div class="l-row">
-					<div class="demo f f-inline">
-						<div class="f-row">
-							<label class="f-label">
-								手机号 
-							</label> 
-							<div class="f-bd">
-								<input class="f-ipt" type="text" placeholder="手机号">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								密码 
-							</label> 
-							<div class="f-bd">
-								<input class="f-ipt" type="password" placeholder="密码">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-mul f-mul-fill">
-								<input type="checkbox" name="">
-								<span class="f-box"></span>
-								记住我
-							</label>
-						</div>
-						<div class="f-row">
-							<button class="b-bc-h" type="button">登录</button>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="f f-inline">
+&lt;fieldset disabled>
 	......
+&lt;/fieldset>
 &lt;/div>
-</pre>					
-					</div>
-				</div>
-			</div><!--end l-->
-
-	
-			<div class="l l-res">
-				<h4 class="l-top">
-					图标表单
-				</h4>
-				<div class="l-row f-fix">
-					<h6>
-						本示例需要与
-						<a class="k-hover-a" href="icon.html">图标</a>
-						组件结合使用
-					</h6>
-					<div class="mode f">
-						<div class="f-row">
-							<label class="f-label">
-								左边图标
-							</label>
-								
-							<div class="f-icon">
-								<i class="i-time"></i>
-								<input class="f-ipt" type="text" placeholder="时间">
-							</div>
-						</div>
-						<div class="f-row">
-							<label class="f-label">
-								右边图标
-							</label>
-							<div class="f-icon right">
-								<i class="i-map"></i>
-								<input class="f-ipt" type="text" placeholder="地址">
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
 </pre>	
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					表单尺寸
-				</h4>
-				<div class="l-row">
-					<h6>
-						添加类
-						<code>.f-ipt-l</code> ||
-						<code>.f-ipt-m</code> ||
-						<code>.f-ipt-s</code>
-						来改变表单元素的高度
-					</h6>
-					<div class="demo">
-						<div class="f-row">
-							<input class="f-ipt f-ipt-l f-width-m" type="text" placeholder="最大尺寸">
-						</div>
-						<div class="f-row">
-							<input class="f-ipt f-ipt-m f-width-m" type="text" placeholder="大个尺寸">
-						</div>
-						<div class="f-row">
-							<input class="f-ipt f-width-m" type="text" placeholder="默认尺寸">
-						</div>
-						<div class="f-row">
-							<input class="f-ipt f-ipt-s f-width-m" type="text" placeholder="迷你尺寸">
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="f-row">
-	&lt;input class="f-ipt f-ipt-l" type="text" placeholder="最大尺寸">
-&lt;/div>
-&lt;div class="f-row">
-	&lt;input class="f-ipt f-ipt-m" type="text" placeholder="大个尺寸">
-&lt;/div>
-&lt;div class="f-row">
-	&lt;input class="f-ipt" type="text" placeholder="默认尺寸">
-&lt;/div>
-&lt;div class="f-row">
-	&lt;input class="f-ipt f-ipt-s" type="text" placeholder="迷你尺寸">
-&lt;/div>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					宽度
-				</h4>
-				<div class="l-row">
-					<h6>
-						添加类
-						<code>.f-width-l</code> |
-						<code>.f-width-m</code> |
-						<code>.f-width-s</code>
-						来改变表单元素的宽度
-					</h6>
-					<div class="demo">
-						<div class="f-row">
-							<input class="f-ipt f-inline" type="text" placeholder="default">
-						</div>
-						<div class="f-row">
-							<input class="f-ipt f-width-l" type="text" placeholder="f-width-l">
-						</div>
-						<div class="f-row">
-							<input class="f-ipt f-width-m" type="text" placeholder="f-width-m">
-						</div>
-						<div class="f-row">
-							<input class="f-ipt f-width-s" type="text" placeholder="f-width-s">
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="f-row">
-	&lt;input class="f-ipt" type="text" placeholder="default">
-&lt;/div>
-&lt;div class="f-row">
-	&lt;input class="f-ipt f-width-l" type="text" placeholder="f-width-l">
-&lt;/div>
-&lt;div class="f-row">
-	&lt;input class="f-ipt f-width-m" type="text" placeholder="f-width-m">
-&lt;/div>
-&lt;div class="f-row">
-	&lt;input class="f-ipt f-width-s" type="text" placeholder="f-width-s">
-&lt;/div>
-</pre>
-					</div>
 				</div>
 			</div>
+		</div><!--end l-->
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					表单组
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="f-group">
-							<input class="f-ipt" type="text" placeholder="请输入用户名">
-							<input class="f-ipt" type="text" placeholder="请输入密码">
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				行级表单
+			</h4>
+			<div class="l-row">
+				<div class="demo f f-inline">
+					<div class="f-row">
+						<label class="f-label">
+							手机号 
+						</label> 
+						<div class="f-bd">
+							<input class="f-ipt" type="text" placeholder="手机号">
 						</div>
 					</div>
-					<div class="code">
+					<div class="f-row">
+						<label class="f-label">
+							密码 
+						</label> 
+						<div class="f-bd">
+							<input class="f-ipt" type="password" placeholder="密码">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-mul f-mul-fill">
+							<input type="checkbox" name="">
+							<span class="f-box"></span>
+							记住我
+						</label>
+					</div>
+					<div class="f-row">
+						<button class="b-bc-h" type="button">登录</button>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="f f-inline">
+......
+&lt;/div>
+</pre>					
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				图标表单
+			</h4>
+			<div class="l-row f-fix">
+				<h6>
+					本示例需要与
+					<a class="k-hover-a" href="icon.html">图标</a>
+					组件结合使用
+				</h6>
+				<div class="mode f">
+					<div class="f-row">
+						<label class="f-label">
+							左边图标
+						</label>
+							
+						<div class="f-icon">
+							<i class="i-time"></i>
+							<input class="f-ipt" type="text" placeholder="时间">
+						</div>
+					</div>
+					<div class="f-row">
+						<label class="f-label">
+							右边图标
+						</label>
+						<div class="f-icon right">
+							<i class="i-map"></i>
+							<input class="f-ipt" type="text" placeholder="地址">
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+</pre>	
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				表单尺寸
+			</h4>
+			<div class="l-row">
+				<h6>
+					添加类
+					<code>.f-ipt-l</code> ||
+					<code>.f-ipt-m</code> ||
+					<code>.f-ipt-s</code>
+					来改变表单元素的高度
+				</h6>
+				<div class="demo">
+					<div class="f-row">
+						<input class="f-ipt f-ipt-l f-width-m" type="text" placeholder="最大尺寸">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-ipt-m f-width-m" type="text" placeholder="大个尺寸">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-width-m" type="text" placeholder="默认尺寸">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-ipt-s f-width-m" type="text" placeholder="迷你尺寸">
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="f-row">
+&lt;input class="f-ipt f-ipt-l" type="text" placeholder="最大尺寸">
+&lt;/div>
+&lt;div class="f-row">
+&lt;input class="f-ipt f-ipt-m" type="text" placeholder="大个尺寸">
+&lt;/div>
+&lt;div class="f-row">
+&lt;input class="f-ipt" type="text" placeholder="默认尺寸">
+&lt;/div>
+&lt;div class="f-row">
+&lt;input class="f-ipt f-ipt-s" type="text" placeholder="迷你尺寸">
+&lt;/div>
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				宽度
+			</h4>
+			<div class="l-row">
+				<h6>
+					添加类
+					<code>.f-width-l</code> |
+					<code>.f-width-m</code> |
+					<code>.f-width-s</code>
+					来改变表单元素的宽度
+				</h6>
+				<div class="demo">
+					<div class="f-row">
+						<input class="f-ipt f-inline" type="text" placeholder="default">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-width-l" type="text" placeholder="f-width-l">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-width-m" type="text" placeholder="f-width-m">
+					</div>
+					<div class="f-row">
+						<input class="f-ipt f-width-s" type="text" placeholder="f-width-s">
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="f-row">
+&lt;input class="f-ipt" type="text" placeholder="default">
+&lt;/div>
+&lt;div class="f-row">
+&lt;input class="f-ipt f-width-l" type="text" placeholder="f-width-l">
+&lt;/div>
+&lt;div class="f-row">
+&lt;input class="f-ipt f-width-m" type="text" placeholder="f-width-m">
+&lt;/div>
+&lt;div class="f-row">
+&lt;input class="f-ipt f-width-s" type="text" placeholder="f-width-s">
+&lt;/div>
+</pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				表单组
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="f-group">
+						<input class="f-ipt" type="text" placeholder="请输入用户名">
+						<input class="f-ipt" type="text" placeholder="请输入密码">
+					</div>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="f-group">
-	&lt;input class="f-ipt" type="text" placeholder="请输入用户名">
-	&lt;input class="f-ipt" type="text" placeholder="请输入密码">
+&lt;input class="f-ipt" type="text" placeholder="请输入用户名">
+&lt;input class="f-ipt" type="text" placeholder="请输入密码">
 &lt;/div>
 </pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				状态
+			</h4>
+			<div class="l-row">
+				<h6>
+					添加类
+					<code>.f-red</code> ||
+					<code>.f-green</code>
+					来表示表单元素的验证状态
+				</h6>
+				<div class="demo">
+					<div class="f-row">
+						<input class="f-ipt f-red" type="text" value="f-red">
+						<div class="f-tip">输入信息有误</div>
+					</div>
+					<div class="f-row">
+						<div class="f-icon right">
+							<i class="i-check"></i>
+							<input class="f-ipt f-green" type="text" value="f-green">
+						</div>
 					</div>
 				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					状态
-				</h4>
-				<div class="l-row">
-					<h6>
-						添加类
-						<code>.f-red</code> ||
-						<code>.f-green</code>
-						来表示表单元素的验证状态
-					</h6>
-					<div class="demo">
-						<div class="f-row">
-							<input class="f-ipt f-red" type="text" value="f-red">
-							<div class="f-tip">输入信息有误</div>
-						</div>
-						<div class="f-row">
-							<div class="f-icon right">
-								<i class="i-check"></i>
-								<input class="f-ipt f-green" type="text" value="f-green">
-							</div>
-						</div>
-					</div>
-					<div class="code">
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="f-row">
-	&lt;input class="f-ipt f-red" type="text" value="f-red">
+&lt;input class="f-ipt f-red" type="text" value="f-red">
 &lt;/div>
 &lt;div class="f-row">
-	&lt;input class="f-ipt f-green" type="text" value="f-green">
+&lt;input class="f-ipt f-green" type="text" value="f-green">
 &lt;/div>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
-		</div><!--end k-container-->
-	</div><!--end main-->
+			</div>
+		</div><!--end l-->
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
     <script type="text/javascript" src="../js/prettify.min.js"></script>

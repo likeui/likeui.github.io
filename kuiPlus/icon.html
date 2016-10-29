@@ -14,7 +14,122 @@
     <link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+
+
+			<ul class="n-nav">
+				<li>
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li>
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li>
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li>
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li>
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li class="active">
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li>
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -24,253 +139,196 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
-			</div>
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				图标
+				<small>
+					Icon
+				</small>
+			</h2>
+			<p>
+				所有图标类以
+				<span class="k-label k-bc-h">I</span>
+				开头
+			</p>
+			<b>优点：</b>
+			<ol class="k-nums">
+				<li>轻量性：一个图标字体比一系列的图像（特别是在Retina屏中使用双倍图像）要小，并且减少HTTP请求，做本地存储的性能优化；</li>
+				<li>灵活性：可以随意调节字体大小，更改颜色、添加阴影等效果；</li>
+				<li>兼容性：网页字体支持所有现代浏览器，包括IE低版本。</li>
+			</ol>
+			<b>缺点：</b>
+			<ol class="k-nums">
+				<li>创作费时，维护成本偏高；</li>
+				<li>颜色单一，只能使用纯色或者CSS3的渐变色；</li>
+				<li>需要服务器做些相应的配置来解决识别问题和跨域问题。</li>
+			</ol>
+			<b>字体图标网站</b>
+			<p>
+				<a class="k-hover-a" href="http://iconfont.cn/" target="_blank">iconfont</a> 
+				阿里巴巴UX部门推出的矢量图标管理网站，也是国内首家推广Webfont形式图标的平台。推荐！
+			</p>
+			<p>
+				<a class="k-hover-a" href="https://icomoon.io/" target="_blank">icomoon</a>
+				是国外的一个矢量图标网站，图标资源丰富，功能强大，唯独页面响应速度有点慢。
+			</p>
+			<p>
+				关于字体图标的详细解读，请跳转至
+				<a class="k-hover-a" href="">这里</a>
+				查看
+			</p>
+		</div><!--end main-top-->
 
 
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li>
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li>
-					<a href="button.html">按 钮</a>
-				</li>
-				<li>
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li>
-					<a href="form.html">表 单</a>
-				</li>
-				<li>
-					<a href="grid.html">网 格</a>
-				</li>
-				<li class="active">
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li>
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-
-			<div class="link k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="main">
-		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					图标
-					<small>
-						Icon
-					</small>
-				</h2>
-				<p>
-					所有图标类以
-					<span class="k-label k-bc-h">I</span>
-					开头
-				</p>
-				<b>优点：</b>
-				<ol class="k-nums">
-					<li>轻量性：一个图标字体比一系列的图像（特别是在Retina屏中使用双倍图像）要小，并且减少HTTP请求，做本地存储的性能优化；</li>
-					<li>灵活性：可以随意调节字体大小，更改颜色、添加阴影等效果；</li>
-					<li>兼容性：网页字体支持所有现代浏览器，包括IE低版本。</li>
-				</ol>
-				<b>缺点：</b>
-				<ol class="k-nums">
-					<li>创作费时，维护成本偏高；</li>
-					<li>颜色单一，只能使用纯色或者CSS3的渐变色；</li>
-					<li>需要服务器做些相应的配置来解决识别问题和跨域问题。</li>
-				</ol>
-				<b>字体图标网站</b>
-				<p>
-					<a class="k-hover-a" href="http://iconfont.cn/" target="_blank">iconfont</a> 
-					阿里巴巴UX部门推出的矢量图标管理网站，也是国内首家推广Webfont形式图标的平台。推荐！
-				</p>
-				<p>
-					<a class="k-hover-a" href="https://icomoon.io/" target="_blank">icomoon</a>
-					是国外的一个矢量图标网站，图标资源丰富，功能强大，唯独页面响应速度有点慢。
-				</p>
-				<p>
-					关于字体图标的详细解读，请跳转至
-					<a class="k-hover-a" href="">这里</a>
-					查看
-				</p>
-			</div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					基本使用
-					<small>
-						class：i-*
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<p>
-							<i class="i-user-fill"></i> 用户图标
-						</p>
-						<p>
-							<a class="cl-d"><i class="i-download"></i> 下载图标</a>
-						</p>
-						<p>
-							<button type="button"><i class="i-share"></i> 分享图标</button>
-						</p>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				基本使用
+				<small>
+					class：i-*
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<p>
+						<i class="i-user-fill"></i> 用户图标
+					</p>
+					<p>
+						<a class="cl-d"><i class="i-download"></i> 下载图标</a>
+					</p>
+					<p>
+						<button type="button"><i class="i-share"></i> 分享图标</button>
+					</p>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;i class="i-user-fill">&lt;/i> 用户图标
 &lt;a class="cl-d">&lt;i class="i-download">&lt;/i> 下载图标&lt;/a>
 &lt;button type="button">&lt;i class="i-share">&lt;/i> 分享图标&lt;/button>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					图标角度
-					<small>
-						class: i-rotate-[90 || 180 || 270]
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<p>
-							<i class="i-heart-fill"></i>
-							默认图标角度
-						</p>
-						<p>
-							<i class="i-heart-fill i-rotate-90"></i>
-							顺时针旋转 90°
-						</p>
-						<p>
-							<i class="i-heart-fill i-rotate-180"></i>
-							顺时针旋转 180°
-						</p>
-						<p>
-							<i class="i-heart-fill i-rotate-270"></i>
-							顺时针旋转 270°
-						</p>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				图标角度
+				<small>
+					class: i-rotate-[90 || 180 || 270]
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<p>
+						<i class="i-heart-fill"></i>
+						默认图标角度
+					</p>
+					<p>
+						<i class="i-heart-fill i-rotate-90"></i>
+						顺时针旋转 90°
+					</p>
+					<p>
+						<i class="i-heart-fill i-rotate-180"></i>
+						顺时针旋转 180°
+					</p>
+					<p>
+						<i class="i-heart-fill i-rotate-270"></i>
+						顺时针旋转 270°
+					</p>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;i class="i-heart-fill">&lt;/i>
 &lt;i class="i-heart-fill i-rotate-90">&lt;/i>
 &lt;i class="i-heart-fill i-rotate-180">&lt;/i>
 &lt;i class="i-heart-fill i-rotate-270">&lt;/i>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					图标大小
-					<small>
-						class: i-[s || m || l]
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<p>
-							<i class="i-home-fill"></i>
-							默认尺寸
-						</p>
-						<p>
-							<i class="i-home-fill i-s"></i>	
-							稍大尺寸 i-s
-						</p>
-						<p>
-							<i class="i-home-fill i-m"></i>	
-							中型尺寸 i-m
-						</p>
-						<p>
-							<i class="i-home-fill i-l"></i>	
-							最大尺寸 i-l
-						</p>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				图标大小
+				<small>
+					class: i-[s || m || l]
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<p>
+						<i class="i-home-fill"></i>
+						默认尺寸
+					</p>
+					<p>
+						<i class="i-home-fill i-s"></i>	
+						稍大尺寸 i-s
+					</p>
+					<p>
+						<i class="i-home-fill i-m"></i>	
+						中型尺寸 i-m
+					</p>
+					<p>
+						<i class="i-home-fill i-l"></i>	
+						最大尺寸 i-l
+					</p>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;i class="i-home">&lt;/i>
 &lt;i class="i-home i-s">&lt;/i>	
 &lt;i class="i-home i-m">&lt;/i>
 &lt;i class="i-home i-l">&lt;/i>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					图表旋转
-					<small>
-						class: i-spin
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<i class="i-repeat i-spin"></i>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				图表旋转
+				<small>
+					class: i-spin
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<i class="i-repeat i-spin"></i>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;i class="i-repeat i-spin">&lt;/i>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					图标按钮
-					<small>
-						class: i-b && k-bc-[a-j]
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<i class="i-b i-heart k-bc-a"></i>
-						<i class="i-b i-heart k-bc-b"></i>
-						<i class="i-b i-heart k-bc-c"></i>
-						<i class="i-b i-heart k-bc-d"></i>
-						<i class="i-b i-heart k-bc-e"></i>
-						<i class="i-b i-heart k-bc-f"></i>
-						<i class="i-b i-heart k-bc-g"></i>
-						<i class="i-b i-heart k-bc-h"></i>
-						<i class="i-b i-heart k-bc-i"></i>
-						<i class="i-b i-heart k-bc-j"></i>
-						<i class="i-b i-heart k-bc-k"></i>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				图标按钮
+				<small>
+					class: i-b && k-bc-[a-j]
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<i class="i-b i-heart k-bc-a"></i>
+					<i class="i-b i-heart k-bc-b"></i>
+					<i class="i-b i-heart k-bc-c"></i>
+					<i class="i-b i-heart k-bc-d"></i>
+					<i class="i-b i-heart k-bc-e"></i>
+					<i class="i-b i-heart k-bc-f"></i>
+					<i class="i-b i-heart k-bc-g"></i>
+					<i class="i-b i-heart k-bc-h"></i>
+					<i class="i-b i-heart k-bc-i"></i>
+					<i class="i-b i-heart k-bc-j"></i>
+					<i class="i-b i-heart k-bc-k"></i>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;i class="i-b i-heart k-bc-a">&lt;/i>
 &lt;i class="i-b i-heart k-bc-b">&lt;/i>
@@ -283,540 +341,536 @@
 &lt;i class="i-b i-heart k-bc-i">&lt;/i>
 &lt;i class="i-b i-heart k-bc-j">&lt;/i>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					图标大全
-				</h4>
-				<div class="l-row iconbox">
-					<div class="g">
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-user</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-users</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-home</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-heart</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-star</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-user-fill</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-users-fill</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-home-fill</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-heart-fill</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-star-fill</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-arrow-down</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-arrow-left</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-arrow-right</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-arrow-up</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-angle-up</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-angle-left</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-angle-right</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-angle-down</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-cloud-upload</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-cloud-download</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-upload</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-download</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-plus</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-minus</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-cross</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-check</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-map</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-map2</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-chart</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-chart-pie</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-info-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-help-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-cross-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-check-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-plus-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-minus-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-rmb-bd</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-bulb</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-time</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-calendar</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-img</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-email</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-msg</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-coupon</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-cog</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-share</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-refresh</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-repeat</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-phone</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-lock</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-music</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-mic</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-qrcode</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-tab</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-more</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-file</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-key</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-iphone</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-search</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-loading</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-list</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-list2</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-menu</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-computer</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-laptop</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-camera</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-qq</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-weixin</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-sina</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-gift</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-paperclip</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-shopping</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-card</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-shopping-cart</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-edit</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-trash</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-thumb-up</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-volume</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-rmb</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-phonebook</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-send</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-woman</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-man</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-table</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-exit</p>
-							</div>
-						</div>
-						
-						<div class="g-4 g-s-3 g-m-2">
-							<div class="k-mb">
-								<p class="iconname">i-emoji</p>
-							</div>
+		<div class="l l-res">
+			<h4 class="l-top">
+				图标大全
+			</h4>
+			<div class="l-row iconbox">
+				<div class="g">
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-user</p>
 						</div>
 					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-users</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-home</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-heart</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-star</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-user-fill</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-users-fill</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-home-fill</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-heart-fill</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-star-fill</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-arrow-down</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-arrow-left</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-arrow-right</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-arrow-up</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-angle-up</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-angle-left</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-angle-right</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-angle-down</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-cloud-upload</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-cloud-download</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-upload</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-download</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-plus</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-minus</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-cross</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-check</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-map</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-map2</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-chart</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-chart-pie</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-info-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-help-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-cross-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-check-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-plus-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-minus-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-rmb-bd</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-bulb</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-time</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-calendar</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-img</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-email</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-msg</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-coupon</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-cog</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-share</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-refresh</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-repeat</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-phone</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-lock</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-music</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-mic</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-qrcode</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-tab</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-more</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-file</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-key</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-iphone</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-search</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-loading</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-list</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-list2</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-menu</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-computer</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-laptop</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-camera</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-qq</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-weixin</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-sina</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-gift</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-paperclip</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-shopping</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-card</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-shopping-cart</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-edit</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-trash</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-thumb-up</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-volume</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-rmb</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-phonebook</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-send</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-woman</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-man</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-table</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-exit</p>
+						</div>
+					</div>
+					
+					<div class="g-4 g-s-3 g-m-2">
+						<div class="k-mb">
+							<p class="iconname">i-emoji</p>
+						</div>
+					</div>
 				</div>
-			</div><!--end l-->
-		</div><!--end k-container-->
-	</div><!--end mian-->
-	
-	<div class="main-shade"></div>
-
+			</div>
+		</div><!--end l-->
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
     <script type="text/javascript" src="../js/prettify.min.js"></script>

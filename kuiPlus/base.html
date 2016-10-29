@@ -16,7 +16,122 @@
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+
+
+			<ul class="n-nav">
+				<li class="active">
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li>
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li>
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li>
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li>
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li>
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li>
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -26,130 +141,73 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				基础
+				<small>base</small>
+			</h2>
+			<p>
+				所有基础类以
+				<span class="k-label k-bc-h">K</span>
+				开头
+			</p>
+		</div><!--end main-top-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				默认文字色
+			</h4>
+			<div class="l-row">
+				<table class="t t-border">
+					<thead>
+						<tr>
+							<th>标签</th>
+							<th>主色</th>
+							<th>重色</th>
+							<th>轻色</th>
+							<th>边框色</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>html</td>
+							<td>#54687b</td>
+							<td>#34495e</td>
+							<td>#95a5a6</td>
+							<td>#dee5ed</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
+		</div><!--end l-->
 
 
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li class="active">
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li>
-					<a href="button.html">按 钮</a>
-				</li>
-				<li>
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li>
-					<a href="form.html">表 单</a>
-				</li>
-				<li>
-					<a href="grid.html">网 格</a>
-				</li>
-				<li>
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li>
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-
-			<div class="link k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="main">
-		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					基础
-					<small>base</small>
-				</h2>
-				<p>
-					所有基础类以
-					<span class="k-label k-bc-h">K</span>
-					开头
-				</p>
-			</div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					默认文字色
-				</h4>
-				<div class="l-row">
-					<table class="t t-border">
-						<thead>
-							<tr>
-								<th>标签</th>
-								<th>主色</th>
-								<th>重色</th>
-								<th>轻色</th>
-								<th>边框色</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>html</td>
-								<td>#54687b</td>
-								<td>#34495e</td>
-								<td>#95a5a6</td>
-								<td>#dee5ed</td>
-							</tr>
-						</tbody>
-					</table>
+		<div class="l l-res">
+			<h4 class="l-top">
+				标题
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<h6>
+						<kbd>&lt;h1&gt;
+						-
+						&lt;h4&gt;</kbd> 
+						文本颜色为：#34495e；
+						<kbd>&lt;h5&gt;
+						-
+						&lt;h6&gt;</kbd> 
+						文本颜色为：#95a5a6；
+					</h6>
+					<h1>标题：Heading <small>explain</small></h1>
+					<h2>标题：Heading <small>explain</small></h2>
+					<h3>标题：Heading <small>explain</small></h3>
+					<h4>标题：Heading <small>explain</small></h4>
+					<h5>标题：Heading <small>explain</small></h5>
+					<h6>标题：Heading <small>explain</small></h6>
 				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					标题
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<h6>
-							<kbd>&lt;h1&gt;
-							-
-							&lt;h4&gt;</kbd> 
-							文本颜色为：#34495e；
-							<kbd>&lt;h5&gt;
-							-
-							&lt;h6&gt;</kbd> 
-							文本颜色为：#95a5a6；
-						</h6>
-						<h1>标题：Heading <small>explain</small></h1>
-						<h2>标题：Heading <small>explain</small></h2>
-						<h3>标题：Heading <small>explain</small></h3>
-						<h4>标题：Heading <small>explain</small></h4>
-						<h5>标题：Heading <small>explain</small></h5>
-						<h6>标题：Heading <small>explain</small></h6>
-					</div>
-					<div class="code">
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;h1>标题：Heading &lt;small>explain&lt;/small>&lt;/h1>
 &lt;h2>标题：Heading &lt;small>explain&lt;/small>&lt;/h2>
@@ -158,372 +216,371 @@
 &lt;h5>标题：Heading &lt;small>explain&lt;/small>&lt;/h5>
 &lt;h6>标题：Heading &lt;small>explain&lt;/small>&lt;/h6>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					链接
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a href="#">默认链接样式</a><br>
-						<a class="k-link-a" href="#">有颜色的链接样式</a><br>
-						<a class="k-link-b" href="#">鼠标移进来试试</a><br>
-						<a class="k-link-c" href="#">鼠标移进来试试</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				链接
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a href="#">默认链接样式</a><br>
+					<a class="k-link-a" href="#">有颜色的链接样式</a><br>
+					<a class="k-link-b" href="#">鼠标移进来试试</a><br>
+					<a class="k-link-c" href="#">鼠标移进来试试</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a href="#">默认链接样式&lt;/a>
 &lt;a class="k-link-a" href="#">有颜色的链接样式&lt;/a>
 &lt;a class="k-link-b" href="#">鼠标移进来试试&lt;/a>
 &lt;a class="k-link-c" href="#">鼠标移进来试试&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					标签
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<label class="k-label">标签</label>
-						<label class="k-label k-bc-a">标签</label>
-						<label class="k-label k-bc-b">标签</label>
-						<label class="k-label k-bc-c">标签</label>
-						<label class="k-label k-bc-d">标签</label>
-						<label class="k-label k-bc-e">标签</label>
-						<label class="k-label k-bc-f">标签</label>
-						<label class="k-label k-bc-g">标签</label>
-						<label class="k-label k-bc-h">标签</label>
-						<label class="k-label k-bc-i">标签</label>
-						<label class="k-label k-bc-j">标签</label>
-						<label class="k-label k-bc-k">标签</label>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				标签
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<label class="k-label">标签</label>
+					<label class="k-label k-bc-a">标签</label>
+					<label class="k-label k-bc-b">标签</label>
+					<label class="k-label k-bc-c">标签</label>
+					<label class="k-label k-bc-d">标签</label>
+					<label class="k-label k-bc-e">标签</label>
+					<label class="k-label k-bc-f">标签</label>
+					<label class="k-label k-bc-g">标签</label>
+					<label class="k-label k-bc-h">标签</label>
+					<label class="k-label k-bc-i">标签</label>
+					<label class="k-label k-bc-j">标签</label>
+					<label class="k-label k-bc-k">标签</label>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;label class="k-label">标签&lt;/label>
 &lt;label class="k-label k-bc-a">标签&lt;/label>
 ......
 &lt;label class="k-label k-bc-k">标签&lt;/label>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					徽章
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<label class="k-badge">徽章</label>
-						<label class="k-badge k-bc-a">徽章</label>
-						<label class="k-badge k-bc-b">徽章</label>
-						<label class="k-badge k-bc-c">徽章</label>
-						<label class="k-badge k-bc-d">徽章</label>
-						<label class="k-badge k-bc-e">徽章</label>
-						<label class="k-badge k-bc-f">徽章</label>
-						<label class="k-badge k-bc-g">徽章</label>
-						<label class="k-badge k-bc-h">徽章</label>
-						<label class="k-badge k-bc-i">徽章</label>
-						<label class="k-badge k-bc-j">徽章</label>
-						<label class="k-badge k-bc-k">徽章</label>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				徽章
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<label class="k-badge">徽章</label>
+					<label class="k-badge k-bc-a">徽章</label>
+					<label class="k-badge k-bc-b">徽章</label>
+					<label class="k-badge k-bc-c">徽章</label>
+					<label class="k-badge k-bc-d">徽章</label>
+					<label class="k-badge k-bc-e">徽章</label>
+					<label class="k-badge k-bc-f">徽章</label>
+					<label class="k-badge k-bc-g">徽章</label>
+					<label class="k-badge k-bc-h">徽章</label>
+					<label class="k-badge k-bc-i">徽章</label>
+					<label class="k-badge k-bc-j">徽章</label>
+					<label class="k-badge k-bc-k">徽章</label>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;label class="k-badge">徽章&lt;/label>
 &lt;label class="k-badge k-bc-a">徽章&lt;/label>
 ......
 &lt;label class="k-badge k-bc-k">徽章&lt;/label>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					文字颜色
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<label class="k-cl-a">文字颜色</label>
-						<label class="k-cl-b">文字颜色</label>
-						<label class="k-cl-c">文字颜色</label>
-						<label class="k-cl-d">文字颜色</label>
-						<label class="k-cl-e">文字颜色</label>
-						<label class="k-cl-f">文字颜色</label>
-						<label class="k-cl-g">文字颜色</label>
-						<label class="k-cl-h">文字颜色</label>
-						<label class="k-cl-i">文字颜色</label>
-						<label class="k-cl-j">文字颜色</label>
-						<label class="k-cl-k">文字颜色</label>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				文字颜色
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<label class="k-cl-a">文字颜色</label>
+					<label class="k-cl-b">文字颜色</label>
+					<label class="k-cl-c">文字颜色</label>
+					<label class="k-cl-d">文字颜色</label>
+					<label class="k-cl-e">文字颜色</label>
+					<label class="k-cl-f">文字颜色</label>
+					<label class="k-cl-g">文字颜色</label>
+					<label class="k-cl-h">文字颜色</label>
+					<label class="k-cl-i">文字颜色</label>
+					<label class="k-cl-j">文字颜色</label>
+					<label class="k-cl-k">文字颜色</label>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;label class="k-cl-a">文字颜色&lt;/label>
 ......
 &lt;label class="k-cl-k">文字颜色&lt;/label>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					浮动
-				</h4>
-				<div class="l-row">
-					<div class="demo k-tac">
-						<span class="k-fl">左浮动</span>
-						<span class="k-fr">右浮动</span>
-						<span class="k-clearfix">清除浮动</span>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				浮动
+			</h4>
+			<div class="l-row">
+				<div class="demo k-tac">
+					<span class="k-fl">左浮动</span>
+					<span class="k-fr">右浮动</span>
+					<span class="k-clearfix">清除浮动</span>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;span class="k-fl">左浮动&lt;/span>
 &lt;span class="k-fr">右浮动&lt;/span>
 &lt;span class="k-clearfix">清除浮动&lt;/span>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					对齐方式
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="k-tal">左对齐</div>
-						<div class="k-tar">右对齐</div>
-						<div class="k-tac">居中</div>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				对齐方式
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="k-tal">左对齐</div>
+					<div class="k-tar">右对齐</div>
+					<div class="k-tac">居中</div>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="k-tal">左对齐&lt;/div>
 &lt;div class="k-tar">右对齐&lt;/div>
 &lt;div class="k-tac">居中&lt;/div>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					段落
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				段落
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;p>......&lt;/p>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					文章
-					<small>
-						label：article
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<article>
-							<h3>文章标题</h3>
-							<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
-						</article>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				文章
+				<small>
+					label：article
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<article>
+						<h3>文章标题</h3>
+						<p>通过可以自定义设置的变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
+					</article>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;article>......&lt;/article>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
-			
+			</div>
+		</div><!--end l-->
+		
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					水平线
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<hr>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				水平线
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<hr>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;hr>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					文本语义
-				</h4>
-				<div class="l-row">
-					<table class="t">
-						<thead>
-							<tr>
-								<th>标签</th>
-								<th>描述</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><span class="k-label">&lt;a></span></td>
-								<td>将文本转换为超文本使用 <a href="">a 标签</a></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;em></span></td>
-								<td>强调文本使用 <em>em 标签</em> </td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;b></span></td>
-								<td>文本加粗显示使用 <b>b 标签</b></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;strong></span></td>
-								<td>强调任何额外的更重要文本使用 <b>strong 标签</b></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;code></span></td>
-								<td>定义内联代码片段使用 <code>code 标签</span></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;del></span></td>
-								<td>标记文档中已被修改或删除的文本使用 <del>del 标签</del></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;ins></span></td>
-								<td>标记文档中插入的文本使用 <ins>ins 标签</ins></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;mark></span></td>
-								<td>高亮显示文本使用 <mark>mark 标签</mark>，它没有任何语义含义</td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;q></span></td>
-								<td>定义引入的语录在 <q>q 标签 <q>里面使用</q> q</q> 标签</td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;abbr></span></td>
-								<td>定义一个标题的缩写使用 <abbr title="Abbreviation Element">abbr 标签</abbr></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;dfn></span></td>
-								<td>定义一个项目术语名称使用 <dfn>dfn 标签</dfn></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;small></span></td>
-								<td>缩小显示不重要的文本使用 <small>small 标签</small></td>
-							</tr>
-							<tr>
-								<td><span class="k-label">&lt;big></span></td>
-								<td>放大显示不重要的文本使用 <big>big 标签</big></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div><!--end l-->
+		<div class="l l-res">
+			<h4 class="l-top">
+				文本语义
+			</h4>
+			<div class="l-row">
+				<table class="t">
+					<thead>
+						<tr>
+							<th>标签</th>
+							<th>描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="k-label">&lt;a></span></td>
+							<td>将文本转换为超文本使用 <a href="">a 标签</a></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;em></span></td>
+							<td>强调文本使用 <em>em 标签</em> </td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;b></span></td>
+							<td>文本加粗显示使用 <b>b 标签</b></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;strong></span></td>
+							<td>强调任何额外的更重要文本使用 <b>strong 标签</b></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;code></span></td>
+							<td>定义内联代码片段使用 <code>code 标签</span></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;del></span></td>
+							<td>标记文档中已被修改或删除的文本使用 <del>del 标签</del></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;ins></span></td>
+							<td>标记文档中插入的文本使用 <ins>ins 标签</ins></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;mark></span></td>
+							<td>高亮显示文本使用 <mark>mark 标签</mark>，它没有任何语义含义</td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;q></span></td>
+							<td>定义引入的语录在 <q>q 标签 <q>里面使用</q> q</q> 标签</td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;abbr></span></td>
+							<td>定义一个标题的缩写使用 <abbr title="Abbreviation Element">abbr 标签</abbr></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;dfn></span></td>
+							<td>定义一个项目术语名称使用 <dfn>dfn 标签</dfn></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;small></span></td>
+							<td>缩小显示不重要的文本使用 <small>small 标签</small></td>
+						</tr>
+						<tr>
+							<td><span class="k-label">&lt;big></span></td>
+							<td>放大显示不重要的文本使用 <big>big 标签</big></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					手机布局
-				</h4>
-				<div class="l-row">
-					<div class="g">
-						<div class="g-3">
-							<div class="k-icon k-bc-c active">
-								<img src="images/001.svg">
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
+		<div class="l l-res">
+			<h4 class="l-top">
+				手机布局
+			</h4>
+			<div class="l-row">
+				<div class="g">
+					<div class="g-3">
+						<div class="k-icon k-bc-c active">
+							<img src="images/001.svg">
 						</div>
-						<div class="g-3">
-							<div class="k-icon k-bc-d active">
-								<img src="images/002.svg">
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
-						</div>
-						<div class="g-3">
-							<div class="k-icon k-bc-e active">
-								<img src="images/003.svg">
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
-						</div>
-						<div class="g-3">
-							<div class="k-icon k-bc-f active">
-								<img src="images/004.svg">
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
+						<div class="k-ft">
+							第一个
 						</div>
 					</div>
-					<div class="g">
-						<div class="g-3">
-							<div class="k-icon k-bc-g">
-								<i class="i-home"></i>
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
+					<div class="g-3">
+						<div class="k-icon k-bc-d active">
+							<img src="images/002.svg">
 						</div>
-						<div class="g-3">
-							<div class="k-icon k-bc-h">
-								<i class="i-user"></i>
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
+						<div class="k-ft">
+							第一个
 						</div>
-						<div class="g-3">
-							<div class="k-icon k-bc-i">
-								<i class="i-msg"></i>
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
+					</div>
+					<div class="g-3">
+						<div class="k-icon k-bc-e active">
+							<img src="images/003.svg">
 						</div>
-						<div class="g-3">
-							<div class="k-icon k-bc-j">
-								<i class="i-sina"></i>
-							</div>
-							<div class="k-ft">
-								第一个
-							</div>
+						<div class="k-ft">
+							第一个
+						</div>
+					</div>
+					<div class="g-3">
+						<div class="k-icon k-bc-f active">
+							<img src="images/004.svg">
+						</div>
+						<div class="k-ft">
+							第一个
 						</div>
 					</div>
 				</div>
-			</div><!--end l-->
-		</div><!--end k-container-->
-	</div><!--end main-->
+				<div class="g">
+					<div class="g-3">
+						<div class="k-icon k-bc-g">
+							<i class="i-home"></i>
+						</div>
+						<div class="k-ft">
+							第一个
+						</div>
+					</div>
+					<div class="g-3">
+						<div class="k-icon k-bc-h">
+							<i class="i-user"></i>
+						</div>
+						<div class="k-ft">
+							第一个
+						</div>
+					</div>
+					<div class="g-3">
+						<div class="k-icon k-bc-i">
+							<i class="i-msg"></i>
+						</div>
+						<div class="k-ft">
+							第一个
+						</div>
+					</div>
+					<div class="g-3">
+						<div class="k-icon k-bc-j">
+							<i class="i-sina"></i>
+						</div>
+						<div class="k-ft">
+							第一个
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--end l-->
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="../js/prettify.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>

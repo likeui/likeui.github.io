@@ -20,7 +20,122 @@
     </style>
 </head>
 <body ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+
+
+			<ul class="n-nav">
+				<li>
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li class="active">
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li>
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li>
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li>
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li>
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li>
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -30,132 +145,75 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
-			</div>
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				按钮
+				<small>
+					Button
+				</small>
+			</h2>
+			<p>
+				所有按钮类以
+				<span class="k-label k-bc-h">B</span>
+				开头
+			</p>
+			<p>
+				<code>button</code>
+				标签作为按钮时，会有内阴影
+			</p>
+		</div><!--end main-top-->
 
 
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li>
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li class="active">
-					<a href="button.html">按 钮</a>
-				</li>
-				<li>
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li>
-					<a href="form.html">表 单</a>
-				</li>
-				<li>
-					<a href="grid.html">网 格</a>
-				</li>
-				<li>
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li>
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-
-			<div class="link k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="main">
-		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					按钮
-					<small>
-						Button
-					</small>
-				</h2>
-				<p>
-					所有按钮类以
-					<span class="k-label k-bc-h">B</span>
-					开头
-				</p>
-				<p>
-					<code>button</code>
-					标签作为按钮时，会有内阴影
-				</p>
-			</div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					基本按钮
-					<small>
-						class: b
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<button class="b-bc-d" type="button">button 按钮</button>
-						<a class="b b-bc-d">A 标签按钮</a>
-						<span class="b b-bc-d">Span 标签按钮</span>
-						<input class="b b-bc-d" type="button" value="Input 标签按钮">
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				基本按钮
+				<small>
+					class: b
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<button class="b-bc-d" type="button">button 按钮</button>
+					<a class="b b-bc-d">A 标签按钮</a>
+					<span class="b b-bc-d">Span 标签按钮</span>
+					<input class="b b-bc-d" type="button" value="Input 标签按钮">
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;button type="button">button 按钮&lt;/button>
 &lt;a class="b">A 标签按钮&lt;/a>
 &lt;span class="b">Span 标签按钮&lt;/span>
 &lt;input class="b" type="button" value="Input 标签按钮">
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					按钮颜色
-					<small>
-						class: b-bc-[a-j]
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<button type="button" type="button">默认</button>
-						<a class="b b-bc-a">链接</a>
-						<a class="b b-bc-b">灰色</a>
-						<a class="b b-bc-c">绿色</a>
-						<a class="b b-bc-d">青绿</a>
-						<a class="b b-bc-e">浅蓝</a>
-						<a class="b b-bc-f">蓝色</a>
-						<a class="b b-bc-g">黄色</a>
-						<a class="b b-bc-h">橙色</a>
-						<a class="b b-bc-i">红色</a>
-						<a class="b b-bc-j">粉色</a>
-						<a class="b b-bc-k">紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				按钮颜色
+				<small>
+					class: b-bc-[a-j]
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<button type="button" type="button">默认</button>
+					<a class="b b-bc-a">链接</a>
+					<a class="b b-bc-b">灰色</a>
+					<a class="b b-bc-c">绿色</a>
+					<a class="b b-bc-d">青绿</a>
+					<a class="b b-bc-e">浅蓝</a>
+					<a class="b b-bc-f">蓝色</a>
+					<a class="b b-bc-g">黄色</a>
+					<a class="b b-bc-h">橙色</a>
+					<a class="b b-bc-i">红色</a>
+					<a class="b b-bc-j">粉色</a>
+					<a class="b b-bc-k">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;button type="button" type="button">默认&lt;/button>
 &lt;a class="b b-bc-a">链接&lt;/a>
@@ -170,34 +228,34 @@
 &lt;a class="b b-bc-j">粉色&lt;/a>
 &lt;a class="b b-bc-k">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					禁用按钮
-					<small>
-						class: disabled
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b" disabled>默认</a>
-						<a class="b b-bc-a" disabled>链接</a>
-						<a class="b b-bc-b" disabled>灰色</a>
-						<a class="b b-bc-c" disabled>绿色</a>
-						<a class="b b-bc-d" disabled>青绿</a>
-						<a class="b b-bc-e" disabled>浅蓝</a>
-						<a class="b b-bc-f" disabled>蓝色</a>
-						<a class="b b-bc-g" disabled>黄色</a>
-						<a class="b b-bc-h" disabled>橙色</a>
-						<a class="b b-bc-i" disabled>红色</a>
-						<a class="b b-bc-j" disabled>粉色</a>
-						<a class="b b-bc-k" disabled>紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				禁用按钮
+				<small>
+					class: disabled
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b" disabled>默认</a>
+					<a class="b b-bc-a" disabled>链接</a>
+					<a class="b b-bc-b" disabled>灰色</a>
+					<a class="b b-bc-c" disabled>绿色</a>
+					<a class="b b-bc-d" disabled>青绿</a>
+					<a class="b b-bc-e" disabled>浅蓝</a>
+					<a class="b b-bc-f" disabled>蓝色</a>
+					<a class="b b-bc-g" disabled>黄色</a>
+					<a class="b b-bc-h" disabled>橙色</a>
+					<a class="b b-bc-i" disabled>红色</a>
+					<a class="b b-bc-j" disabled>粉色</a>
+					<a class="b b-bc-k" disabled>紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a type="b" disabled >默认&lt;/a>
 &lt;a class="b b-bc-a" disabled>链接&lt;/a>
@@ -212,34 +270,34 @@
 &lt;a class="b b-bc-j" disabled>粉色&lt;/a>
 &lt;a class="b b-bc-k" disabled>紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					细边框
-					<small>
-						class: b-bd-a
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-bd">默认</a>
-						<a class="b b-bd b-bc-a">链接</a>
-						<a class="b b-bd b-bc-b">灰色</a>
-						<a class="b b-bd b-bc-c">绿色</a>
-						<a class="b b-bd b-bc-d">青绿</a>
-						<a class="b b-bd b-bc-e">浅蓝</a>
-						<a class="b b-bd b-bc-f">蓝色</a>
-						<a class="b b-bd b-bc-g">黄色</a>
-						<a class="b b-bd b-bc-h">橙色</a>
-						<a class="b b-bd b-bc-i">红色</a>
-						<a class="b b-bd b-bc-j">粉色</a>
-						<a class="b b-bd b-bc-k">紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				细边框
+				<small>
+					class: b-bd-a
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-bd">默认</a>
+					<a class="b b-bd b-bc-a">链接</a>
+					<a class="b b-bd b-bc-b">灰色</a>
+					<a class="b b-bd b-bc-c">绿色</a>
+					<a class="b b-bd b-bc-d">青绿</a>
+					<a class="b b-bd b-bc-e">浅蓝</a>
+					<a class="b b-bd b-bc-f">蓝色</a>
+					<a class="b b-bd b-bc-g">黄色</a>
+					<a class="b b-bd b-bc-h">橙色</a>
+					<a class="b b-bd b-bc-i">红色</a>
+					<a class="b b-bd b-bc-j">粉色</a>
+					<a class="b b-bd b-bc-k">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-bd">默认&lt;/a>
 &lt;a class="b b-bd b-bc-a">链接&lt;/a>
@@ -254,34 +312,34 @@
 &lt;a class="b b-bd b-bc-j">粉色&lt;/a>
 &lt;a class="b b-bd b-bc-k">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					空心按钮
-					<small>
-						class: b-o
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-o">默认</a>
-						<a class="b b-o b-bc-a">链接</a>
-						<a class="b b-o b-bc-b">灰色</a>
-						<a class="b b-o b-bc-c">绿色</a>
-						<a class="b b-o b-bc-d">青绿</a>
-						<a class="b b-o b-bc-e">浅蓝</a>
-						<a class="b b-o b-bc-f">蓝色</a>
-						<a class="b b-o b-bc-g">黄色</a>
-						<a class="b b-o b-bc-h">橙色</a>
-						<a class="b b-o b-bc-i">红色</a>
-						<a class="b b-o b-bc-j">粉色</a>
-						<a class="b b-o b-bc-k">紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				空心按钮
+				<small>
+					class: b-o
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-o">默认</a>
+					<a class="b b-o b-bc-a">链接</a>
+					<a class="b b-o b-bc-b">灰色</a>
+					<a class="b b-o b-bc-c">绿色</a>
+					<a class="b b-o b-bc-d">青绿</a>
+					<a class="b b-o b-bc-e">浅蓝</a>
+					<a class="b b-o b-bc-f">蓝色</a>
+					<a class="b b-o b-bc-g">黄色</a>
+					<a class="b b-o b-bc-h">橙色</a>
+					<a class="b b-o b-bc-i">红色</a>
+					<a class="b b-o b-bc-j">粉色</a>
+					<a class="b b-o b-bc-k">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-o">默认&lt;/a>
 &lt;a class="b b-o b-bc-a">链接&lt;/a>
@@ -296,34 +354,34 @@
 &lt;a class="b b-o b-bc-j">粉色&lt;/a>
 &lt;a class="b b-o b-bc-k">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					3D按钮
-					<small>
-						class: b-3d
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-3d">默认</a>
-						<a class="b b-3d b-bc-a">链接</a>
-						<a class="b b-3d b-bc-b">灰色</a>
-						<a class="b b-3d b-bc-c">绿色</a>
-						<a class="b b-3d b-bc-d">青绿</a>
-						<a class="b b-3d b-bc-e">浅蓝</a>
-						<a class="b b-3d b-bc-f">蓝色</a>
-						<a class="b b-3d b-bc-g">黄色</a>
-						<a class="b b-3d b-bc-h">橙色</a>
-						<a class="b b-3d b-bc-i">红色</a>
-						<a class="b b-3d b-bc-j">粉色</a>
-						<a class="b b-3d b-bc-k">紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				3D按钮
+				<small>
+					class: b-3d
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-3d">默认</a>
+					<a class="b b-3d b-bc-a">链接</a>
+					<a class="b b-3d b-bc-b">灰色</a>
+					<a class="b b-3d b-bc-c">绿色</a>
+					<a class="b b-3d b-bc-d">青绿</a>
+					<a class="b b-3d b-bc-e">浅蓝</a>
+					<a class="b b-3d b-bc-f">蓝色</a>
+					<a class="b b-3d b-bc-g">黄色</a>
+					<a class="b b-3d b-bc-h">橙色</a>
+					<a class="b b-3d b-bc-i">红色</a>
+					<a class="b b-3d b-bc-j">粉色</a>
+					<a class="b b-3d b-bc-k">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-3d">默认&lt;/a>
 &lt;a class="b b-3d b-bc-a">链接&lt;/a>
@@ -338,34 +396,34 @@
 &lt;a class="b b-3d b-bc-j">粉色&lt;/a>
 &lt;a class="b b-3d b-bc-k">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
-			
-			<div class="l l-res">
-				<h4 class="l-top">
-					突起按钮
-					<small>
-						class: b-shade
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-shade">默认</a>
-						<a class="b b-shade b-bc-a">链接</a>
-						<a class="b b-shade b-bc-b">灰色</a>
-						<a class="b b-shade b-bc-c">绿色</a>
-						<a class="b b-shade b-bc-d">青绿</a>
-						<a class="b b-shade b-bc-e">浅蓝</a>
-						<a class="b b-shade b-bc-f">蓝色</a>
-						<a class="b b-shade b-bc-g">黄色</a>
-						<a class="b b-shade b-bc-h">橙色</a>
-						<a class="b b-shade b-bc-i">红色</a>
-						<a class="b b-shade b-bc-j">粉色</a>
-						<a class="b b-shade b-bc-k">紫色</a>
-					</div>
-					<div class="code">
+		
+		<div class="l l-res">
+			<h4 class="l-top">
+				突起按钮
+				<small>
+					class: b-shade
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-shade">默认</a>
+					<a class="b b-shade b-bc-a">链接</a>
+					<a class="b b-shade b-bc-b">灰色</a>
+					<a class="b b-shade b-bc-c">绿色</a>
+					<a class="b b-shade b-bc-d">青绿</a>
+					<a class="b b-shade b-bc-e">浅蓝</a>
+					<a class="b b-shade b-bc-f">蓝色</a>
+					<a class="b b-shade b-bc-g">黄色</a>
+					<a class="b b-shade b-bc-h">橙色</a>
+					<a class="b b-shade b-bc-i">红色</a>
+					<a class="b b-shade b-bc-j">粉色</a>
+					<a class="b b-shade b-bc-k">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-shade">默认&lt;/a>
 &lt;a class="b b-shade b-bc-a">链接&lt;/a>
@@ -380,34 +438,34 @@
 &lt;a class="b b-shade b-bc-j">粉色&lt;/a>
 &lt;a class="b b-shade b-bc-k">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					棱角按钮
-					<small>
-						class: b-br-a
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-br-a">默认</a>
-						<a class="b b-br-a b-bc-a">链接</a>
-						<a class="b b-br-a b-bc-b">灰色</a>
-						<a class="b b-br-a b-bc-c">绿色</a>
-						<a class="b b-br-a b-bc-d">青绿</a>
-						<a class="b b-br-a b-bc-e">浅蓝</a>
-						<a class="b b-br-a b-bc-f">蓝色</a>
-						<a class="b b-br-a b-bc-g">黄色</a>
-						<a class="b b-br-a b-bc-h">橙色</a>
-						<a class="b b-br-a b-bc-i">红色</a>
-						<a class="b b-br-a b-bc-j">粉色</a>
-						<a class="b b-br-a b-bc-k">紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				棱角按钮
+				<small>
+					class: b-br-a
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-br-a">默认</a>
+					<a class="b b-br-a b-bc-a">链接</a>
+					<a class="b b-br-a b-bc-b">灰色</a>
+					<a class="b b-br-a b-bc-c">绿色</a>
+					<a class="b b-br-a b-bc-d">青绿</a>
+					<a class="b b-br-a b-bc-e">浅蓝</a>
+					<a class="b b-br-a b-bc-f">蓝色</a>
+					<a class="b b-br-a b-bc-g">黄色</a>
+					<a class="b b-br-a b-bc-h">橙色</a>
+					<a class="b b-br-a b-bc-i">红色</a>
+					<a class="b b-br-a b-bc-j">粉色</a>
+					<a class="b b-br-a b-bc-k">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-br-a">默认&lt;/a>
 &lt;a class="b b-br-a b-bc-a">链接&lt;/a>
@@ -422,34 +480,34 @@
 &lt;a class="b b-br-a b-bc-j">粉色&lt;/a>
 &lt;a class="b b-br-a b-bc-k">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					胶囊按钮
-					<small>
-						class: b-br-c
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-br-b">默认</a>
-						<a class="b b-bc-a b-br-b">链接</a>
-						<a class="b b-bc-b b-br-b">灰色</a>
-						<a class="b b-bc-c b-br-b">绿色</a>
-						<a class="b b-bc-d b-br-b">青绿</a>
-						<a class="b b-bc-e b-br-b">浅蓝</a>
-						<a class="b b-bc-f b-br-b">蓝色</a>
-						<a class="b b-bc-g b-br-b">黄色</a>
-						<a class="b b-bc-h b-br-b">橙色</a>
-						<a class="b b-bc-i b-br-b">红色</a>
-						<a class="b b-bc-j b-br-b">粉色</a>
-						<a class="b b-bc-k b-br-b">紫色</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				胶囊按钮
+				<small>
+					class: b-br-c
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-br-b">默认</a>
+					<a class="b b-bc-a b-br-b">链接</a>
+					<a class="b b-bc-b b-br-b">灰色</a>
+					<a class="b b-bc-c b-br-b">绿色</a>
+					<a class="b b-bc-d b-br-b">青绿</a>
+					<a class="b b-bc-e b-br-b">浅蓝</a>
+					<a class="b b-bc-f b-br-b">蓝色</a>
+					<a class="b b-bc-g b-br-b">黄色</a>
+					<a class="b b-bc-h b-br-b">橙色</a>
+					<a class="b b-bc-i b-br-b">红色</a>
+					<a class="b b-bc-j b-br-b">粉色</a>
+					<a class="b b-bc-k b-br-b">紫色</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-br-b">默认&lt;/a>
 &lt;a class="b b-bc-a b-br-b">链接&lt;/a>
@@ -464,257 +522,256 @@
 &lt;a class="b b-bc-j b-br-b">粉色&lt;/a>
 &lt;a class="b b-bc-k b-br-b">紫色&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					独行按钮
-					<small>
-						class: b-block
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-block b-bc-h">默认</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				独行按钮
+				<small>
+					class: b-block
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-block b-bc-h">默认</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;button class="b-block">默认&lt;/button>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					按钮大小
-					<small>
-						class: b-s || b-m || b-l
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-bc-c b-s">最小按钮</a>
-						<a class="b b-bc-c">默认按钮</a>
-						<a class="b b-bc-c b-m">中型按钮</a>
-						<a class="b b-bc-c b-l">最大按钮</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				按钮大小
+				<small>
+					class: b-s || b-m || b-l
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-bc-c b-s">最小按钮</a>
+					<a class="b b-bc-c">默认按钮</a>
+					<a class="b b-bc-c b-m">中型按钮</a>
+					<a class="b b-bc-c b-l">最大按钮</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-bc-c b-s">最小按钮&lt;/a>
 &lt;a class="b b-bc-c">默认按钮&lt;/a>
 &lt;a class="b b-bc-c b-m">中型按钮&lt;/a>
 &lt;a class="b b-bc-c b-l">最大按钮&lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					盒子按钮
-					<small>
-						class: b-shape-a
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-shape-a b-bc-c b-s">
-							<i class="i-qq"></i>
-						</a>
-						<a class="b b-shape-a b-bc-c">
-							<i class="i-qq"></i>
-						</a>
-						<a class="b b-shape-a b-bc-c b-m">
-							<i class="i-qq"></i>
-						</a>
-						<a class="b b-shape-a b-bc-c b-l">
-							<i class="i-qq"></i>
-						</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				盒子按钮
+				<small>
+					class: b-shape-a
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-shape-a b-bc-c b-s">
+						<i class="i-qq"></i>
+					</a>
+					<a class="b b-shape-a b-bc-c">
+						<i class="i-qq"></i>
+					</a>
+					<a class="b b-shape-a b-bc-c b-m">
+						<i class="i-qq"></i>
+					</a>
+					<a class="b b-shape-a b-bc-c b-l">
+						<i class="i-qq"></i>
+					</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-shape-a b-bc-c b-s">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 &lt;a class="b b-shape-a b-bc-c">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 &lt;a class="b b-shape-a b-bc-c b-m">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 &lt;a class="b b-shape-a b-bc-c b-l">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					圆形按钮
-					<small>
-						class: b-shape-b
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-shape-b b-bc-c b-s">
-							<i class="i-qq"></i>
-						</a>
-						<a class="b b-shape-b b-bc-c">
-							<i class="i-qq"></i>
-						</a>
-						<a class="b b-shape-b b-bc-c b-m">
-							<i class="i-qq"></i>
-						</a>
-						<a class="b b-shape-b b-bc-c b-l">
-							<i class="i-qq"></i>
-						</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				圆形按钮
+				<small>
+					class: b-shape-b
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-shape-b b-bc-c b-s">
+						<i class="i-qq"></i>
+					</a>
+					<a class="b b-shape-b b-bc-c">
+						<i class="i-qq"></i>
+					</a>
+					<a class="b b-shape-b b-bc-c b-m">
+						<i class="i-qq"></i>
+					</a>
+					<a class="b b-shape-b b-bc-c b-l">
+						<i class="i-qq"></i>
+					</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-shape-b b-bc-c b-s">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 &lt;a class="b b-shape-b b-bc-c">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 &lt;a class="b b-shape-b b-bc-c b-m">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 &lt;a class="b b-shape-b b-bc-c b-l">
-	&lt;i class="i-qq">&lt;/i>
+&lt;i class="i-qq">&lt;/i>
 &lt;/a>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					图标按钮
-					<small>按钮内添加&lt;i&gt;标签</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<a class="b b-bc-h">
-							<i class="i-email"></i> 
-							邮箱
-						</a>
-						<a class="b b-bc-f">
-							菜单 
-							<i class="i-menu"></i>
-						</a>
-						<a class="b b-bc-g">
-							<i class="i-search"></i>
-							查询
-						</a>
-					</div>
-					<div class="code">
+		<div class="l l-res">
+			<h4 class="l-top">
+				图标按钮
+				<small>按钮内添加&lt;i&gt;标签</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-bc-h">
+						<i class="i-email"></i> 
+						邮箱
+					</a>
+					<a class="b b-bc-f">
+						菜单 
+						<i class="i-menu"></i>
+					</a>
+					<a class="b b-bc-g">
+						<i class="i-search"></i>
+						查询
+					</a>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;a class="b b-bc-h">
-	&lt;i class="i-email">&lt;/i> 
-	邮箱
+&lt;i class="i-email">&lt;/i> 
+邮箱
 &lt;/a>
 &lt;a class="b b-bc-f">
-	菜单 
-	&lt;i class="i-menu">&lt;/i>
+菜单 
+&lt;i class="i-menu">&lt;/i>
 &lt;/a>
 &lt;a class="b b-bc-g">
-	&lt;i class="i-search">&lt;/i>
-	查询
+&lt;i class="i-search">&lt;/i>
+查询
 &lt;/a>
 </pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				按钮组
+				<small>
+					class: b-g
+				</small>
+			</h4>
+			<div class="l-row not">
+				<div class="demo">
+					<div class="b-g">
+						<a class="b b-bd b-bc-h">left</a>
+						<a class="b b-bd b-bc-h">middle</a>
+						<a class="b b-bd b-bc-h">middle</a>
+						<a class="b b-bd b-bc-h">right</a>
 					</div>
 				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					按钮组
-					<small>
-						class: b-g
-					</small>
-				</h4>
-				<div class="l-row not">
-					<div class="demo">
-						<div class="b-g">
-							<a class="b b-bd b-bc-h">left</a>
-							<a class="b b-bd b-bc-h">middle</a>
-							<a class="b b-bd b-bc-h">middle</a>
-							<a class="b b-bd b-bc-h">right</a>
-						</div>
-					</div>
-					<div class="code">
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="b-g">
-	&lt;a class="b b-bd b-bc-h">left&lt;/a>
-	&lt;a class="b b-bd b-bc-h">middle&lt;/a>
-	&lt;a class="b b-bd b-bc-h">middle&lt;/a>
-	&lt;a class="b b-bd b-bc-h">right&lt;/a>
+&lt;a class="b b-bd b-bc-h">left&lt;/a>
+&lt;a class="b b-bd b-bc-h">middle&lt;/a>
+&lt;a class="b b-bd b-bc-h">middle&lt;/a>
+&lt;a class="b b-bd b-bc-h">right&lt;/a>
 &lt;/div>
 </pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				垂直按钮组
+				<small>
+					class: b-g b-y
+				</small>
+			</h4>
+			<div class="l-row not">
+				<div class="demo">
+					<div class="b-g b-y">
+						<a class="b b-bd b-bc-g">top</a>
+						<a class="b b-bd b-bc-g">Middle</a>
+						<a class="b b-bd b-bc-g">bottom</a>
 					</div>
 				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					垂直按钮组
-					<small>
-						class: b-g b-y
-					</small>
-				</h4>
-				<div class="l-row not">
-					<div class="demo">
-						<div class="b-g b-y">
-							<a class="b b-bd b-bc-g">top</a>
-							<a class="b b-bd b-bc-g">Middle</a>
-							<a class="b b-bd b-bc-g">bottom</a>
-						</div>
-					</div>
-					<div class="code">
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="b-g b-y">
-	&lt;a class="b b-bd b-bc-g">top&lt;/a>
-	&lt;a class="b b-bd b-bc-g">Middle&lt;/a>
-	&lt;a class="b b-bd b-bc-g">bottom&lt;/a>
+&lt;a class="b b-bd b-bc-g">top&lt;/a>
+&lt;a class="b b-bd b-bc-g">Middle&lt;/a>
+&lt;a class="b b-bd b-bc-g">bottom&lt;/a>
 &lt;/div>
 </pre>
-					</div>
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					对齐按钮组
-					<small>
-						class: b-g b-just
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="b-g b-just">
-                    	<a class="b b-bc-c">Left</a>
-                    	<a class="b b-bc-d">Middle</a>
-                    	<a class="b b-bc-f">Middle</a>
-                    	<a class="b b-bc-g">Right</a>
-                	</div>
-				</div>
-			</div><!--end l-->
-		</div><!--end k-container-->
-	</div><!--end main-->
+		<div class="l l-res">
+			<h4 class="l-top">
+				对齐按钮组
+				<small>
+					class: b-g b-just
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="b-g b-just">
+                	<a class="b b-bc-c">Left</a>
+                	<a class="b b-bc-d">Middle</a>
+                	<a class="b b-bc-f">Middle</a>
+                	<a class="b b-bc-g">Right</a>
+            	</div>
+			</div>
+		</div><!--end l-->
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
     <script type="text/javascript" src="../js/prettify.min.js"></script>

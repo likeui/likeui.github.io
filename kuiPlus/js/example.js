@@ -1,11 +1,13 @@
 $(".n-left").click(function() {
-	$("body").addClass("active").on("touchmove", function(event) {
+	$("body").addClass("active");
+	$(".mask").on("touchmove", function(event) {
 		event.preventDefault();
 	})
 });
 
 $(".mask").click(function() {
-	$("body").removeClass("active").unbind('touchmove');
+	$("body").removeClass("active");
+	$(".mask").unbind('touchmove');
 })
 
 

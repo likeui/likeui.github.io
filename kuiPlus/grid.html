@@ -15,7 +15,122 @@
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+
+
+			<ul class="n-nav">
+				<li>
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li>
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li class="active">
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li>
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li>
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li>
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li>
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -25,580 +140,523 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				网格
+				<small class="">
+					Grid
+				</small>
+			</h2>
+			<p>
+				所有网格类以
+				<span class="k-label k-bc-h">G</span>
+				开头
+			</p>
+			<p>
+				使用CSS3的媒体查询进行响应式布局，仅支持现代浏览器
+			</p>
+		</div><!--end main-top-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				响应式断点
+			</h4>
+			<div class="l-row">
+				<table class="t">
+					<thead>
+						<tr>
+							<th>大小</th>
+							<th>断点</th>
+							<th>设备</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>g-[1-12]</td>
+							<td>all</td>
+							<td>all</td>
+						</tr>
+						<tr>
+							<td>g-s-[1-12]</td>
+							<td>768px-1023px</td>
+							<td>平板电脑纵向</td>
+						</tr>
+						<tr>
+							<td>g-m-[1-12]</td>
+							<td>1024px-1279px</td>
+							<td>台式机或平板电脑横向</td>
+						</tr>
+						<tr>
+							<td>g-l-[1-12]</td>
+							<td>1280px +</td>
+							<td>大屏幕设备</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
+		</div><!--end l-->
 
 
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li>
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li>
-					<a href="button.html">按 钮</a>
-				</li>
-				<li>
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li>
-					<a href="form.html">表 单</a>
-				</li>
-				<li class="active">
-					<a href="grid.html">网 格</a>
-				</li>
-				<li>
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li>
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-
-			<div class="link k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="main">
-		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					网格
-					<small class="">
-						Grid
-					</small>
-				</h2>
-				<p>
-					所有网格类以
-					<span class="k-label k-bc-h">G</span>
-					开头
-				</p>
-				<p>
-					使用CSS3的媒体查询进行响应式布局，仅支持现代浏览器
-				</p>
-			</div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					响应式断点
-				</h4>
-				<div class="l-row">
-					<table class="t">
-						<thead>
-							<tr>
-								<th>大小</th>
-								<th>断点</th>
-								<th>设备</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>g-[1-12]</td>
-								<td>all</td>
-								<td>all</td>
-							</tr>
-							<tr>
-								<td>g-s-[1-12]</td>
-								<td>768px-1023px</td>
-								<td>平板电脑纵向</td>
-							</tr>
-							<tr>
-								<td>g-m-[1-12]</td>
-								<td>1024px-1279px</td>
-								<td>台式机或平板电脑横向</td>
-							</tr>
-							<tr>
-								<td>g-l-[1-12]</td>
-								<td>1280px +</td>
-								<td>大屏幕设备</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					基本样式
-					<small>
-						class：
-						g-[1-12] || 
-						g-[s || m || l]-[1-12]
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g">
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g">
-	&lt;div class="g-4">
-		&lt;div class="bc-a k-pd">
-			g-4
-		&lt;/div>
-	&lt;/div>
-	......
-&lt;/div></pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					删除间隔
-					<small>
-						class：g-del
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g g-del">
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g g-del">
-	&lt;div class="g-4">
-		&lt;div class="bc-a k-pd">
-			g-4
-		&lt;/div>
-	&lt;/div>
-	......
-&lt;/div></pre>
-					</div>
-				</div>
-			</div><!--end l-->
-			
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					大间隔
-					<small>
-						class：g-lar
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g g-lar">
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g g-lar">
-	&lt;div class="g-4">
-		&lt;div class="bc-a k-pd">
-			g-4
-		&lt;/div>
-	&lt;/div>
-	......
-&lt;/div></pre>
-					</div>
-				</div>
-			</div><!--end l-->
-			
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					响应式间隔
-					<small>
-						class：g-res
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g g-res">
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g g-res">
-	&lt;div class="g-4">
-		&lt;div class="bc-a k-pd">
-			g-4
-		&lt;/div>
-	&lt;/div>
-	......
-&lt;/div></pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					响应式网格
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g">
-							<div class="g-s-6 g-m-4 g-l-3">
-								<div class="bc-a k-pd">
-									g-s-6 g-m-4 g-l-3
-								</div>
-							</div>
-							<div class="g-s-6 g-m-4 g-l-3">
-								<div class="bc-a k-pd">
-									g-s-6 g-m-4 g-l-3
-								</div>
-							</div>
-							<div class="g-s-6 g-m-4 g-l-3">
-								<div class="bc-a k-pd">
-									g-s-6 g-m-4 g-l-3
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g">
-	&lt;div class="g-s-6 g-m-4 g-l-3">
-		&lt;div class="bc-a k-pd">
-			g-s-6 g-m-4 g-l-3
-		&lt;/div>
-	&lt;/div>
-	......
-&lt;/div></pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					网格居中
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g-6 k-container-cen">
+		<div class="l l-res">
+			<h4 class="l-top">
+				基本样式
+				<small>
+					class：
+					g-[1-12] || 
+					g-[s || m || l]-[1-12]
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g">
+						<div class="g-4">
 							<div class="bc-a k-pd">
-								g-6
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
 							</div>
 						</div>
 					</div>
-					<div class="code">
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
-&lt;div class="g-6 k-container-cen">
+&lt;div class="g">
+&lt;div class="g-4">
 	&lt;div class="bc-a k-pd">
-		g-6
-	&lt;/div>
-&lt;/div>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					九宫格
-					<small>
-						class：g-col
-					</small>
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g g-col g-lar">
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g g-col">
-	&lt;div class="g-4">
-		&lt;div class="k-pd">
-			g-4
-		&lt;/div>
-	&lt;/div>
-	......
-&lt;/div>
-</pre>
-						
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					网格偏移
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g">
-							<div class="g-2"></div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-						<div class="g">
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-							<div class="g-4">
-								
-							</div>
-							<div class="g-4">
-								<div class="bc-a k-pd">
-									g-4
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g">
-	&lt;div class="g-2">&lt;/div>
-	&lt;div class="g-4">
-		...
-	&lt;/div>
-	&lt;div class="g-4">
-		...
-	&lt;/div>
-&lt;/div>
-&lt;div class="g">
-	&lt;div class="g-4">
-		...
-	&lt;/div>
-	&lt;div class="g-4">
-		
-	&lt;/div>
-	&lt;div class="g-4">
-		...
-	&lt;/div>
-&lt;/div>
-</pre>
-					</div>
-				</div>
-			</div><!--end l-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					Flex布局
-				</h4>
-				<div class="l-row">
-					<div class="demo k-tac">
-						<div class="g-flex">
-							<div class="g-cell">
-								<div class="bc-a k-pd">1</div>
-							</div>
-						</div>
-						<div class="g-flex">
-							<div class="g-cell">
-								<div class="bc-a k-pd">1</div>
-							</div>
-							<div class="g-cell">
-								<div class="bc-a k-pd">2</div>
-							</div>
-						</div>
-						<div class="g-flex">
-							<div class="g-cell">
-								<div class="bc-a k-pd">1</div>
-							</div>
-							<div class="g-cell">
-								<div class="bc-a k-pd">2</div>
-							</div>
-							<div class="g-cell">
-								<div class="bc-a k-pd">3</div>
-							</div>
-						</div>
-						<div class="g-flex">
-							<div class="g-cell">
-								<div class="bc-a k-pd">1</div>
-							</div>
-							<div class="g-cell">
-								<div class="bc-a k-pd">2</div>
-							</div>
-							<div class="g-cell">
-								<div class="bc-a k-pd">3</div>
-							</div>
-							<div class="g-cell">
-								<div class="bc-a k-pd">4</div>
-							</div>
-						</div>
-					</div>
-					<div class="code">
-<pre class="prettyprint beige">
-&lt;div class="g-flex">
-	&lt;div class="g-cell">
-		...
+		g-4
 	&lt;/div>
 &lt;/div>
 ......
-</pre>
+&lt;/div></pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				删除间隔
+				<small>
+					class：g-del
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g g-del">
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
 					</div>
 				</div>
-			</div><!--end l-->
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-del">
+&lt;div class="g-4">
+	&lt;div class="bc-a k-pd">
+		g-4
+	&lt;/div>
+&lt;/div>
+......
+&lt;/div></pre>
+				</div>
+			</div>
+		</div><!--end l-->
+		
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				大间隔
+				<small>
+					class：g-lar
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g g-lar">
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-lar">
+&lt;div class="g-4">
+	&lt;div class="bc-a k-pd">
+		g-4
+	&lt;/div>
+&lt;/div>
+......
+&lt;/div></pre>
+				</div>
+			</div>
+		</div><!--end l-->
+		
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				响应式间隔
+				<small>
+					class：g-res
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g g-res">
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-res">
+&lt;div class="g-4">
+	&lt;div class="bc-a k-pd">
+		g-4
+	&lt;/div>
+&lt;/div>
+......
+&lt;/div></pre>
+				</div>
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					分布
-				</h4>
-				<div class="l-row">
-					<div class="demo">
-						<div class="g-start">
-							<div class="bc-a k-pd">1</div>
-							<div class="bc-a k-pd">2</div>
+		<div class="l l-res">
+			<h4 class="l-top">
+				响应式网格
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g">
+						<div class="g-s-6 g-m-4 g-l-3">
+							<div class="bc-a k-pd">
+								g-s-6 g-m-4 g-l-3
+							</div>
 						</div>
-						<div class="g-end">
-							<div class="bc-a k-pd">1</div>
-							<div class="bc-a k-pd">2</div>
+						<div class="g-s-6 g-m-4 g-l-3">
+							<div class="bc-a k-pd">
+								g-s-6 g-m-4 g-l-3
+							</div>
 						</div>
-						<div class="g-center">
-							<div class="bc-a k-pd">1</div>
-							<div class="bc-a k-pd">2</div>
+						<div class="g-s-6 g-m-4 g-l-3">
+							<div class="bc-a k-pd">
+								g-s-6 g-m-4 g-l-3
+							</div>
 						</div>
-						<div class="g-between">
-							<div class="bc-a k-pd">1</div>
-							<div class="bc-a k-pd">2</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g">
+&lt;div class="g-s-6 g-m-4 g-l-3">
+	&lt;div class="bc-a k-pd">
+		g-s-6 g-m-4 g-l-3
+	&lt;/div>
+&lt;/div>
+......
+&lt;/div></pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				网格居中
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g-6 k-container-cen">
+						<div class="bc-a k-pd">
+							g-6
 						</div>
-						<div class="g-around">
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g-6 k-container-cen">
+&lt;div class="bc-a k-pd">
+	g-6
+&lt;/div>
+&lt;/div>
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				九宫格
+				<small>
+					class：g-col
+				</small>
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g g-col g-lar">
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="k-pd">
+								g-4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g g-col">
+&lt;div class="g-4">
+	&lt;div class="k-pd">
+		g-4
+	&lt;/div>
+&lt;/div>
+......
+&lt;/div>
+</pre>
+					
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				网格偏移
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g">
+						<div class="g-2"></div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+					</div>
+					<div class="g">
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+						<div class="g-4">
+							
+						</div>
+						<div class="g-4">
+							<div class="bc-a k-pd">
+								g-4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g">
+&lt;div class="g-2">&lt;/div>
+&lt;div class="g-4">
+	...
+&lt;/div>
+&lt;div class="g-4">
+	...
+&lt;/div>
+&lt;/div>
+&lt;div class="g">
+&lt;div class="g-4">
+	...
+&lt;/div>
+&lt;div class="g-4">
+	
+&lt;/div>
+&lt;div class="g-4">
+	...
+&lt;/div>
+&lt;/div>
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				Flex布局
+			</h4>
+			<div class="l-row">
+				<div class="demo k-tac">
+					<div class="g-flex">
+						<div class="g-cell">
 							<div class="bc-a k-pd">1</div>
+						</div>
+					</div>
+					<div class="g-flex">
+						<div class="g-cell">
+							<div class="bc-a k-pd">1</div>
+						</div>
+						<div class="g-cell">
 							<div class="bc-a k-pd">2</div>
 						</div>
 					</div>
-					<div class="code">
+					<div class="g-flex">
+						<div class="g-cell">
+							<div class="bc-a k-pd">1</div>
+						</div>
+						<div class="g-cell">
+							<div class="bc-a k-pd">2</div>
+						</div>
+						<div class="g-cell">
+							<div class="bc-a k-pd">3</div>
+						</div>
+					</div>
+					<div class="g-flex">
+						<div class="g-cell">
+							<div class="bc-a k-pd">1</div>
+						</div>
+						<div class="g-cell">
+							<div class="bc-a k-pd">2</div>
+						</div>
+						<div class="g-cell">
+							<div class="bc-a k-pd">3</div>
+						</div>
+						<div class="g-cell">
+							<div class="bc-a k-pd">4</div>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="g-flex">
+&lt;div class="g-cell">
+	...
+&lt;/div>
+&lt;/div>
+......
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				分布
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<div class="g-start">
+						<div class="bc-a k-pd">1</div>
+						<div class="bc-a k-pd">2</div>
+					</div>
+					<div class="g-end">
+						<div class="bc-a k-pd">1</div>
+						<div class="bc-a k-pd">2</div>
+					</div>
+					<div class="g-center">
+						<div class="bc-a k-pd">1</div>
+						<div class="bc-a k-pd">2</div>
+					</div>
+					<div class="g-between">
+						<div class="bc-a k-pd">1</div>
+						<div class="bc-a k-pd">2</div>
+					</div>
+					<div class="g-around">
+						<div class="bc-a k-pd">1</div>
+						<div class="bc-a k-pd">2</div>
+					</div>
+				</div>
+				<div class="code">
 <pre class="prettyprint beige">
 &lt;div class="g-start">
 ...
@@ -616,14 +674,10 @@
 ...
 &lt;/div>
 </pre>
-					</div>
 				</div>
 			</div>
-		</div><!--end k-container-->
-	</div><!--end main-->
-	
-	<div class="main-shade"></div>
-
+		</div>
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
 	<script type="text/javascript" src="../js/prettify.min.js"></script>

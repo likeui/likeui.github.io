@@ -1,23 +1,24 @@
 /*
  * Component: nav
  ========================================================================== */
-.n {
-	position: relative;
-	height: 48px;
+.n-fixed {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 3;
+	line-height: inherit;
 }
-.n-bar ~ .k-container {
+.n-bar.n-fixed ~ .k-container {
 	padding-top: 48px;
 }
-.n-fixed ~ .k-container {
+.n-tab.n-fixed ~ .k-container {
 	padding-bottom: 50px;
 }
 /*顶部导航*/
 .n-bar {
-	position: fixed;
 	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 3;
+	min-height: 48px;
+	background-color: #fff;
 }
 .n-left,
 .n-right {
@@ -25,6 +26,7 @@
 	z-index: 1;
 	height: 48px;
 	padding: 12px;
+	line-height: 24px;
 }
 .n-left {
 	float: left;
@@ -39,14 +41,13 @@
 .n-left i,
 .n-right i {
 	font-size: 24px;
-	vertical-align: -2px;
+	vertical-align: -3px;
 }
 .n-tit {
 	position: absolute;
 	right: 48px;
 	left: 48px;
 	z-index: 0;
-	height: 48px;
 	line-height: 48px;
 	text-align: center;
 	font-size: 17px;
@@ -57,21 +58,27 @@
 .n-tit img {
 	height: 100%;
 }
-/*底部选项卡*/
+/*导航条*/
+.n-logo a {
+	display: block;
+	padding: 5px 15px;
+	font-size: 24px;
+}
+.n-nav li a {
+	display: block;
+	padding: 7px 15px;
+}
+.n-nav li a:hover,
+.n-nav li.active a {
+	background-color: #f4f4f4;
+}
+/*选项卡*/
 .n-tab {
+	bottom: 0;
 	background-color: #fff;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
-}
-.n-fixed {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 3;
-	height: 50px;
-	line-height: inherit;
 }
 .n-cell {
 	position: relative;
@@ -82,17 +89,18 @@
 			flex: 1;
 }
 .n-ft {
+	margin-bottom: 3px;
 	font-size: 12px;
 	line-height: 1;
 }
-.n .k-badge {
+.n-tab .k-badge {
 	position: absolute;
 	top: 5px;
 	left: 50%;
 	margin-left: 5px;
 	background-color: #e45853;
 }
-.n .k-badge:empty {
+.n-tab .k-badge:empty {
 	padding: 5px;
 }
 .n-fixed .n-cell {

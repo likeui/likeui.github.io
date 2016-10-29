@@ -307,7 +307,11 @@ h6 small, .k-h6 small {
 }
 /*  Lists
 ==========================================================================  */
-ul,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 ol {
 	padding-left: 20px;
 }
@@ -320,10 +324,6 @@ ol > li > ul {
 .k-nums li {
 	padding-left: 10px;
 	line-height: 28px;
-}
-.k-list {
-	padding: 0;
-	list-style: none;
 }
 /*  Description lists
 ==========================================================================  */
@@ -395,7 +395,6 @@ iframe {
 ==========================================================================  */
 .k-container {
 	max-width: 1200px;
-
 	-webkit-overflow-scrolling: touch;
 }
 .k-container-cen {

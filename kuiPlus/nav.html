@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="color">
+<html lang="en" class="nav">
 <head>
 	<meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no"> 
@@ -15,7 +15,122 @@
 </head>
 <body>
 <div ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+			
+
+			<ul class="n-nav">
+				<li>
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li>
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li>
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li>
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li>
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li>
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li class="active">
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -25,63 +140,7 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
-			</div>
-
-
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li>
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li>
-					<a href="button.html">按 钮</a>
-				</li>
-				<li>
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li>
-					<a href="form.html">表 单</a>
-				</li>
-				<li>
-					<a href="grid.html">网 格</a>
-				</li>
-				<li>
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li class="active">
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-			
-			<div class="k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="n n-tab n-fixed">
+	<div class="n-tab n-fixed">
 		<span class="n-cell active">
 			<i class="i-home"></i>
 			<div class="n-ft">
@@ -111,89 +170,114 @@
 	</div><!--end n-tab-->
 
 
-	<div class="main">
-		<div class="k-container">
-			<div class="l">
-				<div class="l-top">
-					顶部导航
-				</div>
-				<div class="n k-bc-b">
-					<div class="n-left k-back">
-					</div>
-					<div class="n-tit">
-						这是导航标题
-						这是导航标题
-						这是导航标题
-						这是导航标题
-					</div>
-					<div class="n-right">
-						<i class="i-menu"></i>
-					</div>
-				</div>
-			</div><!--end l-->
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				导航
+				<small>
+					Nav
+				</small>
+			</h2>
+        </div><!--end main-top-->
 
 
-			<div class="l">
-				<div class="l-top">
-					顶部导航
+		<div class="l">
+			<div class="l-top">
+				顶部导航
+			</div>
+			<div class="n-bar">
+				<div class="n-left k-back">
 				</div>
-				<div class="n k-bc-b">
-					<div class="n-left">
-						<i class="i-map"></i>
-						济南
-					</div>
-					<div class="n-tit">
-						选择地址
-					</div>
-					<div class="n-right">
-						保存
-					</div>
+				<div class="n-tit">
+					这是导航标题
+					这是导航标题
+					这是导航标题
+					这是导航标题
 				</div>
-			</div><!--end l-->
+				<div class="n-right">
+					<i class="i-menu"></i>
+				</div>
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l">
-				<div class="l-top">
-					选项卡
+		<div class="l">
+			<div class="l-top">
+				顶部导航
+			</div>
+			<div class="n-bar">
+				<div class="n-left">
+					<i class="i-map"></i>
+					济南
 				</div>
-				<div class="n n-tab n-a">
-					<a class="n-cell active">
-						选项卡一
-					</a>
-					<a class="n-cell">
-						选项卡一
-					</a>
-					<a class="n-cell">
-						选项卡一
-					</a>
-					<a class="n-cell">
-						选项卡一
-					</a>
+				<div class="n-tit">
+					选择地址
 				</div>
-			</div><!--end l-->
+				<div class="n-right">
+					保存
+				</div>
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l">
-				<div class="l-top">
-					选项卡二
-				</div>
-				<div class="n n-tab n-b">
-					<a class="n-cell active">
-						选项卡一
-					</a>
-					<a class="n-cell">
-						选项卡一
-					</a>
-					<a class="n-cell">
-						选项卡一
-					</a>
-					<a class="n-cell">
-						选项卡一
-					</a>
-				</div>
-			</div><!--end l-->
-		</div><!--end k-container-->
-	</div><!--end main-->
+		<div class="l">
+			<div class="l-top">
+				菜单
+			</div>
+			<ul class="n-nav">
+				<li>
+					<a href="">一级菜单</a>
+					<ul class="n-sub">
+						<li>
+							<a href="">二级菜单</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!--end l-->
+
+
+		<div class="l">
+			<div class="l-top">
+				选项卡
+			</div>
+			<div class="n n-tab n-a">
+				<a class="n-cell active">
+					选项卡一
+				</a>
+				<a class="n-cell">
+					选项卡一
+				</a>
+				<a class="n-cell">
+					选项卡一
+				</a>
+				<a class="n-cell">
+					选项卡一
+				</a>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l">
+			<div class="l-top">
+				选项卡二
+			</div>
+			<div class="n n-tab n-b">
+				<a class="n-cell active">
+					选项卡一
+				</a>
+				<a class="n-cell">
+					选项卡一
+				</a>
+				<a class="n-cell">
+					选项卡一
+				</a>
+				<a class="n-cell">
+					选项卡一
+				</a>
+			</div>
+		</div><!--end l-->
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
 	<script type="text/javascript" src="../js/prettify.min.js"></script>
@@ -201,6 +285,11 @@
 	<script type="text/javascript">
 		$(".n-cell").on("click", function() {
 			$(this).addClass('active').siblings().removeClass('active');
+		});
+
+
+		$(".n-nav a").on("click", function(event) {
+
 		});
 	</script>
 </body>

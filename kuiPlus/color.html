@@ -8,13 +8,129 @@
 	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="../css/icon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
 <body>
 <div ontouchstart>
-	<div class="n n-bar">
+	<div>
+		<div class="mask"></div>
+		<div class="side">
+			<div class="n-logo">
+				<a href="index.html">
+					KUI
+				</a>
+			</div>
+
+
+			<ul class="n-nav">
+				<li>
+					<a href="base.html">
+						<span class="n-icon k-bc-c">
+							<img src="images/001.svg">
+						</span>
+						基 础
+						<small>Base</small>
+					</a>
+				</li>
+				<li>
+					<a href="anime.html">
+						<span class="n-icon k-bc-f">
+							<img src="images/003.svg">
+						</span>
+						动 画
+						<small>Anime</small>
+					</a>
+				</li>
+				<li>
+					<a href="button.html">
+						<span class="n-icon k-bc-i">
+							<img src="images/004.svg">
+						</span>
+						按 钮
+						<small>Button</small>
+					</a>
+				</li>
+				<li>
+					<a href="dialog.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/005.svg">
+						</span>
+						弹 窗
+						<small>Dialog</small>
+					</a>
+				</li>
+				<li>
+					<a href="grid.html">
+						<span class="n-icon k-bc-j">
+							<img src="images/002.svg">
+						</span>
+						网 格
+						<small>Grid</small>
+					</a>
+				</li>
+				<li class="active">
+					<a href="color.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/006.svg">
+						</span>
+						颜 色
+						<small>Color</small>
+					</a>
+				</li>
+				<li>
+					<a href="form.html">
+						<span class="n-icon k-bc-g">
+							<img src="images/007.svg">
+						</span>
+						表 单
+						<small>Table</small>
+					</a>
+				</li>
+				<li>
+					<a href="icon.html">
+						<span class="n-icon k-bc-h">
+							<img src="images/008.svg">
+						</span>
+						图 标
+						<small>Icon</small>
+					</a>
+				</li>
+				<li>
+					<a href="list.html">
+						<span class="n-icon k-bc-d">
+							<img src="images/013.svg">
+						</span>
+						列 表
+						<small>List</small>
+					</a>
+				</li>
+				<li>
+					<a href="nav.html">
+						<span class="n-icon k-bc-e">
+							<img src="images/014.svg">
+						</span>
+						导 航
+						<small>Nav</small>
+					</a>
+				</li>
+				<li>
+					<a href="table.html">
+						<span class="n-icon k-bc-k">
+							<img src="images/009.svg">
+						</span>
+						表 格
+						<small>Table</small>
+					</a>
+				</li>
+			</ul>
+		</div><!--end side-->
+	</div>
+
+
+	<div class="n-bar n-fixed">
 		<div class="n-left">
 			<i class="i-menu"></i>
 		</div>
@@ -24,98 +140,40 @@
 	</div><!--end n-bar-->
 
 
-	<div>
-		<div class="mask"></div>
-		<div class="side">
-			<div class="logo">
-				KUI
-			</div>
+	<div class="k-container">
+		<div class="main-top">
+			<h2>
+				颜色
+				<small>
+					Color
+				</small>
+			</h2>
+        </div><!--end main-top-->
 
 
-			<ul class="sidenav">
-				<li>
-					<a href="index.html">首 页</a>
-				</li>
-				<li>
-					<a href="base.html">基 础</a>
-				</li>
-				<li>
-					<a href="anime.html">动 画</a>
-				</li>
-				<li>
-					<a href="button.html">按 钮</a>
-				</li>
-				<li class="active">
-					<a href="color.html">颜 色</a>
-				</li>
-				<li>
-					<a href="dialog.html">弹 窗</a>
-				</li>
-				<li>
-					<a href="form.html">表 单</a>
-				</li>
-				<li>
-					<a href="grid.html">网 格</a>
-				</li>
-				<li>
-					<a href="icon.html">图 标</a>
-				</li>
-	            <li>
-	                <a href="list.html">列 表</a>
-	            </li>
-	            <li>
-	                <a href="nav.html">导 航</a>
-	            </li>
-				<li>
-					<a href="table.html">表 格</a>
-				</li>
-			</ul>
-
-
-			<div class="link k-tac">
-	            <a class="b b-bc-g" href="css/kui.css" target="_self">下载 KUI+</a>
-				<div class="k-mt k-h6">当前版本 1.0</div>
-			</div>
-		</div><!--end side-->
-	</div>
-
-
-	<div class="main">
-		<div class="k-container">
-			<div class="main-top">
-				<h2>
-					颜色
-					<small>
-						Color
-					</small>
-				</h2>
-            </div><!--end main-top-->
-
-
-			<div class="l l-res">
-				<h4 class="l-top">
-					WEB标准色
-				</h4>
-				<div class="l-row">
-					<h6>
-						WEB标准颜色是由W3C组织定义的，可以直接以英文名称形式在网页脚本中使用的一组RGB颜色。WEB标准色共计140种，其中Aqua与Cyan异名同色（青色），Fuchsia与Magenta异名同色（洋红），所以实际上共有138种。
-					</h6>
-					<div id="webColor" class="g webcolor">
-						
-					</div>
+		<div class="l l-res">
+			<h4 class="l-top">
+				WEB标准色
+			</h4>
+			<div class="l-row">
+				<h6>
+					WEB标准颜色是由W3C组织定义的，可以直接以英文名称形式在网页脚本中使用的一组RGB颜色。WEB标准色共计140种，其中Aqua与Cyan异名同色（青色），Fuchsia与Magenta异名同色（洋红），所以实际上共有138种。
+				</h6>
+				<div id="webColor" class="g webcolor">
+					
 				</div>
-			</div><!--end l-->
+			</div>
+		</div><!--end l-->
 
 
-			<div class="l l-res">
-				<h4 class="l-top">
-					颜色搭配
-				</h4>
-				<div id="dpColor" class="l-row">
-				</div>
-			</div><!--end l-->
-		</div><!--end k-container-->
-	</div><!--end main-->
+		<div class="l l-res">
+			<h4 class="l-top">
+				颜色搭配
+			</h4>
+			<div id="dpColor" class="l-row">
+			</div>
+		</div><!--end l-->
+	</div><!--end k-container-->
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
 	<script type="text/javascript" src="js/color.js"></script>
