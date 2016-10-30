@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no"> 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
-	<link rel="stylesheet" href="css/kui.css">
-	<link rel="stylesheet" href="css/button.css">
-	<link rel="stylesheet" href="css/list.css">
-	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="../css/anime.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/dialog.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/kui.css">
+	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
@@ -131,7 +135,7 @@
 
 
 	<div class="n-bar n-fixed">
-		<div class="n-left">
+		<div class="n-left n-menu">
 			<i class="i-menu"></i>
 		</div>
 		<div class="n-tit">
@@ -222,18 +226,36 @@
 
 		<div class="l">
 			<div class="l-top">
-				菜单
+				选项卡
 			</div>
-			<ul class="n-nav">
-				<li>
-					<a href="">一级菜单</a>
-					<ul class="n-sub">
-						<li>
-							<a href="">二级菜单</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+			<div class="n-tab">
+				<span class="n-cell active">
+					<i class="i-home"></i>
+					<div class="n-ft">
+						图片
+					</div>
+				</span>
+				<span class="n-cell">
+					<i class="i-phonebook"></i>
+					<div class="n-ft">
+						通讯录
+					</div>
+				</span>
+				<span class="n-cell">
+					<i class="i-time"></i>
+					<label class="k-badge">1</label>
+					<div class="n-ft">
+						发现
+					</div>
+				</span>
+				<span class="n-cell">
+					<i class="i-user"></i>
+					<label class="k-badge"></label>
+					<div class="n-ft">
+						我
+					</div>
+				</span>
+			</div><!--end n-tab-->
 		</div><!--end l-->
 
 
@@ -241,18 +263,39 @@
 			<div class="l-top">
 				选项卡
 			</div>
-			<div class="n n-tab n-a">
+			<div class="n-tab n-a">
 				<a class="n-cell active">
 					选项卡一
 				</a>
 				<a class="n-cell">
+					选项卡二
+				</a>
+				<a class="n-cell">
+					选项卡三
+				</a>
+				<a class="n-cell">
+					选项卡四
+				</a>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l">
+			<div class="l-top">
+				选项卡
+			</div>
+			<div class="n-tab n-b">
+				<a class="n-cell active">
 					选项卡一
 				</a>
 				<a class="n-cell">
-					选项卡一
+					选项卡二
 				</a>
 				<a class="n-cell">
-					选项卡一
+					选项卡三
+				</a>
+				<a class="n-cell">
+					选项卡四
 				</a>
 			</div>
 		</div><!--end l-->
@@ -262,18 +305,18 @@
 			<div class="l-top">
 				选项卡二
 			</div>
-			<div class="n n-tab n-b">
+			<div class="n-tab n-c">
 				<a class="n-cell active">
 					选项卡一
 				</a>
 				<a class="n-cell">
-					选项卡一
+					选项卡二
 				</a>
 				<a class="n-cell">
-					选项卡一
+					选项卡三
 				</a>
 				<a class="n-cell">
-					选项卡一
+					选项卡四
 				</a>
 			</div>
 		</div><!--end l-->

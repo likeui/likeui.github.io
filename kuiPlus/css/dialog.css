@@ -281,6 +281,7 @@
 	top: auto;
 	text-align: center;
 	font-size: 16px;
+	border-radius: 0;
 }
 .d-sheet .l-top {
 	padding: 15px;
@@ -293,14 +294,6 @@
 .d-sheet .l-row:active,
 .d-sheet .l-btm:active {
 	background-color: #f4f4f4;
-}
-.d-sheet-b {
-	right: 10px;
-	bottom: 10px;
-	left: 10px;
-}
-.d-sheet-b .l-row:last-child:after {
-	display: none;
 }
 /*信息*/
 .d-msg {

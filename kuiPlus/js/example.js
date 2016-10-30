@@ -1,4 +1,4 @@
-$(".n-left").click(function() {
+$(".n-menu").click(function() {
 	$("body").addClass("active");
 	$(".mask").on("touchmove", function(event) {
 		event.preventDefault();

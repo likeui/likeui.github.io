@@ -69,40 +69,22 @@ body.active .side {
 	top: -1px;
 }
 .side .n-nav small {
-	color: #999;
 	margin-left: 10px;
 }
 .main-top {
-	margin-bottom: 50px;
+	margin: 30px 0;
 }
-html:not(.list) .l-top:after {
-	display: none;
-}
-@media screen and ( max-width: 768px ) {
-	.main-top {
-		margin: 30px 0;
-		padding: 0 15px;
-	}
-}
-@media screen and ( min-width: 768px ) {
-	body {
-		padding-left: 240px;
-	}
-	html:not(.nav) .n-bar {
-		display: none;
-	}
-	.k-container {
-		padding: 0 80px;
-	}
-	.side {
-		-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-	}
-}
-.l-res .l-top {
+.l-res > .l-top {
 	padding-bottom: 0;
 	margin-bottom: 0;
 	background-color: #fff;
+}
+.l-res > .l-top:after {
+	display: none;
+}
+.l-res .l-top small {
+	margin-left: 10px;
+	vertical-align: top;
 }
 .demo,
 .code {
@@ -139,6 +121,29 @@ html:not(.list) .l-top:after {
 .code:before {
 	content: 'Code';
 	background-color: #f6c903;
+}
+.n-bar.n-fixed {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .05);
+}
+@media screen and ( max-width: 768px ) {
+	.main-top {
+		padding: 0 15px;
+	}
+}
+@media screen and ( min-width: 768px ) {
+	body {
+		padding-left: 240px;
+	}
+	.n-bar.n-fixed {
+		display: none;
+	}
+	.k-container {
+		padding: 0 80px;
+	}
+	.side {
+		-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+	}
 }
 
 
@@ -251,10 +256,9 @@ html:not(.list) .l-top:after {
 }
 
 /*按钮*/
-.button .l-dec:not(.not) button,
-.button .l-dec:not(.not) .b {
-	margin-right: 5px;
-	margin-bottom: 5px;
+.button button,
+.button .b {
+	margin-bottom: 10px;
 }
 
 
@@ -288,7 +292,7 @@ html:not(.list) .l-top:after {
 	margin-left: 40px;
 	font-size: 12px;
 	line-height: 15px;
-	color: #999;
+	color: #95a5a6;
 	text-transform: lowercase;
 }
 .color .group {
@@ -307,7 +311,7 @@ html:not(.list) .l-top:after {
 .anime .preview {
 	position: fixed;
 	top: 50%;
-	right: 50px;
+	right: 20px;
 	z-index: 4;
 	width: 40px;
 	height: 40px;
@@ -339,7 +343,7 @@ html:not(.list) .l-top:after {
 }
 .anime button,
 .anime .b {
-	margin: 0 5px 5px 0;
+	margin-bottom: 10px;
 }
 
 
@@ -375,7 +379,7 @@ html:not(.list) .l-top:after {
 	width: 40px;
 	margin: 0 20px;
 }
-#dialog5 .d-style1 .l-top {
+#dialog2 .d-style1 .l-top {
 	padding: 20px 15px;
 	color: #fff;
 	background-image: url(../pic/d-kt2.png);
@@ -383,8 +387,11 @@ html:not(.list) .l-top:after {
 	background-position: 85% bottom;
 	background-color: #1caff6;
 }
-#dialog14 .d-dialog {
+#dialog3 .d-dialog {
 	width: 600px;
+}
+#sheet2 .d .k-icon {
+	margin-bottom: 0;
 }
 @media screen and ( min-width: 768px ) {
 	.d-style1 .l-bd .l-img {

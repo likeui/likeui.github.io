@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no"> 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" /> 
-	<link rel="stylesheet" href="css/kui.css">
+	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="../css/anime.css">
 	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/dialog.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/kui.css">
 	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/nav.css">
-	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/dialog.css">
-	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/prettify.css">
 </head>
@@ -132,7 +135,7 @@
 	
 
 	<div class="n-bar n-fixed">
-		<div class="n-left">
+		<div class="n-left n-menu">
 			<i class="i-menu"></i>
 		</div>
 		<div class="n-tit">
@@ -149,9 +152,6 @@
 					Dialog
 				</small>
 			</h2>
-			<p>
-				需要与button grid list组件一起使用
-			</p>
         </div><!--end main-top-->
 
 
@@ -159,10 +159,72 @@
 			<h4 class="l-top">
 				提示
 			</h4>
-			<div class="l-row not">
+			<div class="l-row">
 				<div class="demo">
-					<a class="b b-bc-b dialog-btn" href="dialog1">toast</a>
-					<a class="b b-bc-b dialog-btn" href="dialog2">loading</a>
+					<a class="b b-bd dialog-btn" href="toast">toast</a>
+					<a class="b b-bd dialog-btn" href="toast1">有倒计时的Toast</a>
+
+
+					<div id="toast" style="display: none;">
+						<div class="d-wrap">
+							<div class="d d-tip" data-anime="zoom">
+								This is a toast
+							</div>
+						</div>
+					</div><!--end toast-->
+					<div id="toast1" style="display: none;">
+						<div class="d-wrap">
+							<div class="d d-tip d-count" data-anime="zoom">
+								有倒计时的Toast
+							</div>
+						</div>
+					</div><!--end toast1-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="d-wrap">
+	&lt;div class="d d-tip" data-anime="zoom">
+		This is a toast
+	&lt;/div>
+&lt;/div>
+&lt;div class="d-wrap">
+	&lt;div class="d d-tip d-count" data-anime="zoom">
+		有倒计时的Toast
+	&lt;/div>
+&lt;/div>	
+</pre>
+				</div>
+			</div>
+		</div><!--end l-->
+
+
+		<div class="l l-res">
+			<h4 class="l-top">
+				加载
+			</h4>
+			<div class="l-row">
+				<div class="demo">
+					<a class="b b-bc-b dialog-btn" href="loading">loading</a>
+
+
+					<div id="loading" style="display: none;">
+						<div class="d-wrap">
+							<div class="d d-tip" data-anime="slideDown">
+								<div class="d-spin"></div>
+								正在加载
+							</div>
+						</div>
+					</div><!--end loading-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div class="d-wrap">
+	&lt;div class="d d-tip" data-anime="slideDown">
+		&lt;div class="d-spin">&lt;/div>
+		正在加载
+	&lt;/div>
+&lt;/div>
+</pre>
 				</div>
 			</div>
 		</div><!--end l-->
@@ -172,12 +234,167 @@
 			<h4 class="l-top">
 				任务
 			</h4>
-			<div class="l-row not">
+			<div class="l-row">
 				<div class="demo">
-					<a class="b b-bc-b dialog-btn" href="dialog3">样式一</a>
-					<a class="b b-bc-b dialog-btn" href="dialog4">样式二</a>
-					<a class="b b-bc-b dialog-btn" href="dialog5">样式三</a>
-					<a class="b b-bc-b dialog-btn" href="dialog14">样式四</a>
+					<a class="b b-bd dialog-btn" href="dialog">样式一</a>
+					<a class="b b-bd dialog-btn" href="dialog1">样式二</a>
+					<a class="b b-bd dialog-btn" href="dialog2">样式三</a>
+					<a class="b b-bd dialog-btn" href="dialog3">样式四</a>
+
+
+					<div id="dialog" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-dialog" data-anime="zoom">
+								<div class="d-close d-close-b" data-type="0"></div>
+								<div class="l-pic">
+									<img src="pic/001.png">
+								</div>
+								<div class="l-row l-max k-un">
+									<div class="l-hd">
+										体验版KUI Dialog
+									</div>
+									<div class="l-ft">
+										简单、快捷、精彩！
+									</div>
+								</div>
+								<div class="l-btm l-max">
+									<a class="k-pr k-cl-a">不用了谢谢</a>
+									<a class="k-link-a" href="javascript:;">马上使用</a>
+								</div>
+							</div>
+						</div>
+					</div><!--end dialog-->
+
+
+					<div id="dialog1" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-dialog d-style1" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-top">
+									<i class="i-file"></i> 下载 KUI+
+								</div>
+								<div class="l-row k-tac">
+									<div class="l-hd">
+										选择您要下载的版本
+									</div>
+									<div class="l-bd">
+										<div class="g k-tac">
+											<div class="g-4">
+												<img class="l-img" src="pic/007.svg">
+												<h6>安卓版</h6>
+												<button class="b-bc-h"><i class="i-arrow-down"></i> 下载</button>
+											</div>
+											<div class="g-4">
+												<img class="l-img" src="pic/008.svg">
+												<h6>电脑版</h6>
+												<button class="b-bc-h"><i class="i-arrow-down"></i> 下载</button>
+											</div>
+											<div class="g-4">
+												<img class="l-img" src="pic/009.svg">
+												<h6>iPhone或IPad</h6>
+												<button class="b-bc-h"><i class="i-arrow-down"></i> 下载</button>
+											</div>
+										</div>
+									</div>
+									<div class="l-ft k-cl-a">
+										下载完成后请给好评哦！
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--end dialog1-->
+
+
+					<div id="dialog2" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-dialog d-style1" data-anime="slideUp">
+								<div class="d-close d-close-b" data-type="0"></div>
+								<div class="l-top">
+									下载 KUI+ 
+								</div>
+								<div class="l-row k-tac">
+									<div class="l-hd">
+										选择您要下载的版本
+									</div>
+									<div class="l-bd">
+										<div class="g k-tac">
+											<div class="g-4">
+												<img class="l-img" src="pic/007.svg">
+												<h6>安卓版</h6>
+												<button class="b-bc-h">下载</button>
+											</div>
+											<div class="g-4">
+												<img class="l-img" src="pic/008.svg">
+												<h6>电脑版</h6>
+												<button class="b-bc-h">下载</button>
+											</div>
+											<div class="g-4">
+												<img class="l-img" src="pic/009.svg">
+												<h6>iPhone或IPad</h6>
+												<button class="b-bc-h">下载</button>
+											</div>
+										</div>
+									</div>
+									<div class="l-ft">
+										下载完成后请给好评哦！
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--end dialog2-->
+
+
+					<div id="dialog3" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-dialog" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l l-talk">
+									<div class="l-top">
+										这是标题
+									</div>
+									<div class="l-row">
+										<img class="l-img" src="pic/001.jpg">
+										<div class="l-bd">
+											<div class="l-just">
+												<div class="l-tit">
+													花儿姐姐
+												</div>
+												<div class="l-last">
+													105 <i class="i-thumb-up"></i>
+												</div>
+											</div>
+											<div class="l-sub">
+												愿你有情人终成眷属，愿你在尘世获得幸福，我只愿面朝大海，春暖花开愿你有情人终成眷属，愿你在尘世获得幸福，我只愿面朝大海，春暖花开
+											</div>
+										</div>
+									</div>
+									<div class="l-pic">
+										<img src="pic/002.png">
+									</div>
+									<div class="l-btm">
+										<button data-type="0">查看</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--end dialog3-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div id="dialog" style="display: none;">
+	&lt;div class="d-mask">&lt;/div>
+	&lt;div class="d-wrap">
+		&lt;div class="d d-dialog" data-anime="zoom">
+			&lt;div class="d-close d-close-b" data-type="0">&lt;/div> //关闭按钮
+			......
+		&lt;/div>
+	&lt;/div>
+&lt;/div><!--end dialog-->
+</pre>
 				</div>
 			</div>
 		</div><!--end l-->
@@ -187,12 +404,129 @@
 			<h4 class="l-top">
 				对话框
 			</h4>
-			<div class="l-row not">
+			<div class="l-row">
 				<div class="demo">
-					<a class="b b-bc-b dialog-btn" href="dialog6">样式一</a>
-					<a class="b b-bc-b dialog-btn" href="dialog7">样式二</a>
-					<a class="b b-bc-b dialog-btn" href="dialog8">样式三</a>
-					<a class="b b-bc-b dialog-btn" href="dialog9">样式四</a>
+					<a class="b b-bd dialog-btn" href="alert">样式一</a>
+					<a class="b b-bd dialog-btn" href="alert1">样式二</a>
+					<a class="b b-bd dialog-btn" href="alert2">样式三</a>
+					<a class="b b-bd dialog-btn" href="alert3">样式四</a>
+
+
+					<div id="alert" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="l-hd">
+										主标题
+									</div>
+									<div class="l-ft">
+										内容内容内容内容内容内容内容内容
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bd">操作</button>
+									<button class="b-bc-b b-bd-a" data-type="0">取消</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert-->
+
+
+					<div id="alert1" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="l-hd">
+										开启自动回复？
+									</div>
+									<div class="l-ft">
+										开启自动回复之后，将自动回复所有粉丝！
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-f">开启</button>
+									<button class="b-bc-b b-bd-a" data-type="0">取消</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert1-->
+
+
+					<div id="alert2" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="l-hd">
+										发送群发消息？
+									</div>
+									<div class="l-ft">
+										<div>
+											当前选中<span class="k-cl-i">32</span>人，点击发送按钮即可发送。
+										</div>
+										<div>
+											滴滴打车QQ订阅号<span class="k-cl-i">10</span>人
+										</div>
+										<div>
+											滴滴打车QQ服务好<span class="k-cl-i">12</span>人
+										</div>
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-c">发送</button>
+									<button class="b-bc-b b-bd-a" data-type="0">取消</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert2-->
+
+
+					<div id="alert3" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="l-hd">
+										删除群发内容？
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-i">删除</button>
+									<button class="b-bc-b b-bd-a" data-type="0">取消</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert3-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div id="alert" style="display: none;">
+	&lt;div class="d-mask">&lt;/div>
+	&lt;div class="d-wrap">
+		&lt;div class="d d-alert" data-anime="slideDown">
+			&lt;div class="d-close" data-type="0">&lt;/div>
+			&lt;div class="l-row">
+				&lt;div class="l-hd">
+					主标题
+				&lt;/div>
+				&lt;div class="l-ft">
+					内容内容内容内容内容内容内容内容
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="l-btm">
+				&lt;button class="b-bd">操作&lt;/button>
+				&lt;button class="b-bc-b b-bd-a" data-type="0">取消&lt;/button>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div><!--end alert-->
+</pre>
 				</div>
 			</div>
 		</div><!--end l-->
@@ -202,12 +536,121 @@
 			<h4 class="l-top">
 				反馈
 			</h4>
-			<div class="l-row not">
+			<div class="l-row">
 				<div class="demo">
-					<a class="b b-bc-b dialog-btn" href="dialog10">样式一</a>
-					<a class="b b-bc-b dialog-btn" href="dialog11">样式二</a>
-					<a class="b b-bc-b dialog-btn" href="dialog12">样式三</a>
-					<a class="b b-bc-b dialog-btn" href="dialog13">样式四</a>
+					<a class="b b-bd dialog-btn" href="alert4">样式一</a>
+					<a class="b b-bd dialog-btn" href="alert5">样式二</a>
+					<a class="b b-bd dialog-btn" href="alert6">样式三</a>
+					<a class="b b-bd dialog-btn" href="alert7">样式四</a>
+
+
+					<div id="alert4" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="k-icon k-bc-a"></div>
+									<div class="l-hd">
+										删除群发内容？
+									</div>
+									<div class="l-ft">
+										内容内容内容内容内容内容内容内容
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert4-->
+
+
+					<div id="alert5" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="k-icon d-succ"></div>
+									<div class="l-hd">
+										开号资料已提交！
+									</div>
+									<div class="l-ft">
+										审核结果将在两天内下发至您的手机
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert5-->
+
+
+					<div id="alert6" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="k-icon d-warn"></div>
+									<div class="l-hd">
+										群发消息失败！
+									</div>
+									<div class="l-ft">
+										您的登录信息已经被修改
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert6-->
+
+
+					<div id="alert7" style="display: none;">
+						<div class="d-mask"></div>
+						<div class="d-wrap">
+							<div class="d d-alert" data-anime="slideDown">
+								<div class="d-close" data-type="0"></div>
+								<div class="l-row">
+									<div class="k-icon d-info"></div>
+									<div class="l-hd">
+										敬请期待
+									</div>
+								</div>
+								<div class="l-btm">
+									<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
+								</div>
+							</div>
+						</div>
+					</div><!--end alert7-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div id="alert4" style="display: none;">
+	&lt;div class="d-mask">&lt;/div>
+	&lt;div class="d-wrap">
+		&lt;div class="d d-alert" data-anime="slideDown">
+			&lt;div class="d-close" data-type="0">&lt;/div>
+			&lt;div class="l-row">
+				&lt;div class="k-icon k-bc-a">&lt;/div>
+				&lt;div class="l-hd">
+					删除群发内容？
+				&lt;/div>
+				&lt;div class="l-ft">
+					内容内容内容内容内容内容内容内容
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="l-btm">
+				&lt;button class="b-bc-b b-bd-a" data-type="0">知道了&lt;/button>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div><!--end alert4-->
+</pre>
 				</div>
 			</div>
 		</div><!--end l-->
@@ -217,12 +660,150 @@
 			<h4 class="l-top">
 				询问
 			</h4>
-			<div class="l-row not">
+			<div class="l-row">
 				<div class="demo">
-					<a class="b b-bc-b dialog-btn" href="dialog15">样式一</a>
-					<a class="b b-bc-b dialog-btn" href="dialog16">样式二</a>
-					<a class="b b-bc-b dialog-btn" href="dialog17">样式三</a>
-					<a class="b b-bc-b dialog-btn" href="dialog18">样式四</a>
+					<a class="b b-bd dialog-btn" href="sheet">样式一</a>
+					<a class="b b-bd dialog-btn" href="sheet1">样式二</a>
+					<a class="b b-bd dialog-btn" href="sheet2">样式三</a>
+
+
+					<div id="sheet" style="display: none;">
+						<div class="d-mask" data-type="0"></div>
+						<div class="d d-sheet" data-anime="slideDown">
+							<div class="l-top">
+								设置更新时间
+							</div>
+							<div class="l-row">
+								一天更新一次
+							</div>
+							<div class="l-row">
+								一周更新一次
+							</div>
+							<div class="l-row k-cl-i">
+								一月更新一次
+							</div>
+							<div class="l-btm" data-type="0">
+								取消
+							</div>
+						</div>
+					</div><!--end sheet-->
+
+
+					<div id="sheet1" style="display: none;">
+						<div class="d-mask" data-type="0"></div>
+						<div class="d d-sheet" data-anime="slideDown">
+							<div class="l-top">
+								这只是一个底部提示信息
+							</div>
+						</div>
+					</div><!--end sheet1-->
+
+
+					<div id="sheet2" style="display: none;">
+						<div class="d-mask" data-type="0"></div>
+						<div class="d d-sheet" data-anime="slideDown">
+							<div class="l-top">
+								底部菜单
+							</div>
+							<div class="l-row">
+								<div class="g">
+									<div class="g-3">
+										<div class="k-icon k-bc-c active">
+											<img src="images/001.svg">
+										</div>
+										<div class="k-ft">
+											第一个
+										</div>
+									</div>
+									<div class="g-3">
+										<div class="k-icon k-bc-d active">
+											<img src="images/002.svg">
+										</div>
+										<div class="k-ft">
+											第2个
+										</div>
+									</div>
+									<div class="g-3">
+										<div class="k-icon k-bc-e active">
+											<img src="images/003.svg">
+										</div>
+										<div class="k-ft">
+											第3个
+										</div>
+									</div>
+									<div class="g-3">
+										<div class="k-icon k-bc-f active">
+											<img src="images/004.svg">
+										</div>
+										<div class="k-ft">
+											第4个
+										</div>
+									</div>
+								</div>
+								<div class="g">
+									<div class="g-3">
+										<div class="k-icon k-bc-g">
+											<i class="i-home"></i>
+										</div>
+										<div class="k-ft">
+											第5个
+										</div>
+									</div>
+									<div class="g-3">
+										<div class="k-icon k-bc-h">
+											<i class="i-user"></i>
+										</div>
+										<div class="k-ft">
+											第6个
+										</div>
+									</div>
+									<div class="g-3">
+										<div class="k-icon k-bc-i">
+											<i class="i-msg"></i>
+										</div>
+										<div class="k-ft">
+											第7个
+										</div>
+									</div>
+									<div class="g-3">
+										<div class="k-icon k-bc-j">
+											<i class="i-sina"></i>
+										</div>
+										<div class="k-ft">
+											第8个
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="l-btm" data-type="0">
+								取消
+							</div>
+						</div>
+					</div><!--end sheet2-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+&lt;div id="sheet" style="display: none;">
+	&lt;div class="d-mask" data-type="0">&lt;/div>
+	&lt;div class="d d-sheet" data-anime="slideDown">
+		&lt;div class="l-top">
+			设置更新时间
+		&lt;/div>
+		&lt;div class="l-row">
+			一天更新一次
+		&lt;/div>
+		&lt;div class="l-row">
+			一周更新一次
+		&lt;/div>
+		&lt;div class="l-row k-cl-i">
+			一月更新一次
+		&lt;/div>
+		&lt;div class="l-btm" data-type="0">
+			取消
+		&lt;/div>
+	&lt;/div>
+&lt;/div><!--end sheet-->
+</pre>
 				</div>
 			</div>
 		</div><!--end l-->
@@ -232,473 +813,70 @@
 			<h4 class="l-top">
 				信息
 			</h4>
-			<div class="l-row not">
+			<div class="l-row">
 				<div class="demo">
-					<a class="b b-bc-b dialog-btn" href="dialog19">样式一</a>
-					<a class="b b-bc-b dialog-btn" href="dialog20">样式二</a>
-					<a class="b b-bc-b dialog-btn" href="dialog21">样式三</a>
-					<a class="b b-bc-b dialog-btn" href="dialog22">样式四</a>
+					<a class="b b-bd dialog-btn" href="msg">样式一</a>
+					<a class="b b-bd dialog-btn" href="msg1">样式二</a>
+					<a class="b b-bd dialog-btn" href="msg2">样式三</a>
+					<a class="b b-bd dialog-btn" href="msg3">样式四</a>
+
+
+					<div id="msg" style="display: none;">
+						<div class="d d-msg" data-anime="slideUp">
+							<div class="n-bar">
+								<div class="n-left k-back" data-type="0"></div>
+							</div>
+							<div class="l-top">
+								<div class="k-icon d-succ"></div>
+							</div>
+							<div class="l-row">
+								<div class="l-hd">
+									提交成功
+								</div>
+								<div class="l-ft">
+									此标题
+								</div>
+							</div>
+							<div class="l-btm">
+								<button>再来一次</button>
+							</div>
+						</div>
+					</div><!--end msg-->
+
+
+					<div id="msg1" style="display: none;" data-type="0">
+						<div class="d d-msg" data-anime="slideRight">
+							<div class="n u-b">
+								<div class="n-left">1</div>
+								<div class="n-tit">标题</div>
+							</div>
+							<div class="k-container">
+								<p>广东分公司的分公司的</p>
+							</div>
+						</div>
+					</div><!--end msg1-->
+
+
+					<div id="msg2" style="display: none;" data-type="0">
+						<div class="d d-msg" data-anime="slideDown">
+							<div class="k-icon d-succ"></div>
+						</div>
+					</div><!--end msg2-->
+
+
+					<div id="msg3" style="display: none;" data-type="0">
+						<div class="d d-msg" data-anime="slideLeft">
+							<div class="k-icon d-succ"></div>
+						</div>
+					</div><!--end msg3-->
+				</div>
+				<div class="code">
+<pre class="prettyprint beige">
+</pre>
 				</div>
 			</div>
 		</div><!--end l-->
 	</div><!--end k-container-->
-
-
-	<div id="dialog1" style="display: none;">
-		<div class="d-wrap">
-			<div class="d d-tip d-count" data-anime="zoom">
-				This is a toast
-			</div>
-		</div>
-	</div><!--end dialog1-->
-
-
-	<div id="dialog2" style="display: none;">
-		<div class="d-wrap">
-			<div class="d d-tip" data-anime="slideDown">
-				<div class="d-spin"></div>
-				正在加载
-			</div>
-		</div>
-	</div><!--end dialog2-->
-
-
-	<div id="dialog3" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-dialog" data-anime="zoom">
-				<div class="d-close d-close-b" data-type="0"></div>
-				<div class="l-pic">
-					<img src="pic/001.png">
-				</div>
-				<div class="l-row l-max k-un">
-					<div class="l-hd">
-						体验版KUI Dialog
-					</div>
-					<div class="l-ft">
-						简单、快捷、精彩！
-					</div>
-				</div>
-				<div class="l-btm l-max">
-					<a class="k-pr k-cl-a">不用了谢谢</a>
-					<a class="k-link-a" href="javascript:;">马上使用</a>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog3-->
-
-
-	<div id="dialog4" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-dialog d-style1" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-top">
-					<i class="i-file"></i>下载KUI+
-				</div>
-				<div class="l-row k-tac">
-					<div class="l-hd">
-						选择您要下载的版本
-					</div>
-					<div class="l-bd">
-						<div class="g k-tac">
-							<div class="g-4">
-								<img class="l-img" src="pic/007.svg">
-								<h6>安卓版</h6>
-								<button class="b-bc-h"><i class="i-arrow-down"></i> 下载</button>
-							</div>
-							<div class="g-4">
-								<img class="l-img" src="pic/008.svg">
-								<h6>电脑版</h6>
-								<button class="b-bc-h"><i class="i-arrow-down"></i> 下载</button>
-							</div>
-							<div class="g-4">
-								<img class="l-img" src="pic/009.svg">
-								<h6>iPhone或IPad</h6>
-								<button class="b-bc-h"><i class="i-arrow-down"></i> 下载</button>
-							</div>
-						</div>
-					</div>
-					<div class="l-ft k-cl-a">
-						下载完成后请给好评哦！
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog4-->
-
-
-	<div id="dialog5" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-dialog d-style1" data-anime="slideUp">
-				<div class="d-close d-close-b" data-type="0"></div>
-				<div class="l-top">
-					下载KUI+
-				</div>
-				<div class="l-row k-tac">
-					<div class="l-hd">
-						选择您要下载的版本
-					</div>
-					<div class="l-bd">
-						<div class="g k-tac">
-							<div class="g-4">
-								<img class="l-img" src="pic/007.svg">
-								<h6>安卓版</h6>
-								<button class="b-bc-h">下载</button>
-							</div>
-							<div class="g-4">
-								<img class="l-img" src="pic/008.svg">
-								<h6>电脑版</h6>
-								<button class="b-bc-h">下载</button>
-							</div>
-							<div class="g-4">
-								<img class="l-img" src="pic/009.svg">
-								<h6>iPhone或IPad</h6>
-								<button class="b-bc-h">下载</button>
-							</div>
-						</div>
-					</div>
-					<div class="l-ft">
-						下载完成后请给好评哦！
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog5-->
-
-
-	<div id="dialog14" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-dialog" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l l-talk">
-					<div class="l-top">
-						这是标题
-					</div>
-					<div class="l-row">
-						<img class="l-img" src="pic/001.jpg">
-						<div class="l-bd">
-							<div class="l-just">
-								<div class="l-tit">
-									花儿姐姐
-								</div>
-								<div class="l-last">
-									105 <i class="i-thumb-up"></i>
-								</div>
-							</div>
-							<div class="l-sub">
-								愿你有情人终成眷属，愿你在尘世获得幸福，我只愿面朝大海，春暖花开愿你有情人终成眷属，愿你在尘世获得幸福，我只愿面朝大海，春暖花开
-							</div>
-						</div>
-					</div>
-					<div class="l-pic">
-						<img src="pic/002.png">
-					</div>
-					<div class="l-btm">
-						<button data-type="0">查看</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog14-->
-
-
-	<div id="dialog6" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="l-hd">
-						主标题
-					</div>
-					<div class="l-ft">
-						内容内容内容内容内容内容内容内容
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bd">操作</button>
-					<button class="b-bc-b b-bd-a" data-type="0">取消</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog6-->
-
-
-	<div id="dialog7" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="l-hd">
-						开启自动回复？
-					</div>
-					<div class="l-ft">
-						开启自动回复之后，将自动回复所有粉丝！
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-f">开启</button>
-					<button class="b-bc-b b-bd-a" data-type="0">取消</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog7-->
-
-
-	<div id="dialog8" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="l-hd">
-						发送群发消息？
-					</div>
-					<div class="l-ft">
-						<div>
-							当前选中<span class="k-cl-i">32</span>人，点击发送按钮即可发送。
-						</div>
-						<div>
-							滴滴打车QQ订阅号<span class="k-cl-i">10</span>人
-						</div>
-						<div>
-							滴滴打车QQ服务好<span class="k-cl-i">12</span>人
-						</div>
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-c">发送</button>
-					<button class="b-bc-b b-bd-a" data-type="0">取消</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog8-->
-
-
-	<div id="dialog9" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert d-count" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="l-hd">
-						删除群发内容？
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-i">删除</button>
-					<button class="b-bc-b b-bd-a" data-type="0">取消</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog9-->
-
-
-	<div id="dialog10" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="k-icon k-bc-a"></div>
-					<div class="l-hd">
-						删除群发内容？
-					</div>
-					<div class="l-ft">
-						内容内容内容内容内容内容内容内容
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog10-->
-
-
-	<div id="dialog11" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="k-icon d-succ"></div>
-					<div class="l-hd">
-						开号资料已提交！
-					</div>
-					<div class="l-ft">
-						审核结果将在两天内下发至您的手机
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog11-->
-
-
-	<div id="dialog12" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="k-icon d-warn"></div>
-					<div class="l-hd">
-						群发消息失败！
-					</div>
-					<div class="l-ft">
-						您的登录信息已经被修改
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog12-->
-
-
-	<div id="dialog13" style="display: none;">
-		<div class="d-mask"></div>
-		<div class="d-wrap">
-			<div class="d d-alert" data-anime="slideDown">
-				<div class="d-close" data-type="0"></div>
-				<div class="l-row">
-					<div class="k-icon d-info"></div>
-					<div class="l-hd">
-						敬请期待
-					</div>
-				</div>
-				<div class="l-btm">
-					<button class="b-bc-b b-bd-a" data-type="0">知道了</button>
-				</div>
-			</div>
-		</div>
-	</div><!--end dialog13-->
-
-
-	<div id="dialog15" style="display: none;">
-		<div class="d-mask" data-type="0"></div>
-		<div class="d d-sheet" data-anime="slideDown">
-			<div class="l-top">
-				设置更新时间
-			</div>
-			<div class="l-row">
-				一天更新一次
-			</div>
-			<div class="l-row">
-				一周更新一次
-			</div>
-			<div class="l-row k-cl-i">
-				一月更新一次
-			</div>
-			<div class="l-btm" data-type="0">
-				取消
-			</div>
-		</div>
-	</div><!--end dialog15-->
-
-
-	<div id="dialog16" style="display: none;">
-		<div class="d-mask" data-type="0"></div>
-		<div class="d d-sheet d-sheet-b" data-anime="slideDown">
-			<div class="l-top">
-				设置更新时间
-			</div>
-			<div>
-				<div class="l-row">
-					一天更新一次
-				</div>
-				<div class="l-row">
-					一周更新一次
-				</div>
-				<div class="l-row">
-					一月更新一次
-				</div>
-			</div>
-			<div class="l-btm" data-type="0">
-				取消
-			</div>
-		</div>
-	</div><!--end dialog16-->
-
-
-	<div id="dialog17" style="display: none;">
-		<div class="d-mask" data-type="0"></div>
-		<div class="d d-sheet" data-anime="slideDown">
-			<div class="l-top">
-				这只是一个底部提示信息
-			</div>
-		</div>
-	</div><!--end dialog17-->
-
-
-	<div id="dialog18" style="display: none;">
-		<div class="d-mask" data-type="0"></div>
-		<div class="d d-sheet" data-anime="slideDown">
-			<div class="l-top" data-type="0">
-				这只是一个底部提示信息
-			</div>
-			<div class="l-btm" data-type="0">
-				取消
-			</div>
-		</div>
-	</div><!--end dialog18-->
-
-
-	<div id="dialog19" style="display: none;" data-type="0">
-		<div class="d d-msg" data-anime="slideUp">
-			<div class="l-top">
-				<div class="k-icon d-succ"></div>
-			</div>
-			<div class="l-row">
-				<div class="l-hd">
-					提交成功
-				</div>
-				<div class="l-ft">
-					此标题
-				</div>
-			</div>
-			<div class="l-btm">
-				<button>再来一次</button>
-			</div>
-		</div>
-	</div><!--end dialog19-->
-
-
-	<div id="dialog20" style="display: none;" data-type="0">
-		<div class="d d-msg" data-anime="slideRight">
-			<div class="n u-b">
-				<div class="n-left">1</div>
-				<div class="n-tit">标题</div>
-			</div>
-			<div class="k-container">
-				<p>广东分公司的分公司的</p>
-			</div>
-		</div>
-	</div><!--end dialog20-->
-
-
-	<div id="dialog21" style="display: none;" data-type="0">
-		<div class="d d-msg" data-anime="slideDown">
-			<div class="k-icon d-succ"></div>
-		</div>
-	</div><!--end dialog21-->
-
-
-	<div id="dialog22" style="display: none;" data-type="0">
-		<div class="d d-msg" data-anime="slideLeft">
-			<div class="k-icon d-succ"></div>
-		</div>
-	</div><!--end dialog22-->
-
-
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
 	<script type="text/javascript" src="js/dialog.js"></script>

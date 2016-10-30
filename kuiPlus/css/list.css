@@ -328,30 +328,30 @@
 .l-lar {
 	margin-bottom: 30px;
 }
-.l-lar .l-top,
-.l-lar .l-row,
-.l-lar .l-btm  {
+.l-lar > .l-top,
+.l-lar > .l-row,
+.l-lar > .l-btm  {
 	padding: 24px 30px;
 }
 /*小边距*/
-.l-del .l-top,
-.l-del .l-row,
-.l-del .l-btm  {
+.l-del > .l-top,
+.l-del > .l-row,
+.l-del > .l-btm  {
 	padding: 12px 0;
 }
 /*响应边距*/
-.l-res .l-top,
-.l-res .l-row,
-.l-res .l-btm  {
+.l-res > .l-top,
+.l-res > .l-row,
+.l-res > .l-btm  {
 	padding: 12px 15px;
 }
 @media screen and ( min-width: 768px ) {
 	.l-res {
 		margin-bottom: 30px;
 	}
-	.l-res .l-top,
-	.l-res .l-row,
-	.l-res .l-btm  {
+	.l-res > .l-top,
+	.l-res > .l-row,
+	.l-res > .l-btm  {
 		padding: 24px 30px;
 	}
 }

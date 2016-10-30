@@ -140,6 +140,7 @@ q {
 }
 small {
 	font-size: 75%;
+	color: #95a5a6;
 }
 sub,
 sup {
@@ -295,16 +296,6 @@ h6, .k-h6 {
 * + h6 {
 	margin-top: 15px;
 }
-h1 small, .k-h1 small,
-h2 small, .k-h2 small,
-h3 small, .k-h3 small,
-h4 small, .k-h4 small,
-h5 small, .k-h5 small,
-h6 small, .k-h6 small {
-	font-weight: 400;
-	line-height: 1;
-	color: #95a5a6;
-}
 /*  Lists
 ==========================================================================  */
 ul {
@@ -411,15 +402,12 @@ iframe {
 	top: 1px;
 	display: inline-block;
 	padding: 3px 6px;
-
 	line-height: 1;
 	font-size: 10px;
 	font-weight: normal;
 	white-space: nowrap;
 	vertical-align: 1px;
-
-	color: #fff;
-	background-color: rgba(0, 0, 0, .15);
+	background-color: #fff;
 }
 .k-label {
 	border-radius: 3px;
@@ -561,14 +549,6 @@ a.k-thumbnail:focus {
 .k-br-e {
 	border-radius: 50% !important;
 }
-/*  Box-shadow
-==========================================================================  */
-.k-bs-a:hover {
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
-}
-.k-bs-b:hover {
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, .15);
-}
 /*  Padding
 ==========================================================================  */
 .k-pt {
@@ -624,12 +604,10 @@ a.k-thumbnail:focus {
 /*  Background Color
 ==========================================================================  */
 .k-bc-a {
-	color: #34495e;
-	background-color: #dee5ed;
+	background-color: #34495e;
 }
 .k-bc-b {
-	color: #34495e;
-	background-color: #fff;
+	background-color: #eee;
 }
 .k-bc-c {
 	background-color: #28d772;
@@ -658,16 +636,16 @@ a.k-thumbnail:focus {
 .k-bc-k {
 	background-color: #be62e4;
 }
-.k-bc-c, .k-bc-d, .k-bc-e, .k-bc-f, .k-bc-g, .k-bc-h, .k-bc-i, .k-bc-j, .k-bc-k {
+.k-bc-a, .k-bc-c, .k-bc-d, .k-bc-e, .k-bc-f, .k-bc-g, .k-bc-h, .k-bc-i, .k-bc-j, .k-bc-k {
 	color: #fff;
 }
 /*  Text Color
 ==========================================================================  */
 .k-cl-a {
-	color: #95a5a6;
+	color: #34495e;
 }
 .k-cl-b {
-	color: #fff;
+	color: #95a5a6;
 }
 .k-cl-c {
 	color: #28d772;
@@ -753,9 +731,11 @@ a.k-thumbnail:focus {
 /*  Arrow
 ==========================================================================  */
 .k-back {
+	position: relative;
 	padding-left: 30px !important;
 }
 .k-link {
+	position: relative;
 	padding-right: 26px !important;
 }
 .k-back:before,
@@ -763,6 +743,7 @@ a.k-thumbnail:focus {
 	content: '';
 	position: absolute;
 	top: 50%;
+	z-index: 4;
 	display: inline-block;
 	height: 9px;
 	width: 9px;
