@@ -155,9 +155,6 @@
 	-webkit-appearance: none;
 			appearance: none;
 }
-.l-form select.l-ipt {
-	padding: 12px 30px 12px 15px;
-}
 .l-form textarea.l-ipt {
 	height: auto;
 }
@@ -237,11 +234,9 @@
 .l-talk .l-con,
 .l-toe-2 {
 	height: 40px;
-
 	white-space: normal;
-
+	
 	display: -webkit-box;
-	word-wrap: break-word;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }

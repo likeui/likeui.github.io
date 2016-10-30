@@ -35,8 +35,9 @@ body.active .side {
 .n-logo {
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 2;
-	width: 100%;
+	width: 240px;
 }
 .n-logo a {
 	padding: 7px 25px;
@@ -81,10 +82,6 @@ body.active .side {
 }
 .l-res > .l-top:after {
 	display: none;
-}
-.l-res .l-top small {
-	margin-left: 10px;
-	vertical-align: top;
 }
 .demo,
 .code {
@@ -131,7 +128,7 @@ body.active .side {
 	}
 }
 @media screen and ( min-width: 768px ) {
-	body {
+	html:not(.index) body {
 		padding-left: 240px;
 	}
 	.n-bar.n-fixed {
@@ -149,7 +146,7 @@ body.active .side {
 
 /*首页*/
 .index .head {
-	margin-top: 50px;
+	margin: 50px 0 80px;
 	text-align: center;
 	font-size: 72px;
 	font-weight: 700;

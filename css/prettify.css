@@ -1,7 +1,4 @@
 pre {
-	overflow: auto;
-	padding: 10px 15px;
-	font: 12px/20px Consolas, "Courier New", FontAwesome, monospace;
 	-webkit-overflow-scrolling: touch;
 }
 pre.prettyprint {

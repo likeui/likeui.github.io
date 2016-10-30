@@ -4,11 +4,14 @@
  *  Base Style Refer to normalize v4.1.1
  */
 * {
-	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 html {
-	font: 14px/1.429 "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif;
+	font: 400 14px/1.429 "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif;
 	color: #34495e;
 	background-color: #fff;
 	/* Prevent adjustments of font size after orientation changes in IE and iOS */
@@ -72,33 +75,32 @@ svg:not(:root) {
 ========================================================================  */
 a {
 	text-decoration: none;
-	color: #34495e;
+	color: #54687b;
 	background-color: transparent;
 	/* Remove gaps in links underline in iOS 8+ and Safari 8+ */
 	-webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
+	outline-width: 0;
+}
+a:hover,
+a:focus {
 	outline: 0;
+	color: #34495e;
 }
 a:focus {
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
 	outline-offset: -2px;
 }
-a.k-link-a {
+.k-url {
 	color: #1abc9c;
 }
-a.k-link-a:hover {
+.k-url:hover,
+.k-url:focus {
 	text-decoration: underline;
-}
-a.k-link-b:hover {
-	color: #1abc9c;
-	text-decoration: underline;
-}
-a.k-link-c:hover {
-	color: #f60;
-	text-decoration: underline;
+	color: #029f80;
 }
 /*  Text-level semantics
 ========================================================================  */
@@ -237,7 +239,7 @@ pre,
 address,
 fieldset,
 figure {
-	margin: 0 0 15px 0;
+	margin: 0 0 15px;
 }
 * + p,
 * + ul,
@@ -258,9 +260,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 500;
-	margin: 0 0 15px 0;
-	color: #34495e;
+	font-weight: 400;
+	margin: 0 0 15px;
 }
 h1, .k-h1 {
 	font-size: 32px;
@@ -268,11 +269,11 @@ h1, .k-h1 {
 }
 h2, .k-h2 {
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 32px;
 }
 h3, .k-h3 {
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 26px;
 }
 h4, .k-h4 {
 	font-size: 16px;
@@ -316,14 +317,6 @@ ol > li > ul {
 	padding-left: 10px;
 	line-height: 28px;
 }
-/*  Description lists
-==========================================================================  */
-dt {
-	font-weight: 600;
-}
-dd {
-	margin-left: 0;
-}
 /*  Horizontal rules
 ==========================================================================  */
 hr {
@@ -344,35 +337,16 @@ hr:after {
 	-webkit-transform-origin: 0 100%;
 			transform-origin: 0 100%;
 }
-/*  Address
-==========================================================================  */
-address {
-	font-style: normal;
-}
-/*  Blockquotes
-==========================================================================  */
-blockquote {
-	padding-left: 15px;
-	border-left: 5px solid #dee5ed;
-	font-size: 16px;
-	line-height: 22px;
-	font-style: italic;
-}
 /*  Preformatted text
 ==========================================================================  */
 pre {
 	padding: 10px;
-	background-color: #f5f5f5;
-	font: 12px / 18px Consolas, monospace, serif;
+	font: 12px/ 20px Consolas, "Courier New", FontAwesome, monospace;
 	color: #34495e;
+	background-color: #f5f5f5;
+	overflow: auto;
 	-moz-tab-size: 4;
 	tab-size: 4;
-	overflow: auto;
-}
-/*  Iframe
-==========================================================================  */
-iframe {
-	border: 0;
 }
 /*  Clearing
 ==========================================================================  */
@@ -399,14 +373,14 @@ iframe {
 .k-label, 
 .k-badge {
 	position: relative;
-	top: 1px;
+	top: -1px;
 	display: inline-block;
 	padding: 3px 6px;
 	line-height: 1;
 	font-size: 10px;
 	font-weight: normal;
 	white-space: nowrap;
-	vertical-align: 1px;
+	vertical-align: middle;
 	background-color: #fff;
 }
 .k-label {
@@ -445,19 +419,26 @@ a.k-thumbnail:focus {
 .k-nowrap {
 	white-space: nowrap;
 }
+.k-oh {
+	overflow: hidden;
+}
+.k-oa {
+	overflow: auto;
+}
+.k-oa > :last-child {
+	margin-bottom: 0;
+}
 .k-toe {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
 .k-toe-2 {
-	display: -webkit-box;
-
 	text-overflow: ellipsis;
 	white-space: normal;
-	word-wrap: break-word;
 	overflow: hidden;
 
+	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
@@ -470,27 +451,16 @@ a.k-thumbnail:focus {
 	float: right;
 }
 .k-db {
-	display: block !important;
+	display: block;
 }
 .k-dn {
-	display: none !important;
+	display: none;
 }
-.k-vv {
-	visibility: visible !important;
+.k-show {
+	visibility: visible;
 }
-.k-vh {
-	visibility: hidden !important;
-}
-/*  Overflow
-==========================================================================  */
-.k-oh {
-	overflow: hidden;
-}
-.k-oa {
-	overflow: auto;
-}
-.k-oa > :last-child {
-	margin-bottom: 0;
+.k-hide {
+	visibility: hidden;
 }
 /*  Text transform 
 ==========================================================================  */
@@ -506,31 +476,31 @@ a.k-thumbnail:focus {
 /*  Align and Text style
 ==========================================================================  */
 .k-fwb {
-	font-weight: bold !important;
+	font-weight: bold;
 }
 .k-fwn {
-	font-weight: normal !important;
+	font-weight: normal;
 }
 .k-tac {
-	text-align: center !important;
+	text-align: center;
 }
 .k-tar {
-	text-align: right !important;
+	text-align: right;
 }
 .k-tal {
-	text-align: left !important;
+	text-align: left;
 }
 .k-taj {
-	text-align: justify !important;
+	text-align: justify;
 }
 .k-vat {
-	vertical-align: top !important;
+	vertical-align: top;
 }
 .k-vam {
-	vertical-align: middle !important;
+	vertical-align: middle;
 }
 .k-vab {
-	vertical-align: bottom !important;
+	vertical-align: bottom;
 }
 /*  Radius
 ==========================================================================  */
@@ -538,73 +508,70 @@ a.k-thumbnail:focus {
 	border-radius: 0 !important;
 }
 .k-br-b {
-	border-radius: 2px !important;
+	border-radius: 3px !important;
 }
 .k-br-c {
-	border-radius: 5px !important;
-}
-.k-br-d {
 	border-radius: 1000px !important;
 }
-.k-br-e {
+.k-br-d {
 	border-radius: 50% !important;
 }
 /*  Padding
 ==========================================================================  */
 .k-pt {
-	padding-top: 15px !important;
+	padding-top: 15px;
 }
 .k-pr {
-	padding-right: 15px !important;
+	padding-right: 15px;
 }
 .k-pb {
-	padding-bottom: 15px !important;
+	padding-bottom: 15px;
 }
 .k-pl {
-	padding-left: 15px !important;
+	padding-left: 15px;
 }
 .k-px {
-	padding: 0 15px !important;
+	padding: 0 15px;
 }
 .k-py {
-	padding: 15px 0 !important;
+	padding: 15px 0;
 }
 .k-pd {
-	padding: 15px !important;
+	padding: 15px;
 }
 .k-pn {
-	padding: 0 !important;
+	padding: 0;
 }
 /*  Margin
 ==========================================================================  */
 .k-mt {
-	margin-top: 15px !important;
+	margin-top: 15px;
 }
 .k-mr {
-	margin-right: 15px !important;
+	margin-right: 15px;
 }
 .k-mb {
-	margin-bottom: 15px !important;
+	margin-bottom: 15px;
 }
 .k-ml {
-	margin-left: 15px !important;
+	margin-left: 15px;
 }
 .k-mx {
-	margin: 0 15px !important;
+	margin: 0 15px;
 }
 .k-my {
-	margin: 15px 0 !important;
+	margin: 15px 0;
 }
 .k-mg {
-	margin: 15px !important;
+	margin: 15px;
 }
 .k-mn {
-	margin: 0 !important;
+	margin: 0;
 }
 /*  Background Color
 ==========================================================================  */
 .k-bc-a {
-	background-color: #34495e;
+	background-color: #fff;
 }
 .k-bc-b {
 	background-color: #eee;
@@ -636,13 +603,16 @@ a.k-thumbnail:focus {
 .k-bc-k {
 	background-color: #be62e4;
 }
-.k-bc-a, .k-bc-c, .k-bc-d, .k-bc-e, .k-bc-f, .k-bc-g, .k-bc-h, .k-bc-i, .k-bc-j, .k-bc-k {
+.k-bc-l {
+	background-color: #34495e;
+}
+.k-bc-c, .k-bc-d, .k-bc-e, .k-bc-f, .k-bc-g, .k-bc-h, .k-bc-i, .k-bc-j, .k-bc-k, .k-bc-l {
 	color: #fff;
 }
 /*  Text Color
 ==========================================================================  */
 .k-cl-a {
-	color: #34495e;
+	color: #fff;
 }
 .k-cl-b {
 	color: #95a5a6;
@@ -673,6 +643,9 @@ a.k-thumbnail:focus {
 }
 .k-cl-k {
 	color: #be62e4;
+}
+.k-cl-l {
+	color: #34495e;
 }
 /*  Line
 ==========================================================================  */
@@ -730,13 +703,17 @@ a.k-thumbnail:focus {
 }
 /*  Arrow
 ==========================================================================  */
-.k-back {
+.k-back,
+.k-link,
+.k-down {
 	position: relative;
-	padding-left: 30px !important;
 }
-.k-link {
-	position: relative;
-	padding-right: 26px !important;
+.k-back {
+	padding-left: 32px !important;
+}
+.k-link,
+.k-down {
+	padding-right: 32px !important;
 }
 .k-back:before,
 .k-link:before {
@@ -747,18 +724,18 @@ a.k-thumbnail:focus {
 	display: inline-block;
 	height: 9px;
 	width: 9px;
-	margin-top: -5px;
+	margin-top: -4px;
 	border-style: solid;
 	border-color: #95a5a6;
 	-webkit-transform: rotate(45deg);
 			transform: rotate(45deg);
 }
 .k-back:before {
-	left: 15px;
+	left: 13px;
 	border-width: 0px 0px 2px 2px;
 }
 .k-link:before {
-	right: 15px;
+	right: 13px;
 	border-width: 2px 2px 0px 0px;
 }
 .k-link:active {
@@ -767,8 +744,8 @@ a.k-thumbnail:focus {
 .k-down:before {
 	content: '';
 	position: absolute;
-	top: 20px;
-	right: 15px;
+	top: 46%;
+	right: 13px;
 	border: 5px solid transparent;
 	border-top-color: #95a5a6;
 }
