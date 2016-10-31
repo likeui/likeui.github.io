@@ -328,6 +328,7 @@ textarea.f-ipt {
  ========================================================================== */
 .f-switch {
 	position: relative;
+	top: 2px;
 	z-index: 0;
 	width: 52px;
 	height: 32px;

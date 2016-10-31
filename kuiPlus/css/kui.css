@@ -368,6 +368,10 @@ pre {
 .k-usn {
 	-webkit-user-select: none;
 }
+.k-tip {
+	margin: 15px 15px 10px;
+	color: #95a5a6;
+}
 /*  Label and Badge
 ==========================================================================  */
 .k-label, 

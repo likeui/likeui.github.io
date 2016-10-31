@@ -253,19 +253,13 @@
 }
 /*  Flex
 ==========================================================================  */
-.g-flex,
-.g-start,
-.g-end,
-.g-center,
-.g-between,
-.g-around {
-	margin-top: 15px;
+.g-flex {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
 }
-.g-flex {
-	margin-left: -15px;
+.g-flex + .g-flex {
+	margin-top: 4px;
 }
 .g-start {
 	-webkit-justify-content: flex-start;
@@ -288,8 +282,16 @@
 			justify-content: space-around;
 }
 .g-cell {
-	padding-left: 15px;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 			flex: 1;
+}
+.g-cell {
+	text-align: center;
+}
+.g-cell:first-child {
+	text-align: left;
+}
+.g-cell:last-child {
+	text-align: right;
 }
