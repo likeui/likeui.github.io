@@ -54,6 +54,13 @@ var lottery = {
 	}
 };
 
+var a = {
+	startBtn : $("#startBtn"),
+	repeatBtn : $("#repeatBtn"),
+	section : $("section"),
+	footer : $("footer")
+}
+
 function run() {
 	lottery.times += 1;
 	lottery.roll();
@@ -66,7 +73,9 @@ function run() {
 
 		setTimeout(function() {
 			$("#price").text(lottery.lotteryList[lottery.award]+"元金投币");
-			$("section").removeClass('active').next().addClass('active');
+			a.startBtn.removeClass('active');
+			a.section.removeClass('active');
+			a.footer.addClass('active');
 		}, 1000);
 	}else{
 		if ( lottery.times < lottery.cycle ) {
@@ -87,12 +96,17 @@ function run() {
 
 window.onload = function() {
 	lottery.init("#grid");
-	$("#startBtn").click(function(event) {
+	a.startBtn.click(function(event) {
 		var that = $(this);
 		if( that.hasClass('active') ) {
 			return false;
 		}
 		that.addClass('active');
 		run();
+	});
+
+	a.repeatBtn.click(function(event) {
+		a.footer.removeClass('active');
+		a.section.addClass('active');
 	});
 }
