@@ -5,7 +5,6 @@
 	position: relative;
 	display: block;
 	padding: 0;
-	margin: 0 0 15px;
 }
 .l-top,
 .l-row,
@@ -15,17 +14,6 @@
 	padding: 12px 15px;
 	line-height: 20px;
 	background-color: #fff;
-}
-.l-top-b:after {
-	content: '';
-	position: absolute;
-	top: 8px;
-	bottom: 8px;
-	left: 0;
-	border-left: 3px solid #1abc9c;
-}
-.l-top-c {
-	padding: 12px 15px 0;
 }
 .l-hd {
 	font-size: 16px;
@@ -181,7 +169,7 @@
 }
 /*对话列表*/
 .l-talk .l-row:after {
-	left: 65px;
+	left: 70px;
 }
 .l-talk .l-img {
 	width: 40px;
@@ -274,6 +262,9 @@
 .l-del > .l-btm  {
 	padding: 12px 0;
 }
+.l-res {
+	margin-bottom: 15px;
+}
 /*响应边距*/
 @media screen and ( min-width: 768px ) {
 	.l-res {
@@ -284,4 +275,15 @@
 	.l-res > .l-btm  {
 		padding: 24px 30px;
 	}
+}
+.l-top-b:after {
+	content: '';
+	position: absolute;
+	top: 8px;
+	bottom: 8px;
+	left: 0;
+	border-left: 3px solid #1abc9c;
+}
+.l-top-c {
+	padding: 12px 15px 0;
 }

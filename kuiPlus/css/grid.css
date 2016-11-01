@@ -258,6 +258,9 @@
 	display: -webkit-flex;
 	display: flex;
 }
+.g-space {
+	margin-left: -15px;
+}
 .g-flex + .g-flex {
 	margin-top: 4px;
 }
@@ -281,17 +284,18 @@
 	-webkit-justify-content: space-around;
 			justify-content: space-around;
 }
+.g-space .g-cell {
+	padding-left: 15px;
+}
 .g-cell {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 			flex: 1;
-}
-.g-cell {
 	text-align: center;
 }
-.g-cell:first-child {
+.g-cell:first-child:not(:last-child) {
 	text-align: left;
 }
-.g-cell:last-child {
+.g-cell:last-child:not(:first-child) {
 	text-align: right;
 }

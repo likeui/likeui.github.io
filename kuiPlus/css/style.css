@@ -14,11 +14,6 @@ html {
 	width: 100%;
 	pointer-events: none;
 }
-body.active .mask {
-	background-color: rgba(0, 0, 0, .6);
-	box-shadow: inset 0 0 10px rgba(0, 0, 0, .15);
-	pointer-events: all;
-}
 .side {
 	width: 240px;
 	background-color: #fff;
@@ -28,23 +23,28 @@ body.active .mask {
 			transform: translate3d(-110%, 0, 0);
 	-webkit-overflow-scrolling: touch;
 }
+body.active .mask {
+	background-color: rgba(0, 0, 0, .6);
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, .15);
+	pointer-events: all;
+}
 body.active .side {
 	-webkit-transform: translate3d(0, 0, 0);
 			transform: translate3d(0, 0, 0);
 }
-.n-logo {
+.side .n-logo {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 2;
 	width: 240px;
 }
-.n-logo a {
+.side .n-logo a {
 	padding: 7px 25px;
 	color: #fff;
 	background-color: #34495e;
 }
-.n-logo img {
+.side .n-logo img {
 	display: block;
 	height: 34px;
 }
@@ -60,28 +60,26 @@ body.active .side {
 	padding: 5px;
 	border-radius: 50%;
 }
-.n-nav {
-	height: 100%;
-	padding-top: 65px;
-	overflow: auto;
-}
 .side .n-icon img {
 	position: relative;
 	top: -1px;
 }
+.side .n-nav {
+	height: 100%;
+	padding-top: 65px;
+	overflow: auto;
+}
 .side .n-nav small {
 	margin-left: 10px;
 }
+
+
 .main-top {
 	margin: 30px 0;
 }
 .l-res > .l-top {
 	padding-bottom: 0;
 	margin-bottom: 0;
-	background-color: #fff;
-}
-.l-res > .l-top:after {
-	display: none;
 }
 .demo,
 .code {
@@ -95,11 +93,9 @@ body.active .side {
 	top: 0;
 	left: 0;
 	width: 50px;
-
 	font-size: 12px;
 	line-height: 20px;
 	text-align: center;
-
 	color: #fff;
 	border-radius: 10px;
 	background-color: #50c7f9;
@@ -119,9 +115,13 @@ body.active .side {
 	content: 'Code';
 	background-color: #f6c903;
 }
+
+
 .n-bar.n-fixed {
 	box-shadow: 0 1px 5px rgba(0, 0, 0, .05);
 }
+
+
 @media screen and ( max-width: 768px ) {
 	.main-top {
 		padding: 0 15px;
@@ -131,15 +131,15 @@ body.active .side {
 	html:not(.index) body {
 		padding-left: 240px;
 	}
-	.n-bar.n-fixed {
-		display: none;
-	}
-	.k-container {
+	html:not(.index) .k-container {
 		padding: 0 80px;
 	}
 	.side {
 		-webkit-transform: translate3d(0, 0, 0);
 				transform: translate3d(0, 0, 0);
+	}
+	.n-bar.n-fixed {
+		display: none;
 	}
 }
 
@@ -152,20 +152,17 @@ body.active .side {
 	font-weight: 700;
 }
 .index .top {
-	display: none;
 	position: absolute;
 	width: 100%;
-	padding: 40px 0;
+	padding: 30px 0;
 	text-align: center;
 	color: #fff;
 }
 .index .top-time {
 	font-size: 64px;
-	line-height: 1.2;
 }
 .index .foot {
-	display: none;
-	padding: 80px 0;
+	margin: 80px 0;
 	text-align: center;
 }
 .index .foot .b {
@@ -189,12 +186,13 @@ body.active .side {
 		left: 0;
 		padding-top: 0;
 	}
-	.index .top {
-		display: block;
-	}
 	.index .g > * {
 		width: 25%;
 		text-align: center;
+	}
+	.index .l-row {
+		padding: 0 0 10px;
+		background-color: transparent;
 	}
 	.index .k-icon {
 		width: 60px;
@@ -202,14 +200,11 @@ body.active .side {
 		margin: 0 auto 2px;
 		border-radius: 10px;
 	}
-	.index .l-row {
-		padding: 0 0 10px;
-		background-color: transparent;
-	}
 	.index .l-hd {
 		font-size: 12px;
 		color: #fff;
 	}
+	.index .foot,
 	.index .head,
 	.index .l-bd,
 	.index .l-ft {
@@ -220,19 +215,18 @@ body.active .side {
 	.index {
 		background-color: #f4f4f4;
 	}
+	.index .top {
+		display: none;
+	}
 	.index .g {
 		margin: 0 0 0 -3px;
 	}
 	.index .g > * {
 		padding-left: 3px;
 	}
-	.index .k-icon {
-		margin-bottom: 15px;
-	}
 	.index .l {
 		margin-bottom: 3px;
-		-webkit-transition: box-shadow .3s, transform .3s;
-				transition: box-shadow .3s, transform .3s;
+		transition: all .3s;
 	}
 	.index a.l:hover {
 		z-index: 2;
@@ -243,18 +237,19 @@ body.active .side {
 	.index .l-row {
 		padding: 50px;
 	}
+	.index .k-icon {
+		margin-bottom: 15px;
+	}
 	.index .l-bd {
 		font-size: 24px;
 		font-weight: 700;
 	}
-	.index .foot {
-		display: block;
-	}
 }
 
+
 /*按钮*/
-.button button,
-.button .b {
+.button .demo:not(.not) button,
+.button .demo:not(.not) .b {
 	margin-bottom: 10px;
 }
 
@@ -263,6 +258,7 @@ body.active .side {
 .grid .demo .bc-a {
 	background-color: #fafafa;
 }
+
 
 /*颜色*/
 .color .demo {
@@ -366,7 +362,6 @@ body.active .side {
 }
 
 
-
 /*弹层*/
 .d-style1 .l-hd,
 .d-style1 .l-ft {
@@ -388,7 +383,7 @@ body.active .side {
 	width: 600px;
 }
 #sheet2 .d .k-icon {
-	margin-bottom: 0;
+	margin-bottom: 3px;
 }
 @media screen and ( min-width: 768px ) {
 	.d-style1 .l-bd .l-img {

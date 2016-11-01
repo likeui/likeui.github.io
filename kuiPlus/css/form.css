@@ -58,8 +58,7 @@
 	background-color: #fff;
 
 	border-radius: 3px;
-	-webkit-transition: all linear 0.2s;
-			transition: all linear 0.2s;
+	transition: all .2s;
 	-webkit-appearance: none;
 }
 .f-ipt:focus {
@@ -339,8 +338,7 @@ textarea.f-ipt {
 	background-color: #fafafa;
 	-webkit-appearance: none;
 			appearance: none;
-	-webkit-transition: background-color .5s, border .5s;
-			transition: background-color .5s, border .5s;
+	transition: all .5s;
 }
 .f-switch:checked {
 	border-color: #54687b;
@@ -354,8 +352,7 @@ textarea.f-ipt {
 	left: 0;
 	z-index: 1;
 	border-radius: 16px;
-	-webkit-transition: -webkit-transform .3s;
-			transition: transform .3s;
+	transition: all .3s;
 }
 .f-switch:before {
 	width: 100%;

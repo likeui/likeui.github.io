@@ -724,7 +724,7 @@ a.k-thumbnail:focus {
 	content: '';
 	position: absolute;
 	top: 50%;
-	z-index: 4;
+	z-index: 3;
 	display: inline-block;
 	height: 9px;
 	width: 9px;
@@ -760,7 +760,7 @@ a.k-thumbnail:focus {
 	width: 50px;
 	height: 50px;
 	padding: 10px;
-	margin: 0 auto;
+	margin: 0 auto 3px;
 	font-size: 30px;
 	overflow: hidden;
 	border-radius: 50%;
@@ -768,9 +768,4 @@ a.k-thumbnail:focus {
 }
 .k-icon.active:active {
 	opacity: .2;
-}
-.k-ft {
-	font-size: 12px;
-	text-align: center;
-	color: #95a5a6;
 }

@@ -9,8 +9,7 @@
 	cursor: pointer;
 	-webkit-transform: rotate(45deg);
 			transform: rotate(45deg);
-	-webkit-transition: -webkit-transform .3s;
-			transition: transform .3s;
+	transition: all .3s;
 }
 .d-close:hover {
 	-webkit-transform: rotate(315deg);
@@ -40,7 +39,7 @@
 }
 /*图标*/
 .d .k-icon {
-	margin: 0 auto 20px;
+	margin-bottom: 20px;
 }
 .d .k-icon:after {
 	content: '';
@@ -229,16 +228,6 @@
 	left: 0;
 	z-index: 9;
 }
-.d .l-top {
-	padding: 12px 15px;
-	background-color: #fff;
-}
-.d:not(.d-sheet) .l-top:after {
-	display: none;
-}
-.d .l-btm {
-	background-color: #fff;
-}
 /*提示层*/
 .d-tip {
 	position: relative;
@@ -286,12 +275,10 @@
 .d-sheet .l-top {
 	padding: 15px;
 	font-size: 12px;
-	background-color: #fff;
 }
 .d-sheet .l-btm {
 	margin-top: 10px;
 }
-.d-sheet .l-row:active,
 .d-sheet .l-btm:active {
 	background-color: #f4f4f4;
 }
