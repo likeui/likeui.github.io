@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>-->
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if !IE]>-->
+    <script type="text/javascript">
+    	//非IE浏览器加载
+        window.jQuery || document.write("<scr"+"ipt src='js/jquery-2.1.1.min.js'>"+"<"+"/scr"+"ipt>");
+    </script>
+    <!--<![endif]-->
+
+    <!--[if IE]>-->
+    <script type="text/javascript">
+    	//IE浏览器加载
+        window.jQuery || document.write("<scr"+"ipt src='js/jquery-1.11.1.min.js'>"+"<"+"/scr"+"ipt>");
+    </script>
+    <!--<![endif]-->
+</head>
+<body ontouchstart>
+	<div class="main-wrap">
+		<div class="evn-wrap">
+			<img src="images/evn_logo.png">
+			<div>
+				<img class="a-flash" src="images/mouse_btn.png">
+				<p>点击红包开抢！</p>
+				<p>每轮只有一次机会</p>
+			</div>
+			<div class="countTime">
+				<p>本轮是第<span>2</span>批次红包PK</p>
+				<p>距离下次红包PK还有</p>
+				<div>
+					<b id="h">00</b> :
+					<b id="m">00</b> :
+					<b id="s">00</b>
+				</div>
+			</div>
+		</div>
+
+		<div id="grid" class="red-wrap">
+			<ul class="sub"></ul>
+			<ul class=""></ul>
+		</div>
+	</div><!--end main-wrap-->
+	<script type="text/javascript" src="js/red.js"></script>
+</body>
+</html>
