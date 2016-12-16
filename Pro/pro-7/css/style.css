@@ -1,0 +1,113 @@
+*,
+:before,
+:after {
+	box-sizing: border-box;
+}
+html {
+	font: 400 14px/1.429 "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif;
+	color: #333;
+	background-color: #fff;
+	/* Prevent adjustments of font size after orientation changes in IE and iOS */
+	-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;
+}
+body {
+	margin: 0;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+img {
+	max-width: 100%;
+}
+.main {
+	position: fixed;
+	top: 60%;
+	bottom: 0;
+	width: 100%;
+}
+.content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.main-wrap {
+	position: relative;
+	float: left;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+}
+.main-wrap:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -100%;
+	width: 128px;
+	height: 128px;
+	visibility: hidden;
+	transition: all .05s ease-in;
+	background-image: url(../images/hammer.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+}
+.main-wrap:not(.active):active:after {
+	visibility: visible;
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+}
+.img2 {
+	display: none;
+}
+.img3 {
+	position: absolute;
+	top: 0;
+	
+	-webkit-animation: rotateDown 1s  ease-out both;
+			animation: rotateDown 1s  ease-out both;
+}
+@-webkit-keyframes rotateDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotateY(0deg) translateZ(0px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotateY(720deg) translateZ(0px);
+	}
+}
+@keyframes rotateDown {
+	0% {
+		opacity: 0;
+		transform: rotateY(0deg) translateZ(0px);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateY(720deg) translateZ(0px);
+	}
+}
+.main-wrap.active .img1,
+.img3 {
+	display: none;
+}
+.main-wrap.active .img2,
+.main-wrap.active .img3 {
+	display: block;
+}
+@media screen and ( min-width: 768px ) {
+	.main-wrap:after {
+		top: -60%;
+		width: 256px;
+		height: 256px;
+	}
+}

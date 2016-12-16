@@ -28,18 +28,18 @@
 	<div class="main-wrap">
 		<div class="evn-wrap">
 			<img src="images/evn_logo.png">
-			<div>
+			<div id="countDown">
 				<img class="a-flash" src="images/mouse_btn.png">
 				<p>点击红包开抢！</p>
 				<p>每轮只有一次机会</p>
-			</div>
-			<div class="countTime">
-				<p>本轮是第<span>2</span>批次红包PK</p>
-				<p>距离下次红包PK还有</p>
-				<div>
-					<b id="h">00</b> :
-					<b id="m">00</b> :
-					<b id="s">00</b>
+				<div class="countdown">
+					<p>本轮是第<span>2</span>批次红包PK</p>
+					<p>距离下次红包PK还有</p>
+					<div>
+						<b id="h">00</b> :
+						<b id="m">00</b> :
+						<b id="s">00</b>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -49,6 +49,39 @@
 			<ul class=""></ul>
 		</div>
 	</div><!--end main-wrap-->
+
+	
+	<div id="dialog" style="display: none;">
+		<div class="d-mask"></div>
+		<div class="d-wrap">
+			<div class="d d-dialog result" data-anime="zoom">
+				<div class="reswrap">
+					<p class="l-hd"></p>
+					<p class="l-ft"></p>
+				</div>
+				<button class="resbtn" type="1">确定</button>
+			</div>
+		</div>
+	</div><!--end dialog-->
+
+
+	<div id="alert" style="display: none;">
+		<div class="d-mask"></div>
+		<div class="d-wrap">
+			<div class="d d-alert" data-anime="slideDown">
+				<div class="l-row">
+					<div class="k-icon"></div>
+					<div class="l-hd">
+					</div>
+					<div class="l-ft">
+					</div>
+				</div>
+				<div class="l-btm">
+					<button class="b" type="1">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="js/red.js"></script>
 </body>
 </html>
